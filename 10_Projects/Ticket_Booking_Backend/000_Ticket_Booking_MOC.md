@@ -53,9 +53,16 @@ created_at: 2026-06-27
 ### Architecture & Specs
 
 - Lộ trình thiết lập và checklist chi tiết: [[Setup_Roadmap_and_Checklist]]
+- Quy chuẩn & Mẫu viết tài liệu Workflow (SSOT): [[Workflow_Documentation_Standard]]
+- Template Bảng WBS Phân Cấp Mẫu (L1 -> L4): [[WBS_Table_Template]]
 - Đặc tả thiết kế hệ thống chi tiết: [[Architecture_and_Spec]]
 - Chiến lược kiến trúc đa giao thức Hybrid: [[Hybrid_Architecture_Strategy]]
 - Luồng thực thi chi tiết NestJS Request Lifecycle: [[NestJS_Execution_Workflow_and_Lifecycle]]
+- Phân tích chuyên sâu NestJS Guards & Interface CanActivate: [[Guards_and_CanActivate_Deep_Dive]]
+- Phân tích cơ chế ExecutionContext & ArgumentsHost: [[ExecutionContext_and_ArgumentsHost_Deep_Dive]]
+- Chuẩn hóa Error Response theo RFC 9457: [[RFC_9457_Problem_Details_Deep_Dive]]
+- Quy trình & Sơ đồ vận hành GlobalExceptionFilter: [[Global_Exception_Filter_Workflow]]
+- Cơ chế Locking & Concurrency Control (FOR UPDATE, SKIP LOCKED): [[PostgreSQL_Locking_and_Concurrency_Deep_Dive]]
 
 ### Auth Strategy & Security
 
