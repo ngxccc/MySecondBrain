@@ -29,6 +29,10 @@ Bản đồ điều hướng trung tâm cho toàn bộ tri thức khái niệm l
 - [[Customer_Outcome_Thinking]]: Tập trung vào thay đổi hành vi tích cực của người dùng (Outcomes) thay vì tính năng (Outputs).
 - [[Student_Mindsets]]: Mô hình tư duy tối ưu hóa học tập, tài chính và sự nghiệp cho sinh viên.
 - [[Maslow_Hierarchy_and_Brain_Structure]]: Phân tầng thần kinh học của tháp nhu cầu Maslow theo tiến hóa não bộ (Brainstem, Limbic, PFC).
+- [[BATNA_Negotiation_Model]]: Phương án thay thế tốt nhất - Điểm tựa an toàn và nguồn sức mạnh thương lượng cốt lõi.
+- [[ZOPA_Negotiation_Framework]]: Vùng thỏa thuận khả thi - Khoảng không gian giao thoa ranh giới chấp nhận được giữa hai bên.
+- [[Principled_Negotiation_Getting_To_Yes]]: Đàm phán nguyên tắc Harvard - Giải quyết xung đột dựa trên lợi ích cốt lõi và tiêu chí khách quan.
+- [[Tactical_Empathy_Chris_Voss]]: Thấu cảm chiến thuật & Kỹ thuật đàm phán tâm lý FBI (Mirroring, Labeling, Accusation Audit).
 
 ## Knowledge Management
 
