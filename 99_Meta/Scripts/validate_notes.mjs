@@ -42,6 +42,7 @@ const colors = {
 
 const ignoredDirs = [
   "00_Inbox",
+  "10_Projects",
   "40_Archives",
   "99_Meta",
   ".git",
