@@ -1,5 +1,5 @@
 ---
-noteId: 1783415599633
+noteId: 1785417092502
 ---
 
 redirect mapping /ˌriː.daɪˈrekt ˈmæp.ɪŋ/

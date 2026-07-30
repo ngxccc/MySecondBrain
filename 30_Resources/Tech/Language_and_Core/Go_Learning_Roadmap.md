@@ -14,13 +14,36 @@ Tài liệu này phác thảo lộ trình học tập thực dụng và hiệu q
 
 ## Lộ Trình Học 4 Giai Đoạn
 
-### Giai đoạn 1: Làm Chủ Cú Pháp & Tư Duy Ngôn Ngữ
+### Giai đoạn 1: Làm Chủ Cú Pháp, Quản Lý Bộ Nhớ & Cấu Trúc Dữ Liệu Nền Tảng
 
-- **Mục tiêu:** Nắm vững cú pháp tối giản của Go, cơ chế con trỏ (Pointers), Interface, Struct, và cách quản lý lỗi qua giá trị (`error` as value).
-- **Hành động:**
-  - **Thực hành tương tác:** Trải nghiệm ngay [A Tour of Go](https://go.dev/tour/) - trang web giới thiệu ngôn ngữ chính thức và trực quan nhất của Google.
-  - **Học bằng TDD (Test-Driven Development):** Học Go bằng cách viết test trước qua [Learn Go with Tests (by quii)](https://quii.gitbook.io/learn-go-with-tests/). Đây là tài liệu tuyệt vời nhất để rèn luyện thói quen viết code sạch, dễ bảo trì và dễ test từ đầu.
-  - **Tra cứu nhanh:** Sử dụng [Go by Example](https://gobyexample.com/) làm tài liệu tham khảo nhanh cho bất kỳ cú pháp hay tính năng nào của ngôn ngữ.
+- **Mục tiêu:** Nắm vững cú pháp tối giản của Go, cơ chế quản lý bộ nhớ ngầm bên dưới (Pointers, Slices, Maps), Interface, Struct, và cách quản lý lỗi qua giá trị (`error` as value).
+- **Kiến thức Bộ nhớ & Cấu trúc Core trong Go (Cần đọc tài liệu bổ trợ ngoài Tour of Go):**
+  - **Con trỏ & Escape Analysis (Pointers `*` & `&`):** Hiểu truyền giá trị (Pass-by-Value) vs. truyền con trỏ (Pass-by-Pointer), phân bổ bộ nhớ Stack vs. Heap.
+    - _Tài liệu bổ trợ:_ [Language Mechanics On Escape Analysis (Ardan Labs)](https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-escape-analysis.html) & [Understanding Escape Analysis in Go (FreeCodeCamp)](https://www.freecodecamp.org/news/understanding-escape-analysis-in-go/)
+  - **Bản chất Slice (`len` & `cap`):** Nắm cấu trúc 3 phần tử ngầm của Slice (Con trỏ mảng nền, `len`, `cap`), hiện tượng Reallocation bộ nhớ khi dùng `append`.
+    - _Tài liệu bổ trợ:_ [Go Slices: usage and internals (Go Blog Official)](https://go.dev/blog/slices-intro)
+  - **Bản chất `map[K]V` (Hash Table):** Cơ chế Buckets, va chạm Hash, và tính chất Non-Thread-Safe (Nổ lỗi `fatal error: concurrent map writes`).
+    - _Tài liệu bổ trợ:_ [Go maps in action (Go Blog Official)](https://go.dev/blog/maps)
+  - **Interface Tuple (`iface` / `eface` & `nil` trap):** Bản chất 2 con trỏ `(Type, Value)` ngầm bên trong Interface và bẫy `interface(nil) != (*Struct)(nil)`.
+    - _Tài liệu bổ trợ:_ [Go Data Structures: Interfaces (Russ Cox)](https://research.swtch.com/interfaces)
+- **Hành động & Lộ trình Học tập:**
+  - **Bước 1 (Cú pháp cơ bản):** Hoàn thành 100% bài tập tương tác trên [A Tour of Go](https://go.dev/tour/).
+  - **Bước 2 (Code Go chuẩn phong cách):** Đọc cẩm nang [Effective Go](https://go.dev/doc/effective_go).
+  - **Bước 3 (Học qua TDD & Test):** Thực hành qua [Learn Go with Tests (by quii)](https://quii.gitbook.io/learn-go-with-tests/).
+  - **Bước 4 (Tra cứu nhanh):** Sử dụng [Go by Example](https://gobyexample.com/) làm tài liệu tham khảo cú pháp.
+
+---
+
+### Giai đoạn 1.5: Tự Cài Đặt Thuật Toán & Cấu Trúc Dữ Liệu Bằng Go (DSA for Golang Backend)
+
+- **Mục tiêu:** Tự tay xây dựng các Cấu trúc Dữ liệu & Thuật toán cốt lõi bằng Go thuần túy không dùng thư viện ngoài (Theo lộ trình [[Data_Structures_and_Algorithms_Roadmap]]).
+- **Các thuật toán & Cấu trúc cần tự viết bằng Go:**
+  - **Singly & Doubly Linked List:** Viết bằng `struct` và `pointer` trong Go.
+  - **Stack & Queue:** Cài đặt bằng Slice hoặc LinkedList.
+  - **Custom LRU Cache:** Bài tập huyền thoại kết hợp `map[string]*Node` và `DoublyLinkedList`.
+  - **Quick Sort:** Tự viết thuật toán phân chia In-place bằng Go.
+  - **Standard Library DSA trong Go:** Tìm hiểu cách Go dùng `container/heap`, `container/list`, `sort.Slice` và gói `slices` (Go 1.21+).
+  - **Thread-Safe Data Structures:** Dùng `sync.Mutex`, `sync.RWMutex` hoặc `sync.Map` để đóng gói Cấu trúc Dữ liệu an toàn khi chạy đa luồng với Goroutines.
 
 ---
 

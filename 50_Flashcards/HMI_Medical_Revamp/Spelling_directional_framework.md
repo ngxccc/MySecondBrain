@@ -1,5 +1,5 @@
 ---
-noteId: 1783415598966
+noteId: 1785417091848
 ---
 
 Spell the word/phrase that means "Khung định hướng/hướng dẫn mang tính gợi ý" (/daɪˈrek.ʃən.əl ˈfreɪm.wɜːk/):
