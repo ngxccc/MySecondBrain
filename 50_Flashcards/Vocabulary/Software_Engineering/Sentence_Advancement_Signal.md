@@ -1,3 +1,7 @@
+---
+noteId: 1785423601592
+---
+
 Nghĩa và cách dùng cụm từ **advancement signal** trong tiếng Anh công nghệ? Nêu loại từ, ví dụ và bản dịch.
 
 ---

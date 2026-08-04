@@ -1,3 +1,7 @@
+---
+noteId: 1785423601617
+---
+
 Nghĩa và cách dùng cụm từ **mandatory turn footer** trong tiếng Anh công nghệ? Nêu loại từ, ví dụ và bản dịch.
 
 ---

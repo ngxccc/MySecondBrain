@@ -1,3 +1,7 @@
+---
+noteId: 1785423601649
+---
+
 Nghĩa và cách dùng cụm từ **stop command** trong tiếng Anh công nghệ? Nêu loại từ, ví dụ và bản dịch.
 
 ---
