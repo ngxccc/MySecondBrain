@@ -46,6 +46,7 @@ Tài liệu quy định chức năng và quy tắc lưu trữ cho từng thư m�
 - **Các thư mục con:**
   - `Daily_Logs/`: Nhật ký, log công việc hàng ngày (Ví dụ: `2026-06-07.md`). Sử dụng template `Daily_Log_Template.md` để tạo mới hàng ngày.
   - `Finances/`: Quản lý tài chính cá nhân, đầu tư (`My_Investment_Strategy.md`, `000_Finances_MOC.md`, `Income_Reservoir_Technique.md`, `Financial_Migration_Strategy.md`).
+  - `Learning/`: Theo dõi tiến trình học tập cá nhân dài hạn (`English_Learner_Profile.md`).
   - `University/`: Lưu trữ tài liệu, thông tin về trường học, lớp học.
   - `Health/`: Theo dõi, ghi chú về sức khỏe.
 - **Quy tắc:**
@@ -84,9 +85,12 @@ Tài liệu quy định chức năng và quy tắc lưu trữ cho từng thư m�
 ### 50_Flashcards (Thẻ ghi nhớ học tập)
 
 - **Mục đích:** Nơi lưu trữ các deck và card flashcard dành cho Anki (đồng bộ qua plugin Yanki).
+- **Các thư mục con:**
+  - `Vocabulary/`: Thẻ từ vựng và ma trận họ từ (Word Family Matrix) phân loại theo trình độ (`A1/`, `A2/`, `B1/`, `B2/`, `C1/`, `C2/`, `Software_Engineering/`, `Professional_Communication/`...).
+  - `Grammar/`: Thẻ ngữ pháp thực chiến phân loại theo chủ đề (`Question_Patterns/`, `Parts_Of_Speech_And_Morphology/`, `Verb_Patterns_And_Prepositions/`, `Sentence_Structures/`, `Technical_Phrasing/`).
 - **Quy tắc:**
-  - Cấu trúc cây thư mục con phản ánh cấu trúc Deck trong Anki (ví dụ: `50_Flashcards/Distributed Systems/` sẽ đồng bộ vào deck `Distributed Systems` hoặc `50_Flashcards::Distributed Systems`).
-  - Mỗi file Markdown tương ứng với một Anki Note độc lập (Front/Back phân tách bằng `---` hoặc thẻ Cloze `~~`).
+  - Cấu trúc cây thư mục con phản ánh cấu trúc Deck trong Anki (ví dụ: `50_Flashcards/Grammar/Question_Patterns/` sẽ đồng bộ vào deck `Grammar::Question_Patterns`).
+  - Mỗi file Markdown tương ứng với một Anki Note độc lập (Front/Back phân tách bằng `---`).
   - Không gán tag `type/...` trong frontmatter để bỏ qua bộ kiểm tra cấu trúc Atomic Note thông thường của Second Brain.
 
 ### 99_Meta (Cấu hình hệ thống)
