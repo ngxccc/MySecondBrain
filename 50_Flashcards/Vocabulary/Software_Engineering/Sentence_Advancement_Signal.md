@@ -2,11 +2,11 @@
 noteId: 1785423601592
 ---
 
-Nghĩa và cách dùng cụm từ **advancement signal** trong tiếng Anh công nghệ? Nêu loại từ, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Advancement Signal**?
 
 ---
 
-- **Loại từ (Type)**: Noun Phrase (Cụm danh từ)
-- **Nghĩa (Meaning)**: Tín hiệu chuyển bước / Tín hiệu tiếp tục sang lượt hỏi tiếp theo
-- **Ví dụ (Example)**:
-  - _The keyword 'continue' acts strictly as an **advancement signal** in the interrogation loop._ (Từ khóa 'continue' hoạt động hoàn toàn như một tín hiệu tiếp tục trong vòng lặp thẩm vấn.)
+- **Type**: Noun Phrase
+- **Meaning**: The definition and usage of Advancement Signal in software engineering and professional communication.
+- **Example**:
+  - _The keyword 'continue' acts strictly as an **advancement signal** in the interrogation loop._

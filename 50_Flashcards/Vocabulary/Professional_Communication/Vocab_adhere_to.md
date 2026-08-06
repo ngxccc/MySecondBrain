@@ -2,14 +2,12 @@
 noteId: 1783154400245
 ---
 
-adhere to /ədˈhɪər tuː/
+What is the definition, type, pronunciation, and usage of the term **adhere to**?
 
 ---
 
----
-
-Tuân thủ (quy trình, quy định).
-
----
-
-CV Context: "consistently adhere to regulations"
+- **Type**: Verb Phrase
+- **Pronunciation**: /ədˈhɪər tuː/
+- **Meaning**: To follow or comply with a rule, standard, or practice.
+- **Example**:
+  - _consistently adhere to regulations_

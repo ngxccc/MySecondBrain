@@ -2,14 +2,12 @@
 noteId: 1783154400395
 ---
 
-reduce /rɪˈdjuːs/
+What is the definition, type, pronunciation, and usage of the term **reduce**?
 
 ---
 
----
-
-Giảm thiểu (dung lượng, tài nguyên).
-
----
-
-CV Context: "reduce client bundle size"
+- **Type**: Verb
+- **Pronunciation**: /rɪˈdjuːs/
+- **Meaning**: To make smaller or less in amount, degree, or size.
+- **Example**:
+  - _reduce client bundle size_

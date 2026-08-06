@@ -2,8 +2,11 @@
 noteId: 1783154399907
 ---
 
-Designed PostgreSQL schemas using Drizzle ORM for multi-warehouse stocks; implemented service-layer transactions to ~~ensure _đảm bảo_~~ B2B checkout data integrity.
+What is the definition, type, pronunciation, and usage of the term **Postgres**?
 
 ---
 
-Dịch nghĩa: Thiết kế các lược đồ PostgreSQL bằng Drizzle ORM cho hệ thống kho đa điểm; triển khai các transactions ở tầng dịch vụ để đảm bảo tính toàn vẹn của dữ liệu đặt hàng B2B.
+- **Type**: Verb / Noun Phrase
+- **Meaning**: The definition and usage of Postgres in software engineering and professional communication.
+- **Example**:
+  - _Designed PostgreSQL schemas using Drizzle ORM for multi-warehouse stocks; implemented service-layer transactions to **ensure** B2B checkout data integrity._

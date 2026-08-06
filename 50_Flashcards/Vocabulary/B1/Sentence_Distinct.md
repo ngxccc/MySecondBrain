@@ -2,11 +2,11 @@
 noteId: 1785417092721
 ---
 
-Nghĩa và cách dùng từ **distinct** trong tiếng Anh và trong LINQ?
+What is the definition, type, pronunciation, and usage of the term **Distinct**?
 
 ---
 
-- **Loại từ (Type)**: Adjective (Tính từ)
-- **Nghĩa (Meaning)**: Riêng biệt / Duy nhất (không trùng lặp)
-- **Ví dụ (Example)**:
-  - _We use `Distinct()` to get a list of unique categories._ (Chúng ta dùng `Distinct()` để lấy danh sách các danh mục không trùng lặp.)
+- **Type**: Adjective
+- **Meaning**: The definition and usage of Distinct in software engineering and professional communication.
+- **Example**:
+  - _We use `Distinct()` to get a list of unique categories._

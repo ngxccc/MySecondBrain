@@ -2,11 +2,11 @@
 noteId: 1785417092994
 ---
 
-Nghĩa và cách dùng của phrasal verb **revert back to** trong tiếng Anh?
+What is the definition, type, pronunciation, and usage of the term **Revert Back**?
 
 ---
 
-- **Loại từ (Type)**: Phrasal Verb (Cụm động từ)
-- **Nghĩa (Meaning)**: Khôi phục lại / Quay trở về trạng thái cũ
-- **Ví dụ (Example)**:
-  - _Let's **revert back to** the original sidebar layout._ (Hãy khôi phục lại bố cục thanh bên ban đầu.)
+- **Type**: Phrasal Verb
+- **Meaning**: The definition and usage of Revert Back in software engineering and professional communication.
+- **Example**:
+  - _Let's **revert back to** the original sidebar layout._

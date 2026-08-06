@@ -2,11 +2,12 @@
 noteId: 1785417093220
 ---
 
-Nghĩa và cách dùng cụm từ **embed principles** trong tiếng Anh công nghệ? Nêu loại từ, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Embed Principles**?
 
 ---
 
-- **Loại từ (Type)**: Verb Phrase (Cụm động từ)
-- **Nghĩa (Meaning)**: Nhúng các nguyên lý / Tích hợp các quy tắc cốt lõi vào bên trong
-- **Ví dụ (Example)**:
-  - _The new skill **embeds principles** from the Cognitive Stack Framework._ (Skill mới tích hợp các nguyên lý từ Khung phân cấp nhận thức.)
+- **Type**: Verb Phrase
+- **Pronunciation**: /ɪmˈbed ˈprɪn.sə.pəlz/
+- **Meaning**: To firmly instill core rules or values into a system or mindset.
+- **Example**:
+  - _The new skill **embeds principles** from the Cognitive Stack Framework._

@@ -2,11 +2,11 @@
 noteId: 1785422280268
 ---
 
-Nghĩa và cách dùng cụm từ **entire column** trong tiếng Anh?
+What is the definition, type, pronunciation, and usage of the term **Entire Column**?
 
 ---
 
-- **Loại từ (Type)**: Noun Phrase (Cụm danh từ)
-- **Nghĩa (Meaning)**: Toàn bộ cột (tất cả các cửa sổ nằm trên cùng một cột đứng)
-- **Ví dụ (Example)**:
-  - _Mod+Shift+H moves the **entire column** to the left._ (Phím Mod+Shift+H di chuyển toàn bộ cột sang bên trái.)
+- **Type**: Noun Phrase
+- **Meaning**: The definition and usage of Entire Column in software engineering and professional communication.
+- **Example**:
+  - _Mod+Shift+H moves the **entire column** to the left._

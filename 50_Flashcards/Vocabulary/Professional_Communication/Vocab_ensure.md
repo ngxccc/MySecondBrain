@@ -2,14 +2,12 @@
 noteId: 1783154400321
 ---
 
-ensure /ɪnˈʃɔːr/
+What is the definition, type, pronunciation, and usage of the term **ensure**?
 
 ---
 
----
-
-Đảm bảo, chắc chắn (để ngăn chặn lỗi).
-
----
-
-CV Context: "to ensure B2B checkout data integrity"
+- **Type**: Verb
+- **Pronunciation**: /ɪnˈʃʊər/
+- **Meaning**: To make certain that something will occur or be the case.
+- **Example**:
+  - _to ensure B2B checkout data integrity_

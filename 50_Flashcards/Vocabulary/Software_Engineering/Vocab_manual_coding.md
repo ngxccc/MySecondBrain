@@ -2,17 +2,11 @@
 noteId: 1785856695781
 ---
 
-manual coding /ˈmænjuəl ˈkəʊdɪŋ/ (Noun Chunk)
+What is the definition, type, pronunciation, and usage of the term **manual coding**?
 
 ---
 
-**Nghĩa**: Lập trình thủ công (Viết mã nguồn bằng tay từ đầu thay vì dùng công cụ tự động hóa hoặc AI).
-
-**Loại từ**: Noun Phrase (Cụm danh từ).
-
-**Ví dụ**:
-
-- Fixed inputs produce fixed outputs through **manual coding**.
-  _(Đầu vào cố định tạo ra đầu ra cố định thông qua lập trình thủ công)._
-
-**Cách dùng**: Dùng để so sánh công việc viết code thủ công với sinh code tự động bằng AI (AI Code Generation).
+- **Type**: Noun Phrase.
+- **Meaning**: The definition and usage of manual coding in software engineering and professional communication.
+- **Example**:
+  - _The term **manual coding** is widely used in software development and professional communication._

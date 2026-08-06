@@ -2,14 +2,11 @@
 noteId: 1783430787406
 ---
 
-atomic item tracking /əˈtɒm.ɪk ˈaɪ.təm ˈtræk.ɪŋ/
+What is the definition, type, pronunciation, and usage of the term **atomic item tracking**?
 
 ---
 
----
-
-Theo dõi sản phẩm ở mức độ nguyên tử (tách biệt topping ra khỏi món chính).
-
----
-
-CV Context: "implementing atomic item tracking for granular inventory control"
+- **Type**: Noun Phrase
+- **Meaning**: The definition and usage of atomic item tracking in software engineering and professional communication.
+- **Example**:
+  - _implementing atomic item tracking for granular inventory control_

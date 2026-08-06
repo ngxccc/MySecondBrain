@@ -2,14 +2,12 @@
 noteId: 1783154400275
 ---
 
-automated /ˈɔː.tə.meɪ.tɪd/
+What is the definition, type, pronunciation, and usage of the term **automated**?
 
 ---
 
----
-
-Tự động hóa.
-
----
-
-CV Context: "run automated tests"
+- **Type**: Adjective
+- **Pronunciation**: /ˈɔː.tə.meɪ.tɪd/
+- **Meaning**: Operated or executed automatically by software scripts or machinery.
+- **Example**:
+  - _run automated tests_

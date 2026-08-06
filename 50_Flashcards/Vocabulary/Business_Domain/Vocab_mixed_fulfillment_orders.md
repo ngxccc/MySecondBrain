@@ -2,14 +2,11 @@
 noteId: 1783430787507
 ---
 
-mixed-fulfillment orders /mɪkst fʊlˈfɪl.mənt ˈɔː.dərz/
+What is the definition, type, pronunciation, and usage of the term **mixed fulfillment orders**?
 
 ---
 
----
-
-Đơn hàng phức tạp có nhiều hình thức hoàn thành (ví dụ: vừa mang đi vừa ăn tại chỗ).
-
----
-
-CV Context: "architecting database schemas for mixed-fulfillment orders"
+- **Type**: Noun Phrase
+- **Meaning**: The definition and usage of mixed fulfillment orders in software engineering and professional communication.
+- **Example**:
+  - _architecting database schemas for mixed-fulfillment orders_

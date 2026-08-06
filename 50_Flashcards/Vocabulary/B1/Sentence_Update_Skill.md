@@ -2,11 +2,11 @@
 noteId: 1785417093073
 ---
 
-Nghĩa và cách dùng của cụm từ **update the skill** trong ngữ cảnh quản lý agent?
+What is the definition, type, pronunciation, and usage of the term **Update Skill**?
 
 ---
 
-- **Loại từ (Type)**: Verb Phrase (Cụm động từ)
-- **Nghĩa (Meaning)**: Cập nhật kỹ năng
-- **Ví dụ (Example)**:
-  - _We need to **update the skill** rules to remove the central inbox requirement._ (Chúng ta cần cập nhật quy tắc kỹ năng để gỡ bỏ yêu cầu inbox trung tâm.)
+- **Type**: Verb Phrase
+- **Meaning**: The definition and usage of Update Skill in software engineering and professional communication.
+- **Example**:
+  - _We need to **update the skill** rules to remove the central inbox requirement._

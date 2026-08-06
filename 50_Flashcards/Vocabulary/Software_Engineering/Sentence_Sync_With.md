@@ -2,11 +2,11 @@
 noteId: 1785334777139
 ---
 
-Nghĩa và cách dùng của cụm từ **sync with** trong tiếng Anh công nghệ? Nêu loại từ, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Sync With**?
 
 ---
 
-- **Loại từ (Type)**: Verb Phrase (Cụm động từ)
-- **Nghĩa (Meaning)**: Đồng bộ với / Đồng bộ hóa dữ liệu với
-- **Ví dụ (Example)**:
-  - _Yanki plugin **syncs with** Anki seamlessly._ (Plugin Yanki đồng bộ với Anki một cách mượt mà.)
+- **Type**: Verb Phrase
+- **Meaning**: The definition and usage of Sync With in software engineering and professional communication.
+- **Example**:
+  - _Yanki plugin **syncs with** Anki seamlessly._

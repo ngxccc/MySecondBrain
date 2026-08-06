@@ -2,12 +2,12 @@
 noteId: 1785417093144
 ---
 
-Front: deviate from
+What is the definition, type, pronunciation, and usage of the term **deviate from**?
+
 ---
 
-Back:
-**Meaning**: (Đi chệch khỏi, khác với) To do something different from what is usual or expected.
-**Type**: Phrasal Verb (Động từ)
-**CEFR**: B2
-**Example**: The system should not deviate from the core design specification. (Hệ thống không nên đi chệch khỏi đặc tả thiết kế cốt lõi).
-**Usage**: Followed by a noun or noun phrase (`deviate from standard/rule/norm`).
+- **Type**: Verb Phrase
+- **Pronunciation**: /ˈdiː.vi.eɪt frɒm/
+- **Meaning**: To depart or diverge from an established course, rule, or standard.
+- **Example**:
+  - _The term **deviate from** is widely used in software development and professional communication._

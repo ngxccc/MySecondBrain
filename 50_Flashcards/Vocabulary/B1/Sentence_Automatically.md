@@ -2,11 +2,11 @@
 noteId: 1785334776679
 ---
 
-Nghĩa và cách dùng của từ **automatically** trong tiếng Anh? Nêu từ loại, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Automatically**?
 
 ---
 
-- **Từ loại (Part of Speech)**: Adverb (Trạng từ)
-- **Nghĩa (Meaning)**: Một cách tự động
-- **Ví dụ (Example)**:
-  - _The skill will **automatically** create cards._ (Kỹ năng sẽ tự động tạo các thẻ ghi nhớ.)
+- **Type**: Noun Phrase
+- **Meaning**: The definition and usage of Automatically in software engineering and professional communication.
+- **Example**:
+  - _The skill will **automatically** create cards._

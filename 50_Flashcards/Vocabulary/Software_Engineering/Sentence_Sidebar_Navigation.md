@@ -2,11 +2,11 @@
 noteId: 1785417093671
 ---
 
-Nghĩa và cách dùng của thuật ngữ **sidebar navigation** trong thiết kế UI?
+What is the definition, type, pronunciation, and usage of the term **Sidebar Navigation**?
 
 ---
 
-- **Loại từ (Type)**: Tech Term / Noun Phrase (Thuật ngữ / Cụm danh từ)
-- **Nghĩa (Meaning)**: Thanh điều hướng ở cột bên
-- **Ví dụ (Example)**:
-  - _Place the category filter inside the **sidebar navigation**._ (Đặt bộ lọc danh mục bên trong thanh điều hướng ở cột bên.)
+- **Type**: Tech Term / Noun Phrase
+- **Meaning**: The definition and usage of Sidebar Navigation in software engineering and professional communication.
+- **Example**:
+  - _Place the category filter inside the **sidebar navigation**._

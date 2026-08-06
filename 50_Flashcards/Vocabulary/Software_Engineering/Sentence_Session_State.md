@@ -2,11 +2,11 @@
 noteId: 1785417093629
 ---
 
-Nghĩa và cách dùng của thuật ngữ **session state** trong phát triển Web?
+What is the definition, type, pronunciation, and usage of the term **Session State**?
 
 ---
 
-- **Loại từ (Type)**: Tech Term / Noun Phrase (Thuật ngữ / Cụm danh từ)
-- **Nghĩa (Meaning)**: Trạng thái phiên làm việc (lưu trữ thông tin người dùng giữa các request HTTP)
-- **Ví dụ (Example)**:
-  - _Use **session state** to store the user's cart contents._ (Sử dụng session state để lưu trữ nội dung giỏ hàng của người dùng.)
+- **Type**: Tech Term / Noun Phrase
+- **Meaning**: The definition and usage of Session State in software engineering and professional communication.
+- **Example**:
+  - _Use **session state** to store the user's cart contents._

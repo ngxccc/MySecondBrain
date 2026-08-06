@@ -2,14 +2,12 @@
 noteId: 1783154400458
 ---
 
-timely delivery /ˈtaɪmli dɪˈlɪvəri/
+What is the definition, type, pronunciation, and usage of the term **timely delivery**?
 
 ---
 
----
-
-Việc bàn giao sản phẩm đúng thời hạn.
-
----
-
-CV Context: "timely delivery of assigned tasks"
+- **Type**: Noun Phrase
+- **Pronunciation**: /ˈtaɪm.li dɪˈlɪv.ər.i/
+- **Meaning**: The act of delivering software or tasks punctually according to schedule.
+- **Example**:
+  - _timely delivery of assigned tasks_

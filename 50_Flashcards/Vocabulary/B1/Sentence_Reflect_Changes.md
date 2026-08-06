@@ -2,11 +2,11 @@
 noteId: 1785417092952
 ---
 
-Nghĩa và cách dùng từ **reflect changes** trong tiếng Anh?
+What is the definition, type, pronunciation, and usage of the term **Reflect Changes**?
 
 ---
 
-- **Loại từ (Type)**: Verb Phrase (Cụm động từ)
-- **Nghĩa (Meaning)**: Phản ánh các thay đổi / Cập nhật theo sự thay đổi
-- **Ví dụ (Example)**:
-  - _The documentation was updated to **reflect changes** in the workflow._ (Tài liệu đã được cập nhật để phản ánh các thay đổi trong quy trình làm việc.)
+- **Type**: Verb Phrase
+- **Meaning**: The definition and usage of Reflect Changes in software engineering and professional communication.
+- **Example**:
+  - _The documentation was updated to **reflect changes** in the workflow._

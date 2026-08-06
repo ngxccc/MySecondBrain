@@ -2,11 +2,11 @@
 noteId: 1785417093645
 ---
 
-Nghĩa và cách dùng của thuật ngữ **shopping cart** trong lập trình Web?
+What is the definition, type, pronunciation, and usage of the term **Shopping Cart**?
 
 ---
 
-- **Loại từ (Type)**: Tech Term / Noun Phrase (Thuật ngữ / Cụm danh từ)
-- **Nghĩa (Meaning)**: Giỏ hàng trực tuyến
-- **Ví dụ (Example)**:
-  - _We implemented a session-backed **shopping cart** for the store._ (Chúng tôi đã triển khai một hệ thống giỏ hàng hỗ trợ bởi Session cho cửa hàng.)
+- **Type**: Tech Term / Noun Phrase
+- **Meaning**: The definition and usage of Shopping Cart in software engineering and professional communication.
+- **Example**:
+  - _We implemented a session-backed **shopping cart** for the store._

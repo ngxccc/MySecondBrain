@@ -2,11 +2,12 @@
 noteId: 1785334776865
 ---
 
-Nghĩa và cách dùng của từ **burnout** trong tiếng Anh? Nêu từ loại, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Burnout**?
 
 ---
 
-- **Từ loại (Part of Speech)**: Noun (Danh từ)
-- **Nghĩa (Meaning)**: Kiệt sức / Nản lòng do làm việc quá sức
-- **Ví dụ (Example)**:
-  - _Prevent **burnout** by switching to Low-Energy mode._ (Ngăn ngừa sự kiệt sức bằng cách chuyển sang chế độ Năng lượng thấp.)
+- **Type**: Noun
+- **Pronunciation**: /ˈbɜːn.aʊt/
+- **Meaning**: Physical or mental collapse caused by overwork or stress.
+- **Example**:
+  - _Prevent **burnout** by switching to Low-Energy mode._

@@ -2,11 +2,11 @@
 noteId: 1785417092674
 ---
 
-Nghĩa và cách dùng của từ **activate** trong tiếng Anh? Nêu loại từ, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Activate**?
 
 ---
 
-- **Loại từ (Type)**: Verb (Động từ)
-- **Nghĩa (Meaning)**: Kích hoạt / Bật lên
-- **Ví dụ (Example)**:
-  - _Please **activate** the English tutor skill for me._ (Vui lòng kích hoạt kỹ năng trợ giảng Tiếng Anh giúp tôi.)
+- **Type**: Verb
+- **Meaning**: The definition and usage of Activate in software engineering and professional communication.
+- **Example**:
+  - _Please **activate** the English tutor skill for me._

@@ -2,11 +2,12 @@
 noteId: 1785334776909
 ---
 
-Nghĩa và cách dùng của cụm từ **eliminate friction** trong tiếng Anh? Nêu loại từ, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Eliminate Friction**?
 
 ---
 
-- **Loại từ (Type)**: Verb Phrase (Cụm động từ)
-- **Nghĩa (Meaning)**: Loại bỏ rào cản / Triệt tiêu trở lực
-- **Ví dụ (Example)**:
-  - _Automating card creation **eliminates friction**._ (Tự động hóa việc tạo thẻ loại bỏ rào cản.)
+- **Type**: Verb Phrase
+- **Pronunciation**: /ɪˈlɪm.ɪ.neɪt ˈfrɪk.ʃən/
+- **Meaning**: To remove obstacles or difficulties to make a workflow smoother.
+- **Example**:
+  - _Automating card creation **eliminates friction**._

@@ -2,11 +2,12 @@
 noteId: 1785334776816
 ---
 
-Nghĩa và cách dùng của từ **accumulate** trong tiếng Anh? Nêu loại từ, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Accumulate**?
 
 ---
 
-- **Loại từ (Type)**: Verb (Động từ)
-- **Nghĩa (Meaning)**: Tích lũy / Gom góp dần dần
-- **Ví dụ (Example)**:
-  - _You can **accumulate** new words every day._ (Bạn có thể tích lũy từ mới mỗi ngày.)
+- **Type**: Verb
+- **Pronunciation**: /əˈkjuː.mjə.leɪt/
+- **Meaning**: To gather or build up gradually over time.
+- **Example**:
+  - _You can **accumulate** new words every day._

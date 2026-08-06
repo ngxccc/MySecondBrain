@@ -2,14 +2,11 @@
 noteId: 1783154400295
 ---
 
-dependency injection /dɪˈpendənsi ɪnˈdʒekʃn/
+What is the definition, type, pronunciation, and usage of the term **dependency injection**?
 
 ---
 
----
-
-Kỹ thuật tiêm phụ thuộc (design pattern).
-
----
-
-CV Context: "using constructor dependency injection"
+- **Type**: Noun Phrase
+- **Meaning**: The definition and usage of dependency injection in software engineering and professional communication.
+- **Example**:
+  - _using constructor dependency injection_

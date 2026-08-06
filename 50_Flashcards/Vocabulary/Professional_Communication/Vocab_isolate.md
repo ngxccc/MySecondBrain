@@ -2,14 +2,12 @@
 noteId: 1783154400371
 ---
 
-isolate /ˈaɪ.sə.leɪt/
+What is the definition, type, pronunciation, and usage of the term **isolate**?
 
 ---
 
----
-
-Cô lập, tách rời phụ thuộc.
-
----
-
-CV Context: "to isolate core business logic"
+- **Type**: Verb
+- **Pronunciation**: /ˈaɪ.sə.leɪt/
+- **Meaning**: To set apart from others or decouple system components.
+- **Example**:
+  - _to isolate core business logic_

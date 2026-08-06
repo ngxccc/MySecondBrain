@@ -2,11 +2,11 @@
 noteId: 1785417092898
 ---
 
-Nghĩa và cách dùng từ **polite request** trong tiếng Anh?
+What is the definition, type, pronunciation, and usage of the term **Polite Request**?
 
 ---
 
-- **Loại từ (Type)**: Noun Phrase (Cụm danh từ)
-- **Nghĩa (Meaning)**: Lời yêu cầu lịch sự
-- **Ví dụ (Example)**:
-  - _Start your sentence with 'Could you...?' to make a **polite request**._ (Bắt đầu câu bằng 'Could you...?' để đưa ra một lời yêu cầu lịch sự.)
+- **Type**: Noun Phrase
+- **Meaning**: The definition and usage of Polite Request in software engineering and professional communication.
+- **Example**:
+  - _Start your sentence with 'Could you...?' to make a **polite request**._

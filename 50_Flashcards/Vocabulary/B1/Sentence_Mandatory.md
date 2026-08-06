@@ -2,11 +2,11 @@
 noteId: 1785417092829
 ---
 
-Nghĩa và cách dùng từ **mandatory** trong tiếng Anh?
+What is the definition, type, pronunciation, and usage of the term **Mandatory**?
 
 ---
 
-- **Loại từ (Type)**: Adjective (Tính từ)
-- **Nghĩa (Meaning)**: Bắt buộc / Thiết yếu
-- **Ví dụ (Example)**:
-  - _Both files are **mandatory** for the View Component to work._ (Cả hai tệp đều bắt buộc để View Component hoạt động.)
+- **Type**: Adjective
+- **Meaning**: The definition and usage of Mandatory in software engineering and professional communication.
+- **Example**:
+  - _Both files are **mandatory** for the View Component to work._

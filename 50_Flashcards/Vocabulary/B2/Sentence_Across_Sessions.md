@@ -2,11 +2,12 @@
 noteId: 1785334776836
 ---
 
-Nghĩa và cách dùng của cụm từ **across sessions** trong tiếng Anh? Nêu loại từ, ví dụ và bản dịch.
+What is the definition, type, pronunciation, and usage of the term **Across Sessions**?
 
 ---
 
-- **Loại từ (Type)**: Prepositional Phrase (Cụm giới từ)
-- **Nghĩa (Meaning)**: Qua nhiều phiên làm việc / Xuyên suốt các phiên
-- **Ví dụ (Example)**:
-  - _The AI remembers rules **across sessions**._ (Trí tuệ nhân tạo nhớ các quy tắc qua nhiều phiên làm việc.)
+- **Type**: Prepositional Phrase
+- **Pronunciation**: /əˈkrɒs ˈseʃ.ənz/
+- **Meaning**: Sustained or preserved over multiple working or learning periods.
+- **Example**:
+  - _The AI remembers rules **across sessions**._
