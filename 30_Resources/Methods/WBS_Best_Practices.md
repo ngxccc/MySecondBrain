@@ -2,9 +2,10 @@
 tags: [type/method, topic/project-management]
 date: 2026-06-24
 aliases: [Phương pháp phân rã công việc WBS, WBS Best Practices]
+description: "Phương pháp phân rã công việc WBS chuẩn PMBOK (PMI) và cách phân rã task cá nhân."
 ---
 
-# 🗺️ Phương Pháp Phân Rã Công Việc WBS (Work Breakdown Structure)
+# ️ Phương Pháp Phân Rã Công Việc WBS
 
 ## TL;DR
 
@@ -16,30 +17,30 @@ Tài liệu hướng dẫn chi tiết phương pháp phân rã công việc WBS 
 
 Phương pháp WBS được sử dụng ngay tại thời điểm khởi động dự án (Day 1 - Kick-off) và trước mỗi đợt lập kế hoạch Sprint (Sprint Planning). Nó giúp bóc tách và định nghĩa rõ ràng phạm vi công việc bàn giao, làm cơ sở để phân chia trách nhiệm và ước lượng thời gian chính xác cho từng thành viên trong nhóm.
 
-## Định Nghĩa & Nguyên Tắc Cốt Lõi (PMBOK Standards)
+## Định Nghĩa & Nguyên Tắc Cốt Lõi
 
 Theo tổ chức PMI (Project Management Institute), **WBS** là sự phân rã phân cấp hướng sản phẩm bàn giao (Deliverable-oriented) đối với toàn bộ phạm vi công việc mà dự án phải thực hiện.
 
 Để xây dựng một WBS chuẩn chỉnh, cần tuân thủ nghiêm ngặt **3 nguyên tắc vàng** sau:
 
-### A. Quy Tắc 100% (The 100% Rule)
+### A. Quy Tắc 100%
 
 - **Nội dung:** Tổng số công việc ở các nhánh con ở mọi cấp độ phân rã phải bằng chính xác 100% công việc của nhánh cha.
 - **Ý nghĩa:** Đảm bảo không bỏ sót bất kỳ phần việc nào của dự án (không thiếu), đồng thời không đưa vào bất kỳ công việc nào nằm ngoài phạm vi được duyệt (không thừa). Nếu một hạng mục không xuất hiện trong WBS, nó không thuộc phạm vi dự án.
 
-### B. Hướng Kết Quả Bàn Giao (Deliverable-Oriented)
+### B. Hướng Kết Quả Bàn Giao
 
 - **Nội dung:** WBS tập trung vào **"Cái gì" (Nouns - Danh từ)** được tạo ra sau khi hoàn thành, chứ không phải **"Làm thế nào" (Verbs - Động từ)** để tạo ra nó.
 - **Ý nghĩa:** Giúp kiểm soát phạm vi (Scope) khách quan và dễ dàng nghiệm thu sản phẩm bàn giao (Deliverables) thay vì theo dõi hoạt động vụn vặt.
 
-### C. Tính Loại Trừ Lẫn Nhau (Mutually Exclusive)
+### C. Tính Loại Trừ Lẫn Nhau
 
 - **Nội dung:** Các phần việc ở cùng một cấp phân rã không được trùng lặp phạm vi với nhau.
 - **Ý nghĩa:** Tránh lãng phí tài nguyên làm việc chồng chéo, mập mờ trách nhiệm và sai sót khi tính toán chi phí hoặc ước lượng thời gian.
 
 ---
 
-## 🔄 2. Phân Biệt WBS Dự Án (High-Level) vs WBS Cá Nhân (Activity/Task List)
+## 2. Phân Biệt WBS Dự Án vs WBS Cá Nhân (Activity/Task List)
 
 Trong môi trường phát triển phần mềm Agile/Scrum:
 
@@ -48,9 +49,9 @@ Trong môi trường phát triển phần mềm Agile/Scrum:
 
 ---
 
-## ⚖️ 3. So Sánh Ví Dụ Đúng vs Sai Trong Thực Tế
+## ️ 3. So Sánh Ví Dụ Đúng vs Sai Trong Thực Tế
 
-### A. Cấp độ 1: WBS Dự Án (Project WBS)
+### A. Cấp độ 1: WBS Dự Án
 
 - ❌ **SAI (Phân rã theo giai đoạn/hoạt động hoặc vai trò):**
   - 1.0 Dự án Web E-commerce
@@ -75,7 +76,7 @@ Trong môi trường phát triển phần mềm Agile/Scrum:
 
 ---
 
-### B. Cấp độ 2: WBS Cá Nhân / Task List (Excel)
+### B. Cấp độ 2: WBS Cá Nhân / Task List
 
 - ❌ **SAI (Đặt tên mơ hồ, độ mịn quá to):**
   - Task: _"Làm database"_ (Deadline: 3 ngày, Estimated: 24h)

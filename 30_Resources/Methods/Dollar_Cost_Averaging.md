@@ -2,9 +2,10 @@
 tags: [type/method, topic/finance, topic/investing]
 date: 2026-04-29
 aliases: [DCA, Trung bình giá, Đầu tư định kỳ]
+description: "Chiến thuật trung bình giá để triệt tiêu tâm lý FOMO/Panic, biến việc đầu tư thành một Cron Job tự động vô tri."
 ---
 
-# Dollar Cost Averaging (DCA)
+# Dollar Cost Averaging
 
 ## TL;DR
 

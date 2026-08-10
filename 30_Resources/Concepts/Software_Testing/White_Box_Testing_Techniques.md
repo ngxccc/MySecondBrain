@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/testing]
+tags: [type/concept, topic/testing, layer/quality]
 date: 2026-07-07
 aliases:
   [
@@ -7,9 +7,10 @@ aliases:
     White-box Testing Techniques,
     Độ phủ dòng lệnh Độ phủ nhánh,
   ]
+description: "Kỹ thuật kiểm thử hộp trắng tập trung vào độ phủ dòng lệnh và độ phủ nhánh/quyết định."
 ---
 
-# Kỹ thuật Kiểm thử Hộp trắng (White-box Testing Techniques)
+# Kỹ thuật Kiểm thử Hộp trắng
 
 ## TL;DR
 
@@ -21,21 +22,21 @@ Kiểm thử hộp trắng là kỹ thuật thiết kế test case dựa trên v
 
 Kiểm thử hộp trắng tập trung vào cấu trúc code bên trong (cú pháp, điều kiện rẽ nhánh, luồng điều khiển). Bộ tiêu chuẩn ISTQB định nghĩa hai độ phủ cốt lõi:
 
-### 1. Độ phủ dòng lệnh (Statement Coverage)
+### 1. Độ phủ dòng lệnh
 
 - **Nguyên lý:** Đo lường tỷ lệ các câu lệnh thực thi (executable statements) trong mã nguồn được chạy qua bởi các ca kiểm thử.
 - **Mục tiêu:** Đảm bảo tất cả mã nguồn viết ra phải được chạy qua ít nhất một lần để tránh mã "chết" hoặc sai sót cú pháp cơ bản.
 - **Công thức:**
   $$\text{Độ phủ dòng lệnh} = \frac{\text{Số câu lệnh đã thực thi}}{\text{Tổng số câu lệnh khả thi}} \times 100\%$$
 
-### 2. Độ phủ quyết định (Decision/Branch Coverage)
+### 2. Độ phủ quyết định
 
 - **Nguyên lý:** Đo lường tỷ lệ các kết quả quyết định (decision outcomes) - tức là các nhánh Đúng (True) và Sai (False) tại mỗi điểm rẽ nhánh (như `if`, `switch`, vòng lặp) được chạy qua bởi các ca kiểm thử.
 - **Mục tiêu:** Đảm bảo tất cả các điều kiện logic logic phải được đánh giá cả hai mặt True và False.
 - **Công thức:**
   $$\text{Độ phủ quyết định} = \frac{\text{Số kết quả quyết định đã thực thi}}{\text{Tổng số kết quả quyết định có thể xảy ra}} \times 100\%$$
 
-### 3. Quan hệ bao hàm (Subsumption)
+### 3. Quan hệ bao hàm
 
 - **Nguyên lý:** Đạt được **100% Độ phủ quyết định** sẽ **đảm bảo đạt 100% Độ phủ dòng lệnh**.
 - **Ngược lại:** Đạt được 100% Độ phủ dòng lệnh **chưa chắc** đã đạt được 100% Độ phủ quyết định (vì nhánh rẽ nhánh trống - không có mã thực thi bên trong - có thể bị bỏ qua).

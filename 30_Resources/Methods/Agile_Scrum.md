@@ -2,6 +2,7 @@
 tags: [type/method, topic/engineering, topic/productivity]
 aliases: [Quy trình Agile Scrum, Agile Scrum Process]
 date: 2026-06-23
+description: "Quy trình quản lý và phát triển phần mềm linh hoạt thông qua các chu kỳ ngắn (Sprints) và cải tiến quy trình liên tục."
 ---
 
 # Quy Trình Agile & Scrum Trong Dự Án
@@ -22,11 +23,11 @@ Quy trình quản lý dự án linh hoạt (Agile) áp dụng khung làm việc 
   - Phân chia rõ ràng các vai trò trong Scrum Team: Product Owner (PO), Scrum Master (SM), và Developers.
   - Có danh sách các yêu cầu (Product Backlog) được viết dưới dạng **User Story**.
 
-### 🕒 Lịch Sử & Tiến Hóa (Evolutionary History)
+### Lịch Sử & Tiến Hóa
 
 Agile (chính thức hóa năm 2001 qua Agile Manifesto) ra đời như một cuộc cách mạng nhằm giải quyết triệt để sự kém linh hoạt, chi phí thay đổi cao và tình trạng đóng băng yêu cầu của các mô hình truyền thống trước đó (như [[Waterfall]], [[V_Model]], [[Spiral_Model]]). Thay vì tập trung vào quy trình và tài liệu, Agile/Scrum tập trung vào con người, sự thích ứng và bàn giao giá trị liên tục qua từng chu kỳ ngắn. Xem chi tiết lược sử tiến hóa tại [[SDLC_Methodologies_Evolution]].
 
-### 🌟 3 Trụ Cột Cốt Lõi Của Scrum (Empiricism)
+### 3 Trụ Cột Cốt Lõi Của Scrum
 
 Scrum vận hành dựa trên chủ nghĩa thực nghiệm với 3 trụ cột cốt lõi:
 
@@ -34,7 +35,7 @@ Scrum vận hành dựa trên chủ nghĩa thực nghiệm với 3 trụ cột c
 2. **Tính Thanh Tra (Inspection):** Định kỳ kiểm tra sản phẩm và quy trình làm việc (thông qua các cuộc họp Daily, Review, Retro) để phát hiện sớm các sai lệch.
 3. **Tính Thích Ứng (Adaptation):** Sẵn sàng thay đổi quy trình làm việc hoặc sản phẩm ngay khi phát hiện sai lệch để giảm thiểu rủi ro (ví dụ: thích ứng khi có Change Requirement - CR ở Day 12).
 
-### 💎 5 Giá Trị Của Scrum (Scrum Values)
+### 5 Giá Trị Của Scrum
 
 Scrum Team cần cam kết thực hiện 5 giá trị cốt lõi để xây dựng lòng tin và sự hiệu quả:
 
@@ -44,7 +45,7 @@ Scrum Team cần cam kết thực hiện 5 giá trị cốt lõi để xây dự
 4. **Tôn Trọng (Respect):** Tôn trọng khả năng độc lập, chuyên môn và ý kiến của nhau.
 5. **Dũng Cảm (Courage):** Dũng cảm đối mặt với thử thách, làm điều đúng đắn và giải quyết các vấn đề khó khăn.
 
-### 📦 3 Hiện Vật & 3 Cam Kết (Artifacts & Commitments)
+### 3 Hiện Vật & 3 Cam Kết
 
 Mỗi hiện vật trong Scrum đi kèm với một cam kết nhằm tăng tính minh bạch và cung cấp mục tiêu để đo lường tiến độ:
 
@@ -72,21 +73,21 @@ Mỗi hiện vật trong Scrum đi kèm với một cam kết nhằm tăng tính
   - PO thu thập yêu cầu từ khách hàng và phân rã thành các **User Story** theo mẫu: _"Là [vai trò], tôi muốn [chức năng] để [lợi ích]."_
   - Sắp xếp thứ tự ưu tiên cho các User Story từ cao xuống thấp.
 
-### 1.5. Cải Tiến Product Backlog (Backlog Refinement / Grooming)
+### 1.5. Cải Tiến Product Backlog
 
 - **Thời điểm:** Diễn ra định kỳ trong suốt Sprint (thường là giữa Sprint hoặc trước Sprint Planning).
 - **Hành động:**
   - Cả team cùng PO rà soát lại Product Backlog, làm rõ nghiệp vụ và chi tiết hóa các User Story sắp thực hiện ở Sprint tiếp theo.
   - Developers tiến hành ước lượng kích thước công việc (Story Point) cho các story để chuẩn bị tốt nhất cho buổi Sprint Planning.
 
-### 2. Họp Kế Hoạch Sprint (Sprint Planning)
+### 2. Họp Kế Hoạch Sprint
 
 - **Thời điểm:** Đầu mỗi Sprint (chu kỳ từ 1 đến 4 tuần, thông thường là 1 tuần cho dự án ngắn hạn).
 - **Hành động:**
   1. Cả team họp cùng PO để chọn ra các User Story ưu tiên hàng đầu mà team cam kết sẽ hoàn thành trong Sprint này (đưa vào **Sprint Backlog**) và xác định **Sprint Goal**.
   2. Developers thực hiện phân rã các User Story được chọn thành các task kỹ thuật cụ thể (WBS - Work Breakdown Structure) với thời gian hoàn thành từ 2 - 4 tiếng mỗi task.
 
-### 3. Thực Hiện Sprint & Họp Hàng Ngày (Daily Scrum / Standup)
+### 3. Thực Hiện Sprint & Họp Hàng Ngày
 
 - **Thời điểm:** Hàng ngày trong suốt Sprint, thường họp nhanh tối đa 15 phút vào cùng một giờ cố định.
 - **Hành động:**
@@ -97,14 +98,14 @@ Mỗi hiện vật trong Scrum đi kèm với một cam kết nhằm tăng tính
     3. _Tôi có gặp khó khăn hay trở ngại gì không?_ (Blockers)
   - Scrum Master ghi nhận các khó khăn (blockers) để tìm phương án giải quyết sớm nhất, đảm bảo team không bị tắc nghẽn.
 
-### 4. Họp Đánh Giá Sprint (Sprint Review)
+### 4. Họp Đánh Giá Sprint
 
 - **Thời điểm:** Cuối Sprint.
 - **Hành động:**
   1. Developers thực hiện **Demo** các tính năng đã hoàn thành và chạy được trực quan trước PO và khách hàng (hoặc Mentor).
   2. PO nghiệm thu sản phẩm dựa trên tiêu chí chấp nhận (Acceptance Criteria) riêng của từng User Story và Định nghĩa Hoàn thành (DoD) chung của team. Các User Story chưa hoàn thành sẽ được đẩy ngược lại Product Backlog để làm sau.
 
-### 5. Họp Rút Kinh Nghiệm Sprint (Sprint Retrospective)
+### 5. Họp Rút Kinh Nghiệm Sprint
 
 - **Thời điểm:** Cuối Sprint, ngay sau Sprint Review.
 - **Hành động:**

@@ -1,5 +1,12 @@
 ---
-tags: [type/concept, topic/tech, architecture-patterns, system-design]
+tags:
+  [
+    type/concept,
+    topic/tech,
+    architecture-patterns,
+    system-design,
+    layer/architecture,
+  ]
 date: 2026-06-07
 aliases:
   [
@@ -8,6 +15,7 @@ aliases:
     Hybrid Fan-out Newsfeed,
     Fan-out on Read/Write,
   ]
+description: "Thiết kế hệ thống Newsfeed tải cao bằng kiến trúc Hybrid Fan-out (Push + Pull)."
 ---
 
 # Newsfeed System Design: Hybrid Fan-out Architecture
@@ -28,7 +36,7 @@ Thiết kế hệ thống Newsfeed (mạng xã hội giống Twitter/Facebook) �
    - **Ưu điểm**: Đọc cực kỳ nhanh ($O(1)$ hoặc $O(log(N))$).
    - **Nhược điểm**: Ghi chậm khi người nổi tiếng (ví dụ: Ronaldo có 100M+ followers) đăng bài, khiến hàng đợi worker bị quá tải (write bottleneck).
 
-## Hybrid Fan-out Solution (Kiến trúc lai thực chiến)
+## Hybrid Fan-out Solution
 
 Hệ thống sử dụng các tiêu chí động để quyết định cách xử lý:
 

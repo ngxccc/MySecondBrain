@@ -1,10 +1,11 @@
 ---
-tags: [type/concept, topic/tech, language/javascript]
+tags: [type/concept, topic/tech, language/javascript, layer/core-mechanics]
 date: 2026-06-24
 aliases: [Temporal API, JS Temporal API, API xử lý thời gian mới của JavaScript]
+description: "API xử lý ngày giờ thế hệ mới chính thức của JavaScript (ECMAScript 2026)."
 ---
 
-# ⏰ JavaScript Temporal API
+# JS Temporal API
 
 ## TL;DR
 
@@ -46,7 +47,7 @@ Temporal API là API xử lý ngày giờ thế hệ mới chính thức của J
 
 ### 2. Các Ví Dụ Code Thực Tế
 
-#### A. Lấy Thời Gian Hiện Tại (`Temporal.Now`)
+#### A. Lấy Thời Gian Hiện Tại
 
 ```javascript
 // Lấy ngày hiện tại cục bộ (PlainDate)
@@ -62,7 +63,7 @@ const tokyoTime = Temporal.Now.zonedDateTimeISO("Asia/Tokyo");
 console.log(tokyoTime.toString()); // "2026-06-24T21:00:00.123456789+09:00[Asia/Tokyo]"
 ```
 
-#### B. Phép Toán Cộng Trừ & So Sánh Thời Gian (PlainDate)
+#### B. Phép Toán Cộng Trừ & So Sánh Thời Gian
 
 ```javascript
 const birthDay = Temporal.PlainDate.from("2026-06-24");
@@ -94,7 +95,7 @@ const compareResult = Temporal.PlainDate.compare(birthDay, futureDate); // Trả
 
 ---
 
-### 4. Mẫu Câu Hỏi Phỏng Vấn (Flex)
+### 4. Mẫu Câu Hỏi Phỏng Vấn
 
 **Q: Temporal API giải quyết những vấn đề gì của đối tượng Date truyền thống trong Javascript? Bạn sẽ sử dụng nó thế nào trong dự án hiện nay?**
 
@@ -108,6 +109,6 @@ const compareResult = Temporal.PlainDate.compare(birthDay, futureDate); // Trả
 ## Related Notes
 
 - [[000_Tech_MOC]]
-- [[JS_Memory_Management_Stack_Heap_GC]]
+- [[JS_Stack_vs_Heap_Memory]]
 - [[TS_Decorators]]
 - [[JS_Runtimes_Bun_vs_NodeJS]]

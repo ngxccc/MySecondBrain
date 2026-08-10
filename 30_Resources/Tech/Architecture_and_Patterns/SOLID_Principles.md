@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech]
+tags: [type/concept, topic/tech, layer/architecture]
 aliases: [SOLID, 5 nguyên lý thiết kế hướng đối tượng, SOLID Principles]
 created_at: Saturday, May 23rd 2026, 7:35:12 pm +07:00
 updated_at: Saturday, May 23rd 2026, 7:35:12 pm +07:00
+description: "Bộ 5 nguyên lý vàng thiết kế hướng đối tượng giúp code modular, linh hoạt và dễ bảo trì."
 ---
 
 # SOLID Principles
@@ -26,33 +27,33 @@ SOLID là bộ 5 nguyên lý thiết kế hướng đối tượng (OOD) kinh đ
 
 ---
 
-### Bóc tách 5 nguyên lý (How it works under the hood)
+### Bóc tách 5 nguyên lý
 
-#### 1. S - Single Responsibility Principle (SRP)
+#### 1. S - Single Responsibility Principle
 
 > "A class should have one, and only one, reason to change."
 
 - **Bản chất:** Một class/module chỉ nên chịu trách nhiệm cho duy nhất một nhóm tác nhân (Actor). Đừng tạo ra các "God Class" ôm đồm vừa xử lý logic, vừa query DB, vừa gửi Mail và validate UI. Hãy phân rã chúng ra.
 
-#### 2. O - Open/Closed Principle (OCP)
+#### 2. O - Open/Closed Principle
 
 > "Software entities should be open for extension, but closed for modification."
 
 - **Bản chất:** Khi cần thêm tính năng mới, ta chỉ viết thêm code mới (kế thừa, implement interface, polymorphism) chứ tuyệt đối không chọc ngoáy, sửa đổi code cũ đã chạy ổn định. Giúp triệt tiêu rủi ro làm hỏng những gì đang chạy tốt.
 
-#### 3. L - Liskov Substitution Principle (LSP)
+#### 3. L - Liskov Substitution Principle
 
 > "Subtypes must be substitutable for their base types."
 
 - **Bản chất:** Class con phải kế thừa và thực thi trọn vẹn hành vi của class cha mà không làm thay đổi tính đúng đắn của chương trình. Nếu class con ghi đè một method của cha và ném ra `NotImplementedException`, hoặc ép client phải kiểm tra `if (child instanceof ConcreteType)` thì bạn đã phá vỡ LSP.
 
-#### 4. I - Interface Segregation Principle (ISP)
+#### 4. I - Interface Segregation Principle
 
 > "Clients should not be forced to depend on methods they do not use."
 
 - **Bản chất:** Thà đẻ ra nhiều interface nhỏ gọn, tập trung vào từng hành vi chuyên biệt (role interface) còn hơn ép client phụ thuộc vào một "Mega Interface" khổng lồ chứa hàng chục method dư thừa mà họ không thèm đụng tới.
 
-#### 5. D - Dependency Inversion Principle (DIP)
+#### 5. D - Dependency Inversion Principle
 
 > "Depend upon abstractions, not concretions."
 

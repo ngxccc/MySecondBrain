@@ -1,7 +1,15 @@
 ---
-tags: [type/concept, topic/tech, api-data-design, status/permanent]
+tags:
+  [
+    type/concept,
+    topic/tech,
+    api-data-design,
+    status/permanent,
+    layer/architecture,
+  ]
 date: 2026-06-27
 aliases: [Outbox Pattern, Transactional Outbox, Mẫu thiết kế Outbox]
+description: "Mẫu thiết kế xử lý Dual-Write tin cậy bằng bảng Outbox và Worker."
 ---
 
 # Outbox Pattern
@@ -28,7 +36,7 @@ aliases: [Outbox Pattern, Transactional Outbox, Mẫu thiết kế Outbox]
 
 ## NestJS Implementation Sketch
 
-### 1. Database Schema (SQL)
+### 1. Database Schema
 
 ```sql
 CREATE TABLE orders (
@@ -49,7 +57,7 @@ CREATE TABLE outbox_events (
 );
 ```
 
-### 2. Transactional Business Logic (NestJS Service)
+### 2. Transactional Business Logic
 
 _Theo nguyên tắc [[Clean_Architecture]], Service này thuộc **Application Layer**, chịu trách nhiệm điều phối transaction và tách biệt hoàn toàn chi tiết lưu trữ khỏi Business Domain._
 
@@ -93,7 +101,7 @@ export class OrderService {
 }
 ```
 
-### 3. Outbox Publisher (NestJS Schedule / Polling Relayer)
+### 3. Outbox Publisher
 
 ```typescript
 import { Injectable } from "@nestjs/common";
@@ -140,7 +148,7 @@ export class OutboxPublisher {
 }
 ```
 
-### 4. Background Consumer (BullMQ Processor)
+### 4. Background Consumer
 
 ```typescript
 import { Processor, WorkerHost } from "@nestjs/bullmq";

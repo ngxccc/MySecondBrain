@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/engineering, topic/productivity]
+tags: [type/concept, topic/engineering, topic/productivity, layer/quality]
 aliases: [Lịch sử tiến hóa SDLC, Tiến trình phát triển SDLC, SDLC Evolution]
 date: 2026-07-08
+description: "Lịch sử phát triển các mô hình Vòng đời Phát triển Phần mềm (SDLC) là một tiến trình chuyển dịch từ các phương pháp lập kế hoạch tuyến tính, cứng nhắc (Plan-driven như Waterfall, V-Model) sang các ..."
 ---
 
 # Lịch Sử Tiến Hóa Của Các Mô Hình SDLC
@@ -33,17 +34,17 @@ graph TD
 
 ## Chi Tiết Các Cột Mốc Tiến Hóa
 
-### 1. Waterfall Model (Thập kỷ 1970) - Điểm Khởi Đầu
+### 1. Waterfall Model - Điểm Khởi Đầu
 
 - **Bối cảnh:** Bắt nguồn từ các ngành kỹ thuật truyền thống (xây dựng, sản xuất phần cứng). Được Winston Royce mô tả năm 1970.
 - **Hạn chế thúc đẩy tiến hóa:** Khi yêu cầu nghiệp vụ thay đổi hoặc kiểm thử ở cuối dự án phát hiện lỗi thiết kế nghiêm trọng, chi phí sửa chữa cực kỳ đắt đỏ, thường dẫn đến trễ hạn và vượt ngân sách.
 
-### 2. V-Model (Thập kỷ 1980) - Đưa Kiểm Thử Lên Hàng Đầu
+### 2. V-Model - Đưa Kiểm Thử Lên Hàng Đầu
 
 - **Tiến hóa từ Waterfall:** Khắc phục hạn chế _"kiểm thử quá muộn"_ bằng cách bắt cặp song song từng pha thiết kế (Verification) với một pha kiểm thử (Validation).
 - **Hạn chế còn tồn tại:** Vẫn giữ nguyên tính chất tuyến tính và đóng băng yêu cầu từ đầu. Rất khó phản ứng với các thay đổi yêu cầu từ phía khách hàng.
 
-### 3. Prototype Model (Thập kỷ 1980) - Giải Quyết Sự Mơ Hồ Về Yêu Cầu
+### 3. Prototype Model - Giải Quyết Sự Mơ Hồ Về Yêu Cầu
 
 - **Tiến hóa từ Waterfall:** Khắc phục hạn chế _"khách hàng không rõ mình muốn gì"_. Cho phép xây dựng nhanh các bản mẫu thô để người dùng tương tác và chỉnh sửa thiết kế trước khi lập trình chính thức.
 - **Hạn chế còn tồn tại:** Dễ dẫn đến việc bỏ qua tài liệu thiết kế hệ thống vững chắc và khách hàng lầm tưởng bản mẫu là sản phẩm thật đã hoàn thành.

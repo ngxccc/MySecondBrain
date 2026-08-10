@@ -2,6 +2,7 @@
 title: NextJS Dynamic Opt Out and connection() API
 tags: [type/concept, topic/tech, framework/nextjs, topic/rendering]
 created: 2026-06-20
+description: "Cơ chế ngắt Prerender tĩnh và chuyển đổi sang Dynamic Rendering ở Next.js 15/16."
 ---
 
 # NextJS Dynamic Opt Out and connection() API
@@ -46,7 +47,7 @@ Trước đây, chúng ta thường dùng `export const dynamic = 'force-dynamic
 
 ## Practical Implementation
 
-### 1. Ứng dụng trong việc lấy Session an toàn (RSC)
+### 1. Ứng dụng trong việc lấy Session an toàn
 
 Trong file `session.ts` của dự án, `getCachedSession` sử dụng `connection()` để lấy header an toàn mà không làm hỏng quá trình build tĩnh:
 
@@ -71,7 +72,7 @@ export const getCachedSession = cache(async () => {
 });
 ```
 
-### 2. Ứng dụng trong API Route Handlers (GET)
+### 2. Ứng dụng trong API Route Handlers
 
 Các API route kiểm tra trạng thái thanh toán hoặc generate link thanh toán (GET) bắt buộc phải dùng `connection()` ở dòng đầu tiên:
 
@@ -101,7 +102,7 @@ export async function GET(request: Request) {
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
 ### Q1: Lỗi `NEXT_PRERENDER_INTERRUPTED` trong Next.js App Router nghĩa là gì và cách xử lý?
 

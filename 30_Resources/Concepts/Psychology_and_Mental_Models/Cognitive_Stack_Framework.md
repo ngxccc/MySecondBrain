@@ -8,6 +8,7 @@ aliases:
     Khung phân cấp nhận thức,
     Cognitive Stack,
   ]
+description: "Khung phân cấp nhận thức 5 tầng đi từ bộ lọc thiên kiến đến đưa ra quyết định thực thi tối ưu."
 ---
 
 # Cognitive Stack Framework
@@ -42,7 +43,7 @@ graph TD
 
 ## The 5-Layer Cognitive Stack
 
-### Tầng 1: Trực giác & Lọc nhiễu (Intuition & Bias Filtering)
+### Tầng 1: Trực giác & Lọc nhiễu
 
 - **Bản chất:** Tầng tiền xử lý dữ liệu. Nhận diện các phản xạ nhanh của Hệ thống 1 (Fast Thinking) để lọc sạch các lỗi nhận thức tự nhiên trước khi đưa vào phân tích chuyên sâu.
 - **Các mô hình cốt lõi:**
@@ -51,7 +52,7 @@ graph TD
   - _Sunk Cost Fallacy (Ngụy biện chi phí chìm):_ Tránh việc tiếp tục đầu tư vào con đường sai lầm chỉ vì tiếc công sức đã bỏ ra.
 - **Ứng dụng trong Học tập & Đường đời:** Đảm bảo điểm bắt đầu của mọi suy nghĩ là dữ liệu khách quan, không bị bóp méo (nguyên lý "Garbage In, Garbage Out").
 
-### Tầng 2: Truy vấn & Phân tách Nguyên bản (Inquiry & Deconstruction)
+### Tầng 2: Truy vấn & Phân tách Nguyên bản
 
 - **Bản chất:** Bóc tách các vấn đề phức tạp thành các chân lý/sự thật cơ bản nhất (Facts) không thể chối cãi, phá vỡ các định kiến kế thừa hoặc tư duy bắt chước (Analogy).
 - **Các mô hình cốt lõi:**
@@ -59,7 +60,7 @@ graph TD
   - _Socratic Questioning (Đặt câu hỏi kiểu Socrates):_ Liên tục truy vấn các giả định ngầm (assumptions) để làm sáng tỏ bản chất luận điểm.
 - **Ứng dụng trong Học tập & Đường đời:** Giúp người học thấu hiểu tận gốc kiến thức (Cook vs. Chef), không học vẹt, và giúp giới tri thức nhìn thấy cơ hội đột phá từ những giới hạn vật lý thực tế.
 
-### Tầng 3: Tư duy Hệ thống & Quan hệ Liên kết (Systems Thinking & Synthesizing)
+### Tầng 3: Tư duy Hệ thống & Quan hệ Liên kết
 
 - **Bản chất:** Lắp ghép các mảnh sự thật đã bóc tách ở Tầng 2 vào bức tranh tổng thể để quan sát mối liên hệ phức tạp, vòng lặp phản hồi (Feedback loops) và hệ quả lâu dài.
 - **Các mô hình cốt lõi:**
@@ -67,7 +68,7 @@ graph TD
   - _Second-Order Thinking (Tư duy hệ quả bậc hai):_ Đặt câu hỏi "Và sau đó là gì?" để dự đoán tác động dây chuyền của một hành động.
 - **Ứng dụng trong Học tập & Đường đời:** Tránh lỗi tối ưu hóa cục bộ nhưng làm hỏng toàn cục (Local vs. Global Optimization) và giúp tri thức trẻ dự đoán trước các rủi ro hệ thống dài hạn.
 
-### Tầng 4: Sáng tạo & Đa chiều (Innovation & Divergent Thinking)
+### Tầng 4: Sáng tạo & Đa chiều
 
 - **Bản chất:** Tìm kiếm lối đi mới, các giải pháp đột phá phi truyền thống khi các quy luật vật lý (Tầng 2) và ràng buộc hệ thống (Tầng 3) đã được xác định rõ.
 - **Các mô hình cốt lõi:**
@@ -75,7 +76,7 @@ graph TD
   - _Design Thinking (Tư duy thiết kế):_ Tập trung vào hành vi thực tế và trải nghiệm người dùng cuối cùng để thiết kế giải pháp.
 - **Ứng dụng trong Học tập & Đường đời:** Giúp tạo ra các sáng kiến độc đáo, phát minh công nghệ mới hoặc các hướng đi sự nghiệp đột phá mà người khác không nhìn thấy.
 
-### Tầng 5: Quyết định Chiến lược & Thực thi (Strategic Decision & Execution)
+### Tầng 5: Quyết định Chiến lược & Thực thi
 
 - **Bản chất:** Tầng ra quyết định và tối ưu hóa hành động dưới áp lực của sự bất định và các giới hạn tài nguyên (thời gian, tiền bạc, năng lượng).
 - **Các mô hình cốt lõi:**

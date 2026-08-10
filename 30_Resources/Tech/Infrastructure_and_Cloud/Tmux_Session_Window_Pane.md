@@ -1,6 +1,7 @@
 ---
-tags: [type/concept, topic/tech, tmux, terminal, tooling]
+tags: [type/concept, topic/tech, tmux, terminal, tooling, layer/infrastructure]
 aliases: [Tmux Session vs Window vs Pane, Tmux Keybinds]
+description: "Tmux (Terminal Multiplexer) giúp quản lý nhiều phiên làm việc (Sessions), tab (Windows) và phân mảnh màn hình (Panes) trên một cửa sổ Terminal duy nhất. Bằng cách tích hợp `vim-tmux-navigator`, ta ..."
 ---
 
 # Quản lý và Điều hướng Terminal với Tmux
@@ -43,7 +44,7 @@ Session (Một dự án độc lập, chạy ngầm)
 | **`Prefix` + `s`**       | Gõ phím `s`                             | Hiện danh sách Session (Nhấn `x` trên một dòng để xóa session đó)                                                |
 | **`Prefix` + `r`**       | Gõ phím `r`                             | Reload lại file cấu hình Tmux                                                                                    |
 
-### 2. Lưu & Khôi phục Phiên làm việc (Session Persistence)
+### 2. Lưu & Khôi phục Phiên làm việc
 
 - **Lưu trạng thái thủ công:** Nhấn `Prefix` + `Ctrl + s`.
 - **Khôi phục trạng thái thủ công:** Nhấn `Prefix` + `Ctrl + r`.

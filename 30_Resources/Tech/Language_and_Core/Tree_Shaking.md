@@ -1,7 +1,9 @@
 ---
-tags: [type/concept, topic/tech, language-core, status/todo]
+tags:
+  [type/concept, topic/tech, language-core, status/todo, layer/core-mechanics]
 date: 2026-06-07
 aliases: [Tree Shaking, Loại bỏ code thừa, Tối ưu hóa bundle JS]
+description: "Kỹ thuật phân tích tĩnh để loại bỏ dead code khi đóng gói Javascript."
 ---
 
 # Tree Shaking

@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech]
+tags: [type/concept, topic/tech, layer/architecture]
 aliases: [CA, Kiến trúc sạch, Clean Architecture]
 created_at: Saturday, May 23rd 2026, 7:37:45 pm +07:00
 updated_at: Saturday, May 23rd 2026, 7:37:45 pm +07:00
+description: "Hệ tư tưởng phân tầng kiến trúc để cô lập và bảo vệ Core Business Logic khỏi sự phụ thuộc công nghệ."
 ---
 
 # Clean Architecture
@@ -27,9 +28,9 @@ Clean Architecture (Kiến trúc Sạch) do Robert C. Martin (Uncle Bob) khởi 
 
 ---
 
-### Cơ chế hoạt động (How it works under the hood)
+### Cơ chế hoạt động
 
-#### Quy tắc phụ thuộc (The Dependency Rule)
+#### Quy tắc phụ thuộc
 
 > "Source code dependencies must point only inward, toward higher-level policies."
 

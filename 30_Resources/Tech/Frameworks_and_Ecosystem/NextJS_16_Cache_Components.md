@@ -1,8 +1,16 @@
 ---
-tags: [type/concept, topic/tech, framework/nextjs, topic/rendering]
+tags:
+  [
+    type/concept,
+    topic/tech,
+    framework/nextjs,
+    topic/rendering,
+    layer/infrastructure,
+  ]
 aliases:
   [NextJS 16 Cache Components, NextJS 16 Caching, use cache, Cache Components]
 date: 2026-06-20
+description: "Mô hình Caching component-level mới của Next.js 16 dùng chỉ thị 'use cache' và cacheLife."
 ---
 
 # Next.js 16 Cache Components & 'use cache'
@@ -54,7 +62,7 @@ export async function getTopSellingProducts() {
 }
 ```
 
-### 2. Caching theo thẻ (Tag-based Revalidation) và Hard Purge
+### 2. Caching theo thẻ và Hard Purge
 
 ```typescript
 import { cacheLife, cacheTag } from "next/cache";
@@ -85,7 +93,7 @@ export async function updateProductAdminAction() {
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
 ### Q1: Chỉ thị `"use cache"` trong Next.js 16 khác gì so với hàm `unstable_cache` ở các phiên bản trước?
 

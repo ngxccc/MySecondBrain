@@ -4,6 +4,7 @@ tags:
 date: 2026-07-04
 aliases:
   [Torrent CLI Tools, aria2c Alternatives, Torrent Download Clients Comparison]
+description: "So sánh các công cụ download torrent CLI thay thế aria2c; qBittorrent-nox là all-rounder hàng đầu cho server headless năm 2026."
 ---
 
 # Torrent CLI Download Tools Comparison
@@ -32,7 +33,7 @@ aria2c là công cụ download đa giao thức (HTTP/FTP/BitTorrent) mạnh về
 # Install & run headless
 sudo apt install qbittorrent-nox
 qbittorrent-nox --daemon
-# Truy cập WebUI tại http://server:8080 (default user:admin pass:adminadmin)
+# Truy cập WebUI tại http://server:8080
 ```
 
 **rTorrent CLI thuần:**

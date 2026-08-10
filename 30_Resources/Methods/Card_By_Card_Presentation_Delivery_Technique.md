@@ -7,6 +7,7 @@ date: 2026-08-04
 aliases:
   - Kỹ thuật thuyết trình 2 thẻ slide
   - Card by Card Presentation Delivery Method
+description: "Phương pháp thuyết trình theo khung thẻ (Card-by-Card Delivery Technique) là kỹ thuật điều phối ánh mắt và nhịp điều diễn thuyết dựa trên bố cục UI 2 thẻ (Two-Card Layout). Bằng cách dẫn dắt khán g..."
 ---
 
 # Card By Card Presentation Delivery Technique
@@ -22,7 +23,7 @@ Phương pháp thuyết trình theo khung thẻ (Card-by-Card Delivery Technique
 
 ## Core Concept
 
-### 1. Nguyên Lý Điều Hướng Ánh Mắt (Visual Eye-Tracking Flow)
+### 1. Nguyên Lý Điều Hướng Ánh Mắt
 
 Trong các bài thuyết trình công nghệ hiện đại, slide 16:9 thường được chia thành 2 khung chứa (Cards):
 
@@ -34,14 +35,14 @@ Người thuyết trình điều phối sự chú ý của khán giả thông qu
 - `"If you look at the left card..."` $\rightarrow$ Khán giả tập trung vào bên trái.
 - `"Now, moving to the right card..."` $\rightarrow$ Khán giả chuyển ánh mắt sang bên phải.
 
-### 2. Kỹ Thuật Câu Cầu Nối (Slide Transition Bridge Sentences)
+### 2. Kỹ Thuật Câu Cầu Nối
 
 Lỗi phổ biến nhất khi thuyết trình là bấm chuột chuyển slide rồi mới suy nghĩ xem nói gì tiếp theo. Kỹ thuật Card-by-Card yêu cầu sử dụng **câu cầu nối (Bridge Sentence)**:
 
 - Người nói phát biểu câu cầu nối **TRƯỚC KHI** hoặc **TRONG KHI** bấm chuyển slide.
 - **Tác dụng**: Giúp bài nói liên tục, không bị đứt đoạn (dead air), tạo sự tò mò và chuẩn bị tâm lý cho khán giả đón nhận nội dung slide tiếp theo.
 
-### 3. Phân Cấp Phông Chữ & Bố Cục Thẻ (Visual Hierarchy)
+### 3. Phân Cấp Phông Chữ & Bố Cục Thẻ
 
 - **Màu sắc thẻ**: Thẻ trắng (`#FFFFFF`) cho thông tin tiêu chuẩn/truyền thống; thẻ xanh (`#EBF3FF`) có viền (`#BFDBFE`) cho giải pháp/AI hoặc góc nhìn nổi bật.
 - **Segoe UI Typography**: Sử dụng phông sans-serif chuẩn UI/UX (`Segoe UI Bold` cho Badge & Title; `Segoe UI Regular` cho Body Bullet) giúp slide sắc nét trên mọi thiết bị trình chiếu.
@@ -63,7 +64,7 @@ Lỗi phổ biến nhất khi thuyết trình là bấm chuột chuyển slide r
    - Phát biểu câu nối dạng nghi vấn hoặc dẫn dắt: `"Now that we understand [Slide Content], let's see how this affects [Next Topic]. Moving to Slide X..."`.
    - Bấm chuột chuyển slide ngay khi dứt câu nối.
 
-### Concrete Example (Slide AI vs. Traditional Programs)
+### Concrete Example
 
 ```text
 [Step 1: Section Header]

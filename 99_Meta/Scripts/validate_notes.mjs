@@ -30,6 +30,22 @@ const validatorsRegistry = {
   "type/strategy": validateStrategy,
   "type/technique": validateTechnique,
 };
+let declaredTagsSet = null;
+async function getDeclaredTags() {
+  if (declaredTagsSet) return declaredTagsSet;
+  try {
+    const ssotPath = path.join(rootDir, "99_Meta", "Tag_Taxonomy_SSOT.md");
+    const content = await fs.readFile(ssotPath, "utf8");
+    const matches = content.match(/`([a-z0-9_\-/]+)`/gi) || [];
+    declaredTagsSet = new Set(
+      matches.map((m) => m.replace(/`/g, "").toLowerCase()),
+    );
+  } catch (e) {
+    declaredTagsSet = new Set();
+  }
+  return declaredTagsSet;
+}
+
 // Colors for console
 const colors = {
   reset: "\x1b[0m",
@@ -148,6 +164,29 @@ async function validateFile(filePath) {
       ) {
         errors.push("'tags' is empty");
       }
+
+      // Validate tags against Tag_Taxonomy_SSOT.md
+      const declared = await getDeclaredTags();
+      if (declared.size > 0 && frontmatter.tags) {
+        let rawTagsList = [];
+        if (Array.isArray(frontmatter.tags)) {
+          rawTagsList = frontmatter.tags;
+        } else if (typeof frontmatter.tags === "string") {
+          rawTagsList = frontmatter.tags
+            .replace(/^\[|\]$/g, "")
+            .split(",")
+            .map((t) => t.trim())
+            .filter(Boolean);
+        }
+        for (const tagItem of rawTagsList) {
+          const cleanTag = tagItem.toLowerCase();
+          if (cleanTag && !declared.has(cleanTag)) {
+            warnings.push(
+              `Undeclared tag '${tagItem}' in frontmatter. Please declare it in 99_Meta/Tag_Taxonomy_SSOT.md`,
+            );
+          }
+        }
+      }
     }
 
     const tags = frontmatter ? frontmatter.tags || "" : "";
@@ -166,6 +205,14 @@ async function validateFile(filePath) {
     const hasH1 = /^#\s+.+/m.test(content);
     if (!hasH1) {
       errors.push("Missing top-level heading (# Title)");
+    }
+    // Check for emojis/icons (No-Emoji policy)
+    const emojiRegex =
+      /[\u{1F300}-\u{1F9FF}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F1E6}-\u{1F1FF}\u{1F900}-\u{1F9FF}\u{1FA70}-\u{1FAFF}]/u;
+    if (emojiRegex.test(content)) {
+      warnings.push(
+        "Note contains emojis or icons, violating the No-Emoji policy.",
+      );
     }
 
     // Check for raw template instruction markers

@@ -1,7 +1,19 @@
 ---
-tags: [type/concept, topic/knowledge-management, topic/documentation, topic/workflow]
+tags:
+  [
+    type/concept,
+    topic/knowledge-management,
+    topic/documentation,
+    topic/workflow,
+  ]
 date: 2026-07-24
-aliases: [Visual Workflow Documentation Policy, Chính sách Tài liệu hóa Quy trình Trực quan, Visual Workflow Policy]
+aliases:
+  [
+    Visual Workflow Documentation Policy,
+    Chính sách Tài liệu hóa Quy trình Trực quan,
+    Visual Workflow Policy,
+  ]
+description: "Visual Workflow Documentation Policy là bộ quy chuẩn quản trị tài liệu bắt buộc nhằm chuyển đổi luồng công việc (workflow), quy trình xử lý và kiến trúc hệ thống từ dạng văn bản thô sang mô hình tr..."
 ---
 
 # Visual Workflow Documentation Policy
@@ -18,7 +30,7 @@ aliases: [Visual Workflow Documentation Policy, Chính sách Tài liệu hóa Qu
 
 ## Practical Implementation
 
-### 1. Quy Chuẩn Công Cụ & Ký Hiệu (Notation & Tooling)
+### 1. Quy Chuẩn Công Cụ & Ký Hiệu
 
 - **Công cụ mặc định:** Sử dụng `Mermaid.js` nhúng trực tiếp trong file Markdown.
 - **Quy chuẩn biểu đồ theo ngữ cảnh:**
@@ -26,7 +38,7 @@ aliases: [Visual Workflow Documentation Policy, Chính sách Tài liệu hóa Qu
   - **Flowchart / Swimlanes:** Dùng mô tả quy trình nghiệp vụ phân vai trò (User vs System vs Admin).
   - **Architecture Diagram:** Dùng mô tả quan hệ giữa các component, database, queue và third-party services.
 
-### 2. Tiêu Chuẩn Cấu Trúc Mỗi Biểu Đồ (Diagram Checklist)
+### 2. Tiêu Chuẩn Cấu Trúc Mỗi Biểu Đồ
 
 Mỗi sơ đồ trực quan khi đưa vào tài liệu bắt buộc thỏa mãn 4 yếu tố:
 
@@ -35,7 +47,7 @@ Mỗi sơ đồ trực quan khi đưa vào tài liệu bắt buộc thỏa mãn 
 3. **Ký hiệu chuẩn hóa:** Tên gọi tương ứng chính xác với tên hàm, tên API hoặc tên cột DB trong codebase.
 4. **Chú thích ngắn gọn:** Kèm theo 2-3 câu giải thích bối cảnh bên dưới biểu đồ.
 
-### 3. Ví Dụ Mẫu (Mermaid Sequence Diagram Template)
+### 3. Ví Dụ Mẫu
 
 ```mermaid
 sequenceDiagram
@@ -58,7 +70,7 @@ sequenceDiagram
     end
 ```
 
-### 4. Quy Trình Bảo Trì Tài Liệu (Maintenance SOP)
+### 4. Quy Trình Bảo Trì Tài Liệu
 
 - **Review Gate:** Mọi Pull Request (PR) làm thay đổi luồng API hoặc quy trình hệ thống đều bắt buộc phải cập nhật sơ đồ Mermaid tương ứng.
 - **Periodic Audit:** Đánh giá định kỳ theo quý (Quarterly Audit) để dọn dẹp hoặc cập nhật sơ đồ cũ.

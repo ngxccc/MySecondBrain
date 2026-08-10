@@ -1,8 +1,9 @@
 ---
-tags: [type/method, topic/security, layer/backend]
+tags: [type/method, topic/security, layer/infrastructure]
 date: 2026-07-09
 aliases:
   [Rate Limiting Strategies, DDoS Prevention, Defense in Depth Rate Limiting]
+description: "Chiến lược rate limit đa lớp (IP/Email) và chống DDoS/Credential Stuffing."
 ---
 
 # Chiến Lược Rate Limiting Đa Lớp & Phòng Chống DDoS
@@ -15,7 +16,7 @@ aliases:
 
 ## Core Concept
 
-### 1. Giới hạn theo Địa chỉ IP (IP-based) vs. Theo Tài khoản (Target-based)
+### 1. Giới hạn theo Địa chỉ IP vs. Theo Tài khoản (Target-based)
 
 - **Chặn theo IP (Standard):**
   - _Ưu điểm:_ Ngăn chặn spam hàng loạt từ một nguồn (single-source). Tránh quá tải CPU máy chủ do các thuật toán băm mật khẩu nặng như `scrypt`/`bcrypt`.
@@ -29,7 +30,7 @@ aliases:
     - **Luôn dùng IP làm bộ kiểm soát chính (Primary Tracker)** cho cả đăng ký và đăng nhập để chống spam máy chủ.
     - Chỉ áp dụng chặn theo Email khi có **thử thách bảo mật (CAPTCHA, MFA)** hoặc **Trì hoãn lũy tiến (Progressive Delay)** thay vì chặn cứng HTTP 429. Nếu dùng email-based throttler để đếm, trần giới hạn (limit ceiling) phải cao hơn đáng kể so với IP để tránh việc xoay IP khóa email.
 
-### 2. Mô hình Phòng thủ Đa lớp (Defense in Depth)
+### 2. Mô hình Phòng thủ Đa lớp
 
 1. **Lớp 1: CDN / WAF (Cloudflare, AWS WAF, Nginx)**
    - Lọc thô lưu lượng truy cập dựa trên danh sách đen IP toàn cầu (IP Reputation).
@@ -40,7 +41,7 @@ aliases:
 3. **Lớp 3: Gia tăng rào cản bảo mật (CAPTCHA & Progressive Delay)**
    - Khi vượt ngưỡng giới hạn mềm, chuyển sang yêu cầu giải CAPTCHA (Turnstile/reCAPTCHA) hoặc kích hoạt cơ chế chờ tăng dần (Progressive Delay) để làm chậm tốc độ của bot tự động mà không làm ảnh hưởng tiêu cực đến người dùng thật.
 
-### 3. Phát hiện và Chặn Bot ở Tầng CDN/WAF (Threat Intelligence)
+### 3. Phát hiện và Chặn Bot ở Tầng CDN/WAF
 
 Tuyến phòng thủ đầu tiên trước khi request đi vào server Node.js:
 
@@ -48,7 +49,7 @@ Tuyến phòng thủ đầu tiên trước khi request đi vào server Node.js:
 - **JavaScript Challenge / Managed Challenge:** Ép trình duyệt của client phải thực thi một đoạn mã JS ngầm để chứng minh đó là trình duyệt thật (không phải curl, postman, hay tool automation headless).
 - **CAPTCHA vô hình (Invisible CAPTCHA):** Sử dụng các giải pháp như Cloudflare Turnstile hoặc Google reCAPTCHA v3 để chấm điểm hành vi (Behavioral Risk Score). Nếu điểm nghi vấn cao mới hiển thị CAPTCHA để xác thực.
 
-### 4. Theo dõi Tỷ lệ Lỗi Hệ thống (Global Spike Detection)
+### 4. Theo dõi Tỷ lệ Lỗi Hệ thống
 
 - Theo dõi tổng số lượt đăng nhập thất bại trên toàn bộ hệ thống. Nếu đột ngột tăng vọt (ví dụ tăng 500% so với trung bình), hệ thống sẽ tự động chuyển sang chế độ phòng thủ nghiêm ngặt (ép tất cả user đăng nhập phải qua bước CAPTCHA hoặc tạm thời khóa tính năng đăng ký mới).
 

@@ -8,6 +8,7 @@ date: 2026-08-06
 aliases:
   - Word Family Matrix & Morphemic Anchor Method
   - Phương pháp học từ loại theo họ từ và neo từ mẫu
+description: "Phương pháp học từ loại dựa trên khoa học ngôn ngữ (Morphology) và phản xạ nhóm từ (Word Family Matrix). Thay vì học thuộc lòng từng từ riêng lẻ hay nhớ danh sách quy tắc khô khan, phương pháp sử d..."
 ---
 
 # Word Family and Morphology Method
@@ -20,7 +21,7 @@ Phương pháp học từ loại dựa trên khoa học ngôn ngữ (Morphology)
 
 ## Core Concept
 
-### Quy Tắc 1: "Nhìn Đuôi Biết Loại Từ" (Suffix Clues)
+### Quy Tắc 1: "Nhìn Đuôi Biết Loại Từ"
 
 Nhìn vào đuôi (Suffix) của một từ là cách nhanh nhất 80-90% để biết đó là từ loại nào:
 
@@ -34,7 +35,7 @@ Nhìn vào đuôi (Suffix) của một từ là cách nhanh nhất 80-90% để 
 
 ---
 
-### Quy Tắc 2: Phương Pháp "Word Family Matrix" (Học 1 Biết 4)
+### Quy Tắc 2: Phương Pháp "Word Family Matrix"
 
 Khi học từ mới, không bao giờ học 1 từ đơn lẻ. Hãy học theo Ma trận họ từ (Word Family) để khi viết câu, bạn tự do xoay chuyển dạng từ mà không bị khựng:
 
@@ -47,7 +48,7 @@ Khi học từ mới, không bao giờ học 1 từ đơn lẻ. Hãy học theo 
 
 ---
 
-### Quy Tắc 3: Vị Trí Trong Câu (Sentence Placement Rules)
+### Quy Tắc 3: Vị Trí Trong Câu
 
 Từ đứng ở đâu sẽ làm loại từ đó. Ghi nhớ 3 vị trí vàng:
 
@@ -66,7 +67,7 @@ Từ đứng ở đâu sẽ làm loại từ đó. Ghi nhớ 3 vị trí vàng:
 
 ## Practical Implementation
 
-### Ví Dụ Vòng Lặp Thay Thế (Substitution Loop Example)
+### Ví Dụ Vòng Lặp Thay Thế
 
 ```text
 [Câu gốc cần điền]: "This is an [___] solution."

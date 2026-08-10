@@ -1,5 +1,6 @@
 ---
 tags:
+  - layer/core-mechanics
   - type/concept
   - topic/go
   - topic/memory-management
@@ -8,9 +9,12 @@ aliases:
   - Bản Chất Escape Analysis Trong Go
   - Go Escape Analysis
   - Memory Escape Analysis
+description: "Escape Analysis là bước phân tích tĩnh do Trình biên dịch Go (Go Compiler) thực hiện trong quá trình biên dịch (Compile-time) nhằm quyết định một biến sẽ được cấp phát trên bộ nhớ Stack (nhanh, tự ..."
 ---
 
 # Bản Chất Kiến Trúc Và Cơ Chế Vận Hành Của Go Escape Analysis
+
+Tài liệu này là một ghi chép Layer 2 mô tả chi tiết cơ chế phân tích thoát (Escape Analysis) trong trình biên dịch Go, một giải pháp tự động tối ưu hóa việc phân chia cấp phát bộ nhớ Stack và Heap, dựa trên nguyên lý khoa học máy tính cốt lõi của [[Stack_vs_Heap_Memory_Fundamentals]] và giúp tối ưu hóa hiệu năng dọn rác của [[Garbage_Collection_Fundamentals]].
 
 ## TL;DR
 
@@ -20,7 +24,7 @@ aliases:
 
 ## Core Concept & Rationales
 
-### 1. Bài Toán Vòng Đời Bộ Nhớ (Stack vs Heap Lifetime Dilemma)
+### 1. Bài Toán Vòng Đời Bộ Nhớ
 
 - **Stack (Khung bộ nhớ hàm)**:
   - Bộ nhớ cực nhanh theo cơ chế LIFO.
@@ -33,7 +37,7 @@ aliases:
 
 ---
 
-### 2. Các Trường Hợp Kích Hoạt Escape Analysis (Common Escape Triggers)
+### 2. Các Trường Hợp Kích Hoạt Escape Analysis
 
 Trình biên dịch Go sẽ đẩy một biến từ Stack sang Heap trong 4 tình huống chính:
 
@@ -48,7 +52,7 @@ Trình biên dịch Go sẽ đẩy một biến từ Stack sang Heap trong 4 tì
 
 ---
 
-### 3. Phương Pháp Kiểm Tra Quyết Định Của Compiler (Compiler Flag)
+### 3. Phương Pháp Kiểm Tra Quyết Định Của Compiler
 
 Bạn có thể yêu cầu trình biên dịch Go xuất báo cáo chi tiết các quyết định Escape Analysis bằng cờ lệnh:
 
@@ -110,7 +114,10 @@ func main() {
 
 ## Related Notes
 
+- [[Stack_vs_Heap_Memory_Fundamentals]] - Nguyên lý khoa học máy tính cốt lõi về phân tầng bộ nhớ Stack và Heap.
+- [[Garbage_Collection_Fundamentals]] - Nguyên lý cốt lõi về cơ chế dọn rác tự động.
+- [[Memory_Leaks_Core_Mechanics]] - Bản chất rò rỉ bộ nhớ ở mức độ nguyên lý nền tảng.
 - [[Go_Slice_Underlying_Mechanics]] - Bản chất cấu trúc Slice Header và sự ảnh hưởng của Escape Analysis đến Underlying Array.
 - [[Go_Learning_Roadmap]] - Lộ trình làm chủ ngôn ngữ Go và tối ưu hiệu năng bộ nhớ.
-- [[JS_Memory_Management_Stack_Heap_GC]] - So sánh cơ chế quản lý Stack/Heap và Garbage Collection giữa các ngôn ngữ.
+- [[JS_Stack_vs_Heap_Memory]] - So sánh cơ chế quản lý Stack/Heap và Garbage Collection giữa các ngôn ngữ.
 - [[First_Principles_Thinking]] - Tư duy từ nguyên lý gốc để thiết kế phần mềm tối ưu hiệu năng.

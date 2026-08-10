@@ -2,6 +2,7 @@
 tags: [type/concept, topic/psychology, topic/negotiation, topic/decision-making]
 date: 2026-07-27
 aliases: [ZOPA, Zone of Possible Agreement, Vùng thỏa thuận khả thi]
+description: "Vùng thỏa thuận khả thi - Khoảng không gian giao thoa ranh giới chấp nhận được giữa hai bên."
 ---
 
 # ZOPA Negotiation Framework

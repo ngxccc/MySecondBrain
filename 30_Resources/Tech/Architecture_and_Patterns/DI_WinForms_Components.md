@@ -7,9 +7,10 @@ aliases:
     C# DI UI Components,
     ActivatorUtilities WinForms,
   ]
+description: "Kỹ thuật Dependency Injection cho Dumb, Root và Smart Child Components trong C# WinForms."
 ---
 
-# WinForms Component Design with Dependency Injection (DI)
+# WinForms Component Design with Dependency Injection
 
 ## TL;DR
 
@@ -17,7 +18,7 @@ Quy tắc áp dụng Dependency Injection (DI) vào thiết kế các UI compone
 
 ## Component Classifications
 
-### 1. Dumb Component (Chỉ cần State, không cần Service)
+### 1. Dumb Component
 
 - **Bản chất**: Chỉ nhận dữ liệu từ Control cha truyền xuống và hiển thị lên giao diện, không tự thực hiện logic kết nối Database/API.
 - **Cách tạo**: Dùng từ khóa `new` thuần túy.
@@ -29,7 +30,7 @@ Quy tắc áp dụng Dependency Injection (DI) vào thiết kế các UI compone
   pnl.Controls.Add(editor);
   ```
 
-### 2. Root Component (Cần Service, không cần State lúc khởi tạo)
+### 2. Root Component
 
 - **Bản chất**: Các component lớn (như các Panel màn hình quản trị được gắn cố định trên Sidebar). Khi mở lên nó tự lấy Service từ DI container để fetch dữ liệu mà không cần dữ liệu truyền vào từ trước.
 - **Cách tạo**: Khởi tạo thông qua DI Container.
@@ -40,7 +41,7 @@ Quy tắc áp dụng Dependency Injection (DI) vào thiết kế các UI compone
   var manageProductsPanel = _serviceProvider.GetRequiredService<UC_ManageProducts>();
   ```
 
-### 3. Smart Child Component (Cần cả Service và State)
+### 3. Smart Child Component
 
 - **Bản chất**: Component vừa cần dữ liệu động (State như `productId` khi người dùng click vào một hàng cụ thể), vừa cần các Service chọc DB để lấy thông tin chi tiết.
 - **Cách tạo**: Sử dụng `ActivatorUtilities.CreateInstance` làm cỗ máy lai tạo để tự động inject các Service từ container đồng thời nạp vào các tham số tùy biến thủ công.

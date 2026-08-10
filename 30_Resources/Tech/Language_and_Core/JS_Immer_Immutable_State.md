@@ -9,6 +9,7 @@ tags:
   ]
 aliases: [Immer, ImmerJS, Copy-on-Write, Structural Sharing, Immutable State]
 date: 2026-06-20
+description: "Quản lý trạng thái bất biến (Immutable State) thông qua cơ chế Copy-on-Write (COW) và ES6 Proxy, giải pháp tối ưu cho Zustand/Redux stores."
 ---
 
 # Immer.js: Copy-on-Write & Immutable State Management
@@ -21,7 +22,7 @@ date: 2026-06-20
 
 ## Core Concept
 
-### 1. Cơ chế hoạt động: Copy-on-Write (COW) & Proxy
+### 1. Cơ chế hoạt động: Copy-on-Write & Proxy
 
 Immer hoạt động thông qua một hàm trung tâm là `produce(baseState, recipe)`:
 
@@ -36,7 +37,7 @@ Immer hoạt động thông qua một hàm trung tâm là `produce(baseState, re
   └─ Node B (Không đổi) ───────────────────────────┴─ (Dùng lại tham chiếu cũ)
 ```
 
-### 2. Structural Sharing (Chia sẻ cấu trúc)
+### 2. Structural Sharing
 
 Đây là tính năng cốt lõi giúp các thư viện như React hoạt động hiệu quả:
 
@@ -51,7 +52,7 @@ Immer hoạt động thông qua một hàm trung tâm là `produce(baseState, re
 
 Khi ta cần cập nhật sâu một trạng thái lồng nhau (ví dụ: cập nhật số lượng của một sản phẩm trong giỏ hàng):
 
-#### Cách viết Spread thủ công (Rườm rà và dễ sai sót)
+#### Cách viết Spread thủ công
 
 ```typescript
 const updateCartItemQty = (
@@ -68,7 +69,7 @@ const updateCartItemQty = (
 };
 ```
 
-#### Cách viết sử dụng Immer (Trực quan, an toàn)
+#### Cách viết sử dụng Immer
 
 ```typescript
 import { produce } from "immer";
@@ -123,7 +124,7 @@ export const useCartStore = create<CartState>()(
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
 ### Q1: Immer JS hoạt động dưới runtime như thế nào để đảm bảo tính bất biến của dữ liệu?
 
@@ -141,4 +142,4 @@ export const useCartStore = create<CartState>()(
 
 - Bản đồ tri thức: [[000_Tech_MOC]]
 - Đánh giá hiệu năng thực tế dự án: [[10_Projects/Hyundai_Ecommerce/Docs/V8_Performance_Audit.md|V8_Performance_Audit]]
-- Cơ chế dọn rác bộ nhớ: [[JS_Memory_Management_Stack_Heap_GC]]
+- Cơ chế dọn rác bộ nhớ: [[JS_Generational_Garbage_Collection]]

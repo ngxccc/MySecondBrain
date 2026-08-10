@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
 date: 2026-06-07
 aliases:
   [Nguyên lý Left-Prefix, Composite Index Left-Prefix, PostgreSQL Left-Prefix]
+description: "Nguyên lý Left-Prefix của Composite Index trong PostgreSQL."
 ---
 
 # Left-Prefix Index Principle in PostgreSQL

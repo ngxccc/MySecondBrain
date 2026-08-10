@@ -2,6 +2,7 @@
 tags: [type/concept, topic/tech, dev-tools]
 date: 2026-06-07
 aliases: [Phím tắt Vim, Vim Shortcuts Cheat Sheet, Phím tắt nâng cao Vim]
+description: "Các phím tắt và câu lệnh thay thế vùng nâng cao trong Vim."
 ---
 
 # Vim Advanced Shortcuts & Commands
@@ -10,7 +11,7 @@ aliases: [Phím tắt Vim, Vim Shortcuts Cheat Sheet, Phím tắt nâng cao Vim]
 
 Tập hợp các phím tắt nâng cao và câu lệnh dòng tương đối trong Vim giúp tăng tốc độ điều hướng con trỏ (Navigation), thay thế văn bản (Substitution) và viết code nhanh chóng mà không cần dùng chuột.
 
-## Navigation & Screen Control (Điều hướng & Cuộn trang)
+## Navigation & Screen Control
 
 - **Cuộn màn hình**:
   - `Ctrl + e`: Cuộn màn hình xuống 1 dòng (giữ nguyên con trỏ).
@@ -24,7 +25,7 @@ Tập hợp các phím tắt nâng cao và câu lệnh dòng tương đối tron
   - `Ctrl + f` (Forward): Di chuyển xuống một trang đầy đủ.
   - `Ctrl + b` (Backward): Di chuyển lên một trang đầy đủ.
 
-## Range-based Substitution (Thay thế hàng loạt theo vùng)
+## Range-based Substitution
 
 Cú pháp cơ bản: `:[khoảng_dòng]s/[từ_cũ]/[từ_mới]/g`
 

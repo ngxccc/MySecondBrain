@@ -3,6 +3,7 @@ tags: [type/concept, topic/tech, QA-testing, status/permanent]
 date: 2026-06-07
 aliases:
   [Stress Test Local, Kế hoạch Stress Test, k6 Benchmark, Phỏng vấn Stress Test]
+description: "SOP thiết lập kịch bản và tư duy stress test an toàn trên máy local."
 ---
 
 # Local Stress Testing & Benchmarking Guide
@@ -18,7 +19,7 @@ Hướng dẫn thiết lập và tư duy thực hiện Stress Test (kiểm thử
 3. **Hardware Monitor**: Theo dõi sát sao mức tiêu thụ phần cứng (sử dụng `htop` trên Linux/macOS hoặc Task Manager trên Windows).
    - **Quy tắc dừng**: Nếu CPU chạm ngưỡng 100% hoặc RAM cạn kiệt, hãy lập tức **dừng test**. Đó chính là điểm nghẽn vật lý (Breaking Point) của môi trường hiện tại.
 
-## Tool Selection (Tiêu chí chọn công cụ)
+## Tool Selection
 
 Do máy tính cá nhân thường giới hạn tài nguyên (ví dụ: 8GB-16GB RAM), cần tránh các công cụ ngốn RAM như JMeter (chạy trên máy ảo Java). Hãy ưu tiên:
 
@@ -26,7 +27,7 @@ Do máy tính cá nhân thường giới hạn tài nguyên (ví dụ: 8GB-16GB 
 - **wrk**: Tool viết bằng C, tối ưu cực tốt, hiệu năng cao nhưng khó tùy biến các kịch bản logic phức tạp.
 - **Apache Bench (ab)**: Cổ điển, có sẵn mặc định trên hầu hết hệ điều hành Linux, phù hợp cho kiểm thử endpoint đơn giản, nhanh gọn.
 
-## Interview Q&A (Văn mẫu phỏng vấn)
+## Interview Q&A
 
 **Câu hỏi:** _"Em stress test ở localhost thấy phản hồi nhanh, nhưng ra thực tế có độ trễ mạng (Network Latency) thì kết quả đó còn đúng không?"_
 

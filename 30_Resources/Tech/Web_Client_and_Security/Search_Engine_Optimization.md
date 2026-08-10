@@ -2,9 +2,10 @@
 tags: [type/concept, topic/web, topic/seo]
 date: 2026-07-07
 aliases: [SEO, Search Engine Optimization, Tối ưu hóa công cụ tìm kiếm]
+description: "Tối ưu hóa công cụ tìm kiếm (SEO) là tập hợp các kỹ thuật tối ưu hóa website để tăng thứ hạng tự nhiên trên trang kết quả tìm kiếm (SERPs). Mục tiêu là thu hút lượng truy cập tự nhiên (organic traf..."
 ---
 
-# Search Engine Optimization (SEO)
+# Search Engine Optimization
 
 ## TL;DR
 
@@ -16,7 +17,7 @@ Tối ưu hóa công cụ tìm kiếm (SEO) là tập hợp các kỹ thuật t�
 
 SEO hoạt động dựa trên cơ chế thu thập thông tin (crawling), lập chỉ mục (indexing) và xếp hạng (ranking) của các thuật toán tìm kiếm (như Google RankBrain, PageRank). Để tối ưu hóa hiệu quả và phù hợp với các bản cập nhật mới nhất, SEO được chia thành ba trụ cột chính:
 
-### 1. Technical SEO (SEO Kỹ thuật)
+### 1. Technical SEO
 
 Tập trung vào phần hạ tầng và cấu trúc kỹ thuật của website để các bot tìm kiếm dễ dàng crawl và index trang.
 
@@ -29,7 +30,7 @@ Tập trung vào phần hạ tầng và cấu trúc kỹ thuật của website �
 - **HTTPS & SSL / Mobile-First Indexing:** Bảo mật kết nối và tối ưu hóa hiển thị/hiệu năng trên thiết bị di động (ưu tiên hàng đầu của Google).
 - **Structured Data (Schema Markup):** Cung cấp siêu dữ liệu dưới dạng JSON-LD để hiển thị rich snippets trên kết quả tìm kiếm.
 
-### 2. On-Page SEO (SEO trên trang)
+### 2. On-Page SEO
 
 Tối ưu hóa trực tiếp nội dung và các phần tử hiển thị trên website.
 
@@ -38,14 +39,14 @@ Tối ưu hóa trực tiếp nội dung và các phần tử hiển thị trên 
 - **HTML Elements:** Tối ưu hóa thẻ `<title>`, `<meta name="description">`, và phân cấp tiêu đề `<h1>` đến `<h6>`.
 - **Internal Linking & Friendly URL:** Xây dựng mạng lưới liên kết nội bộ khoa học để phân phối PageRank và tối ưu cấu trúc URL ngắn gọn, rõ nghĩa.
 
-### 3. Off-Page SEO (SEO ngoài trang)
+### 3. Off-Page SEO
 
 Xây dựng uy tín và độ tin cậy của website thông qua các tín hiệu từ bên ngoài.
 
 - **Backlink Profile:** Thu hút các liên kết tự nhiên, chất lượng cao từ các trang web có độ uy tín lớn (domain authority) trỏ về.
 - **Social Signals & Brand Mentions:** Tần suất thương hiệu được đề cập trên mạng xã hội và các phương tiện truyền thông trực tuyến.
 
-### 4. Generative Engine Optimization (GEO / Agentic SEO)
+### 4. Generative Engine Optimization
 
 Tối ưu hóa để trang web dễ dàng được các mô hình ngôn ngữ lớn (LLMs) và các tác nhân AI (AI Agents) thu thập, hiểu và lựa chọn làm nguồn trích dẫn (citations) cho các câu trả lời do AI tổng hợp (zero-click answers).
 
@@ -58,7 +59,7 @@ Tối ưu hóa để trang web dễ dàng được các mô hình ngôn ngữ l�
 
 ## Practical Implementation
 
-### Tối ưu hóa SEO trong mã nguồn HTML (Ví dụ JSON-LD Schema)
+### Tối ưu hóa SEO trong mã nguồn HTML
 
 Dưới đây là cách khai báo cấu trúc dữ liệu bài viết (Article Schema) bằng JSON-LD để cung cấp siêu dữ liệu chi tiết cho công cụ tìm kiếm:
 
@@ -101,7 +102,7 @@ Dưới đây là cách khai báo cấu trúc dữ liệu bài viết (Article S
 | **Thời gian hiệu quả** | Cần thời gian lâu dài để xếp hạng (từ vài tuần đến vài tháng).                    | Xuất hiện ngay lập tức trên đỉnh SERPs khi kích hoạt chiến dịch.                |
 | **Tính bền vững**      | Bền vững, tiếp tục mang lại traffic ngay cả khi ngừng tối ưu hóa tạm thời.        | Biến mất hoàn toàn ngay khi ngân sách quảng cáo cạn kiệt.                       |
 
-### Cấu trúc nội dung tối ưu cho AI Agents (Answer-First Pattern)
+### Cấu trúc nội dung tối ưu cho AI Agents
 
 Các tác nhân AI (AI Agents) và Answer Engines (như Perplexity, SearchGPT) ưu tiên trích dẫn các đoạn văn bản có cấu trúc phân cấp mạch lạc và đi trực tiếp vào câu trả lời:
 

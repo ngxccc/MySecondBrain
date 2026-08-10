@@ -1,10 +1,11 @@
 ---
-tags: [type/concept, topic/testing]
+tags: [type/concept, topic/testing, layer/quality]
 date: 2026-07-07
 aliases: [Lỗi nhầm lẫn sự cố, Error Defect Failure]
+description: "Định nghĩa và chu kỳ lỗi nhầm lẫn, lỗi sai sót, và sự cố phần mềm theo chuẩn ISTQB."
 ---
 
-# Phân biệt Error, Defect (Bug) và Failure
+# Phân biệt Error, Defect và Failure
 
 ## TL;DR
 
@@ -43,7 +44,7 @@ graph TD
 - **Defect:** Đoạn code công thức tính toán trong file `invoice.js` chứa dấu nhân `*` thay vì dấu chia `/`.
 - **Failure:** Khách hàng thanh toán và hóa đơn hiển thị số tiền thuế tăng vọt lên gấp 100 lần thực tế.
 
-### Ví dụ 2: Lỗi tài liệu đặc tả yêu cầu (Requirement)
+### Ví dụ 2: Lỗi tài liệu đặc tả yêu cầu
 
 - **Error:** BA hiểu nhầm yêu cầu của khách hàng về độ tuổi đăng ký tài khoản (khách hàng yêu cầu >= 18, BA nghĩ là > 18).
 - **Defect:** Tài liệu đặc tả yêu cầu ghi: _"Người dùng phải trên 18 tuổi mới được đăng ký"_.

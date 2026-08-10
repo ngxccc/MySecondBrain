@@ -2,9 +2,10 @@
 tags: [type/concept, topic/tech, framework/nextjs, monorepo, devops]
 aliases: [Package Transpilation, transpilePackages, Monorepo Transpilation]
 date: 2026-06-20
+description: "Cơ chế biên dịch gói nội bộ (transpilePackages) và tối ưu hóa build trong Turborepo."
 ---
 
-# Next.js Monorepo & Package Transpilation (transpilePackages)
+# Next.js Monorepo & Package Transpilation
 
 ## TL;DR
 
@@ -26,14 +27,14 @@ Cấu hình `transpilePackages` (thay thế cho thư viện cũ `next-transpile-
 
 - Khi ứng dụng build hoặc dev, trình biên dịch sẽ quét qua mã nguồn của các gói này, áp dụng các thiết lập transpile (như loại bỏ kiểu dữ liệu TypeScript, biên dịch JSX sang JS).
 
-### 3. Giải pháp AOT: Pre-building (tsc / tsup / unbuild)
+### 3. Giải pháp AOT: Pre-building
 
 Thay vì bắt Next.js gánh toàn bộ trách nhiệm biên dịch mã nguồn của các gói khác tại runtime, ta có thể xây dựng quy trình biên dịch trước (Pre-build/Ahead-Of-Time) cho từng package:
 
 - Sử dụng các công cụ biên dịch siêu tốc như **`tsup`** (dựa trên esbuild) để đóng gói mã nguồn của package thành định dạng JavaScript chuẩn (ESM/CJS) và tạo file khai báo kiểu `.d.ts`.
 - Cấu hình trường `exports` trong `package.json` của package để trỏ trực tiếp đến các file build đã xuất ra trong thư mục `dist/` thay vì mã nguồn gốc.
 
-### 4. So sánh hai giải pháp (Trade-offs & Performance)
+### 4. So sánh hai giải pháp
 
 | Tiêu chí                 | On-the-fly (`transpilePackages`)                                                                                                                                  | Pre-building (`tsup` + `exports`)                                                                                                    |
 | :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,7 +47,7 @@ Thay vì bắt Next.js gánh toàn bộ trách nhiệm biên dịch mã nguồn 
 
 ## Practical Implementation
 
-### 1. Cấu hình `transpilePackages` và `optimizePackageImports` (`apps/storefront/next.config.ts`)
+### 1. Cấu hình `transpilePackages` và `optimizePackageImports`
 
 Dự án Hyundai E-commerce áp dụng giải pháp JIT (`transpilePackages`) cho cả 3 gói nội bộ dùng chung, đồng thời kết hợp `optimizePackageImports` để tối ưu hóa hiệu năng build và HMR đối với các thư viện giao diện lớn:
 
@@ -77,7 +78,7 @@ export default nextConfig;
 
 - **Vai trò song song:** Trong khi `transpilePackages` đảm bảo _mã nguồn chưa compile_ của các gói nội bộ được biên dịch đúng cách, `optimizePackageImports` lại tối ưu bằng cách đảm bảo Next.js chỉ nạp và xử lý các hàm/component riêng lẻ được sử dụng từ các thư viện giao diện lớn (như Radix UI, Lucide) thay vì biên dịch toàn bộ thư viện đó. Điều này giúp giảm đáng kể thời gian khởi động môi trường dev và giữ bộ nhớ đệm (HMR cache) ở mức tối thiểu.
 
-### 2. Cấu hình TSConfig để hỗ trợ Type-Safety (`apps/storefront/tsconfig.json`)
+### 2. Cấu hình TSConfig để hỗ trợ Type-Safety
 
 Để VS Code và trình biên dịch TypeScript hiểu và gợi ý kiểu dữ liệu (Auto-complete) cho các gói này khi chúng ta đang dev, cấu hình `moduleResolution` bắt buộc phải là `"bundler"` hoặc `"node"`:
 
@@ -96,7 +97,7 @@ export default nextConfig;
 }
 ```
 
-### 3. Cấu hình thay thế (Pre-build với `tsup`) cho `@nhatnang/shared`
+### 3. Cấu hình thay thế cho `@nhatnang/shared`
 
 Nếu chuyển sang mô hình Pre-build để tối ưu hiệu suất build của Next.js 16:
 
@@ -139,7 +140,7 @@ Cấu hình xuất bản trong `packages/shared/package.json`:
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
 ### Q1: Tại sao chúng ta cần `transpilePackages` trong Monorepo Next.js? Nếu không cấu hình thì bị lỗi gì?
 

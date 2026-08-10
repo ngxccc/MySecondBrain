@@ -2,6 +2,7 @@
 tags: [type/concept, topic/tech, topic/rendering]
 aliases: [NextJS ISR, Incremental Static Regeneration, Tái tạo tĩnh theo chu kỳ]
 date: 2026-06-12
+description: "Cơ chế cập nhật và tái tạo các trang tĩnh ở runtime mà không cần rebuild toàn bộ site."
 ---
 
 # NextJS ISR

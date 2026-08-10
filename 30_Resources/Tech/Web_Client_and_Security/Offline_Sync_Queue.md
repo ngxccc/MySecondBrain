@@ -1,10 +1,12 @@
 ---
-tags: [type/concept, topic/architecture, topic/frontend, pwa]
+tags:
+  [type/concept, topic/architecture, topic/frontend, pwa, layer/infrastructure]
 date: 2026-01-29
 aliases: [Background Sync, Outbox Pattern, Offline First]
+description: "Kỹ thuật Outbox Pattern ở phía client cho ứng dụng Offline-First."
 ---
 
-# Offline Sync Queue (Outbox Pattern)
+# Offline Sync Queue
 
 ## TL;DR
 
@@ -23,7 +25,7 @@ Kỹ thuật "lưu trước, gửi sau" (Store-forward) dành cho các ứng d�
 - **Trade-offs (Xung đột dữ liệu - Conflict Resolution):** Rủi ro lớn nhất là trạng thái dữ liệu bất đồng bộ. Ví dụ: Máy A sửa tên thành "John" lúc offline. Máy B sửa tên thành "Doe" lúc online. Khi máy A có mạng trở lại, Queue chạy và ghi đè "Doe" thành "John". Cần thiết lập chiến lược như _Last Write Wins_ (dựa vào timestamp) trên server.
 - **Tử huyệt Spam Request:** Tuyệt đối không xóa request khỏi Queue nếu server trả về lỗi `5xx` (Lỗi từ phía server). Tuy nhiên, nếu cứ nhắm mắt bắn lại (retry) liên tục, client của em sẽ vô tình tạo ra một cuộc tấn công DDoS vào chính server của mình. Phải cài đặt thuật toán **Exponential Backoff** (tăng dần thời gian chờ giữa mỗi lần thử lại).
 
-## Code Snippet (Logic Lõi)
+## Code Snippet
 
 ```typescript
 // utils/syncManager.ts

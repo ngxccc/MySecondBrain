@@ -2,9 +2,10 @@
 tags: [type/concept, topic/concepts, psychology-mental-models, status/permanent]
 date: 2026-06-24
 aliases: [Phương pháp Kanban, Kanban Methodology, Kanban Board Concept]
+description: "Phương pháp và bảng Kanban quản lý dòng công việc trực quan theo mô hình Kéo (Pull)."
 ---
 
-# 📋 Phương Pháp & Bảng Kanban Trong Quản Trị Dự Án
+# Phương Pháp & Bảng Kanban Trong Quản Trị Dự Án
 
 ## TL;DR
 
@@ -26,7 +27,7 @@ Tài liệu phân tích cốt lõi về phương pháp Kanban—hệ thống qu�
 
 Năm 2004, **David J. Anderson** đã áp dụng thành công các nguyên lý của Kanban vào ngành công nghiệp phần mềm và các công việc tri thức (Knowledge Work).
 
-### 🌟 4 Nguyên Lý Quản Lý Thay Đổi (Change Management Principles)
+### 4 Nguyên Lý Quản Lý Thay Đổi
 
 Khác với Scrum (thường yêu cầu thay đổi cấu trúc vai trò ngay lập tức), Kanban tiếp cận theo hướng tiến hóa tự nhiên:
 
@@ -41,41 +42,41 @@ Khác với Scrum (thường yêu cầu thay đổi cấu trúc vai trò ngay l�
 
 Áp dụng Kanban vào thực tế quản trị dự án phần mềm thông qua **6 thực hành cốt lõi** và các thành phần cấu tạo bảng sau:
 
-### 🌟 6 Thực Hành Cốt Lõi (Core Practices)
+### 6 Thực Hành Cốt Lõi
 
-### 1. Trực Quan Hóa Quy Trình (Visualize the Workflow)
+### 1. Trực Quan Hóa Quy Trình
 
 - Sử dụng bảng vật lý hoặc kỹ thuật số (**Kanban Board**) được chia thành các cột đại diện cho các trạng thái của công việc (ví dụ: `To do`, `In Progress`, `Review`, `Testing`, `Done`).
 - Mỗi công việc được viết trên một thẻ (**Kanban Card**) chứa thông tin mô tả, người làm và deadline. Trực quan hóa giúp toàn đội thấy rõ trạng thái của từng công việc trong nháy mắt.
 
-### 2. Giới Hạn Công Việc Đang Làm (Limit Work in Progress - WIP Limit)
+### 2. Giới Hạn Công Việc Đang Làm
 
 - Đây là thực hành quan trọng nhất của Kanban. Mỗi cột trên bảng Kanban (trừ cột Done) sẽ được thiết lập một con số giới hạn tối đa (**WIP Limit**) số thẻ được phép nằm ở cột đó tại một thời điểm.
 - _Ví dụ:_ Cột `In Progress` có WIP Limit = 3. Nếu đã có 3 task đang làm, các thành viên không được phép kéo thêm task mới từ `To do` sang, trừ khi có ít nhất 1 task trong `In Progress` được hoàn thành và kéo sang cột tiếp theo.
 - **Ý nghĩa:** Ép cả nhóm phải tập trung hoàn thành dứt điểm các công việc cũ trước khi bắt đầu công việc mới (**"Stop starting, start finishing"**), loại bỏ tổn hao do chuyển ngữ cảnh (context switching) và đa nhiệm (multitasking).
 
-### 3. Quản Lý Dòng Chảy (Manage Flow)
+### 3. Quản Lý Dòng Chảy
 
 - Theo dõi tốc độ di chuyển của các thẻ qua các cột.
 - Khi một cột có số lượng thẻ chạm ngưỡng WIP Limit, đó là dấu hiệu của **Điểm nghẽn (Bottleneck)**. Cả nhóm cần tập trung nguồn lực (swarming) vào cột đó để giải quyết nghẽn, khơi thông dòng chảy công việc.
 
-### 4. Quy Định Rõ Ràng Các Chính Sách (Make Process Policies Explicit)
+### 4. Quy Định Rõ Ràng Các Chính Sách
 
 - Thiết lập các tiêu chuẩn đồng thuận chung để dịch chuyển task giữa các cột, ví dụ:
   - Thế nào là hoàn thành (Definition of Done - DoD)?
   - Khi nào một task đủ điều kiện để chuyển sang cột `Code Review` hoặc `Testing`?
 
-### 5. Thiết Lập Các Vòng Lặp Phản Hồi (Implement Feedback Loops)
+### 5. Thiết Lập Các Vòng Lặp Phản Hồi
 
 - Tổ chức các buổi họp định kỳ (như họp Kanban hàng ngày, họp đánh giá dịch vụ) để đánh giá hiệu suất dòng chảy và điều chỉnh các WIP Limit hoặc chính sách quy trình.
 
-### 6. Cải Tiến Cộng Tác (Improve Collaboratively, Evolve Experimentally)
+### 6. Cải Tiến Cộng Tác
 
 - Sử dụng các số liệu thực tế đo lường được để phân tích hiệu suất và thực hiện các thử nghiệm cải tiến quy trình liên tục.
 
 ---
 
-## 📊 Các Thành Phần Cấu Thành Bảng Kanban
+## Các Thành Phần Cấu Thành Bảng Kanban
 
 1. **Kanban Cards (Thẻ Kanban):** Đại diện cho một đơn vị công việc (Task/User Story).
 2. **Kanban Columns (Các cột):** Đại diện cho các bước trong chuỗi giá trị (Value Stream).
@@ -86,7 +87,7 @@ Khác với Scrum (thường yêu cầu thay đổi cấu trúc vai trò ngay l�
 
 ---
 
-## ⚖️ So Sánh Kanban vs. Scrum
+## ️ So Sánh Kanban vs. Scrum
 
 | Tiêu chí so sánh      | Scrum                                                      | Kanban                                          |
 | :-------------------- | :--------------------------------------------------------- | :---------------------------------------------- |
@@ -98,7 +99,7 @@ Khác với Scrum (thường yêu cầu thay đổi cấu trúc vai trò ngay l�
 
 ---
 
-## 📈 Các Chỉ Số Đo Lường Hiệu Suất Trong Kanban
+## Các Chỉ Số Đo Lường Hiệu Suất Trong Kanban
 
 - **Lead Time (Thời gian hoàn thành):** Khoảng thời gian từ lúc khách hàng yêu cầu (đưa vào backlog) đến lúc bàn giao thành công (Delivery Point).
 - **Cycle Time (Thời gian chu kỳ):** Khoảng thời gian từ khi bắt đầu thực hiện công việc (Commitment Point) đến lúc hoàn thành (Delivery Point). Đây là chỉ số quan trọng để đánh giá năng lực thực tế của Dev team.

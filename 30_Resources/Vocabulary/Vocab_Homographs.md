@@ -4,11 +4,12 @@ status: seeding # seeding (mới học), evergreen (đã nhớ sâu)
 created_at: Friday, January 30th 2026, 7:53:18 pm +07:00
 updated_at: Saturday, January 31st 2026, 8:14:03 pm +07:00
 aliases: [] # VD: [Stress Shift, Noun-Verb Pairs]
+description: "createdat: Friday, January 30th 2026, 7:53:18 pm +07:00"
 ---
 
 # Homographs Noun vs Verb
 
-## 💡 TL;DR
+## TL;DR
 
 _(Quy tắc cốt lõi của nhóm này là gì?)_
 
@@ -16,7 +17,7 @@ _(Quy tắc cốt lõi của nhóm này là gì?)_
 
 ---
 
-## 🧩 The Pattern (Logic)
+## The Pattern
 
 _(Giải thích cơ chế hoạt động - The "Backend" Logic)_
 
@@ -25,7 +26,7 @@ _(Giải thích cơ chế hoạt động - The "Backend" Logic)_
 
 ---
 
-## 🗃️ Dataset (Inventory)
+## ️ Dataset
 
 _(Nhóm này cực quan trọng vì sai trọng âm là Tây không hiểu "IP Address" hay "Record database".)_
 
@@ -90,7 +91,7 @@ _(Nhóm này cực quan trọng vì sai trọng âm là Tây không hiểu "IP A
 
 ---
 
-### 📦 Dataset 2: Sound Shift (Đổi âm cuối S/Z)
+### Dataset 2: Sound Shift
 
 _Nhóm này không đổi trọng âm, nhưng đổi âm cuối. Noun = /s/ (nhẹ), Verb = /z/ (rung)._
 
@@ -107,11 +108,11 @@ _Nhóm này không đổi trọng âm, nhưng đổi âm cuối. Noun = /s/ (nh�
 
 ---
 
-## ⚠️ Edge Cases / Exceptions (Bugs)
+## ️ Edge Cases / Exceptions
 
 _(Những từ KHÔNG theo luật Noun-1/Verb-2. Cả Noun và Verb đều đọc GIỐNG NHAU)_
 
-### Nhóm Nhấn Âm 2 (Stress on 2nd)
+### Nhóm Nhấn Âm 2
 
 - ❌ **Request** (`/rɪˈkwest/`): Cả Yêu cầu (Noun) & Gửi yêu cầu (Verb) đều nhấn âm 2.
   - _Note:_ Đừng đọc là `/ˈre.kwest/`.
@@ -120,7 +121,7 @@ _(Những từ KHÔNG theo luật Noun-1/Verb-2. Cả Noun và Verb đều đọ
 - ❌ **Design** (`/dɪˈzaɪn/`): Cả Bản thiết kế & Thiết kế đều nhấn âm 2.
 - ❌ **Review** (`/rɪˈvjuː/`): Cả Bài đánh giá & Xem lại đều nhấn âm 2.
 
-### Nhóm Nhấn Âm 1 (Stress on 1st)
+### Nhóm Nhấn Âm 1
 
 - ❌ **Comment** (`/ˈkɑː.ment/`): Cả Bình luận & Viết bình luận đều nhấn âm 1 (US).
 - ❌ **Access** (`/ˈæk.ses/`): Cả Quyền truy cập & Truy cập đều nhấn âm 1.
@@ -129,11 +130,11 @@ _(Những từ KHÔNG theo luật Noun-1/Verb-2. Cả Noun và Verb đều đọ
 
 ---
 
-## 🗣️ Practice Drill (Unit Test)
+## ️ Practice Drill
 
 _(Checklist luyện tập: Đọc to từng câu, nhấn đúng trọng âm/âm đuôi)_
 
-### 🛠️ Stress Shift Tests (Noun-1 vs Verb-2)
+### ️ Stress Shift Tests
 
 - [x] **Record:** I need to **record** `/rɪˈkɔːrd/` (v) a new user **record** `/ˈrek.ɚd/` (n).
 - [x] **Project:** Can you **project** `/prəˈdʒekt/` (v) the **project** `/ˈprɑː.dʒekt/` (n) plan on the TV?
@@ -164,7 +165,7 @@ _(Checklist luyện tập: Đọc to từng câu, nhấn đúng trọng âm/âm 
 - [ ] **Compound:** Don't **compound** `/kəmˈpaʊnd/` (v - làm trầm trọng thêm) the problem with a complex **compound** `/ˈkɑːn.paʊnd/` (n - tổ hợp).
 - [ ] **Digest:** Read the daily **digest** `/ˈdaɪ.dʒest/` (n) to **digest** `/daɪˈdʒest/` (v) the news.
 
-### 🔊 Sound Shift Tests (S vs Z)
+### Sound Shift Tests
 
 - [ ] **Use:** I **use** `/juːz/` (v) VS Code because its **use** `/juːs/` (n) is simple.
 - [ ] **Close:** Please **close** `/kloʊz/` (v) the tag, the deadline is **close** `/kloʊs/` (adj).
@@ -173,7 +174,7 @@ _(Checklist luyện tập: Đọc to từng câu, nhấn đúng trọng âm/âm 
 
 ---
 
-## 🔗 Connections
+## Connections
 
 ### Internal
 

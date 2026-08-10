@@ -2,6 +2,7 @@
 tags: [type/method, topic/english, topic/writing]
 date: 2026-07-04
 aliases: [IELTS Simon Method, Phương pháp viết IELTS Simon, IELTS Simon Writing]
+description: "Chiến thuật làm bài thi IELTS Writing đơn giản và mạch lạc để đạt band score cao."
 ---
 
 # IELTS Simon Writing Method

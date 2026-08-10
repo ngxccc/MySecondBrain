@@ -2,6 +2,7 @@
 tags: [type/concept, topic/english, grammar]
 date: 2026-07-21
 aliases: [Danh động từ và cách dùng đuôi -ing, Gerunds and Present Participles]
+description: "Cách sử dụng đuôi `-ing` trong tiếng Anh để chuyển đổi động từ thành danh từ làm chủ ngữ/tân ngữ (Danh động từ - Gerund) hoặc mô tả tính chất của danh từ (Hiện tại phân từ - Present Participle). Gi..."
 ---
 
 # Danh động từ và cách dùng đuôi -ing
@@ -30,7 +31,7 @@ Khi muốn biến một hành động làm chủ thể chính của câu, bắt 
   - **Caching** improves database response times. _(**Việc** lưu bộ nhớ đệm giúp cải thiện thời gian phản hồi của cơ sở dữ liệu)._
   - **Coding** requires high concentration. _(**Việc** lập trình đòi hỏi sự tập trung cao độ)._
 
-### 2. Đứng sau các Giới từ (Prepositions)
+### 2. Đứng sau các Giới từ
 
 Động từ đi liền sau các giới từ như _in, on, at, of, about, before, after, instead of, without_ phải chuyển về dạng V-ing.
 
@@ -48,7 +49,7 @@ Một số động từ bắt buộc động từ đi kèm phía sau nó phải 
   - I avoid **writing** documentation. _(Tôi tránh **việc viết** tài liệu)._
   - The team enjoys **using** TypeScript. _(Đội nhóm thích **việc sử dụng** TypeScript)._
 
-### 4. Đóng vai trò làm Tính từ mô tả tính chất (Adjective)
+### 4. Đóng vai trò làm Tính từ mô tả tính chất
 
 Từ đuôi `-ing` đứng trước danh từ để bổ nghĩa, biểu thị tính chất chủ động đang xảy ra hoặc tự thân của sự vật.
 
@@ -56,7 +57,7 @@ Từ đuôi `-ing` đứng trước danh từ để bổ nghĩa, biểu thị t�
   - A **running** process on the server. _(Một tiến trình **đang chạy** trên máy chủ)._
   - An **exciting** tech stack. _(Một bộ công nghệ **đầy thú vị**)._
 
-### 5. Quy tắc biến đổi động từ sang dạng đuôi -ing (Spelling Rules)
+### 5. Quy tắc biến đổi động từ sang dạng đuôi -ing
 
 | Quy tắc                                                       | Cách viết                            | Ví dụ                                                              |
 | :------------------------------------------------------------ | :----------------------------------- | :----------------------------------------------------------------- |

@@ -7,9 +7,10 @@ aliases:
     Efficacy of Facial Sheet Masks,
     Cơ chế hoạt động của mặt nạ dưỡng da,
   ]
+description: "Mặt nạ giấy là một liệu pháp dưỡng ẩm cấp tốc hiệu quả dựa trên hiệu ứng bít kín cơ học (occlusion effect) giúp đẩy tinh chất vào lớp sừng của da. Tuy nhiên, hiệu quả làm căng mịn này chỉ mang tính..."
 ---
 
-# Hiệu quả thực tế của mặt nạ giấy (Facial Sheet Masks)
+# Hiệu quả thực tế của mặt nạ giấy
 
 ## TL;DR
 

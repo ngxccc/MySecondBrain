@@ -8,9 +8,10 @@ aliases:
     Thấu cảm chiến thuật,
     Never Split the Difference,
   ]
+description: "Thấu cảm chiến thuật & Kỹ thuật đàm phán tâm lý FBI (Mirroring, Labeling, Accusation Audit)."
 ---
 
-# Tactical Empathy (Chris Voss Negotiation)
+# Tactical Empathy
 
 ## TL;DR
 

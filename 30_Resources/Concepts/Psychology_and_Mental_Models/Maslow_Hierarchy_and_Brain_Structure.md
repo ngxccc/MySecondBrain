@@ -7,6 +7,7 @@ aliases:
     Maslow Hierarchy and Brain Structure,
     Phân tầng Não bộ Maslow,
   ]
+description: "Phân tầng thần kinh học của tháp nhu cầu Maslow theo tiến hóa não bộ (Brainstem, Limbic, PFC)."
 ---
 
 # Maslow Hierarchy and Brain Structure Alignment
@@ -42,7 +43,7 @@ Liên kết giữa **Tháp nhu cầu Maslow (Hierarchy of Needs)** và **Cấu t
 
 Mô hình 3 tầng não của Paul MacLean (Triune Brain Model) kết hợp với Neurobiology hiện đại cung cấp cơ sở thần kinh học cho các tầng nhu cầu của Maslow:
 
-### 1. Nhu cầu Sinh lý (Physiological Needs) $\leftrightarrow$ Brainstem & Hypothalamus (Thân não & Vùng dưới đồi)
+### 1. Nhu cầu Sinh lý $\leftrightarrow$ Brainstem & Hypothalamus
 
 - **Chức năng sinh học**: Điều khiển phản xạ sinh tồn căn bản, cân bằng nội môi (Homeostasis), nhịp tim, nhịp thở, nhu cầu ăn uống, ngủ nghỉ và sinh sản.
 - **Cấu trúc não bộ**: Thân não (Brainstem), Vùng dưới đồi (Hypothalamus), Hạch nền (Basal Ganglia).
@@ -50,7 +51,7 @@ Mô hình 3 tầng não của Paul MacLean (Triune Brain Model) kết hợp vớ
   - Hypothalamus điều tiết các tín hiệu nội tiết qua hormone Ghrelin (báo đói), Leptin (báo no) và hệ thần kinh tự chủ (Autonomic Nervous System).
   - Hoạt động mang tính bản năng, tự động, không cần đến nhận thức tự giác của vỏ não.
 
-### 2. Nhu cầu An toàn (Safety & Security Needs) $\leftrightarrow$ Amygdala & Subcortical Limbic System (Hạch hạnh nhân & Hệ viền dưới vỏ)
+### 2. Nhu cầu An toàn $\leftrightarrow$ Amygdala & Subcortical Limbic System
 
 - **Chức năng sinh học**: Phát hiện nguy hiểm, tìm kiếm sự ổn định, né tránh rủi ro thân thể và tài chính.
 - **Cấu trúc não bộ**: Hạch hạnh nhân (Amygdala), Vỏ não đảo (Insula), Trục HPA (Hypothalamic-Pituitary-Adrenal Axis).
@@ -58,7 +59,7 @@ Mô hình 3 tầng não của Paul MacLean (Triune Brain Model) kết hợp vớ
   - Amygdala đóng vai trò là "hệ thống báo cháy" của não bộ, xử lý các kích thích đe dọa và kích hoạt phản ứng **Fight-or-Flight** (Chiến hay Biến).
   - Giải phóng Cortisol và Adrenaline vào máu, ép cơ thể tập trung toàn bộ năng lượng để đối phó với mối đe dọa tức thì.
 
-### 3. Nhu cầu Yêu thương & Phụ thuộc (Belongingness & Love Needs) $\leftrightarrow$ Midbrain & Limbic Attachment System (Hệ viền gắn kết)
+### 3. Nhu cầu Yêu thương & Phụ thuộc $\leftrightarrow$ Midbrain & Limbic Attachment System
 
 - **Chức năng sinh học**: Gắn kết xã hội, tình yêu thương, kết nối bộ tộc, tìm kiếm sự thuộc về một cộng đồng.
 - **Cấu trúc não bộ**: Hippocampus (Hải mã), Vùng nhân hạ đồi (Nucleus Accumbens - NAc), Hệ thống Oxytocin/Endorphin.
@@ -66,7 +67,7 @@ Mô hình 3 tầng não của Paul MacLean (Triune Brain Model) kết hợp vớ
   - Oxytocin ("hormone gắn kết") được tiết ra từ Hypothalamus và lưu trữ tại Thùy sau tuyến yên khi có tương tác xã hội tích cực.
   - Tương tác xã hội kích hoạt đường truyền thưởng Dopamine (Mesolimbic Pathway), tạo cảm giác an tâm và hạnh phúc khi thuộc về tập thể.
 
-### 4. Nhu cầu Được tôn trọng (Esteem Needs) $\leftrightarrow$ Ventromedial PFC & Ventral Striatum (Vỏ não trán trán trung gian & Thể vân bụng)
+### 4. Nhu cầu Được tôn trọng $\leftrightarrow$ Ventromedial PFC & Ventral Striatum
 
 - **Chức năng sinh học**: Tìm kiếm địa vị xã hội, sự công nhận từ đồng nghiệp/xã hội, củng cố lòng tự trọng và cảm giác có năng lực.
 - **Cấu trúc não bộ**: Vỏ não trước trán trung gian (vmPFC), Vỏ não đai trước (Anterior Cingulate Cortex - ACC), Ventral Striatum.
@@ -74,7 +75,7 @@ Mô hình 3 tầng não của Paul MacLean (Triune Brain Model) kết hợp vớ
   - **Serotonin** điều chỉnh cảm giác tự tin và vị thế xã hội; mức Serotonin tối ưu gắn liền với cảm giác được tôn trọng và tự chủ.
   - vmPFC liên tục đánh giá và so sánh giá trị bản thân (self-referential processing) với tiêu chuẩn xã hội.
 
-### 5. Nhu cầu Tự thể hiện & Nhận thức (Self-Actualization & Cognitive Needs) $\leftrightarrow$ Prefrontal Cortex & Default Mode Network (Vỏ não trước trán & Mạng chế độ mặc định)
+### 5. Nhu cầu Tự thể hiện & Nhận thức $\leftrightarrow$ Prefrontal Cortex & Default Mode Network
 
 - **Chức năng sinh học**: Sáng tạo nghệ thuật/kỹ thuật, giải quyết vấn đề phức tạp, tư duy trừu tượng, theo đuổi lý tưởng và đạo đức.
 - **Cấu trúc não bộ**: Vỏ não trước trán lưng bên (dlPFC), Vỏ não trước trán trung gian (vmPFC), Default Mode Network (DMN).
@@ -86,20 +87,20 @@ Mô hình 3 tầng não của Paul MacLean (Triune Brain Model) kết hợp vớ
 
 ## Systems Dynamics, Critiques & Overlapping Waves
 
-### 1. Phản biện Mô hình Bậc thang: Sóng Đan xen (Overlapping Waves)
+### 1. Phản biện Mô hình Bậc thang: Sóng Đan xen
 
 - **Sai lầm phổ biến**: Nhầm tưởng phải thỏa mãn 100% tầng dưới thì mới bắt đầu xuất hiện nhu cầu tầng trên.
 - **Thực tế vận hành**: Maslow nhấn mạnh các nhu cầu vận hành dạng **sóng đan xen (Overlapping Waves)**. Một người có thể chỉ đạt 70% Sinh lý, 50% An toàn, 40% Yêu thương nhưng đã bắt đầu xuất hiện 15% nhu cầu Tự thể hiện.
 
-### 2. Amygdala Hijack & Scarcity Mindset (Tư duy Khan hiếm)
+### 2. Amygdala Hijack & Scarcity Mindset
 
 Khi các nhu cầu tầng dưới (Sinh lý, An toàn) bị đe dọa nghiêm trọng, Amygdala và Thân não lập tức ngắt kết nối tạm thời của Vỏ não trước trán (PFC Hijack). Hiện tượng này gây ra **Scarcity Mindset (Tư duy khan hiếm)**, làm giảm băng thông nhận thức (Cognitive Bandwidth), khiến con người chỉ có thể tập trung vào sinh tồn ngắn hạn mà không thể suy nghĩ dài hạn.
 
-### 3. Top-Down Control (Điều khiển từ trên xuống)
+### 3. Top-Down Control
 
 Dù tháp Maslow vận hành theo chiều từ dưới lên (Bottom-Up), con người sở hữu khả năng **Top-Down Regulation** nhờ Vỏ não trước trán (PFC). PFC có khả năng phát tín hiệu ức chế (inhibition) Amygdala và Thân não. Nhờ đó, một người có thể kiềm chế cơn đói/khát hoặc vượt qua nỗi sợ hãi để theo đuổi mục tiêu cao đẹp (như nhà khoa học làm việc quên ăn, hoặc chiến sĩ hy sinh vì tổ quốc).
 
-### 4. Energy Allocation in Brain (Sự phân bổ năng lượng trong Não bộ)
+### 4. Energy Allocation in Brain
 
 Bộ não chiếm khoảng 2% trọng lượng cơ thể nhưng tiêu thụ 20% năng lượng. Sự ưu tiên năng lượng luôn tuân theo tiến hóa:
 $$\text{Brainstem (Sinh tồn)} > \text{Limbic (Cảm xúc/Xã hội)} > \text{PFC (Tư duy/Sáng tạo)}$$
@@ -119,7 +120,7 @@ Khái niệm Maslow & Não bộ có tính phổ quát cho mọi con người, nh
 | **Nhà Quản lý / Leaders / HR**                       | Tôn trọng & Tự thể hiện (Tầng 4-5) | **Tạo lập Môi trường An toàn tâm lý**           | Ứng dụng để thiết kế văn phòng/văn hóa doanh nghiệp: Xóa bỏ văn hóa đe dọa (hạ Cortisol) để kích hoạt năng lực sáng tạo của nhân sự.                                              |
 | **Cha mẹ / Giáo viên**                               | Yêu thương & Tôn trọng (Tầng 3-4)  | **Giáo dục theo Phân tầng Tâm lý**              | Đảm bảo an toàn tình cảm & sự tôn trọng cho con cái/học sinh trước khi đòi hỏi kết quả học tập xuất sắc hay ý thức đạo đức cao.                                                   |
 
-### Bài học về Bẫy nghèo (Poverty Trap)
+### Bài học về Bẫy nghèo
 
 - **Tình huống**: Quan điểm _"Chưa đủ ăn thì biết tư duy/đầu tư làm gì"_ là đúng về phản ứng tâm lý thần kinh ngắn hạn (PFC bị Amygdala chiếm quyền).
 - **Rủi ro**: Nếu coi đó là chân lý tuyệt đối và từ bỏ hoàn toàn việc học tư duy tài chính/kỹ năng, cá nhân sẽ rơi vào **Vòng lặp Bẫy nghèo (Poverty Trap)**: _Chật vật sinh tồn $\rightarrow$ Tư duy ngắn hạn $\rightarrow$ Quyết định sai lầm $\rightarrow$ Mãi không tích lũy $\rightarrow$ Nghèo bền vững_.
@@ -127,7 +128,7 @@ Khái niệm Maslow & Não bộ có tính phổ quát cho mọi con người, nh
 
 ---
 
-## Mindset Selector Matrix (Bản đồ chọn Tư duy theo Tầng Maslow)
+## Mindset Selector Matrix
 
 Tháp nhu cầu Maslow và Cấu trúc Phân tầng Não bộ đóng vai trò là **Hệ khung Meta (Meta-Filter)** giúp xác định đâu là công bộ tư duy phù hợp nhất cần rút ra từ "Hộp đồ nghề" (Mental Models Toolbox) dựa trên trạng thái nhận thức hiện tại:
 

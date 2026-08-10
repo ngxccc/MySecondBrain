@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/architecture, anti-pattern]
+tags: [type/concept, topic/architecture, anti-pattern, layer/architecture]
 date: 2026-05-01
 aliases:
   [
@@ -9,6 +9,7 @@ aliases:
     Vòng lặp phụ thuộc,
     Dependency Cycle,
   ]
+description: "Vòng lặp phụ thuộc tai hại giữa các module và cách giải quyết."
 ---
 
 # Circular Dependency

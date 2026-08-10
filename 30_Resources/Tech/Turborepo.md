@@ -1,6 +1,7 @@
 ---
 tags: [type/concept, topic/tech, monorepo, devops]
 aliases: [Monorepo, Turbo]
+description: "Công cụ xây dựng hiệu suất cao cho các dự án Monorepo sử dụng JavaScript/TypeScript."
 ---
 
 # Turborepo và Kiến trúc Monorepo
@@ -22,7 +23,7 @@ Turborepo là một công cụ xây dựng (build system) hiệu suất cao cho 
 
 ## Practical Implementation
 
-### 1. Cấu hình `turbo.json` thực tế (v2 Schema)
+### 1. Cấu hình `turbo.json` thực tế
 
 Dưới đây là file `turbo.json` mẫu chuẩn hóa theo schema v2 (sử dụng từ khóa `tasks` thay thế cho `pipeline` cũ):
 
@@ -56,7 +57,7 @@ _Giải thích các từ khóa:_
 - **`cache: false`**: Tắt lưu cache (thường dùng cho môi trường dev chạy liên tục).
 - **`persistent: true`**: Khai báo cho Turborepo biết đây là task chạy vô hạn (như dev server) để tránh việc dừng task đột ngột.
 
-### 2. Cấu hình Bun/npm Workspaces (`package.json` ở Root)
+### 2. Cấu hình Bun/npm Workspaces
 
 Để trình quản lý gói nhận diện các thư mục ứng dụng và thư viện dùng chung, file `package.json` tại thư mục gốc phải định nghĩa các workspaces:
 

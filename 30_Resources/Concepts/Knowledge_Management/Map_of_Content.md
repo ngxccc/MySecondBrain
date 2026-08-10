@@ -2,9 +2,10 @@
 tags: [type/concept, topic/knowledge-management]
 date: 2026-04-29
 aliases: [MOC, Index Note, Bản đồ định hướng]
+description: "Nút giao thông điều hướng hệ thống."
 ---
 
-# Map of Content (MOC)
+# Map of Content
 
 ## TL;DR
 
@@ -22,18 +23,18 @@ Một node (ghi chú) đặc biệt đóng vai trò làm "mục lục động" �
 - **Code Snippet (Cấu trúc một MOC chuẩn):**
 
 ```markdown
-# 🏗️ Software Architecture MOC
+# ️ Software Architecture MOC
 
 _Bản đồ các mẫu thiết kế cấu trúc hệ thống Backend._
 
-## 1. Core Patterns (Kiến trúc tổng thể)
+## 1. Core Patterns
 
 Sử dụng khi bắt đầu setup project mới:
 
 - [[Layered_Architecture]]: Dành cho team nhỏ, dễ hiểu nhưng dễ rác.
 - [[Modular_Monolith]]: Dành cho scale vừa, chia theo Domain.
 
-## 2. Communication (Giao tiếp nội bộ)
+## 2. Communication
 
 Giữ cho các module không đấm nhau:
 

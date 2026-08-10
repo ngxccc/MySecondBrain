@@ -1,10 +1,11 @@
 ---
-tags: [type/concept, topic/testing]
+tags: [type/concept, topic/testing, layer/quality]
 date: 2026-06-09
 aliases: [Trường hợp kiểm thử, Ca kiểm thử, Test Case Basics]
+description: "Khái niệm cơ bản về kịch bản kiểm thử và 3 bước cấu thành cốt lõi."
 ---
 
-# Test Case (Trường hợp kiểm thử)
+# Test Case
 
 ## TL;DR
 
@@ -44,7 +45,7 @@ graph TD
     TC1 --> S2[Test Step 2]
 ```
 
-### Tài liệu đầu vào để thiết kế Test Case (Inputs)
+### Tài liệu đầu vào để thiết kế Test Case
 
 Để viết và thiết kế được các trường hợp kiểm thử chính xác, người kiểm thử cần nghiên cứu các tài liệu và nguồn thông tin đầu vào sau:
 

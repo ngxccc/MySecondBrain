@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/tech, architecture, cloud]
+tags: [type/concept, topic/tech, architecture, cloud, layer/infrastructure]
 date: 2026-04-28
 aliases: [Lambda, Cloud Functions]
+description: "Hạ tầng thực thi auto-scale, không lưu state (Stateless)."
 ---
 
 # Serverless Architecture

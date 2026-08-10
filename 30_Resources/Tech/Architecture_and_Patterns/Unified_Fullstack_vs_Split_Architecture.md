@@ -1,7 +1,8 @@
 ---
 title: Unified Fullstack Architecture vs Split Repository Architecture
-tags: [type/concept, topic/tech, topic/architecture]
+tags: [type/concept, topic/tech, topic/architecture, layer/architecture]
 created: 2026-06-20
+description: "Phân tích so sánh chi tiết giữa mô hình Fullstack gộp (Next.js Monorepo) và mô hình chia tách repo Backend/Frontend."
 ---
 
 # Unified Fullstack Architecture vs. Split Repository Architecture
@@ -14,7 +15,7 @@ Kiến trúc Fullstack đồng nhất (Unified Fullstack - sử dụng Next.js A
 
 ## Core Concept
 
-### 1. Tại sao lại gộp chung (Unified Fullstack) thay vì tách riêng?
+### 1. Tại sao lại gộp chung thay vì tách riêng?
 
 - **End-to-End Type Safety (Tính an toàn kiểu từ DB đến UI):**
   - _Kiến trúc tách biệt:_ Khi Backend thay đổi một cột trong DB hoặc định dạng JSON trả về của API, Frontend sẽ bị lỗi chạy (runtime error) trừ khi lập trình viên cập nhật thủ công các file định nghĩa kiểu dữ liệu (hoặc dùng các tool sinh code phức tạp từ Swagger/OpenAPI).
@@ -28,7 +29,7 @@ Kiến trúc Fullstack đồng nhất (Unified Fullstack - sử dụng Next.js A
 - **Chia sẻ code validation cực kỳ dễ dàng:**
   - Chúng ta có thể dùng chung các schema **Zod** để kiểm tra tính hợp lệ của dữ liệu ở cả Client (React Hook Form hiển thị lỗi ngay khi gõ) và Server (Server Actions validate lại trước khi ghi vào Database), loại bỏ hoàn toàn việc viết lặp lại code kiểm tra ở hai phía.
 
-### 2. Các Đánh đổi (Tradeoffs) cần lưu ý
+### 2. Các Đánh đổi cần lưu ý
 
 | Tiêu chí                 | Kiến trúc Fullstack đồng nhất (Next.js)                             | Kiến trúc chia tách (FE/BE rời)                                           |
 | :----------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------ |
@@ -40,9 +41,9 @@ Kiến trúc Fullstack đồng nhất (Unified Fullstack - sử dụng Next.js A
 
 ## Practical Implementation
 
-### 1. Sự khác biệt về luồng gọi dữ liệu (Data Flow)
+### 1. Sự khác biệt về luồng gọi dữ liệu
 
-#### Cách 1: Kiến trúc chia tách truyền thống (Tốn 2 bước gọi mạng)
+#### Cách 1: Kiến trúc chia tách truyền thống
 
 ```
 [Browser] ──(1. Request HTML)──> [NextJS Node Server]
@@ -52,7 +53,7 @@ Kiến trúc Fullstack đồng nhất (Unified Fullstack - sử dụng Next.js A
                                    [PostgreSQL]
 ```
 
-#### Cách 2: Kiến trúc gộp Next.js RSC (Gọi trực tiếp DB không qua API HTTP)
+#### Cách 2: Kiến trúc gộp Next.js RSC
 
 ```
 [Browser] ──(1. Request HTML)──> [NextJS Server Component] ──(2. DB Query)──> [PostgreSQL]

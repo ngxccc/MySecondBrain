@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
 date: 2026-06-07
 aliases: [Dấu nháy trong SQL, SQL Quotes, Single vs Double Quotes SQL]
+description: "Phân biệt dấu nháy đơn (String Literals) và nháy kép (Identifiers) trong SQL."
 ---
 
 # SQL Quotes: Identifiers vs String Literals

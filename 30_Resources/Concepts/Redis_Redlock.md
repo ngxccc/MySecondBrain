@@ -1,11 +1,12 @@
 ---
-tags: [type/concept, topic/tech]
+tags: [type/concept, topic/tech, layer/infrastructure]
 date: 2026-07-27
 aliases:
   - Thuật toán Redis Redlock
   - Khóa phân tán Redis Redlock
   - Redis Redlock Algorithm
   - Distributed Lock Redis Redlock
+description: "Redis Redlock là thuật toán khóa phân tán (Distributed Lock) do Salvatore Sanfilippo (antirez) thiết kế, sử dụng $N$ nút Redis Master hoàn toàn độc lập (thường chọn $N=5$) để đạt cơ chế đồng thuận ..."
 ---
 
 # Redis Redlock

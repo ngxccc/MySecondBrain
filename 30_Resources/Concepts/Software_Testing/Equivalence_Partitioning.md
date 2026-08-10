@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/testing]
+tags: [type/concept, topic/testing, layer/quality]
 date: 2026-07-20
 aliases:
   [
@@ -9,9 +9,10 @@ aliases:
     Equivalence Class Partitioning,
     EP Technique,
   ]
+description: "Kỹ thuật phân hoạch tương đương chia miền dữ liệu thành các tập rời nhau để tối ưu số lượng test case."
 ---
 
-# Kỹ thuật Phân hoạch Tương đương (Equivalence Partitioning)
+# Kỹ thuật Phân hoạch Tương đương
 
 ## TL;DR
 
@@ -31,7 +32,7 @@ Phân hoạch tương đương giải quyết bài toán bùng nổ test case (C
   $$\bigcup_{i=1}^{n} S_i = S \quad \text{và} \quad S_i \cap S_j = \emptyset \; (\forall i \neq j)$$
 - **Tính tương đương hành vi (Equivalent Behaviour):** Nếu một đại diện $x \in S_i$ kích hoạt lỗi (Defect), tất cả các phần tử còn lại trong $S_i$ cũng được kỳ vọng sẽ kích hoạt lỗi đó. Nối tiếp logic này, nếu $x \in S_i$ vượt qua bài kiểm tra (Pass), mọi phần tử khác trong $S_i$ cũng sẽ Pass.
 
-### 2. Phân loại Phân vùng (Partition Types)
+### 2. Phân loại Phân vùng
 
 Theo chuẩn ISTQB CTFL, phân hoạch tương đương áp dụng cho cả đầu vào (Inputs), đầu ra (Outputs), giá trị nội tại (Internal States), thời gian (Time-related values) và các tham số giao diện (Interface Parameters). Mỗi miền được chia làm 2 loại phân vùng:
 
@@ -77,7 +78,7 @@ Thiết kế bộ test case kiểm thử cho tính năng đăng ký đặt mua v
 
 ---
 
-#### Bước 1: Nhận diện Miền Dữ liệu (Identify Data Domain)
+#### Bước 1: Nhận diện Miền Dữ liệu
 
 Xác định kiểu dữ liệu và ràng buộc nghiệp vụ (Business Rules) của từng trường:
 
@@ -87,7 +88,7 @@ Xác định kiểu dữ liệu và ràng buộc nghiệp vụ (Business Rules) 
 
 ---
 
-#### Bước 2: Phân hoạch các Phân vùng Tương đương (Form Partitions)
+#### Bước 2: Phân hoạch các Phân vùng Tương đương
 
 Chia miền dữ liệu của từng trường thành các **Phân vùng Hợp lệ (Valid Partitions - VP)** và **Phân vùng Không hợp lệ (Invalid Partitions - IP)**:
 
@@ -108,7 +109,7 @@ Chia miền dữ liệu của từng trường thành các **Phân vùng Hợp l
 
 ---
 
-#### Bước 3: Chọn Giá trị Đại diện (Select Representatives)
+#### Bước 3: Chọn Giá trị Đại diện
 
 Chọn đúng **1 giá trị đại diện giữa phân vùng (Mid-point)** cho mỗi phân vùng đã xác định:
 
@@ -118,7 +119,7 @@ Chọn đúng **1 giá trị đại diện giữa phân vùng (Mid-point)** cho 
 
 ---
 
-#### Bước 4: Tạo Bộ Test Case Tối ưu (Derive Test Cases)
+#### Bước 4: Tạo Bộ Test Case Tối ưu
 
 Áp dụng 2 quy tắc kết hợp phân vùng:
 
@@ -171,7 +172,7 @@ function processTicketOrder(order: TicketOrder): {
 }
 ```
 
-##### Bảng Thiết kế Test Cases Hoàn chỉnh (Chuẩn mẫu Test Case)
+##### Bảng Thiết kế Test Cases Hoàn chỉnh
 
 | ID       | Test name                                | Precondition                                         | Test steps                                                                                                                                | Expected result                                                            |
 | :------- | :--------------------------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------- |

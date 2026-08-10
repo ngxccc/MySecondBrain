@@ -7,6 +7,7 @@ aliases:
     Mental Model Automation,
     Phản xạ tư duy đàm phán và phản biện,
   ]
+description: "Quy trình 4 bước Deliberate Practice chuyển hóa các mô hình tư duy từ System 2 thành phản xạ System 1 tự động khi đối thoại."
 ---
 
 # Mental Model Automation Method
@@ -32,7 +33,7 @@ Tự động hóa mô hình tư duy (Mental Model Automation) dựa trên hai ng
 
 Quy trình tự động hóa bộ não gồm 4 bước thực hành lặp lại:
 
-### Bước 1: Cài đặt thuật toán phản xạ `IF-THEN` (Implementation Intentions)
+### Bước 1: Cài đặt thuật toán phản xạ `IF-THEN`
 
 Não bộ không thể tự phản xạ với các chỉ dẫn chung chung. Cần lập trình sẵn các lệnh điều kiện cứng (dựa trên nghiên cứu của Peter Gollwitzer):
 
@@ -42,7 +43,7 @@ Não bộ không thể tự phản xạ với các chỉ dẫn chung chung. Cầ
   - `IF` đối phương giận dữ hoặc công kích $\rightarrow$ `THEN` tự động hạ giọng DJ, dán nhãn cảm xúc _"Có vẻ như bạn đang..."_ ([[Tactical_Empathy_Chris_Voss]]).
   - `IF` chuẩn bị chốt hợp đồng hoặc nhận công việc $\rightarrow$ `THEN` tự động rà soát _"Điểm dừng BATNA của mình là gì?"_ ([[BATNA_Negotiation_Model]]).
 
-### Bước 2: Kỹ thuật Cú phanh 3 giây (Micro-Pause) & 3 Cụm từ mở đầu
+### Bước 2: Kỹ thuật Cú phanh 3 giây & 3 Cụm từ mở đầu
 
 Để ngăn Hạch hạnh nhân (Amygdala) cuốn bộ não vào phản xạ giận dữ hoặc bào chữa cấp thiết:
 
@@ -52,7 +53,7 @@ Não bộ không thể tự phản xạ với các chỉ dẫn chung chung. Cầ
   2. _Để đàm phán/ép scope:_ "Làm thế nào để em làm xong đúng hạn mà vẫn đảm bảo chất lượng ạ?" (Calibrated Question).
   3. _Để xoa dịu:_ "Hình như điều này đang làm anh/chị rất lo lắng..." (Labeling).
 
-### Bước 3: Thẻ Anki kịch bản tình huống (Situational Anki Cards)
+### Bước 3: Thẻ Anki kịch bản tình huống
 
 Ứng dụng thuật toán ngắt quãng ([[Spaced_Repetition_SM2]]) để chuyển hóa tri thức quy trình (ACT-R Proceduralization):
 
@@ -64,7 +65,7 @@ Não bộ không thể tự phản xạ với các chỉ dẫn chung chung. Cầ
     2. Hạ giọng DJ.
     3. Accusation Audit + Labeling: "Có vẻ như bên em đã khiến anh rất thất vọng và làm ảnh hưởng lớn đến tiến độ của anh..."
 
-### Bước 4: Vòng lặp phản tư Siêu nhận thức cuối ngày (Metacognition Journaling)
+### Bước 4: Vòng lặp phản tư Siêu nhận thức cuối ngày
 
 Dành 3-5 phút cuối ngày để viết nhật ký phản tư (Decision Journaling):
 

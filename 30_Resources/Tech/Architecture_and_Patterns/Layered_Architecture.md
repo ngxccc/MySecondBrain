@@ -1,7 +1,15 @@
 ---
-tags: [type/concept, topic/backend, pattern/architectural, framework/express]
+tags:
+  [
+    type/concept,
+    topic/backend,
+    layer/architecture,
+    pattern/architectural,
+    framework/express,
+  ]
 date: 2026-02-08
 aliases: [N-Tier Architecture, Monolithic Architecture]
+description: "Kiến trúc N-Tier truyền thống chia theo Technical Concerns."
 ---
 
 # Layered Architecture

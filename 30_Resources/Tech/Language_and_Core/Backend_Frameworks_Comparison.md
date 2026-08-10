@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, layer/backend]
+tags: [type/concept, topic/tech, layer/infrastructure]
 date: 2026-06-24
 aliases:
   [
@@ -7,9 +7,10 @@ aliases:
     So sánh Backend Frameworks,
     Node.js Bun Web Frameworks,
   ]
+description: "So sánh toàn diện giữa NestJS, Express, Fastify và ElysiaJS về hiệu năng, DX, độ tương thích và trường hợp sử dụng phù hợp."
 ---
 
-# 📊 JS/TS Backend Frameworks Comparison (2026)
+# JS/TS Backend Frameworks Comparison
 
 ## TL;DR
 
@@ -19,7 +20,7 @@ Bản so sánh toàn diện 4 framework backend JavaScript/TypeScript nổi bậ
 
 ## Core Concept
 
-### 1. Bản Đồ Tổng Quan Các Framework (Tháng 6/2026)
+### 1. Bản Đồ Tổng Quan Các Framework
 
 - **NestJS (v11.1.27):** Framework hướng đối tượng (OOP), có cấu trúc chặt chẽ (opinionated), kế thừa triết lý Dependency Injection của Angular. Phù hợp nhất cho các dự án doanh nghiệp lớn (Enterprise) cần tính bảo trì cao.
 - **Express (v5.2.1):** Phiên bản Express 5 stable đã chính thức thay thế Express 4 làm mặc định trên npm. Nó giữ nguyên tính tối giản (minimalist) và hệ sinh thái middleware khổng lồ, nhưng bổ sung xử lý Promise bất đồng bộ tự động.
@@ -28,7 +29,7 @@ Bản so sánh toàn diện 4 framework backend JavaScript/TypeScript nổi bậ
 
 ---
 
-### 2. Ma Trận So Sánh Chi Tiết (Comparison Matrix)
+### 2. Ma Trận So Sánh Chi Tiết
 
 | Tiêu chí              | NestJS (v11)                               | Express (v5)               | Fastify (v5)              | ElysiaJS (v1.4)              |
 | :-------------------- | :----------------------------------------- | :------------------------- | :------------------------ | :--------------------------- |
@@ -50,7 +51,7 @@ Bản so sánh toàn diện 4 framework backend JavaScript/TypeScript nổi bậ
 
 Dưới đây là cách 4 framework xử lý route cơ bản và kiểm tra dữ liệu đầu vào (Validation) để thấy sự khác biệt về mặt lập trình:
 
-#### A. NestJS (v11) - Dựa vào Decorators & Class-Validator
+#### A. NestJS - Dựa vào Decorators & Class-Validator
 
 ```typescript
 import {
@@ -80,7 +81,7 @@ export class UserController {
 }
 ```
 
-#### B. Express (v5) - Tối giản, Validation thủ công hoặc qua Middleware
+#### B. Express - Tối giản, Validation thủ công hoặc qua Middleware
 
 ```javascript
 import express from "express";
@@ -96,7 +97,7 @@ app.post("/users", (req, res, next) => {
 });
 ```
 
-#### C. Fastify (v5) - Schema-first (Biên dịch qua Ajv để đạt hiệu năng tối đa)
+#### C. Fastify - Schema-first
 
 ```typescript
 import Fastify from "fastify";
@@ -122,7 +123,7 @@ fastify.post(
 );
 ```
 
-#### D. ElysiaJS (v1.4) - End-to-End Type Safety (Dữ liệu tự động suy luận ra Client)
+#### D. ElysiaJS - End-to-End Type Safety
 
 ```typescript
 import { Elysia, t } from "elysia";

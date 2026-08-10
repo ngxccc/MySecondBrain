@@ -9,6 +9,7 @@ tags:
   ]
 date: 2026-07-04
 aliases: [Evan Wallace Path, Figma CTO Career, esbuild Creator]
+description: "Con đường phát triển sự nghiệp của Evan Wallace (Figma CTO, esbuild creator) – chuyên môn sâu graphics/WebGL + timing + execution."
 ---
 
 # Evan Wallace Career Path

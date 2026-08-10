@@ -1,5 +1,6 @@
 ---
 tags:
+  - layer/core-mechanics
   [
     type/concept,
     topic/tech,
@@ -10,6 +11,7 @@ tags:
   ]
 aliases: [Hidden Classes, Shapes, Inline Caching, JS Optimization]
 date: 2026-06-20
+description: "Trong JavaScript, các đối tượng (Objects) thực chất là các Hash Map động, khiến việc truy cập thuộc tính (property lookup) theo mặc định rất chậm do phải băm chuỗi. Để tối ưu hóa, các JS Engine hiệ..."
 ---
 
 # JS Hidden Classes & Inline Caching
@@ -28,7 +30,7 @@ Trong JavaScript, các đối tượng (Objects) thực chất là các Hash Map
 
 Trong JavaScript, thuộc tính có thể được thêm, bớt động tại runtime. Nếu không có tối ưu hóa, mỗi lần bạn viết `obj.x`, Engine phải tìm kiếm chuỗi khóa `"x"` trong Hash Map của object, điều này tốn rất nhiều chuỗi lệnh CPU (String Hashing, Hash Collision handling).
 
-### 2. Giải pháp của JS Engine: Hidden Classes (Shapes)
+### 2. Giải pháp của JS Engine: Hidden Classes
 
 Để đạt hiệu năng của ngôn ngữ tĩnh, JS Engine tạo ra các Class ẩn ngầm tại runtime:
 
@@ -36,7 +38,7 @@ Trong JavaScript, thuộc tính có thể được thêm, bớt động tại ru
 - Class ẩn này lưu giữ thông tin ánh xạ: tên thuộc tính $\rightarrow$ vị trí offset của nó trong bộ nhớ.
 - Nếu hai object được tạo ra có chung chính xác các thuộc tính và theo cùng thứ tự, chúng sẽ **dùng chung một Class ẩn**.
 
-### 3. Chuỗi chuyển đổi Class ẩn (Class Transition)
+### 3. Chuỗi chuyển đổi Class ẩn
 
 Khi bạn gán thuộc tính động, Engine phải tính toán lại địa chỉ và tạo ra một chuỗi các Class ẩn chuyển tiếp:
 
@@ -48,7 +50,7 @@ obj.y = 2;            // (3) Chuyển tiếp: Class_1 -> Class_2 (Có 'x' ở of
 
 Nếu một object khác được gán theo thứ tự ngược lại (`obj.y = 2` trước `obj.x = 1`), V8 sẽ tạo ra một nhánh chuyển tiếp khác (`Class_3` và `Class_4`). Hai object này lúc này sẽ có hai Class ẩn hoàn toàn khác nhau, dù chúng chứa các thuộc tính giống hệt nhau.
 
-### 4. Inline Caching (IC) là gì?
+### 4. Inline Caching là gì?
 
 Inline Caching là kỹ thuật ghi nhớ kết quả của cuộc tìm kiếm thuộc tính trước đó trực tiếp tại điểm gọi mã (call site).
 
@@ -62,7 +64,7 @@ Inline Caching là kỹ thuật ghi nhớ kết quả của cuộc tìm kiếm t
 
 ### So sánh Code Tối ưu và Không Tối ưu
 
-#### 1. Code phản mẫu (Anti-pattern): Gán động và Sai thứ tự
+#### 1. Code phản mẫu : Gán động và Sai thứ tự
 
 ```javascript
 // Phản mẫu 1: Gán động khiến V8 phải tạo chuỗi chuyển tiếp Class ẩn liên tục
@@ -108,7 +110,7 @@ function createUser(name: string, age: number, isContractor: boolean): User {
 }
 ```
 
-### 3. Runnable Benchmark (Tự chạy kiểm chứng trên Node.js/Bun)
+### 3. Runnable Benchmark
 
 Bạn có thể lưu đoạn code sau thành file `benchmark.js` và chạy trực tiếp bằng lệnh `bun benchmark.js` hoặc `node benchmark.js` để tự kiểm chứng sự chênh lệch hiệu năng:
 
@@ -138,7 +140,7 @@ console.timeEnd("🐌 Dynamic Shape (Unoptimized)");
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
 ### Q1: Tại sao việc gán thuộc tính động trong JavaScript lại làm giảm hiệu năng thực thi của Engine?
 
@@ -160,5 +162,5 @@ console.timeEnd("🐌 Dynamic Shape (Unoptimized)");
 ## Related Notes
 
 - Bản đồ tri thức: [[000_Tech_MOC]]
-- Quản lý bộ nhớ: [[JS_Memory_Management_Stack_Heap_GC]]
+- Quản lý bộ nhớ: [[JS_Stack_vs_Heap_Memory]]
 - Sự khác biệt Runtime: [[JS_Runtimes_Bun_vs_NodeJS]]

@@ -2,6 +2,7 @@
 tags: [type/concept, topic/psychology, topic/finance, topic/learning]
 date: 2026-06-23
 aliases: [Tư duy sinh viên, Student Mindsets, Mô hình tư duy sinh viên]
+description: "Mô hình tư duy tối ưu hóa học tập, tài chính và sự nghiệp cho sinh viên."
 ---
 
 # Student Mindsets
@@ -30,21 +31,21 @@ Mỗi sinh viên cần xây dựng một "mạng lưới mô hình tư duy" (Lat
   3. _Self-Efficacy (Hiệu năng tự thân):_ "Tôi có thể thành công trong việc này." (Tin tưởng vào khả năng giải quyết các vấn đề và bài tập khó).
   4. _Relevance/Value (Giá trị thực tế):_ "Nội dung học này có giá trị thực tiễn đối với tôi." (Chuyển từ học đối phó thi cử sang học để ứng dụng giải quyết bài toán thực tế).
 
-### 1. Trụ cột 1: Học tập & Tư duy Nhận thức (Cognitive & Learning)
+### 1. Trụ cột 1: Học tập & Tư duy Nhận thức
 
 - **First-Principles Thinking (Tư duy nguyên bản):** Không học vẹt hay sao chép lời giải có sẵn. Hãy bóc tách kiến thức xuống các định lý, định nghĩa hoặc quy luật cơ bản nhất.
   - _Ứng dụng:_ Thay vì học thuộc lòng code của một thư viện, hãy tìm hiểu cơ chế hoạt động của giao thức HTTP hoặc cách bộ nhớ Stack/Heap vận hành.
 - **Kỹ thuật Feynman:** Học bằng cách giảng giải lại. Hãy thử giải thích một khái niệm phức tạp (như cơ chế đồng thuận trong blockchain) cho một đứa trẻ 12 tuổi hiểu bằng ngôn từ cực kỳ giản dị. Chỗ nào bị vấp chính là lỗ hổng kiến thức cần học lại.
 - **Active Recall & Spaced Repetition (Chủ động gợi nhớ & Lặp lại ngắt quãng):** Tránh đọc đi đọc lại (passive rereading) tài liệu vì nó tạo ra ảo tưởng về sự hiểu biết. Hãy đóng sách lại, tự viết ra những gì nhớ được, và sử dụng các công cụ như thẻ ghi nhớ (Anki) để ôn tập định kỳ theo chu kỳ chống quên của não bộ.
 
-### 2. Trụ cột 2: Quản lý & Đầu tư Tài chính (Finance & Money)
+### 2. Trụ cột 2: Quản lý & Đầu tư Tài chính
 
 - **Lãi kép tri thức > Lãi kép tiền bạc:** Ở tuổi sinh viên, số vốn tiền mặt của bạn rất nhỏ. Lợi nhuận sinh ra từ đầu tư tài chính không thể bằng lợi nhuận từ việc nâng cao giá trị bản thân.
   - _Quy tắc:_ Đầu tư $1$ triệu vào bản thân (mua sách, học khóa học, học tiếng Anh) để nâng lương khởi điểm từ $10$ triệu lên $15$ triệu/tháng mang lại tỷ lệ ROI vượt trội hơn hẳn việc gửi tiết kiệm hay mua cổ phiếu với số tiền đó.
 - **Dollar-Cost Averaging (DCA) - Kỷ luật tích sản:** Bắt đầu thói quen tiết kiệm và phân bổ vốn định kỳ từ rất sớm với số tiền nhỏ (như 200k - 500k mỗi tháng). Mục tiêu không phải là giàu lên ngay, mà là rèn luyện cơ bắp kỷ luật tài chính và hiểu luật chơi của thị trường.
 - **Tránh rủi ro sụp đổ (Avoid Ruin):** Không dùng tiền vay mượn, không chơi đòn bẩy tài chính (leverage/margin) trong đầu tư khi chưa có thu nhập ổn định và quỹ khẩn cấp. Chỉ cần một lần cháy tài khoản sẽ hủy hoại tâm lý và cản trở con đường học tập.
 
-### 3. Trụ cột 3: Phát triển Sự nghiệp & Năng suất (Career & Productivity)
+### 3. Trụ cột 3: Phát triển Sự nghiệp & Năng suất
 
 - **Circle of Competence (Vòng tròn năng lực):** Biết rõ những gì mình giỏi và những gì mình chưa biết. Ban đầu, hãy tập trung trở thành chuyên gia trong một phạm vi hẹp (ví dụ: viết API Node.js cực tốt) trước khi mở rộng ra Fullstack. Tránh hội chứng "Shiny Object" (cái gì cũng học một ít nhưng không sâu).
 - **Pareto Principle (Quy luật 80/20):** $80\%$ kết quả đến từ $20\%$ nguyên nhân cốt lõi. Trong học tập, hãy xác định các môn học hoặc kiến thức nền tảng quyết định (như cấu trúc dữ liệu, thuật toán, cơ sở dữ liệu) để dồn $80\%$ năng lượng vào đó.

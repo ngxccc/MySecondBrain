@@ -7,6 +7,7 @@ aliases:
     Tư duy hướng kết quả khách hàng,
     Outcome-Based Thinking,
   ]
+description: "Tập trung vào thay đổi hành vi tích cực của người dùng (Outcomes) thay vì tính năng (Outputs)."
 ---
 
 # Customer Outcome Thinking

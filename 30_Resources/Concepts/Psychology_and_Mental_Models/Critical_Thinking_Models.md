@@ -2,6 +2,7 @@
 tags: [type/concept, topic/psychology, topic/decision-making]
 date: 2026-01-30
 aliases: [Mental Models, Khuôn mẫu tư duy]
+description: "Các lăng kính lọc nhiễu thông tin."
 ---
 
 # Critical Thinking Models

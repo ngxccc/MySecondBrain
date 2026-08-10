@@ -1,5 +1,6 @@
 ---
 tags:
+  - layer/core-mechanics
   - type/concept
   - topic/go
   - topic/memory-management
@@ -8,9 +9,12 @@ aliases:
   - Phân Biệt Mảng Và Slice Trong Go
   - Go Array vs Slice Distinction
   - Memory Semantics of Arrays and Slices
+description: "In Go, an Array (`[N]T`) is a fixed-size value type allocated contiguously in memory, while a Slice (`[]T`) is a lightweight 24-byte header descriptor (`ptr`, `len`, `cap`) serving as a dynamic vie..."
 ---
 
 # Bản Chất Kiến Trúc Và Sự Phân Biệt Giữa Array Và Slice Trong Go
+
+Tài liệu này là một ghi chép Layer 2 phân tích sự khác biệt giữa Array và Slice trong Go, cách chúng tương tác với bộ nhớ Stack (dành cho mảng cố định) và Heap (dành cho mảng động), dựa trên nguyên lý khoa học máy tính cốt lõi của [[Stack_vs_Heap_Memory_Fundamentals]] và ảnh hưởng của chúng đối với áp lực dọn rác của [[Garbage_Collection_Fundamentals]].
 
 ## TL;DR
 
@@ -46,7 +50,7 @@ Instead of creating a heavy unified object (like Java's `ArrayList` or Python's 
 
 ## Practical Code Comparison
 
-### Array Copying (Value Semantics - No Side Effects)
+### Array Copying
 
 ```go
 package main
@@ -63,7 +67,7 @@ func main() {
 }
 ```
 
-### Slice Copying (Shared Memory - Side Effects)
+### Slice Copying
 
 ```go
 package main
@@ -84,6 +88,9 @@ func main() {
 
 ## Related Notes
 
+- [[Stack_vs_Heap_Memory_Fundamentals]] - Nguyên lý khoa học máy tính cốt lõi về phân tầng bộ nhớ Stack và Heap.
+- [[Garbage_Collection_Fundamentals]] - Nguyên lý cốt lõi về cơ chế dọn rác tự động.
+- [[Memory_Leaks_Core_Mechanics]] - Bản chất rò rỉ bộ nhớ ở mức độ nguyên lý nền tảng.
 - [[Go_Slice_Underlying_Mechanics]] - Detailed breakdown of slice headers, ptr, len, and cap growth strategy.
 - [[Go_Escape_Analysis_Mechanics]] - How memory escapes from stack to heap.
 - [[English_Learner_Profile]] - Vocabulary tracker and progress milestones.

@@ -2,6 +2,7 @@
 tags: [type/concept, topic/concepts, psychology-mental-models, status/permanent]
 date: 2026-06-07
 aliases: [Tư duy hệ thống, Systems Thinking, 9 Lăng kính Hệ thống]
+description: "Tư duy hệ thống và quy chiếu 6 lăng kính trong kỹ nghệ phần mềm."
 ---
 
 # Systems Thinking in Software Engineering
@@ -23,7 +24,7 @@ Tư duy hệ thống (Systems Thinking) là kỹ năng phân tích phần mềm 
 - Doanh nghiệp trả tiền để giải quyết bài toán kinh doanh dưới sức ép cực đại của các **Ràng buộc** (thời gian, tiền bạc, tài nguyên server).
 - AI (Copilot, Cursor) gen code rất nhanh nhưng mù tịt về ngữ cảnh kinh doanh. Sử dụng tư duy hệ thống giúp lập trình viên "out trình" AI bằng cách thiết kế kiến trúc chuẩn xác trước khi viết dòng code đầu tiên.
 
-## Core System Dynamics (Động lực học Hệ thống)
+## Core System Dynamics
 
 Theo Donella Meadows (tác giả cuốn "Thinking in Systems"), một hệ thống được cấu thành bởi 3 yếu tố cốt lõi: **Phần tử (Elements)**, **Mối liên kết (Interconnections)**, và **Mục tiêu/Chức năng (Function/Purpose)**. Trong kỹ nghệ phần mềm, động lực học hệ thống được thể hiện qua:
 
@@ -33,7 +34,7 @@ Theo Donella Meadows (tác giả cuốn "Thinking in Systems"), một hệ thố
   - **Vòng lặp Tăng cường (Reinforcing Loop - Positive):** Thúc đẩy sự thay đổi tăng theo cấp số nhân (ví dụ: Database bị overload $\rightarrow$ câu lệnh truy vấn bị chậm $\rightarrow$ giữ connection lâu hơn $\rightarrow$ nghẽn connection pool $\rightarrow$ DB sập hoàn toàn).
   - **Vòng lặp Cân bằng (Balancing Loop - Negative):** Giúp hệ thống tự điều chỉnh về trạng thái ổn định (ví dụ: Auto-scaling tự động tăng số lượng Pods khi CPU vượt ngưỡng 80%, hoặc Rate Limiter tự động chặn bớt request khi hàng đợi (Queue) quá đầy).
 
-## 6 Systems Thinking Lenses (Hệ quy chiếu 6 lăng kính)
+## 6 Systems Thinking Lenses
 
 Khi tiếp cận một hệ thống, quét qua các khía cạnh:
 

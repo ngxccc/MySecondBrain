@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech, topic/security, layer/backend]
+tags: [type/concept, topic/tech, topic/security, layer/infrastructure]
 date: 2026-07-09
 aliases:
   [Trust Proxy Express, Trust Proxy NestJS, X-Forwarded-For Configuration]
+description: "Cấu hình tin tưởng proxy trong Express & NestJS để lấy client IP chính xác."
 ---
 
 # Cấu Hình Trust Proxy Trong Express & NestJS
@@ -51,7 +52,7 @@ Khi ứng dụng triển khai `ThrottlerGuard` (Lớp 2 của Defense in Depth) 
 
 ## Practical Implementation
 
-### Cấu hình trong NestJS (Express Platform)
+### Cấu hình trong NestJS
 
 Để kích hoạt, ta cần chuyển kiểu khởi tạo ứng dụng NestJS sang `NestExpressApplication` để truy cập trực tiếp vào các phương thức cấu hình Express bên dưới:
 

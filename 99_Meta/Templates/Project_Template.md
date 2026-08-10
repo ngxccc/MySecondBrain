@@ -1,9 +1,8 @@
 ---
-tags: [type/project, status/active] [BẮT BUỘC]
-priority: High [TÙY CHỌN]
-deadline: [TÙY CHỌN]
-stack: [React, NodeJS, MongoDB] [TÙY CHỌN]
-created_at: <% tp.file.creation_date() %> [TÙY CHỌN]
+tags: [type/project, status/active]
+aliases: []
+date: <% tp.file.creation_date("YYYY-MM-DD") %>
+description: "Mục tiêu cốt lõi và kết quả đầu ra của dự án."
 ---
 
 # [Project Name]

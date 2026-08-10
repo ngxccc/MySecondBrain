@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/tech, architecture, network]
+tags: [type/concept, topic/tech, architecture, network, layer/infrastructure]
 date: 2026-04-28
 aliases: [Edge Functions, Cloudflare Workers]
+description: "Đưa code ra các node CDN gần user nhất để giảm latency."
 ---
 
 # Edge Computing

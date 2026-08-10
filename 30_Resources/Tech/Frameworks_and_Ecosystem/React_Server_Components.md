@@ -1,11 +1,20 @@
 ---
-tags: [type/concept, topic/tech, react, frontend, framework/nextjs]
+tags:
+  [
+    type/concept,
+    topic/tech,
+    react,
+    frontend,
+    framework/nextjs,
+    layer/infrastructure,
+  ]
 date: 2026-06-20
 aliases:
   [RSC, React Server Components vs Client Components, RSC vs Client Components]
+description: "Cơ chế render UI trên server, gửi payload tĩnh về client."
 ---
 
-# React Server Components (RSC) vs. Client Components
+# React Server Components vs. Client Components
 
 ## TL;DR
 
@@ -26,7 +35,7 @@ Trong mô hình Next.js App Router, **React Server Components (RSC)** (mặc đ�
 | **Data Fetching**    | Gọi trực tiếp Database ORM, đọc file hệ thống, gọi API. | Gọi API qua HTTP client (`fetch`, `axios`) từ trình duyệt.   |
 | **Bảo mật**          | Cao (chứa API keys, DB password an toàn).               | Thấp (mọi thứ truyền xuống client đều có thể bị dịch ngược). |
 
-### 2. Ranh giới Client-Server (The Network Boundary) & Quy tắc thiết kế
+### 2. Ranh giới Client-Server & Quy tắc thiết kế
 
 #### Quy tắc 1: Không thể import Server Component vào Client Component
 
@@ -45,7 +54,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
 }
 ```
 
-#### Quy tắc 2: Dữ liệu truyền qua ranh giới phải tuần tự hóa được (Serializable Props)
+#### Quy tắc 2: Dữ liệu truyền qua ranh giới phải tuần tự hóa được
 
 Khi truyền dữ liệu (props) từ một Server Component sang một Client Component, các props đó bắt buộc phải **Serializable** (có thể chuyển thành chuỗi JSON/RSC Payload).
 
@@ -64,7 +73,7 @@ Trong React 19 và Next.js 15+, một mô hình tối ưu mới được giới 
 
 ## Practical Implementation
 
-### 1. Cách thiết kế Form cập nhật thông tin trong dự án (Hyundai Ecommerce)
+### 1. Cách thiết kế Form cập nhật thông tin trong dự án
 
 Trang chi tiết tài khoản (`/portal/profile`) là một **Server Component** để đọc thông tin người dùng từ cơ sở dữ liệu một cách bảo mật, sau đó map thành DTO sạch và truyền xuống **Client Component** (`ProfileForm`) để quản lý form tương tác:
 
@@ -118,9 +127,9 @@ export default function ProfileForm({ initialData }: { initialData: any }) {
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
-### Q1: Có phải Client Component chỉ được chạy trên trình duyệt (Client-side) không?
+### Q1: Có phải Client Component chỉ được chạy trên trình duyệt không?
 
 - **Trả lời:** Không. Đây là hiểu lầm cực kỳ phổ biến. Client Component trong Next.js App Router vẫn được chạy trên Server ở lần tải trang đầu tiên (Pre-rendering) để tạo ra HTML tĩnh gửi về cho trình duyệt. Sau đó, file JavaScript của component mới được tải về client để thực hiện quá trình **Hydration** (ghép nối các trình lắng nghe sự kiện và kích hoạt React state). Chỉ có code bên trong các hook như `useEffect` hoặc các đoạn kiểm tra `typeof window !== 'undefined'` mới thực sự chỉ chạy trên Client.
 

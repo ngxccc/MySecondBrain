@@ -1,10 +1,11 @@
 ---
-tags: [type/concept, topic/tech, pattern/design]
+tags: [type/concept, topic/tech, pattern/design, layer/architecture]
 date: 2026-04-28
 aliases: [DI, Inversion of Control, IoC]
+description: "Kỹ thuật đảo ngược luồng điều khiển (IoC) để giảm tight-coupling và dễ test."
 ---
 
-# Dependency Injection (DI)
+# Dependency Injection
 
 ## TL;DR
 

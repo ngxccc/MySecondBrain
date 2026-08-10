@@ -2,6 +2,7 @@
 tags: [type/guide, topic/rust, topic/learning]
 date: 2026-07-09
 aliases: [Rust Hybrid Roadmap, Lộ trình học Rust thực chiến]
+description: "Lộ trình học Rust thực chiến kết hợp hệ thống & an ninh mạng."
 ---
 
 # Lộ Trình Học Rust Thực Chiến: Từ Cơ Bản Đến Hệ Thống & Bảo Mật
@@ -16,13 +17,13 @@ Tài liệu này cung cấp một lộ trình kết hợp (Hybrid) tối ưu đ�
 
 ## Lộ Trình Học 4 Giai Đoạn
 
-### ⚠️ Khuyến Nghị Trước Khi Bắt Đầu
+### ️ Khuyến Nghị Trước Khi Bắt Đầu
 
 Cộng đồng Rust đều thống nhất rằng bạn **không nên** học async Rust hoặc WebAssembly FFI khi chưa làm chủ được các khái niệm cơ bản. WASM yêu cầu hiểu sâu về cách quản lý bộ nhớ và cách liên kết dữ liệu giữa JS và Rust (`wasm-bindgen`). Lập trình async với `tokio` yêu cầu hiểu rõ về Lifetimes, `Send`, `Sync` và `Pin`. Do đó, hãy đi theo trình tự tuyến tính dưới đây:
 
 ---
 
-### Giai đoạn 1: Làm Chủ Nền Móng (Core Rust & Borrow Checker)
+### Giai đoạn 1: Làm Chủ Nền Móng
 
 - **Mục tiêu:** Vượt qua sự kiểm soát nghiêm ngặt của trình biên dịch (Borrow Checker).
 - **Hành động:**
@@ -32,7 +33,7 @@ Cộng đồng Rust đều thống nhất rằng bạn **không nên** học asy
 
 ---
 
-### Giai đoạn 2: Viết Tool Tấn công Native CLI (Async & Concurrency)
+### Giai đoạn 2: Viết Tool Tấn công Native CLI
 
 - **Mục tiêu:** Học lập trình bất đồng bộ, đa luồng và tương tác mạng ở mức hệ điều hành.
 - **Hành động:** Tự viết một công cụ dò quét bảo mật chạy trực tiếp trên Terminal (ví dụ: Subdomain Scanner hoặc Directory Brute-forcer).
@@ -44,7 +45,7 @@ Cộng đồng Rust đều thống nhất rằng bạn **không nên** học asy
 
 ---
 
-### Giai đoạn 3: Tích hợp WebAssembly & Dịch ngược (WASM/FFI)
+### Giai đoạn 3: Tích hợp WebAssembly & Dịch ngược
 
 - **Mục tiêu:** Nhúng code Rust vào Frontend React/Next.js và học cách dịch ngược bytecode WebAssembly.
 - **Hành động:** Viết một thuật toán xử lý ảnh/crypto (như MD5/SHA256 hoặc thuật toán nén ảnh) bằng Rust và nhúng trực tiếp vào ứng dụng Web của bạn.

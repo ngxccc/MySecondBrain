@@ -7,6 +7,7 @@ aliases:
     Short-Term Income and Defensive Saving,
     Quỹ khẩn cấp và Tăng thu nhập ngắn hạn,
   ]
+description: "Chiến lược tăng thu nhập ngắn hạn và xây dựng quỹ khẩn cấp phòng thủ ở tầng nhu cầu sinh tồn/an toàn."
 ---
 
 # Short-Term Income Acceleration and Defensive Saving Strategy
@@ -27,14 +28,14 @@ Phương pháp **Tăng thu nhập ngắn hạn và Tiết kiệm phòng thủ (S
 
 ## Step-by-Step Execution Framework
 
-### Bước 1: Xây dựng Quỹ Phòng thủ Sinh tồn (Survival Liquidity Buffer)
+### Bước 1: Xây dựng Quỹ Phòng thủ Sinh tồn
 
 - **Mục tiêu**: Tích lũy tối thiểu **1 tháng chi phí sinh hoạt cơ bản** (tiền nhà, ăn uống, điện nước, y tế tối thiểu) trong vòng 30–60 ngày.
 - **Hành động**:
   - Cắt giảm toàn bộ chi phí không thiết yếu (Subscription thừa, giải trí xa xỉ).
   - Gửi quỹ này vào tài khoản tiết kiệm linh hoạt (High-Yield Savings Account - HYSA) hoặc tài khoản ngân hàng riêng biệt có thể rút ngay trong ngày.
 
-### Bước 2: Kích hoạt Luồng Tăng thu nhập Ngắn hạn (Short-Term Income Acceleration)
+### Bước 2: Kích hoạt Luồng Tăng thu nhập Ngắn hạn
 
 - **Mục tiêu**: Tạo thêm nguồn thu nhập từ 20–50% so với lương nền để đẩy nhanh tốc độ tích lũy quỹ phòng thủ.
 - **Chiến thuật triển khai**:
@@ -42,13 +43,13 @@ Phương pháp **Tăng thu nhập ngắn hạn và Tiết kiệm phòng thủ (S
   - **Overtime / Task Acceleration**: Nhận thêm ca làm, công việc ngoài giờ tại công ty hoặc các công việc gig economy.
   - **Thanh lý tài sản thừa (Asset Monetization)**: Bán các vật dụng không còn sử dụng để lấy dòng tiền mặt tức thì.
 
-### Bước 3: Mở rộng Quỹ Khẩn cấp Chuẩn (Standard Emergency Fund)
+### Bước 3: Mở rộng Quỹ Khẩn cấp Chuẩn
 
 - **Mục tiêu**: Nâng cấp quỹ phòng thủ lên **3 đến 6 tháng chi phí sinh hoạt thiết yếu**.
 - **Quy tắc phân bổ dòng tiền (Defense-First Allocation)**:
   - Mọi khoản tiền thưởng đột xuất (Bonus), hoàn thuế, hoặc doanh thu từ dự án phụ đều được tự động ưu tiên 80-100% đổ vào Quỹ khẩn cấp cho đến khi đạt mục tiêu.
 
-### Bước 4: Chuyển giao Trạng thái Nhận thức (PFC Reactivation)
+### Bước 4: Chuyển giao Trạng thái Nhận thức
 
 - Khi Quỹ khẩn cấp đạt mốc 3–6 tháng, Amygdala dừng phát tín hiệu báo động đỏ (hạ Cortisol).
 - Băng thông nhận thức của Vỏ não trước trán (PFC) được khôi phục. Lúc này cá nhân mới chính thức chuyển sang giai đoạn **Tích lũy & Đầu tư dài hạn** (chứng khoán, phát triển bản thân, học tư duy bậc cao).

@@ -3,6 +3,7 @@ title: Laravel Blade Layout Components
 tags: [type/concept, topic/tech, laravel, blade, mvc]
 aliases: [Blade Components, Blade Layouts, Kế thừa Layout Laravel, x-layout]
 date: 2026-07-13
+description: "Laravel Blade Components (thông qua cú pháp thẻ `<x-component>`) cung cấp giải pháp hướng thành phần (Component-based approach) mạnh mẽ để thiết lập cấu trúc Layout kế thừa, thay thế cho các chỉ th..."
 ---
 
 # Laravel Blade Layout Components
@@ -27,21 +28,21 @@ Với Blade Components (Laravel 7+), cách tiếp cận chuyển sang mô hình 
 - **Layout cha:** Định nghĩa dưới dạng một Component chuẩn (`resources/views/components/layout.blade.php`) và định vị nơi hiển thị nội dung động bằng biến `{{ $slot }}`.
 - **Trang con:** Chỉ cần bọc nội dung trực tiếp bên trong thẻ mở và thẻ đóng của Component đó: `<x-layout> ... </x-layout>`.
 
-### 2. Cú pháp `<x-name>` và Tự động Ánh xạ (Auto-mapping)
+### 2. Cú pháp `<x-name>` và Tự động Ánh xạ
 
 Laravel tự động quét thư mục `resources/views/components/` để đăng ký các component:
 
 - Thẻ `<x-layout>` ánh xạ trực tiếp đến tệp `resources/views/components/layout.blade.php`.
 - Tên component dạng CamelCase hoặc kebab-case sẽ được chuyển đổi tương ứng: ví dụ `<x-admin-navigation>` ánh xạ đến `components/admin-navigation.blade.php`.
 
-### 3. Cơ chế Slot (`{{ $slot }}` & Named Slots)
+### 3. Cơ chế Slot
 
 - **Default Slot (`{{ $slot }}`):** Lưu trữ toàn bộ nội dung HTML được bọc trực tiếp bên trong thẻ component.
 - **Named Slots (`<x-slot>`):** Dùng khi layout cần chèn nội dung vào nhiều vị trí khác nhau (ví dụ: title, meta tags, hoặc custom sidebar).
   - Khai báo ở trang con: `<x-slot:title>Trang chủ</x-slot:title>`.
   - Render ở layout cha: `{{ $title }}`.
 
-### 4. Thuộc tính Component và Variables ($attributes)
+### 4. Thuộc tính Component và Variables
 
 Biến `$attributes` được Laravel tự động tạo ra để thu thập tất cả các thuộc tính HTML được truyền vào component mà không được khai báo là props. Điều này cực kỳ hữu ích để tùy biến `class` hoặc `id` động từ trang con:
 
@@ -51,7 +52,7 @@ Biến `$attributes` được Laravel tự động tạo ra để thu thập t�
 
 ## Practical Implementation
 
-### 1. Thiết lập Layout Component chung (`components/layout.blade.php`)
+### 1. Thiết lập Layout Component chung
 
 Loại bỏ hoàn toàn các khối CSS inline dư thừa, thay thế bằng liên kết tài nguyên động qua Vite plugin của Laravel:
 
@@ -75,7 +76,7 @@ Loại bỏ hoàn toàn các khối CSS inline dư thừa, thay thế bằng li�
 </html>
 ```
 
-### 2. Sử dụng ở Trang con (`welcome.blade.php`)
+### 2. Sử dụng ở Trang con
 
 Kế thừa lại layout cha một cách ngắn gọn và áp dụng các class `@utility` từ Tailwind CSS v4 thay vì inline CSS:
 
@@ -120,9 +121,9 @@ Kế thừa lại layout cha một cách ngắn gọn và áp dụng các class 
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
-### Q1: Phân biệt sự khác nhau giữa Layout Inheritance (`@extends`) và Component-based Layout (`<x-...>`)?
+### Q1: Phân biệt sự khác nhau giữa Layout Inheritance và Component-based Layout (`<x-...>`)?
 
 - **Trả lời:**
   - Kế thừa truyền thống (`@extends` / `@section` / `@yield`) tuân theo mô hình từ trên xuống, trang con phải định nghĩa rõ từng phân vùng động mà trang cha yêu cầu.
@@ -132,7 +133,7 @@ Kế thừa lại layout cha một cách ngắn gọn và áp dụng các class 
 
 - **Trả lời:** Biến `$attributes` thu thập tất cả các thuộc tính HTML được truyền vào component từ bên ngoài (chẳng hạn như `class`, `id`, `data-*`). Chúng ta có thể dùng phương thức `{{ $attributes->merge(['class' => 'class-default']) }}` để gộp các class mặc định của component với các class tùy biến truyền thêm từ bên ngoài mà không làm mất hoặc ghi đè đè lên nhau.
 
-### Q3: Làm thế nào để truyền một biến tùy chỉnh (ví dụ: tiêu đề trang `$title`) từ trang con vào Layout Component?
+### Q3: Làm thế nào để truyền một biến tùy chỉnh từ trang con vào Layout Component?
 
 - **Trả lời:** Có hai cách chính:
   1. **Dùng attribute thông thường:** `<x-layout title="Trang chủ">`. Ở component cha, biến `$title` sẽ tự động khả dụng.

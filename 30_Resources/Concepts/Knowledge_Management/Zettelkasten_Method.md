@@ -2,6 +2,7 @@
 tags: [type/concept, topic/productivity, knowledge-management]
 date: 2026-04-29
 aliases: [Hộp ghi chú, Atomic Notes, Linked Thinking]
+description: "Quản lý tri thức bằng Atomic Notes và Links."
 ---
 
 # Zettelkasten Method

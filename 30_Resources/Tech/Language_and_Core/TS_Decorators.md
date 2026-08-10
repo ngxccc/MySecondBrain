@@ -1,10 +1,11 @@
 ---
-tags: [type/concept, topic/tech, language/typescript]
+tags: [type/concept, topic/tech, language/typescript, layer/core-mechanics]
 date: 2026-06-24
 aliases: [TypeScript Decorators, Decorators trong TypeScript]
+description: "Phương pháp trang trí trong TypeScript chuẩn ES (Stage 3) vs cũ (experimentalDecorators)."
 ---
 
-# 🎨 TypeScript Decorators (Trang Trí Trong TypeScript)
+# TS Decorators
 
 ## TL;DR
 
@@ -34,7 +35,7 @@ Sự tiến hóa của ECMAScript dẫn đến sự phân chia sâu sắc giữa
 
 ## Practical Implementation
 
-### 1. Cấu hình Compiler (`tsconfig.json`)
+### 1. Cấu hình Compiler
 
 Tùy vào việc mày muốn sử dụng phiên bản Decorator nào, mày cần cấu hình `tsconfig.json` tương ứng:
 
@@ -53,11 +54,11 @@ Tùy vào việc mày muốn sử dụng phiên bản Decorator nào, mày cần
 
 ---
 
-### 2. Cách Viết Decorator Theo Chuẩn Mới (Stage 3 - TS 5.0+)
+### 2. Cách Viết Decorator Theo Chuẩn Mới
 
 Hàm Decorator theo chuẩn mới nhận vào 2 tham số: `value` (giá trị cần trang trí) và `context` (ngữ cảnh của phần tử đó).
 
-#### Ví dụ: Tạo `@Logged` cho Phương thức (Method Decorator)
+#### Ví dụ: Tạo `@Logged` cho Phương thức
 
 ```typescript
 function Logged<This, Args extends any[], Return>(
@@ -100,7 +101,7 @@ service.getUserById(10);
 
 ---
 
-### 3. Cách Viết Decorator Theo Chuẩn Cũ (Legacy - Stage 2)
+### 3. Cách Viết Decorator Theo Chuẩn Cũ
 
 Hệ thống cũ can thiệp trực tiếp vào `PropertyDescriptor` của phương thức.
 
@@ -124,14 +125,14 @@ class Configuration {
 }
 ```
 
-#### 🚨 Tại sao NestJS/TypeORM bắt buộc phải dùng chuẩn cũ?
+#### Tại sao NestJS/TypeORM bắt buộc phải dùng chuẩn cũ?
 
 1. **Parameter Decorators (Trang trí tham số):** NestJS phụ thuộc hoàn toàn vào trang trí tham số để thực hiện Dependency Injection (ví dụ: `constructor(@InjectRepository(User) private userRepo: Repository<User>)`). Tiêu chuẩn mới (Stage 3) hiện tại **không hỗ trợ** trang trí tham số.
 2. **Metadata Emission:** NestJS cần flag `"emitDecoratorMetadata": true` của hệ thống cũ để tự động suy luận ra kiểu dữ liệu của class lúc runtime phục vụ cơ chế tự động inject instance (IoC Container).
 
 ---
 
-### 4. Mẫu Câu Hỏi Phỏng Vấn (Flex)
+### 4. Mẫu Câu Hỏi Phỏng Vấn
 
 **Q: Sự khác biệt lớn nhất giữa Decorator mặc định của TS 5.0+ và Decorator cũ (experimentalDecorators) là gì? Trong NestJS bạn sẽ chọn loại nào?**
 
@@ -147,4 +148,4 @@ class Configuration {
 - [[000_Tech_MOC]]
 - [[Dependency_Injection]]
 - [[SOLID_Principles]]
-- [[JS_Memory_Management_Stack_Heap_GC]]
+- [[JS_Stack_vs_Heap_Memory]]

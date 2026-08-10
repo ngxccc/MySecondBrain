@@ -8,6 +8,7 @@ aliases:
     ResumeLayout WinForms,
     Hạn chế flickering WinForms,
   ]
+description: "Tối ưu hóa Layout Engine của WinForms bằng SuspendLayout và ResumeLayout."
 ---
 
 # Windows Forms Layout Engine Optimization

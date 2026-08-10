@@ -7,6 +7,7 @@ aliases:
     Quy tắc khai báo React Component,
     export function vs arrow function,
   ]
+description: "Tiêu chuẩn khai báo React component (export function vs arrow function)."
 ---
 
 # React Component Declaration Standards
@@ -19,7 +20,7 @@ Quy tắc thống nhất cách khai báo React components: Ưu tiên **Tradition
 
 ## Core Concepts
 
-### 1. Traditional Functions (`export function`)
+### 1. Traditional Functions
 
 Luôn sử dụng cú pháp hàm truyền thống để định nghĩa UI Components vì các lý do sau:
 
@@ -29,7 +30,7 @@ Luôn sử dụng cú pháp hàm truyền thống để định nghĩa UI Compon
 - **Next.js Server Components (RSC):** Hỗ trợ viết các Server Components dạng bất đồng bộ một cách tự nhiên: `export default async function Component()`.
 - **Hoisting & Top-Down Architecture:** Đưa component chính cần export lên đầu file, còn các helper component phụ trợ không cần export đặt ở cuối file nhờ vào tính chất Hoisting của hàm truyền thống.
 
-### 2. Arrow Functions (`const foo = () => {}`)
+### 2. Arrow Functions => {}`)
 
 Chỉ sử dụng Arrow functions cho các ngữ cảnh bổ trợ:
 

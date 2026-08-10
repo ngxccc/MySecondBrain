@@ -8,9 +8,10 @@ aliases:
     Đàm phán nguyên tắc,
     Phương pháp đàm phán Harvard,
   ]
+description: "Đàm phán nguyên tắc Harvard - Giải quyết xung đột dựa trên lợi ích cốt lõi và tiêu chí khách quan."
 ---
 
-# Principled Negotiation (Getting to Yes)
+# Principled Negotiation
 
 ## TL;DR
 

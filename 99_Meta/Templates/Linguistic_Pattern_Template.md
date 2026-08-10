@@ -1,11 +1,8 @@
 ---
 tags: [type/pattern, lang/english, skill/pronunciation, level/B1]
-status: seeding # seeding (mới tạo), sapling (đang học), evergreen (đã master) [BẮT BUỘC]
-priority: high # high/medium/low (để biết cái nào cần học trước) [TÙY CHỌN]
-source: [] # Link bài giảng/video gốc [TÙY CHỌN]
-created_at: <% tp.file.creation_date("dddd, MMMM Do YYYY, h:mm:ss a Z") %> [TÙY CHỌN]
-updated_at: <% tp.file.last_modified_date("dddd, MMMM Do YYYY, h:mm:ss a Z") %> [TÙY CHỌN]
-aliases: [] # VD: [Noun-Verb Stress, Stress Shift] [BẮT BUỘC]
+aliases: []
+date: <% tp.file.creation_date("YYYY-MM-DD") %>
+description: "Tóm tắt ngắn gọn quy tắc ngữ âm/mẫu câu (để DataviewJS hiển thị trên MOC)."
 ---
 
 # [Tên Pattern - VD: Homographs Stress Shift]
@@ -43,8 +40,8 @@ _(Danh sách các từ tuân theo luật này. Đã thêm cột Audio để chec
 
 _(Mẹo nhớ nhanh - Hack não)_
 
-- 💡 **Tip:** Noun (Danh từ) thường nặng nề -> Nhấn đầu. Verb (Động từ) cần năng lượng để hành động -> Nhấn sau.
-- 🖼️ **Image:** (Nếu có hình ảnh minh họa quy tắc)
+- **Tip:** Noun (Danh từ) thường nặng nề -> Nhấn đầu. Verb (Động từ) cần năng lượng để hành động -> Nhấn sau.
+- **Image:** (Nếu có hình ảnh minh họa quy tắc)
 
 ---
 
@@ -52,8 +49,8 @@ _(Mẹo nhớ nhanh - Hack não)_
 
 _(Những thằng ngoại lệ phá game)_
 
-- ❌ **Exception 1:** **Comment** (Luôn nhấn âm 1 dù là Noun hay Verb).
-- ❌ **Exception 2:** **Report** (Luôn nhấn âm 2).
+- **Exception 1:** **Comment** (Luôn nhấn âm 1 dù là Noun hay Verb).
+- **Exception 2:** **Report** (Luôn nhấn âm 2).
 
 ---
 

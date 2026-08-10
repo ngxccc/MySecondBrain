@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech]
+tags: [type/concept, topic/tech, layer/quality]
 aliases: [Test-Driven Development]
 created_at: Saturday, May 23rd 2026, 6:23:01 pm +07:00
 updated_at: Saturday, May 23rd 2026, 7:18:36 pm +07:00
+description: "Quy trình viết test trước, code sau giúp định hình kiến trúc phần mềm sạch."
 ---
 
 # Test-Driven Design

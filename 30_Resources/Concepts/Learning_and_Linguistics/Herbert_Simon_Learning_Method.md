@@ -7,6 +7,7 @@ aliases:
     Phương pháp học tập Herbert Simon,
     Chunking and Expertise,
   ]
+description: "Phương pháp nhận thức dựa trên chunking và deliberate practice để thành thạo kỹ năng mới."
 ---
 
 # Herbert Simon Learning Method
@@ -27,24 +28,24 @@ Phương pháp học tập và xây dựng chuyên môn dựa trên các nghiên
 
 ## Practical Implementation
 
-### 1. Phân rã kiến thức (Deconstruction)
+### 1. Phân rã kiến thức
 
 Trước khi bắt đầu học, hãy bóc tách kỹ năng lớn thành các phần nhỏ cấu thành (các chunks cơ bản).
 
 - _Ví dụ:_ Học lập trình web không phải là học chung chung, mà phân rã thành: Cú pháp cơ bản → DOM manipulation → Async/Await → API Design → State Management.
 
-### 2. Chiến lược "Mũi dùi" tập trung (Specialization)
+### 2. Chiến lược "Mũi dùi" tập trung
 
 - Tránh học dàn trải nhiều kỹ năng cùng lúc.
 - Dồn 100% tài nguyên nhận thức và thời gian vào một mục tiêu chuyên biệt để tối ưu hóa việc hình thành đường liên kết thần kinh cho kỹ năng đó.
 
-### 3. Thực hành có chủ đích & Vòng lặp phản hồi (Deliberate Practice)
+### 3. Thực hành có chủ đích & Vòng lặp phản hồi
 
 - Tích cực tương tác với kiến thức thay vì đọc/nghe thụ động.
 - Áp dụng ngay kiến thức vào thực tế (viết code, giải bài tập, làm dự án nhỏ).
 - Nhận phản hồi lập tức để sửa lỗi (Self-test, code review, spaced repetition).
 
-### 4. Thời gian hình thành chuyên môn (Ten-Year Rule vs. 6-Month Heuristic)
+### 4. Thời gian hình thành chuyên môn
 
 Nghiên cứu của Chase & Simon (1973) chỉ ra sự tích lũy chuyên môn là một hành trình dài hạn:
 

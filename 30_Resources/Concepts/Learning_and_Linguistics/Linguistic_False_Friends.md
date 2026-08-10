@@ -2,6 +2,7 @@
 tags: [type/concept, topic/english, pronunciation]
 date: 2026-01-29
 aliases: [Homographs, Word Stress Shift]
+description: "Cạm bẫy từ đồng dạng và dịch chuyển trọng âm."
 ---
 
 # Linguistic False Friends

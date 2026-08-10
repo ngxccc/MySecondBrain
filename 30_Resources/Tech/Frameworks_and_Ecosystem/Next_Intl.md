@@ -2,9 +2,10 @@
 tags: [type/concept, topic/frontend, topic/i18n, nextjs, framework/nextjs]
 date: 2026-06-20
 aliases: [Next.js Internationalization, next-intl, Đa ngôn ngữ NextJS]
+description: "Thư viện i18n hỗ trợ strict type-safety và Server Components."
 ---
 
-# Next-Intl (App Router) & Internationalization
+# Next-Intl & Internationalization
 
 ## TL;DR
 
@@ -14,7 +15,7 @@ aliases: [Next.js Internationalization, next-intl, Đa ngôn ngữ NextJS]
 
 ## Core Concept
 
-### 1. Cơ chế hoạt động dưới nền tảng (Under the Hood)
+### 1. Cơ chế hoạt động dưới nền tảng
 
 - **Routing & Middleware Interception:** Middleware của Next.js sẽ chặn các request. Nếu URL thiếu locale (ví dụ: `/portal`), middleware phân tích header `Accept-Language` của trình duyệt hoặc Cookie ngôn ngữ của người dùng để thực hiện chuyển hướng tự động (redirect) sang URL tương ứng (ví dụ: `/en/portal`).
 - **Server-Side Translation:** Khi sử dụng `useTranslations` trong một Server Component, next-intl sẽ đọc file JSON ngôn ngữ trực tiếp từ ổ đĩa máy chủ ở thời điểm render. Mã nguồn tệp dịch JSON hoàn toàn **không bị gửi về client**, giúp giảm thiểu tối đa bundle size của trình duyệt và tối ưu điểm Core Web Vitals (SEO).
@@ -38,7 +39,7 @@ Next-intl cho phép liên kết TypeScript trực tiếp với tệp ngôn ngữ
 
 ## Practical Implementation
 
-### 1. Nạp tệp ngôn ngữ và Validate an toàn (`request.ts`)
+### 1. Nạp tệp ngôn ngữ và Validate an toàn
 
 Trong dự án Hyundai Ecommerce, file nạp cấu hình ngôn ngữ được viết chặt chẽ nhằm tránh việc người dùng nhập thủ công locale bậy bạ lên URL gây lỗi ứng dụng:
 
@@ -96,7 +97,7 @@ export const { Link, redirect, usePathname, useRouter, getPathname } =
   createNavigation(routing);
 ```
 
-### 3. Đồng bộ vs Bất đồng bộ trong Dịch thuật (RSC vs SEO Metadata)
+### 3. Đồng bộ vs Bất đồng bộ trong Dịch thuật
 
 - **Đồng bộ (`useTranslations`):** Dùng trực tiếp trong phần render UI của RSC hoặc Client Component.
 - **Bất đồng bộ (`getTranslations`):** Bắt buộc phải dùng ở các hàm bất đồng bộ bên ngoài phần render UI như hàm cấu hình SEO `generateMetadata` hoặc Route Handlers (API).
@@ -120,9 +121,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
-### Q1: Điểm khác biệt lớn nhất giữa next-intl trong App Router và react-i18next trong các ứng dụng SPA (Vite/React CRA)?
+### Q1: Điểm khác biệt lớn nhất giữa next-intl trong App Router và react-i18next trong các ứng dụng SPA ?
 
 - **Trả lời:** Ở các ứng dụng SPA truyền thống, toàn bộ tệp JSON chứa các câu dịch thuật phải được gửi về trình duyệt của người dùng để JavaScript thực hiện dịch thuật ngay tại client. Việc này làm tăng bundle size và tốn CPU. Với next-intl kết hợp React Server Components (RSC) trong Next.js App Router, tệp JSON được đọc và biên dịch trực tiếp từ ổ đĩa máy chủ. HTML trả về trình duyệt đã được điền sẵn ngôn ngữ, trình duyệt nhận về và hiển thị ngay lập tức với **0 KB JS dịch thuật**.
 

@@ -1,7 +1,8 @@
 ---
-tags: [type/method, topic/engineering] [BẮT BUỘC]
-aliases: [] [BẮT BUỘC]
-created_at: <% tp.file.creation_date() %> [TÙY CHỌN]
+tags: [type/method, topic/engineering]
+aliases: []
+date: <% tp.file.creation_date("YYYY-MM-DD") %>
+description: "Tóm tắt ngắn gọn 1-2 câu về quy trình/phương pháp này (để DataviewJS hiển thị trên MOC)."
 ---
 
 # [Tên Method / SOP]
@@ -13,7 +14,7 @@ _(1-2 câu tóm tắt nhanh quy trình/phương pháp này dùng để làm gì 
 ## Context: When to use? [BẮT BUỘC]
 
 - **Trường hợp áp dụng:** [BẮT BUỘC] (Khi nào thì nên dùng quy trình này)
-- **Điều kiện tiên quyết (Prerequisites):** [TÙY CHỌN] (Những thứ cần chuẩn bị trước khi thực hiện)
+- **Prerequisites:** [TÙY CHỌN] (Những thứ cần chuẩn bị trước khi thực hiện)
 
 ## Step-by-Step Guideline [BẮT BUỘC]
 

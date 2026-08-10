@@ -4,6 +4,7 @@ tags: [type/concept, topic/tech, nextjs, ssr, vercel, topic/rendering]
 aliases:
   [Route Groups, Next.js DYNAMIC_SERVER_USAGE, Nested Layouts, Kế thừa Layout]
 date: 2026-06-20
+description: "Bản chất của Route Groups và cơ chế kế thừa layout (Nested Layouts) trong Next.js App Router."
 ---
 
 # Next.js Route Groups & Nested Layouts Inheritance
@@ -22,7 +23,7 @@ Thông thường, Next.js App Router ánh xạ trực tiếp cấu trúc thư m�
 
 - **Ví dụ:** Thư mục `app/(shop)/checkout/page.tsx` sẽ có URL là `/checkout` chứ không phải `/(shop)/checkout`.
 
-### 2. Cơ chế kế thừa Layout (Nested Layouts & State Preservation)
+### 2. Cơ chế kế thừa Layout
 
 Next.js App Router thiết kế Layout lồng nhau (Nested Layouts) theo dạng vỏ hành:
 
@@ -97,13 +98,13 @@ export default async function PortalLayout({
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
 ### Q1: Bản chất của Route Groups là gì và tại sao nó lại không hiển thị trên URL?
 
 - **Trả lời:** Route Groups là một tính năng của Next.js App Router sử dụng quy ước đặt tên thư mục trong dấu ngoặc đơn `(tên_group)`. Trình biên dịch của Next.js bỏ qua tên thư mục này khi phân tích cây định tuyến (Router Tree) để ánh xạ thành URL. Mục đích duy nhất của nó là để gom nhóm các file mã nguồn nhằm chia sẻ chung Layout (hoặc Middleware cục bộ) mà không muốn làm xáo trộn cấu trúc đường dẫn URL đẹp của trang web.
 
-### Q2: Nested Layouts trong Next.js App Router hoạt động như thế nào khi chuyển trang? Trạng thái (State) của Layout có bị re-mount không?
+### Q2: Nested Layouts trong Next.js App Router hoạt động như thế nào khi chuyển trang? Trạng thái của Layout có bị re-mount không?
 
 - **Trả lời:** Next.js sử dụng cơ chế **Partial Rendering** (Render một phần). Khi người dùng chuyển đổi giữa hai trang cùng cấp trong một Route Group (ví dụ chuyển từ `/portal/debt` sang `/portal/profile`), Next.js chỉ render lại Component `page.tsx` tương ứng. Thư mục Layout chung (`layout.tsx` của `(portal)`) sẽ được giữ lại, DOM của nó không bị tạo lại (no re-mount) và các React State bên trong Layout đó sẽ được bảo toàn nguyên vẹn.
 

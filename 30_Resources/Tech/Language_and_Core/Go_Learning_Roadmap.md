@@ -2,9 +2,10 @@
 tags: [type/guide, topic/go, topic/learning]
 date: 2026-07-09
 aliases: [Go Learning Roadmap, Lộ trình học Go thực chiến]
+description: "Lộ trình học Go thực chiến từ cơ bản đến microservices & production."
 ---
 
-# Lộ Trình Học Go (Golang) Thực Chiến: Từ Cơ Bản Đến Microservices & Production
+# Lộ Trình Học Go Thực Chiến: Từ Cơ Bản Đến Microservices & Production
 
 ## TL;DR
 
@@ -34,7 +35,7 @@ Tài liệu này phác thảo lộ trình học tập thực dụng và hiệu q
 
 ---
 
-### Giai đoạn 1.5: Tự Cài Đặt Thuật Toán & Cấu Trúc Dữ Liệu Bằng Go (DSA for Golang Backend)
+### Giai đoạn 1.5: Tự Cài Đặt Thuật Toán & Cấu Trúc Dữ Liệu Bằng Go
 
 - **Mục tiêu:** Tự tay xây dựng các Cấu trúc Dữ liệu & Thuật toán cốt lõi bằng Go thuần túy không dùng thư viện ngoài (Theo lộ trình [[Data_Structures_and_Algorithms_Roadmap]]).
 - **Các thuật toán & Cấu trúc cần tự viết bằng Go:**
@@ -47,7 +48,7 @@ Tài liệu này phác thảo lộ trình học tập thực dụng và hiệu q
 
 ---
 
-### Giai đoạn 2: Luyện Phản Xạ Qua Dự Án Nhỏ (Gophercises)
+### Giai đoạn 2: Luyện Phản Xạ Qua Dự Án Nhỏ
 
 - **Mục tiêu:** Vận dụng lý thuyết vào thực tế, đọc hiểu Standard Library và làm quen với lập trình đồng thời (Concurrency: Goroutine & Channel).
 - **Hành động:**
@@ -65,7 +66,7 @@ Tài liệu này phác thảo lộ trình học tập thực dụng và hiệu q
 
 ---
 
-### Giai đoạn 4: Web Application & REST API Chuẩn Doanh Nghiệp (Production-grade)
+### Giai đoạn 4: Web Application & REST API Chuẩn Doanh Nghiệp
 
 - **Mục tiêu:** Đưa Go vào các dự án lớn, thiết kế cấu trúc thư mục sạch (Clean Architecture), bảo mật ứng dụng và tối ưu hóa hiệu năng.
 - **Hành động:**

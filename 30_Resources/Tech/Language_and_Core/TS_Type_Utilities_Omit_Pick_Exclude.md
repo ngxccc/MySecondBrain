@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/typescript, language-core]
+tags: [type/concept, topic/typescript, language-core, layer/core-mechanics]
 date: 2026-06-18
 aliases: [TypeScript Type Utilities, So sánh Omit Pick Exclude]
+description: "So sánh chi tiết bản chất và phân biệt các tiện ích kiểu Omit, Pick, Exclude."
 ---
 
 # TypeScript Type Utilities: Omit, Pick, Exclude
@@ -53,7 +54,7 @@ type UserProfileDTO = Omit<User, "createdAt">;
 // { id: string; name: string; email: string; role: "admin" | "user" | "dealer"; }
 ```
 
-### Ví dụ 2: Sử dụng `Exclude` trên Union Type (String Literals)
+### Ví dụ 2: Sử dụng `Exclude` trên Union Type
 
 ```typescript
 type PaymentMethod = "PAYOS" | "CASH" | "TRADE_CREDIT";

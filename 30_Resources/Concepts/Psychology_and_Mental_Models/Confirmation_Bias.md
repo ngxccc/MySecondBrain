@@ -8,6 +8,7 @@ aliases:
     Thành kiến chứng thực,
     Thành kiến xác nhận,
   ]
+description: "Thiên kiến xác nhận - Lỗi tư duy chỉ tập trung tìm kiếm thông tin ủng hộ niềm tin sẵn có và bác bỏ bằng chứng trái chiều."
 ---
 
 # Confirmation Bias
@@ -33,7 +34,7 @@ Hiểu và nhận diện mô hình này để tự cảnh tỉnh bản thân tro
 
 ---
 
-## The Mechanics (Deep Dive)
+## The Mechanics
 
 Bộ não con người có xu hướng tự nhiên là duy trì sự nhất quán trong nhận thức để tránh trạng thái **Bất hòa nhận thức (Cognitive Dissonance)** — cảm giác khó chịu xảy ra khi ta đối mặt với các thông tin phủ nhận niềm tin hiện tại của mình.
 
@@ -45,7 +46,7 @@ Thiên kiến xác nhận vận hành thông qua 3 cơ chế cốt lõi:
 
 ---
 
-## Practical Implementation (How-to)
+## Practical Implementation
 
 Để giảm thiểu tác động của Thiên kiến xác nhận trong nghiên cứu và công việc, hãy áp dụng các kỹ thuật sau:
 

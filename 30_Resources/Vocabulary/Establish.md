@@ -2,6 +2,7 @@
 tags: [type/vocab, topic/english]
 mastery: 1
 created_at: 2026-06-25
+description: "- IPA: /ɪˈstæblɪʃ/"
 ---
 
 # Establish

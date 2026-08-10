@@ -1,17 +1,19 @@
 ---
 title: Postgres SELECT FOR UPDATE (Pessimistic Locking)
 tags:
-  - type/concept
-  - topic/tech
-  - database/postgres
-  - concurrency/locking
-aliases:
-  - SELECT FOR UPDATE
-  - Row-Level Locking
-  - Pessimistic Locking
+  [
+    type/concept,
+    topic/tech,
+    layer/infrastructure,
+    database/postgres,
+    concurrency/locking,
+  ]
+aliases: [SELECT FOR UPDATE, Row-Level Locking, Pessimistic Locking]
+date: 2026-06-08
+description: "Cơ chế Row-Level Exclusive Lock trong PostgreSQL chống tranh chấp đồng thời (TOCTOU / Race Condition)."
 ---
 
-# Postgres SELECT FOR UPDATE (Pessimistic Locking)
+# Postgres SELECT FOR UPDATE
 
 ## TL;DR
 
@@ -30,14 +32,14 @@ Khi một câu lệnh `SELECT ... FOR UPDATE` được thực thi bên trong m�
   - ✅ **Plain `SELECT` (Đọc thông thường)**: **Không bị chặn** nhờ cơ chế **MVCC (Multi-Version Concurrency Control)** của PostgreSQL. Trình truy vấn đọc phiên bản dữ liệu nhất quán trước khi bị khóa mà không bị treo.
   - ✅ **Bản ghi khác**: Các bản ghi khác trong cùng bảng hoàn toàn không bị ảnh hưởng.
 
-### 2. Chu kỳ sống của Lock (Lock Lifetime)
+### 2. Chu kỳ sống của Lock
 
 Khóa được giữ trong suốt thời gian giao dịch diễn ra và tự động giải phóng khi:
 
 - Transaction thực thi `COMMIT` thành công.
 - Transaction thực thi `ROLLBACK` khi gặp sự cố.
 
-### 3. Giải quyết bài toán TOCTOU (Time-of-Check to Time-of-Use)
+### 3. Giải quyết bài toán TOCTOU
 
 Lỗi TOCTOU xảy ra khi khoảng thời gian giữa lúc **Check** (kiểm tra trạng thái) và **Use** (cập nhật trạng thái) bị một request khác can thiệp. Việc dùng `.for("update")` đặt khóa ngay từ bước **Check** giúp đảm bảo trạng thái dữ liệu không bị thay đổi bất ngờ trước bước **Use**.
 
@@ -62,7 +64,7 @@ WHERE email = 'user@example.com';
 COMMIT;
 ```
 
-### Ví dụ 2: Sử dụng Drizzle ORM trong NestJS (Resend Verification Flow)
+### Ví dụ 2: Sử dụng Drizzle ORM trong NestJS
 
 ```typescript
 await this.db.transaction(async (tx) => {

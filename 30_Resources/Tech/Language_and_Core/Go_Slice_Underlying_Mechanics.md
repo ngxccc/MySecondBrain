@@ -1,5 +1,6 @@
 ---
 tags:
+  - layer/core-mechanics
   - type/concept
   - topic/go
   - topic/memory-management
@@ -8,9 +9,12 @@ aliases:
   - Bản Chất Của Slice Trong Go
   - Go Slice Mechanics
   - Slice Header Architecture
+description: "Slice trong Go không lưu trữ dữ liệu trực tiếp mà đóng vai trò như một cấu trúc Slice Header 24-byte (gồm con trỏ `ptr`, độ dài `len`, và sức chứa `cap`) trỏ vào một Mảng ngầm bên dưới (Underlying ..."
 ---
 
-# Bản Chất Kiến Trúc Và Cơ Chế Vận Hành Của Slice Trong Go (Go Slice Underlying Mechanics)
+# Go Slice Underlying Mechanics
+
+Tài liệu này là một ghi chép Layer 2 phân tích cấu trúc hoạt động bên dưới của Slice trong Go (Slice Header, Underlying Array, và Memory Reallocation), dựa trên nguyên lý khoa học máy tính cốt lõi về quản lý bộ nhớ Stack và Heap của [[Stack_vs_Heap_Memory_Fundamentals]], đồng thời liên quan trực tiếp đến cơ chế dọn rác của [[Garbage_Collection_Fundamentals]].
 
 ## TL;DR
 
@@ -20,7 +24,7 @@ Slice trong Go không lưu trữ dữ liệu trực tiếp mà đóng vai trò n
 
 ## Core Concept & Rationales
 
-### 1. Cấu Trúc Slice Header (24 Bytes)
+### 1. Cấu Trúc Slice Header
 
 Trên hệ thống 64-bit, một Slice thực chất chỉ chiếm **24 bytes** bộ nhớ trên Stack dưới dạng một cấu trúc `struct`:
 
@@ -38,7 +42,7 @@ type SliceHeader struct {
 
 ---
 
-### 2. Mảng Ngầm (Underlying Array) & Tính Chất Tham Chiếu
+### 2. Mảng Ngầm & Tính Chất Tham Chiếu
 
 - **Không tự chứa dữ liệu**: Slice chỉ mô tả một phân đoạn của mảng ngầm liên tục (Contiguous Memory Block).
 - **Truyền tham trị nhưng mang hiệu ứng tham chiếu**: Khi truyền Slice vào hàm, Go chỉ sao chép 24-byte header. Do `ptr` vẫn trỏ tới cùng địa chỉ mảng gốc, các chỉnh sửa phần tử bên trong hàm sẽ **thay đổi mảng gốc trực tiếp** (Mutate underlying array).
@@ -46,7 +50,7 @@ type SliceHeader struct {
 
 ---
 
-### 3. Cơ Chế Tăng Trưởng (Growth Strategy & Reallocation)
+### 3. Cơ Chế Tăng Trưởng
 
 Khi gọi `append(slice, val)`:
 
@@ -103,6 +107,9 @@ func main() {
 
 ## Related Notes
 
+- [[Stack_vs_Heap_Memory_Fundamentals]] - Nguyên lý khoa học máy tính cốt lõi về phân tầng bộ nhớ Stack và Heap.
+- [[Garbage_Collection_Fundamentals]] - Nguyên lý cốt lõi về cơ chế dọn rác tự động.
+- [[Memory_Leaks_Core_Mechanics]] - Bản chất rò rỉ bộ nhớ ở mức độ nguyên lý nền tảng.
 - [[Go_Learning_Roadmap]] - Lộ trình làm chủ ngôn ngữ Go và các cấu trúc dữ liệu cốt lõi.
-- [[JS_Memory_Management_Stack_Heap_GC]] - Mối liên hệ giữa Stack, Heap và Garbage Collection trong bộ nhớ.
+- [[JS_Stack_vs_Heap_Memory]] - Mối liên hệ giữa Stack, Heap và Garbage Collection trong bộ nhớ.
 - [[First_Principles_Thinking]] - Phương pháp tư duy từ nguyên lý gốc để bóc tách bản chất bộ nhớ.

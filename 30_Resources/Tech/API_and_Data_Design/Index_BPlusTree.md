@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, layer/core-mechanics, api-data-design]
 date: 2026-06-09
 aliases: [Index và B+Tree, B+Tree Index, B-Tree vs B+Tree]
+description: "Bản chất của Index, cấu trúc B+Tree và lý do tại sao Disk I/O quyết định kiến trúc Database."
 ---
 
 # Index và B+Tree
@@ -31,7 +32,7 @@ Index là cấu trúc dữ liệu phụ trợ giúp database chuyển đổi t�
 - **Thay thế Sorted Array**: Sorted Array cho phép tìm kiếm nhị phân cực nhanh ($O(\log N)$) nhưng chi phí ghi dữ liệu (`INSERT`/`DELETE`) có độ phức tạp lên tới $O(N)$ vì phải dịch chuyển toàn bộ phần tử phía sau trên đĩa.
 - **B+Tree là giải pháp kết hợp**: Chia mảng sắp xếp thành các Page nhỏ độc lập (Leaf Nodes) nối với nhau qua Linked List để thao tác Insert/Delete diễn ra cục bộ ($O(\log N)$), đồng thời dựng thêm các tầng chỉ dẫn phía trên (Internal Nodes) để tìm kiếm nhanh.
 
-### 4. Cơ chế hoạt động (How it works under the hood)
+### 4. Cơ chế hoạt động
 
 Cấu trúc B+Tree phân cấp thành 3 loại Node chính:
 

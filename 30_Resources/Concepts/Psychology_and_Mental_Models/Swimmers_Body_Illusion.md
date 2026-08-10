@@ -3,6 +3,7 @@ tags: [type/concept, topic/psychology, topic/decision-making]
 date: 2026-06-22
 aliases:
   [Swimmer's Body Illusion, Ảo tưởng vóc dáng kình ngư, Selection Bias Fallacy]
+description: "Nhầm lẫn giữa tiêu chí chọn lọc và kết quả thực tế."
 ---
 
 # Swimmer's Body Illusion

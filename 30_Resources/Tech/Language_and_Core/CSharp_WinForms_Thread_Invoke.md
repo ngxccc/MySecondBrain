@@ -8,6 +8,7 @@ aliases:
     Cross-thread Operation,
     Thread Safety UI,
   ]
+description: "Cơ chế Invoke đa luồng an toàn tránh lỗi Cross-thread trong WinForms."
 ---
 
 # C# WinForms Thread Safety with Invoke
@@ -16,7 +17,7 @@ aliases:
 
 Trong lập trình Windows Forms (C#), mọi tương tác với UI controls (vẽ giao diện, nhận tương tác) bắt buộc phải do luồng chính **Main UI Thread** xử lý. Khi các tác vụ nền **Background Threads** cần đụng chạm UI, chúng phải thông qua cơ chế `Invoke()` để gửi yêu cầu nhờ luồng chính xử lý, tránh lỗi xung đột luồng `Cross-thread operation`.
 
-## Analogy (Ẩn dụ thực tế)
+## Analogy
 
 Hãy tưởng tượng luồng của ứng dụng giống như một Nhà hàng:
 
@@ -26,7 +27,7 @@ Hãy tưởng tượng luồng của ứng dụng giống như một Nhà hàng:
 
 ## Workflow & Code Example
 
-### 1. Kịch bản lỗi (Không an toàn)
+### 1. Kịch bản lỗi
 
 ```csharp
 // Chạy trên Background Thread

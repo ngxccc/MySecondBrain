@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/testing]
+tags: [type/concept, topic/testing, layer/quality]
 date: 2026-07-07
 aliases:
   [
@@ -7,9 +7,10 @@ aliases:
     Black-box Testing Techniques,
     Phân vùng tương đương Phân tích giá trị biên,
   ]
+description: "Kỹ thuật kiểm thử hộp đen tập trung vào phân vùng tương đương (EP) và phân tích giá trị biên (BVA)."
 ---
 
-# Kỹ thuật Kiểm thử Hộp đen (Black-box Testing Techniques)
+# Kỹ thuật Kiểm thử Hộp đen
 
 ## TL;DR
 
@@ -21,7 +22,7 @@ Kiểm thử hộp đen là kỹ thuật thiết kế test case dựa trên yêu
 
 Bộ tiêu chuẩn ISTQB tập trung sâu vào hai kỹ thuật thiết kế ca kiểm thử hộp đen sau:
 
-### 1. Phân vùng tương đương (Equivalence Partitioning - EP)
+### 1. Phân vùng tương đương
 
 - **Nguyên lý:** Chia miền dữ liệu đầu vào của một trường (hoặc hệ thống) thành các nhóm (phân vùng) mà hệ thống sẽ xử lý **tương tự như nhau**.
 - **Phân loại:**
@@ -29,7 +30,7 @@ Bộ tiêu chuẩn ISTQB tập trung sâu vào hai kỹ thuật thiết kế ca 
   - _Phân vùng không hợp lệ (Invalid Partition):_ Các giá trị đầu vào mà hệ thống phải từ chối hoặc báo lỗi.
 - **Quy tắc chọn dữ liệu:** Chỉ cần chọn **duy nhất một giá trị bất kỳ** nằm trong mỗi phân vùng để kiểm thử. Nếu giá trị đó chạy đúng/sai, giả định rằng mọi giá trị khác trong cùng phân vùng cũng sẽ chạy đúng/sai như vậy.
 
-### 2. Phân tích giá trị biên (Boundary Value Analysis - BVA)
+### 2. Phân tích giá trị biên
 
 - **Nguyên lý:** Tập trung kiểm thử tại các **đường ranh giới (biên)** của các phân vùng tương đương, vì thực tế lập trình viên rất hay viết nhầm toán tử so sánh (ví dụ: nhầm lẫn giữa `>` và `>=`, `<` và `<=`).
 - **Quy tắc chọn dữ liệu (Biên 2 giá trị hoặc 3 giá trị):**
@@ -52,7 +53,7 @@ Phân vùng không hợp lệ          Phân vùng hợp lệ (Từ A đến B) 
 
 Thiết kế test case cho ô nhập liệu **"Số lượng mua hàng"** của một trang thương mại điện tử. Hệ thống chỉ cho phép mua số lượng từ **1 đến 100 sản phẩm** (chấp nhận số nguyên).
 
-#### Bước 1: Áp dụng Phân vùng tương đương (EP)
+#### Bước 1: Áp dụng Phân vùng tương đương
 
 Ta chia dữ liệu đầu vào thành 3 phân vùng tương đương:
 
@@ -62,7 +63,7 @@ Ta chia dữ liệu đầu vào thành 3 phân vùng tương đương:
 
 _Kết quả EP:_ Cần **3 test cases** đại diện (0, 50, 150).
 
-#### Bước 2: Áp dụng Phân tích giá trị biên (BVA - Biên 2 giá trị)
+#### Bước 2: Áp dụng Phân tích giá trị biên
 
 Các đường biên ranh giới ở đây là 1 và 100. Ta chọn các giá trị kiểm thử:
 

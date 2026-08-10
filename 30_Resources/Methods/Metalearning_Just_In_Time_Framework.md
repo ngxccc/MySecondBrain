@@ -8,9 +8,10 @@ aliases:
     Phương pháp Siêu học tập,
     Tư duy học tập nguyên bản,
   ]
+description: "Metalearning Just-In-Time Framework là phương pháp tiếp thu kiến thức và kỹ năng kỹ thuật tối ưu dựa trên nguyên tắc 80/20 và học tập dựa trên bài toán thực tế (Problem-Driven Learning). Phương phá..."
 ---
 
-# Metalearning Just-In-Time Framework (Phương Pháp Siêu Học Tập)
+# Metalearning Just-In-Time Framework
 
 ## TL;DR
 
@@ -47,7 +48,7 @@ $$\text{Mental Model (20\%)} + \text{Build Something} + \text{Just-In-Time Looku
 
 ## Concrete Examples & 3-Step Algorithm
 
-### Thuật toán 3 bước Siêu Học Tập (Metalearning Algorithm)
+### Thuật toán 3 bước Siêu Học Tập
 
 1. **Bước 1: Map (Vẽ bản đồ 20% cốt lõi - 1-2 ngày)**
    - Đặt câu hỏi theo [[First_Principles_Thinking]]: _"Công nghệ này sinh ra để giải quyết nỗi đau gì?"_

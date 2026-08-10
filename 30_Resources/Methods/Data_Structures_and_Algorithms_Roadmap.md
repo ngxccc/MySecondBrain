@@ -7,6 +7,7 @@ aliases:
     Lộ trình Thuật toán và Cấu trúc Dữ liệu,
     Practical DSA Curriculum,
   ]
+description: "Lộ trình học Cấu trúc Dữ liệu & Thuật toán (DSA) cải tiến được phân tầng theo Giá trị Thực chiến & Mục đích Kỹ nghệ thay vì cày LeetCode dàn phẳng. Khung lộ trình chia làm 3 Tầng: Tầng 1 (Kỹ nghệ T..."
 ---
 
 # Data Structures and Algorithms Roadmap
@@ -19,7 +20,7 @@ Lộ trình học Cấu trúc Dữ liệu & Thuật toán (DSA) cải tiến đ�
 
 ## Core Concept
 
-### Limitations of Standard Roadmaps (Phân tích Nhược điểm Lộ trình Phổ biến)
+### Limitations of Standard Roadmaps
 
 Khảo sát các lộ trình phổ biến hiện nay như **NeetCode 150** và **roadmap.sh**:
 
@@ -32,7 +33,7 @@ Khảo sát các lộ trình phổ biến hiện nay như **NeetCode 150** và *
 
 ---
 
-## The 3-Tier Practical DSA Roadmap (Lộ trình 3 Tầng Cải tiến)
+## The 3-Tier Practical DSA Roadmap
 
 ```
 [Tầng 1: Lập trình Thực chiến (Production & Systems)]
@@ -42,7 +43,7 @@ Khảo sát các lộ trình phổ biến hiện nay như **NeetCode 150** và *
 [Tầng 3: Chuyên sâu Hệ thống & Học thuật (Deep Systems)]
 ```
 
-### 🟢 TẦNG 1: Thuật toán Kỹ nghệ Thực chiến (Production & Systems Engineering - MUST HAVE)
+### TẦNG 1: Thuật toán Kỹ nghệ Thực chiến
 
 > **Mục tiêu:** Nắm vững các Cấu trúc Dữ liệu & Thuật toán xuất hiện trong 90% ứng dụng thực tế (Backend, Database, Caching, Build Tools). Mọi Senior Engineer đều phải thành thạo.
 
@@ -62,7 +63,7 @@ Khảo sát các lộ trình phổ biến hiện nay như **NeetCode 150** và *
 
 ---
 
-### 🟡 TẦNG 2: Tư duy Mẫu & Phỏng vấn Tech (Interview Pattern Mastery - HIGH VALUE)
+### TẦNG 2: Tư duy Mẫu & Phỏng vấn Tech
 
 > **Mục tiêu:** Giải quyết 95% các bài toán phỏng vấn Coding (Big Tech & Startups) dựa trên **8 Dạng Mẫu (Patterns)** thay vì giải từng bài riêng lẻ:
 
@@ -83,7 +84,7 @@ Khảo sát các lộ trình phổ biến hiện nay như **NeetCode 150** và *
 
 ---
 
-### 🔴 TẦNG 3: Chuyên sâu Hệ thống & Học thuật (Deep Systems & Niche - ADVANCED)
+### TẦNG 3: Chuyên sâu Hệ thống & Học thuật
 
 > **Mục tiêu:** Dành cho kỹ sư phát triển Database Engines, Compilers, Game Engines, Network Protocols hoặc thi đấu thuật toán.
 
@@ -94,7 +95,7 @@ Khảo sát các lộ trình phổ biến hiện nay như **NeetCode 150** và *
 
 ---
 
-## Effective Learning Methodology (Phương pháp Học Đúng đắn)
+## Effective Learning Methodology
 
 1. **Không gõ lại code mẫu (Avoid Rote Copying):** Tránh "Ảo tưởng về sự hiểu biết" (Illusion of Competence).
 2. **Chu trình 4 bước:**

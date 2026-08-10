@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
 date: 2026-08-06
 aliases: [Đặt tên Database, DB Naming, Database Naming Conventions]
+description: "Quy tắc đặt tên đồng bộ và nhất quán giữa Database (Số ít) và TypeScript ORM (Số nhiều)."
 ---
 
 # DB Naming Conventions
@@ -14,7 +15,7 @@ Quy tắc đặt tên nhất quán giữa cơ sở dữ liệu (Database) và m�
 
 ## Rules & Rationales
 
-### 1. Tên bảng vật lý trong DB & Tên biến TypeScript: SỐ NHIỀU (Plural)
+### 1. Tên bảng vật lý trong DB & Tên biến TypeScript: SỐ NHIỀU
 
 - **Quy tắc:** Đặt tên bảng vật lý SQL và tên biến ORM/TypeScript đại diện đều là danh từ số nhiều (ví dụ: `users`, `categories`, `products`, `orders`).
 - **Lý do (Rationale):**
@@ -46,7 +47,7 @@ Quy tắc đặt tên nhất quán giữa cơ sở dữ liệu (Database) và m�
 
 ---
 
-### 2. Tên cột (Columns) & Khóa ngoại (Foreign Keys): SỐ ÍT (Singular)
+### 2. Tên cột & Khóa ngoại (Foreign Keys): SỐ ÍT (Singular)
 
 - **Quy tắc:**
   - Tên cột đại diện cho thuộc tính của một bản ghi đơn lẻ $\rightarrow$ dùng **số ít** (`email`, `fullName`, `status`, `createdAt`).
@@ -70,11 +71,11 @@ Quy tắc đặt tên nhất quán giữa cơ sở dữ liệu (Database) và m�
 
 ---
 
-## ❓ Xử Lý Danh Từ Bất Quy Tắc (`category` $\rightarrow$ `categories`, `person` $\rightarrow$ `people`)
+## Xử Lý Danh Từ Bất Quy Tắc
 
 Nhiều người e ngại dùng Số Nhiều vì các từ tiếng Anh bất quy tắc. Tuy nhiên, trong thực tế phát triển phần mềm hiện đại, đây **không phải là vấn đề** vì các lý do sau:
 
-### 1. Đã được Khai Báo Tường Minh (Explicit Declaration) trong TypeScript
+### 1. Đã được Khai Báo Tường Minh trong TypeScript
 
 Trong các ORM hiện đại như **Drizzle ORM** hay **Prisma**, lập trình viên **trực tiếp viết chuỗi tên bảng** vào file schema:
 
@@ -89,7 +90,7 @@ Vì chuỗi tên bảng `"categories"` hay `"people"` được viết rõ ràng 
 
 Đối với các Framework tự động map tên Model ra tên bảng (như Rails hay Laravel), bộ thư viện mã nguồn mở `ActiveSupport::Inflector` / `pluralize` đã có sẵn từ điển đầy đủ cho tất cả các từ bất quy tắc (`category` $\rightarrow$ `categories`, `person` $\rightarrow$ `people`, `child` $\rightarrow$ `children`, `status` $\rightarrow$ `statuses`).
 
-### 3. Tính Đọc Hiểu Tự Nhiên Ngữ Nghĩa (Semantic Readability)
+### 3. Tính Đọc Hiểu Tự Nhiên Ngữ Nghĩa
 
 Trong truy vấn SQL hoặc ORM code, tên bảng số nhiều đọc lên cực kỳ tự nhiên:
 

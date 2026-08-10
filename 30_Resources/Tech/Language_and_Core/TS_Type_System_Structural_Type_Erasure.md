@@ -1,5 +1,6 @@
 ---
 tags:
+  - layer/core-mechanics
   [
     type/concept,
     topic/tech,
@@ -10,6 +11,7 @@ tags:
 aliases:
   [Structural Typing, Type Erasure, Type Guards, Type Predicates, Duck Typing]
 date: 2026-06-20
+description: "Hệ thống kiểu cấu trúc (Structural Typing), cơ chế xóa bỏ kiểu (Type Erasure) và cách thu hẹp kiểu an toàn với Type Predicates."
 ---
 
 # TS Type System: Structural Typing & Type Erasure
@@ -50,9 +52,9 @@ Vì kiểu dữ liệu biến mất ở runtime, để kiểm tra dữ liệu th
 
 ## Practical Implementation
 
-### 1. Minh họa Type Erasure (Compile-time vs. Runtime)
+### 1. Minh họa Type Erasure
 
-#### Mã nguồn TypeScript (Compile-time)
+#### Mã nguồn TypeScript
 
 ```typescript
 interface Dealer {
@@ -65,7 +67,7 @@ function processDealer(dealer: Dealer) {
 }
 ```
 
-#### Mã JavaScript thực thi sau khi Compile (Runtime)
+#### Mã JavaScript thực thi sau khi Compile
 
 Toàn bộ `interface` và đặc tả kiểu dữ liệu bị **xóa sạch**:
 
@@ -112,7 +114,7 @@ function calculateOrderTotal(user: Contractor | Dealer, basePrice: number) {
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
 ### Q1: Sự khác biệt giữa Structural Typing của TypeScript và Nominal Typing của Java/C# là gì?
 
@@ -124,7 +126,7 @@ function calculateOrderTotal(user: Contractor | Dealer, basePrice: number) {
 
 - **Trả lời:** Type Erasure là cơ chế xóa bỏ toàn bộ cú pháp liên quan đến kiểu tĩnh (interface, type annotations, generics) của TypeScript khi biên dịch sang JavaScript. Vì kiểu dữ liệu không hề tồn tại ở runtime, chúng ta không thể dùng toán tử `instanceof` cho `interface` hoặc `type`. Điều này bắt buộc ta phải tự viết các hàm kiểm tra kiểu ở runtime (Type Guards) bằng các toán tử JavaScript thực tế như `typeof`, `"prop" in object`, hoặc tạo hàm trả về kiểu **Type Predicate** (`arg is Type`) để hướng dẫn TypeScript compiler thu hẹp kiểu an toàn.
 
-### Q3: Em hãy ánh xạ hệ thống kiểu của TypeScript sang hệ thống kiểu của ngôn ngữ Go (Golang) và Java?
+### Q3: Em hãy ánh xạ hệ thống kiểu của TypeScript sang hệ thống kiểu của ngôn ngữ Go và Java?
 
 - **Trả lời:**
   - **Java:** Sử dụng hệ thống kiểu tĩnh định danh (**Nominal Typing**). Mọi lớp muốn tương thích với nhau phải kế thừa hoặc implement chung một Interface một cách tường minh tại thời điểm compile.
@@ -136,4 +138,4 @@ function calculateOrderTotal(user: Contractor | Dealer, basePrice: number) {
 
 - Bản đồ tri thức: [[000_Tech_MOC]]
 - Cơ chế Runtime: [[JS_Runtimes_Bun_vs_NodeJS]]
-- Tối ưu hóa bộ nhớ: [[JS_Memory_Management_Stack_Heap_GC]]
+- Tối ưu hóa bộ nhớ: [[JS_Stack_vs_Heap_Memory]]

@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
 date: 2026-06-07
 aliases: [Timestamp vs Timestamptz, Múi giờ Database, Thời gian UTC SQL]
+description: "Phân biệt timestamp và timestamptz, quy tắc Enterprise bắt buộc."
 ---
 
 # Timestamp vs Timestamptz in Database

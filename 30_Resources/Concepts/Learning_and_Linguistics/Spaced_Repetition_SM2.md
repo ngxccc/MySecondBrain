@@ -2,9 +2,10 @@
 tags: [type/algorithm, topic/learning, lang/typescript]
 date: 2026-04-29
 aliases: [SuperMemo 2, SRS, Forgetting Curve]
+description: "Thuật toán chống quên lãng bằng toán học."
 ---
 
-# Spaced Repetition (SM-2 Algorithm)
+# Spaced Repetition
 
 ## TL;DR
 

@@ -1,7 +1,15 @@
 ---
-tags: [type/concept, topic/backend, pattern/architectural, framework/express]
+tags:
+  [
+    type/concept,
+    topic/backend,
+    pattern/architectural,
+    framework/express,
+    layer/architecture,
+  ]
 date: 2026-02-08
 aliases: [Modular Architecture, Feature-Based Architecture]
+description: "Kiến trúc chia theo Domain/Feature (High Cohesion, Low Coupling)."
 ---
 
 # Modular Monolith Architecture

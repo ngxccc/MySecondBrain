@@ -1,6 +1,7 @@
 ---
 tags: [type/concept, topic/tech, nextjs, serverless, backend]
 aliases: [Next.js after(), next/server after(), after()]
+description: "Cơ chế lập lịch tác vụ nền không chặn (non-blocking) sau khi response đã được gửi về client."
 ---
 
 # Next.js after() API
@@ -21,7 +22,7 @@ Next.js `after()` (import từ `next/server`) cho phép lập lịch thực thi 
 
 ## Practical Implementation
 
-### 1. Sử dụng trong Route Handlers (API Routes)
+### 1. Sử dụng trong Route Handlers
 
 Dưới đây là cách sử dụng `after()` để xử lý song song và bất đồng bộ hoàn toàn các tác vụ outbox:
 
@@ -66,9 +67,9 @@ export async function POST(request: Request) {
 }
 ```
 
-### 2. Sử dụng request APIs (cookies/headers) bên trong `after`
+### 2. Sử dụng request APIs bên trong `after`
 
-#### A. Trong Route Handlers và Server Functions (Server Actions)
+#### A. Trong Route Handlers và Server Functions
 
 Bạn có thể gọi trực tiếp `cookies()` và `headers()` bên trong `after()` callback:
 
@@ -80,7 +81,7 @@ after(async () => {
 });
 ```
 
-#### B. Trong Server Components (Page, Layout)
+#### B. Trong Server Components
 
 **KHÔNG ĐƯỢC PHÉP** gọi `cookies()` hay `headers()` bên trong callback của `after()` (Next.js sẽ ném ra lỗi runtime). Bạn phải đọc các thông tin này trước ở rendering lifecycle rồi truyền giá trị vào `after()` qua closure:
 

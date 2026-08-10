@@ -1,7 +1,8 @@
 ---
-tags: [type/method, topic/engineering, topic/productivity]
+tags: [type/method, topic/engineering, topic/productivity, layer/quality]
 aliases: [Quy trình Waterfall, Mô hình thác nước, Waterfall Model]
 date: 2026-07-08
+description: "Quy trình phát triển phần mềm theo mô hình thác nước (Waterfall) là phương pháp quản lý dự án tuyến tính và tuần tự. Trong đó, mỗi giai đoạn của vòng đời phát triển phần mềm (SDLC) phải được hoàn t..."
 ---
 
 # Quy Trình Phát Triển Phần Mềm Theo Mô Hình Waterfall
@@ -24,11 +25,11 @@ Quy trình phát triển phần mềm theo mô hình thác nước (Waterfall) l
   - Các tài liệu thiết kế hệ thống (HLD, LLD) được xây dựng kỹ lưỡng trước khi bắt đầu lập trình.
   - Có quy trình kiểm soát thay đổi (Change Control Board - CCB) chặt chẽ nếu phát sinh yêu cầu mới.
 
-### 🕒 Lịch Sử & Tiến Hóa (Evolutionary History)
+### Lịch Sử & Tiến Hóa
 
 Mô hình Waterfall là phương pháp SDLC đầu tiên (1970), đặt nền móng cho kỹ nghệ phần mềm. Tuy nhiên, tính chất tuyến tính và việc đóng băng yêu cầu từ sớm của nó đã bộc lộ nhiều hạn chế về mặt linh hoạt, dẫn đến sự ra đời của các mô hình cải tiến tiếp theo như [[V_Model]], [[Prototype_Model]], và sau này là [[Agile_Scrum]]. Xem chi tiết tại [[SDLC_Methodologies_Evolution]].
 
-### 🌟 Nguyên Tắc Cốt Lõi Của Waterfall
+### Nguyên Tắc Cốt Lõi Của Waterfall
 
 1. **Tuần Tự Tuyến Tính:** Phát triển đi theo một chiều từ trên xuống dưới như dòng thác. Không quay lại giai đoạn trước khi chưa kết thúc giai đoạn hiện tại.
 2. **Ưu Tiên Tài Liệu (Document-driven):** Mọi quyết định, thiết kế và yêu cầu đều phải được ghi nhận chi tiết bằng văn bản làm căn cứ nghiệm thu.
@@ -38,38 +39,38 @@ Mô hình Waterfall là phương pháp SDLC đầu tiên (1970), đặt nền m�
 
 ## Step-by-Step Guideline
 
-### 1. Thu Thập & Phân Tích Yêu Cầu (Requirements Gathering & Analysis)
+### 1. Thu Thập & Phân Tích Yêu Cầu
 
 - **Hành động:**
   - BA (Business Analyst) làm việc với khách hàng để làm rõ mọi yêu cầu chức năng và phi chức năng.
   - Tạo ra tài liệu đặc tả yêu cầu **SRS (Software Requirement Specification)**.
   - Khách hàng ký duyệt xác nhận tài liệu SRS để đóng băng (freeze) yêu cầu.
 
-### 2. Thiết Kế Hệ Thống (System Design)
+### 2. Thiết Kế Hệ Thống
 
 - **Hành động:**
   - Kiến trúc sư phần mềm (Software Architect) và Tech Lead thiết kế kiến trúc hệ thống, cơ sở dữ liệu và cấu trúc phần mềm.
   - Sản xuất tài liệu **High-Level Design (HLD)** (kiến trúc tổng quan) và **Low-Level Design (LLD)** (thiết kế chi tiết class, DB schema, API specs).
 
-### 3. Triển Khai & Lập Trình (Implementation / Coding)
+### 3. Triển Khai & Lập Trình
 
 - **Hành động:**
   - Developers dựa trên tài liệu LLD và HLD để tiến hành viết code.
   - Thực hiện viết Unit Test và kiểm thử cục bộ (White-box testing) trên từng module.
 
-### 4. Kiểm Thử Hệ Thống (Integration & Testing)
+### 4. Kiểm Thử Hệ Thống
 
 - **Hành động:**
   - Tích hợp tất cả các module và tiến hành kiểm thử toàn diện (System Test, Integration Test, UAT - User Acceptance Test).
   - QA/QC tìm và ghi nhận lỗi (bugs), chuyển về Developers sửa đổi cho đến khi đạt tiêu chuẩn chất lượng đã cam kết.
 
-### 5. Bàn Giao & Triển Khai (Deployment)
+### 5. Bàn Giao & Triển Khai
 
 - **Hành động:**
   - Triển khai sản phẩm lên môi trường Product (sản xuất) cho người dùng cuối sử dụng.
   - Bàn giao mã nguồn, tài liệu hướng dẫn sử dụng và vận hành cho khách hàng.
 
-### 6. Bảo Trì & Vận Hành (Maintenance)
+### 6. Bảo Trì & Vận Hành
 
 - **Hành động:**
   - Tiếp nhận phản hồi từ người dùng thực tế, sửa các lỗi phát sinh (hotfix).

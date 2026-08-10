@@ -3,6 +3,7 @@ tags:
   [
     type/concept,
     topic/tech,
+    layer/core-mechanics,
     framework/nodejs,
     runtime/bun,
     engine/v8,
@@ -10,6 +11,7 @@ tags:
   ]
 aliases: [Bun vs Node.js, JS Runtimes, Event Loop Runtime, JSC vs V8]
 date: 2026-06-20
+description: "So sánh kiến trúc runtime Bun (JavaScriptCore + Zig) vs Node.js (V8 + Libuv) và cơ chế Event Loop cốt lõi."
 ---
 
 # JS Runtime Architecture: Bun vs. Node.js
@@ -22,7 +24,7 @@ Sự khác biệt cốt lõi về mặt kiến trúc giữa **Bun** và **Node.j
 
 ## Core Concept
 
-### 1. Kiến trúc Động cơ: JavaScriptCore (JSC) vs. V8 Engine
+### 1. Kiến trúc Động cơ: JavaScriptCore vs. V8 Engine
 
 Bất kỳ JavaScript Runtime nào cũng cần một Engine lõi để thông dịch và biên dịch mã JavaScript thành mã máy (Machine Code):
 
@@ -48,7 +50,7 @@ Cả hai runtime đều hỗ trợ cơ chế lập trình bất đồng bộ đ�
 
 ## Practical Implementation
 
-### 1. Luồng chạy của JavaScript Event Loop (Quy chuẩn chung)
+### 1. Luồng chạy của JavaScript Event Loop
 
 Dù chạy trên Bun hay Node.js, thứ tự ưu tiên xử lý các tác vụ trong JavaScript Event Loop vẫn tuân thủ nghiêm ngặt đặc tả ECMA/HTML:
 
@@ -82,15 +84,15 @@ const data = await Bun.file("large_file.txt").text();
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
-### Q1: Tại sao Bun lại có tốc độ khởi động (startup time) và hiệu năng I/O nhanh hơn hẳn Node.js?
+### Q1: Tại sao Bun lại có tốc độ khởi động và hiệu năng I/O nhanh hơn hẳn Node.js?
 
 - **Trả lời:** Có hai lý do kiến trúc cốt lõi:
   1. **Lựa chọn Engine:** Bun sử dụng JavaScriptCore (JSC) vốn được tối ưu hóa cho thời gian khởi động nhanh và ít chiếm RAM hơn V8 Engine của Node.js.
   2. **Tối ưu hóa tầng Runtime (Zig vs Libuv):** Node.js sử dụng Libuv (viết bằng C) và có chi phí binding rất lớn khi truyền dữ liệu qua lại giữa ranh giới JS (V8) và C++ (Libuv). Bun được viết bằng Zig, tích hợp trực tiếp I/O vào JavaScriptCore, loại bỏ hoàn toàn chi phí bắc cầu binding này, cho phép gọi trực tiếp các system calls của hệ điều hành với độ trễ gần như bằng không.
 
-### Q2: Cơ chế Garbage Collection (GC) của JavaScriptCore (Bun) khác gì với V8 (Node.js)? Điều này ảnh hưởng gì đến ứng dụng Server?
+### Q2: Cơ chế Garbage Collection của JavaScriptCore (Bun) khác gì với V8 (Node.js)? Điều này ảnh hưởng gì đến ứng dụng Server?
 
 - **Trả lời:**
   - V8 của Node.js sử dụng bộ dọn rác phân thế hệ (Generational GC - Orinoco) cực kỳ trưởng thành và tối ưu cho các tác vụ server dài hạn, nơi các biến được sinh ra và giải phóng liên tục.

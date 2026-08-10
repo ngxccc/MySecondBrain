@@ -7,6 +7,7 @@ aliases:
     Partial Prerendering Integration,
   ]
 date: 2026-06-12
+description: "Cơ chế và cách thức các Cloud Platform hỗ trợ triển khai Partial Prerendering."
 ---
 
 # NextJS PPR Platform Support

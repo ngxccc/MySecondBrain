@@ -1,6 +1,7 @@
 ---
-tags: [type/concept, topic/tech, eslint, ast, tooling]
+tags: [type/concept, topic/tech, eslint, ast, tooling, layer/core-mechanics]
 aliases: [Abstract Syntax Tree, Custom Rules]
+description: "AST (Abstract Syntax Tree) là cấu trúc cây đại diện cho mã nguồn. Bằng cách viết các bộ chọn (AST Selectors) kết hợp với ESLint (`no-restricted-syntax`), ta có thể ép buộc các quy chuẩn kiến trúc (..."
 ---
 
 # Phân tích AST và Custom ESLint Rules

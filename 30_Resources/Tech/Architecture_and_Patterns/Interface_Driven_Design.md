@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech]
+tags: [type/concept, topic/tech, layer/architecture]
 aliases: [IDD, Contract-First Design, Contract-Driven Development]
 created_at: Saturday, May 23rd 2026, 6:20:30 pm +07:00
 updated_at: Saturday, May 23rd 2026, 7:19:54 pm +07:00
+description: "Thiết kế dựa trên giao diện (contract-first) giúp các lớp lỏng lẻo và phát triển song song."
 ---
 
 # Interface-Driven Design

@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
 date: 2026-06-07
 aliases:
   [Bảng liên kết, Junction Table, Bridge Table, Join Table, Khóa chính phức hợp]
+description: "Giải quyết quan hệ Nhiều-Nhiều bằng bảng liên kết và khóa chính phức hợp."
 ---
 
 # Junction Table & Composite Primary Keys
@@ -21,7 +22,7 @@ Bảng liên kết (Junction Table) giải quyết mối quan hệ **Nhiều-Nhi
    - Cách thiết lập: Không dùng UUID hay cột tự tăng (`id`) riêng lẻ. Thay vào đó, gộp chung hai khóa ngoại `(warehouse_id, product_id)` làm khóa chính.
    - Lợi ích: Ràng buộc tính duy nhất ở mức vật lý của DB. Không bao giờ cho phép xuất hiện hai hàng trùng lặp cặp khóa ngoại đó, chống Duplicate Data tuyệt đối.
 
-## Concrete Example (SQL)
+## Concrete Example
 
 ```sql
 CREATE TABLE warehouse_stocks (

@@ -8,9 +8,10 @@ aliases:
     Dotnet 10 vs 9,
     C# 14 and C# 15 Features,
   ]
+description: "So sánh các tính năng mới cốt lõi của .NET 10 (LTS) & .NET 11 (Preview) so với .NET 9."
 ---
 
-# 🚀 .NET 10 & .NET 11: So Sánh Tính Năng Cốt Lõi So Với .NET 9
+# .NET 10 & .NET 11: So Sánh Tính Năng Cốt Lõi So Với .NET 9
 
 ## TL;DR
 
@@ -20,7 +21,7 @@ Tài liệu so sánh các điểm cải tiến lớn của **.NET 10** (LTS, ph�
 
 ## Core Concept & Key Architectural Upgrades
 
-### 1. Chu Kỳ Phát Hành & Lộ Trình Nâng Cấp (Release Lifecycle)
+### 1. Chu Kỳ Phát Hành & Lộ Trình Nâng Cấp
 
 - **.NET 9 (STS - Short-Term Support)**: Phát hành 11/2024, thời gian hỗ trợ 18 tháng. Phiên bản này và phiên bản .NET 8 (LTS) sẽ chính thức **hết hạn hỗ trợ (End-of-Life - EOL) vào ngày 10/11/2026**.
 - **.NET 10 (LTS - Long-Term Support)**: Phát hành 11/2025, được hỗ trợ 3 năm tới ngày **14/11/2028**. Đây là đích nâng cấp chính thức và khuyến nghị cho toàn bộ ứng dụng doanh nghiệp tải cao.
@@ -31,7 +32,7 @@ Tài liệu so sánh các điểm cải tiến lớn của **.NET 10** (LTS, ph�
 
 ### 2. Sự Tiến Hóa của C# qua Các Phiên Bản
 
-#### A. C# 14 (.NET 10) vs C# 13 (.NET 9)
+#### A. C# 14 vs C# 13 (.NET 9)
 
 - **Field-backed properties (`field` keyword)**: Loại bỏ code boilerplate khi cần tùy biến thuộc tính tự sinh. C# 14 giới thiệu từ khóa ngữ cảnh `field` đại diện trực tiếp cho backing field tự sinh của compiler.
 - **Extension Members (Extension Blocks)**: Mở rộng khả năng của "Extension Everything". Thay vì chỉ hỗ trợ extension method dạng tĩnh (static methods) truyền tham số `this`, C# 14 cho phép tạo các khối mở rộng (`extension`) hỗ trợ:
@@ -41,7 +42,7 @@ Tài liệu so sánh các điểm cải tiến lớn của **.NET 10** (LTS, ph�
 - **Null-conditional assignment (`?.`)**: Hỗ trợ cú pháp gán giá trị có kiểm tra null ngầm định (ví dụ: `person?.Address = newAddress`).
 - **Lambda Parameter Modifiers**: Cho phép thêm các modifier `ref`, `in`, `out` trực tiếp vào danh sách tham số của lambda expression mà không cần khai báo tường minh kiểu dữ liệu.
 
-#### B. C# 15 (.NET 11 Preview) vs C# 14 (.NET 10)
+#### B. C# 15 vs C# 14 (.NET 10)
 
 - **Union Types (`union`)**: Mô hình hóa kiểu dữ liệu có thể chứa một trong nhiều trường hợp cụ thể (case types). Rất hữu ích cho thiết kế domain (ví dụ: `union Result(Success, Error)`). Compiler hỗ trợ chuyển đổi ngầm định và kiểm tra tính đầy đủ (`exhaustive check`) khi sử dụng `switch`.
 - **Closed Hierarchies (`closed` modifier)**: Khóa nhánh kế thừa trực hệ của một class/record trong phạm vi assembly hiện tại. Trình biên dịch hiểu rõ toàn bộ các lớp con và cho phép viết `switch` pattern matching toàn vẹn mà không cần nhánh mặc định (`default` arm).
@@ -69,7 +70,7 @@ Tài liệu so sánh các điểm cải tiến lớn của **.NET 10** (LTS, ph�
 
 ## Practical Implementation & Configuration
 
-### 1. Sử dụng Backing Field với Từ Khóa `field` (C# 14)
+### 1. Sử dụng Backing Field với Từ Khóa `field`
 
 ```csharp
 public class User
@@ -85,7 +86,7 @@ public class User
 }
 ```
 
-### 2. Định Nghĩa Khối Mở Rộng Extension Members (C# 14)
+### 2. Định Nghĩa Khối Mở Rộng Extension Members
 
 ```csharp
 using System;
@@ -116,7 +117,7 @@ public static class PointExtensions
 }
 ```
 
-### 3. Union Types & Closed Hierarchies (C# 15 Preview)
+### 3. Union Types & Closed Hierarchies
 
 ```csharp
 // --- Closed Hierarchies ---
@@ -153,7 +154,7 @@ public class PaymentService
 }
 ```
 
-### 4. Collection Expression Arguments (C# 15 Preview)
+### 4. Collection Expression Arguments
 
 ```csharp
 // Khởi tạo List<T> có thiết lập trước Capacity

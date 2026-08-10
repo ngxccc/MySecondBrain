@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
 date: 2026-07-31
 aliases: [Vấn đề truy vấn N+1, N+1 Query Problem, Solution for N+1 Selects]
+description: "N+1 Query Problem là sự cố hiệu năng phổ biến khi làm việc với ORM (Object-Relational Mapping), xảy ra khi ứng dụng thực thi $1$ câu truy vấn ban đầu để lấy danh sách $N$ bản ghi cha, sau đó tiếp t..."
 ---
 
 # N+1 Query Problem
@@ -14,7 +15,7 @@ aliases: [Vấn đề truy vấn N+1, N+1 Query Problem, Solution for N+1 Select
 
 ## Core Concepts & Mechanics
 
-### 1. Cơ chế phát sinh vấn đề (Lazy Loading)
+### 1. Cơ chế phát sinh vấn đề
 
 Nguyên nhân gốc rễ của N+1 Query là cơ chế **Lazy Loading (Tải lười)** được bật mặc định hoặc được lập trình viên sử dụng vô tình trong ORM:
 
@@ -34,7 +35,7 @@ $$\text{Total Queries} = 1 + N$$
 
 ## Solutions & Strategies
 
-### 1. Eager Loading (Tải chủ động)
+### 1. Eager Loading
 
 Khai báo cho ORM biết trước các quan hệ cần lấy cùng lúc với bảng cha trong câu truy vấn ban đầu.
 
@@ -46,14 +47,14 @@ Khai báo cho ORM biết trước các quan hệ cần lấy cùng lúc với b�
   - ORM tách thành $2$ câu truy vấn: câu truy vấn 1 lấy $N$ bản ghi cha, thu thập tất cả danh sách ID con; câu truy vấn 2 sử dụng `WHERE id IN (id_1, id_2, ..., id_N)` để nạp toàn bộ bản ghi con trong 1 lần.
   - _Phù hợp:_ Quan hệ 1-N lớn hoặc Many-to-Many.
 
-### 2. DataLoader Pattern (Application-level Batching)
+### 2. DataLoader Pattern
 
 Đặc biệt phổ biến và chuẩn mực trong kiến trúc **GraphQL Resolvers** hoặc **Microservices**:
 
 - **Cách hoạt động:** Gom (batch) tất cả các yêu cầu đọc dữ liệu lẻ tẻ phát sinh trong cùng một vòng lặp sự kiện (Event Loop Tick) của ứng dụng thành một truy vấn mảng duy nhất (`IN (...)`), đồng thời cache kết quả trong phạm vi vòng đời request (Request Context).
 - **Ưu điểm:** Giúp giữ cho các hàm resolver/service độc lập hoàn toàn mà vẫn loại bỏ triệt để N+1 query bên dưới tầng CSDL.
 
-### 3. Strict Loading (Bật chế độ cảnh báo/chặn)
+### 3. Strict Loading
 
 - Thiết lập ORM ném ra lỗi (Exception) ngay khi phát hiện có mã nguồn đang cố truy cập thuộc tính quan hệ chưa được Eager Load (ví dụ: `strict_loading` trong Ruby on Rails, `lazy='noload'` trong SQLAlchemy).
 - Giúp phát hiện sớm lỗi N+1 Query ngay từ môi trường Development và Integration Testing.
@@ -62,7 +63,7 @@ Khai báo cho ORM biết trước các quan hệ cần lấy cùng lúc với b�
 
 ## Concrete Code Examples
 
-### 1. Anti-Pattern: Mã nguồn bị N+1 Query (TypeScript & ORM)
+### 1. Anti-Pattern: Mã nguồn bị N+1 Query
 
 ```typescript
 // ❌ LỖI N+1 QUERY:
@@ -78,7 +79,7 @@ for (const post of posts) {
 // ➔ TỔNG CỘNG: 1 + 10 = 11 Queries!
 ```
 
-### 2. Solution 1: Sử dụng Eager Loading (`include` / `JOIN`)
+### 2. Solution 1: Sử dụng Eager Loading
 
 ```typescript
 // ✅ TỐI ƯU BẰNG EAGER LOADING:
@@ -97,7 +98,7 @@ for (const post of posts) {
 // ➔ TỔNG CỘNG: Chỉ 1 hoặc 2 Queries!
 ```
 
-### 3. Solution 2: Sử dụng DataLoader Pattern (Node.js `dataloader`)
+### 3. Solution 2: Sử dụng DataLoader Pattern
 
 ```typescript
 import DataLoader from "dataloader";

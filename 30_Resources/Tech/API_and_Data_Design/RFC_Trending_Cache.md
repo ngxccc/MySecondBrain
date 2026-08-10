@@ -1,8 +1,9 @@
 ---
-tags: [type/concept, topic/tech, api-data-design]
+tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
 date: 2026-06-07
 aliases:
   [RFC Caching Trending, Sorted Sets Redis Leaderboard, Realtime Ranking Cache]
+description: "RFC đề xuất caching realtime leaderboard bằng Redis Sorted Sets (ZSET)."
 ---
 
 # RFC: Realtime Leaderboard Caching System

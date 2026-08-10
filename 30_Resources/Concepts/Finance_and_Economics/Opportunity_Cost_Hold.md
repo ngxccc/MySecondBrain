@@ -2,6 +2,7 @@
 tags: [type/concept, topic/psychology, topic/finance]
 date: 2026-01-30
 aliases: [Chi phí cơ hội, Sunk Cost Fallacy, Loss Aversion]
+description: "Đánh đổi giữa việc gồng lỗ và cắt lỗ."
 ---
 
 # Opportunity Cost & Holding Psychology

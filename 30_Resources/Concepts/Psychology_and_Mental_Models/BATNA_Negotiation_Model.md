@@ -7,6 +7,7 @@ aliases:
     Best Alternative to a Negotiated Agreement,
     Phương án thay thế tốt nhất khi đàm phán,
   ]
+description: "Phương án thay thế tốt nhất - Điểm tựa an toàn và nguồn sức mạnh thương lượng cốt lõi."
 ---
 
 # BATNA Negotiation Model

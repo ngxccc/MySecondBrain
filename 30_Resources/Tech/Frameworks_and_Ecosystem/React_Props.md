@@ -2,6 +2,7 @@
 tags: [type/concept, topic/tech, react, frontend]
 date: 2026-07-10
 aliases: [React Props, Thuộc tính trong React]
+description: "Thuộc tính truyền từ component cha xuống, mang tính chất bất biến (read-only)."
 ---
 
 # React Props

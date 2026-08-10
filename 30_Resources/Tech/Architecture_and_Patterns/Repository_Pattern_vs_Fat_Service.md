@@ -1,11 +1,12 @@
 ---
-tags: [type/concept, topic/tech, pattern/architecture]
+tags: [type/concept, topic/tech, pattern/architecture, layer/architecture]
 aliases:
   [
     Repository vs Fat Service,
     Repository Pattern vs Transaction Script,
     Direct ORM,
   ]
+description: "So sánh giữa Repository Pattern và Fat Service (Direct ORM) trong thiết kế tầng dữ liệu."
 ---
 
 # Repository Pattern vs Fat Service

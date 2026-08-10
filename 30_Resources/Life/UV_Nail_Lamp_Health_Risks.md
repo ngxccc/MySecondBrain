@@ -7,9 +7,10 @@ aliases:
     UV Nail Lamp Health Risks,
     Ảnh hưởng của tia UV làm móng,
   ]
+description: "Sử dụng máy hơ gel tia cực tím (UV/LED) khi làm móng phát ra bức xạ UVA. Bức xạ này gây tổn thương DNA tế bào, lão hóa da tay sớm và có thể tăng nguy cơ ung thư da nếu tiếp xúc thường xuyên tích lũ..."
 ---
 
-# Ảnh hưởng sức khỏe của máy hơ gel tia cực tím (UV Nail Lamp)
+# Ảnh hưởng sức khỏe của máy hơ gel tia cực tím
 
 ## TL;DR
 

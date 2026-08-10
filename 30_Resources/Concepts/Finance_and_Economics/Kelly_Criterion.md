@@ -2,6 +2,7 @@
 tags: [type/concept, topic/finance, topic/math]
 date: 2026-06-23
 aliases: [Công thức Kelly, Kelly Criterion, Kelly Formula, Tỷ lệ Kelly]
+description: "Tối ưu hóa quy mô vị thế vốn trong đầu tư tài chính."
 ---
 
 # Kelly Criterion
@@ -14,7 +15,7 @@ Công thức Kelly (Kelly Criterion) là một mô hình toán học dùng để
 
 Công thức Kelly hoạt động dựa trên nguyên lý tối đa hóa kỳ vọng tăng trưởng dài hạn thay vì lợi nhuận ngắn hạn, đồng thời giảm thiểu rủi ro phá sản (risk of ruin).
 
-### 1. Công thức Kelly cho trường hợp phân phối rời rạc (Binary Outcomes)
+### 1. Công thức Kelly cho trường hợp phân phối rời rạc
 
 Áp dụng cho các giao dịch hoặc trò chơi có kết quả nhị phân (chỉ có thắng hoặc thua):
 
@@ -27,7 +28,7 @@ Trong đó:
 - **$q$**: Xác suất thua ($q = 1 - p$).
 - **$b$**: Tỷ lệ cược ròng (net odds), nghĩa là nếu thắng bạn nhận được $b$ lần số tiền đã đặt cược (ví dụ: cược 1 ăn 2 thì $b = 2$).
 
-### 2. Công thức Kelly cho trường hợp phân phối liên tục (Continuous Returns)
+### 2. Công thức Kelly cho trường hợp phân phối liên tục
 
 Áp dụng trong thị trường tài chính (cổ phiếu, danh mục đầu tư) dưới giả định chuyển động Brownian hình học (Geometric Brownian Motion):
 
@@ -42,7 +43,7 @@ Trong đó:
 $$f^* = \Sigma^{-1} \mu$$
 Với $\Sigma$ là ma trận hiệp phương sai của các tài sản và $\mu$ là vector lợi nhuận vượt mức kỳ vọng.
 
-### 3. Fractional Kelly (Tỷ lệ Kelly một phần)
+### 3. Fractional Kelly
 
 Trong thực tế, việc sử dụng "Full Kelly" ($f = 1$) dẫn đến biến động tài sản cực kỳ lớn (volatility) và rủi ro sụt giảm tài sản nghiêm trọng (drawdown). Nhà đầu tư chuyên nghiệp thường áp dụng **Fractional Kelly**:
 
@@ -55,7 +56,7 @@ $$f_{\text{frac}} = \lambda \cdot f^* \quad (0 < \lambda < 1)$$
   - Với **Half-Kelly ($\lambda = 0.5$)**, nhà đầu tư giữ lại được $0.5 \times (2 - 0.5) = 75\%$ tốc độ tăng trưởng của Full Kelly.
   - Trong khi đó, biến động (volatility/standard deviation) của danh mục giảm đi một nửa ($50\%$), giúp hạn chế đáng kể các pha sụt giảm tài sản cực hạn và tăng tính ổn định tâm lý.
 
-### 4. Shannon's Demon (Con quỷ của Shannon)
+### 4. Shannon's Demon
 
 Một ứng dụng kinh điển của tư duy Kelly trong việc tái cân bằng danh mục đầu tư (portfolio rebalancing) được phát triển bởi Claude Shannon:
 
@@ -65,7 +66,7 @@ Một ứng dụng kinh điển của tư duy Kelly trong việc tái cân bằn
 
 ## Concrete Examples
 
-### Ví dụ 1: Cá cược nhị phân (Tung đồng xu lệch)
+### Ví dụ 1: Cá cược nhị phân
 
 - **Kịch bản:** Tung một đồng xu không đồng chất có xác suất thắng $p = 60\%$ ($0.6$), thua $q = 40\%$ ($0.4$). Nếu thắng, ăn tỷ lệ ròng $b = 1$ (cược $1$ ăn $1$).
 - **Tính toán Full Kelly:**
@@ -74,7 +75,7 @@ Một ứng dụng kinh điển của tư duy Kelly trong việc tái cân bằn
 - **Tính toán Half-Kelly:**
   $$f_{\text{half}} = 0.5 \times 20\% = 10\%$$
 
-### Ví dụ 2: Vị thế cổ phiếu (Phân phối liên tục)
+### Ví dụ 2: Vị thế cổ phiếu
 
 - **Kịch bản:** Một cổ phiếu công nghệ có tỷ suất sinh lời vượt mức kỳ vọng hàng năm $\mu = 10\%$ ($0.10$) và độ lệch chuẩn $\sigma = 20\%$ ($0.20$), tương ứng với phương sai $\sigma^2 = 0.04$.
 - **Tính toán Full Kelly:**
@@ -103,9 +104,9 @@ def simulate_path(p, b, fraction, steps=100, init_capital=100):
     return capital
 
 # Chạy mô phỏng 10,000 lần cho 3 chiến lược:
-# 1. Half-Kelly (10%): Tăng trưởng ổn định, sụt giảm tài sản (drawdown) thấp.
+# 1. Half-Kelly (10%): Tăng trưởng ổn định, sụt giảm tài sản thấp.
 # 2. Full Kelly (20%): Tăng trưởng cao nhất dài hạn nhưng biến động cực kỳ lớn.
-# 3. Overbetting (45% - vượt quá 2 * f*): Kỳ vọng dài hạn âm, có nguy cơ cháy tài khoản rất cao.
+# 3. Overbetting : Kỳ vọng dài hạn âm, có nguy cơ cháy tài khoản rất cao.
 ```
 
 ---

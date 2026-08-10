@@ -3,6 +3,7 @@ tags: [type/concept, topic/psychology, topic/innovation]
 date: 2026-04-29
 aliases:
   [Reasoning from First Principles, Tư duy nguyên bản, Nguyên lý đầu tiên]
+description: "Phá vỡ vấn đề thành các hạt nguyên tử sự thật để tìm giải pháp đột phá từ con số 0."
 ---
 
 # First Principles Thinking

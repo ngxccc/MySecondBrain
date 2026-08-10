@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/architecture, pattern/clean-code]
+tags: [type/concept, topic/architecture, pattern/clean-code, layer/architecture]
 date: 2026-04-28
 aliases: [SDP, Stable Dependencies Principle, Circular Dependency]
+description: "Quy tắc mũi tên một chiều chống Circular Dependency."
 ---
 
 # Shared Module Dependency Rule

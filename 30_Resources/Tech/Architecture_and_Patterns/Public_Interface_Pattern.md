@@ -1,10 +1,11 @@
 ---
-tags: [type/concept, topic/architecture, pattern/design]
+tags: [type/concept, topic/architecture, pattern/design, layer/architecture]
 date: 2026-04-28
 aliases: [Module Facade, Boundary Interface]
+description: "Cổng giao tiếp an toàn giữa các module (Facade)."
 ---
 
-# Public Interface Pattern (Module Boundary)
+# Public Interface Pattern
 
 ## TL;DR
 

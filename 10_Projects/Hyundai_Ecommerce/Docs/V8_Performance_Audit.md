@@ -154,5 +154,5 @@ setInputValues((prev) => {
 ## Related Notes
 
 - Bản đồ tri thức: [[000_Tech_MOC]]
-- Quản lý bộ nhớ Stack/Heap: [[JS_Memory_Management_Stack_Heap_GC]]
+- Quản lý bộ nhớ Stack/Heap: [[JS_Stack_vs_Heap_Memory]]
 - Hệ thống kiểu dữ liệu: [[TS_Type_System_Structural_Type_Erasure]]

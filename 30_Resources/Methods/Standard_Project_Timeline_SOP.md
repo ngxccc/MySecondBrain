@@ -2,6 +2,7 @@
 tags: [type/method, topic/engineering-management, topic/sdlc]
 date: 2026-04-29
 aliases: [Capstone Roadmap, Software Dev Lifecycle, Project SOP]
+description: "Quy trình 16 tuần tiêu chuẩn (Hybrid SDLC) để build đồ án/project từ số 0 đến lúc deploy và bảo vệ thành công."
 ---
 
 # Standard Project Timeline SOP

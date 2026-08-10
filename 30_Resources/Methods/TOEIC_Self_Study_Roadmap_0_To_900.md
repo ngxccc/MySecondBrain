@@ -8,6 +8,7 @@ date: 2026-08-04
 aliases:
   - Lộ trình tự học TOEIC 0 đến 900
   - TOEIC Self-Study Roadmap 0-900+
+description: "Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được chia làm 3 giai đoạn rõ ràng trong 6–9 tháng. Lộ trình ứng dụng các phương pháp học tập dựa trên bằng chứng khoa học như Phonetic Chunking, C..."
 ---
 
 # TOEIC Self Study Roadmap 0 To 900
@@ -27,9 +28,9 @@ Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được ch
 
 ---
 
-## TOEIC Exam Structure Breakdown (7 Parts)
+## TOEIC Exam Structure Breakdown
 
-### 🔊 I. KỸ NĂNG NGHE (TOEIC LISTENING) — 100 câu / 45 phút
+### I. KỸ NĂNG NGHE — 100 câu / 45 phút
 
 | Phần thi   | Tên tiếng Anh                   | Số câu | Nội dung & Định dạng                                                                                                    |
 | :--------- | :------------------------------ | :----: | :---------------------------------------------------------------------------------------------------------------------- |
@@ -40,7 +41,7 @@ Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được ch
 
 ---
 
-### 📖 II. KỸ NĂNG ĐỌC (TOEIC READING) — 100 câu / 75 phút
+### II. KỸ NĂNG ĐỌC — 100 câu / 75 phút
 
 | Phần thi   | Tên tiếng Anh                               | Số câu | Nội dung & Định dạng                                                                                      |
 | :--------- | :------------------------------------------ | :----: | :-------------------------------------------------------------------------------------------------------- |
@@ -52,15 +53,18 @@ Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được ch
 
 ## Practical Implementation
 
-### Step 1: Phase 1 — Foundation (0 to 450+) (Target Time: 3 Months)
+### Step 1: Phase 1 — Foundation (Target Time: 3 Months)
 
 - **Target Score**: LC $\ge 50$ câu ($250$ điểm) | RC $\ge 50$ câu ($245$ điểm).
 - **Core Focus**:
-  - **Listening**: Tập trung Part 1 & Part 2. Dùng phương pháp chép chính tả và luyện tập nhận biết câu hỏi 5W1H, Yes/No traps, đồng âm.
+  - **Listening (Chiến lược 3 Cấp độ chống ù tai)**:
+    - _Cấp 1 (Chống nghe mù)_: Bật sẵn Script (Lời thoại) ra vừa nghe vừa nhìn mặt chữ, hạ tốc độ $0.75\times$ để nối ký tự với âm thanh.
+    - _Cấp 2 (Tập trung bài siêu ngắn)_: Chỉ làm Part 1 (Mô tả tranh 1 câu) & Part 2 (Hỏi - đáp 1 câu) + Phim sitcom _Extra English_ để quen khẩu hình.
+    - _Cấp 3 (Chép chính tả & Part 3/4)_: Khi nghe hiểu $60\text{–}70\%$ (khi xem Script), mới nâng cấp lên chép chính tả Dictation và thử sức Part 3 & Part 4.
   - **Reading**: Ôn tập ngữ pháp cơ bản và từ loại (Part 5, 6). Tập làm quen với đoạn văn đơn ngắn ở Part 7 bằng kỹ thuật Skimming & Scanning.
 - **Recommended Textbooks**: _Preparation for the TOEIC Test (Vol 1, 2)_, _Hacker TOEIC Start Listening/Reading_.
 
-### Step 2: Phase 2 — Acceleration (450 to 700+) (Target Time: 3 Months)
+### Step 2: Phase 2 — Acceleration (Target Time: 3 Months)
 
 - **Target Score**: LC $\ge 70$ câu ($360$ điểm) | RC $\ge 70$ câu ($345$ điểm).
 - **Core Focus**:
@@ -68,7 +72,7 @@ Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được ch
   - **Reading**: Giới hạn thời gian làm bài 75 phút ($15$p Part 5 $\rightarrow$ $10$p Part 6 $\rightarrow$ $50$p Part 7). Chữa đề chi tiết (Error Analysis).
 - **Recommended Textbooks**: _ETS TOEIC 2021, 2022, 2023_.
 
-### Step 3: Phase 3 — Mastery (700+ to 900+) (Final Polish)
+### Step 3: Phase 3 — Mastery (Final Polish)
 
 - **Target Score**: LC $\ge 90$ câu ($465$ điểm) | RC $\ge 90$ câu ($445$ điểm).
 - **Core Focus**:
@@ -90,12 +94,12 @@ Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được ch
 
 ## Curated Resources & Practice Downloads
 
-### 🌐 Online Interactive Test Practice (Luyện đề miễn phí có chấm điểm & giải thích):
+### Online Interactive Test Practice :
 
 - [STUDY4 TOEIC Online Practice](https://study4.com/tests/toeic/): Nền tảng làm đề ETS 2020–2024 miễn phí trực tuyến, có tính giờ, đáp án và giải thích tiếng Việt chi tiết.
 - [PrepEDU ETS TOEIC Collection Review](https://prepedu.com/vi/blog/sach-ets-toeic-pdf): Tổng hợp và đánh giá ma trận đề ETS từ các năm.
 
-### 📚 Official & Downloadable Study Materials:
+### Official & Downloadable Study Materials:
 
 - [Official ETS TOEIC Preparation Page](https://www.ets.org/toeic/test-takers/prepare.html): Trang chuẩn của ETS cung cấp cấu trúc đề và sample test chính thức.
 - [STOEIC ETS Practice Resources](https://stoeic.com/blog/file-sach-va-dap-an-ets-toeic-2023.32): Tổng hợp sách và audio các bộ đề ETS TOEIC.

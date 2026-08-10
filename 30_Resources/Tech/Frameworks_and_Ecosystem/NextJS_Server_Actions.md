@@ -1,5 +1,13 @@
 ---
-tags: [type/concept, topic/tech, react, frontend, framework/nextjs]
+tags:
+  [
+    type/concept,
+    topic/tech,
+    react,
+    frontend,
+    framework/nextjs,
+    layer/infrastructure,
+  ]
 date: 2026-06-20
 aliases:
   [
@@ -9,6 +17,7 @@ aliases:
     useActionState,
     useTransition,
   ]
+description: "Kỹ thuật mutate data trực tiếp từ server bằng RPC ngầm."
 ---
 
 # Next.js Server Actions & React 19 Integration
@@ -21,7 +30,7 @@ aliases:
 
 ## Core Concept
 
-### 1. Bản chất bên dưới (Under the Hood - RPC Pattern)
+### 1. Bản chất bên dưới
 
 Mặc dù cú pháp trông giống như gọi một hàm local bình thường từ Client, trình biên dịch của Next.js (compiler) thực chất hoạt động như sau:
 
@@ -29,7 +38,7 @@ Mặc dù cú pháp trông giống như gọi một hàm local bình thường t
 2. **Giao tiếp:** Khi Client kích hoạt hành động (ví dụ bấm submit), Next.js sẽ gửi một HTTP POST request lên server với header `Next-Action: <Action-ID>` chứa ID băm của hàm đó, kèm theo body dạng `multipart/form-data` hoặc `application/json` (chứa các tham số truyền vào).
 3. **Thực thi:** Server nhận request, giải nén tham số, thực thi hàm trong môi trường Node.js (nơi có thể truy cập DB trực tiếp) và trả kết quả về dưới dạng serialized payload (chuỗi văn bản đặc biệt của React).
 
-### 2. Sự tiến hóa tích hợp React 19 (Hooks mới)
+### 2. Sự tiến hóa tích hợp React 19
 
 React 19 chính thức stable các API hỗ trợ quản lý vòng đời của Server Actions (Actions Lifecycle):
 
@@ -50,7 +59,7 @@ Do Server Actions tự động tạo ra endpoint POST, chúng tiềm ẩn nguy c
 
 ## Practical Implementation
 
-### 1. Thiết kế Action Đăng nhập (`login.action.ts`) an toàn với Zod
+### 1. Thiết kế Action Đăng nhập an toàn với Zod
 
 Trong dự án Hyundai Ecommerce, các Server Action được tổ chức tách biệt tại thư mục `actions/` và validate dữ liệu chặt chẽ:
 
@@ -95,7 +104,7 @@ export async function loginAction(prevState: any, formData: FormData) {
 }
 ```
 
-### 2. Sử dụng trong Component Form ở Client (`LoginForm`)
+### 2. Sử dụng trong Component Form ở Client
 
 ```typescript
 // apps/storefront/src/features/auth/components/login-form.tsx (Client Component)
@@ -133,13 +142,13 @@ export default function LoginForm() {
 
 ---
 
-## Interview Prep (Câu hỏi phỏng vấn thực tế)
+## Interview Prep
 
-### Q1: Server Actions hoạt động dưới nền tảng như thế nào? (Cơ chế mạng)
+### Q1: Server Actions hoạt động dưới nền tảng như thế nào?
 
 - **Trả lời:** Khi trình duyệt kích hoạt Server Action, nó sẽ gửi một yêu cầu **HTTP POST** lên server. Yêu cầu này đi kèm một Header đặc biệt là `Next-Action` chứa mã băm định danh của Action đó. Dữ liệu gửi đi định dạng dưới dạng `multipart/form-data` (nếu dùng Form gốc) hoặc `application/json`. Phản hồi trả về của server là định dạng serialized text (React Server Component Payload) chứ không phải JSON thuần túy, giúp React cập nhật trực tiếp cây DOM ở client mà không cần reload trang.
 
-### Q2: Tại sao chúng ta không nên ném lỗi thô (`throw new Error`) bên trong Server Action ở môi trường Production?
+### Q2: Tại sao chúng ta không nên ném lỗi thô bên trong Server Action ở môi trường Production?
 
 - **Trả lời:** Khi chạy ở môi trường Production, để bảo vệ an ninh và tránh rò rỉ cấu trúc hệ thống (như SQL query lỗi, database password), Next.js sẽ tự động mã hóa mọi lỗi thô bị `throw` thành thông báo chung chung: _"An error occurred on the server; go to the server logs for details"_. Điều này làm giảm trải nghiệm người dùng vì họ không biết cụ thể lỗi gì (ví dụ: trùng email, sai mật khẩu).
   _Quy tắc chuẩn:_ Sử dụng khối `try/catch` bắt lỗi, ghi log ở server và trả về một đối tượng có cấu trúc dạng `{ success: false, error: "Thông báo lỗi thân thiện" }`.

@@ -1,7 +1,8 @@
 ---
-tags: [type/vocab, topic/english] [BẮT BUỘC]
-mastery: 1 # 1 (New) -> 5 (Mastered) [TÙY CHỌN]
-created_at: <% tp.file.creation_date() %> [TÙY CHỌN]
+tags: [type/vocab, topic/english]
+aliases: []
+date: <% tp.file.creation_date("YYYY-MM-DD") %>
+description: "Từ vựng tiếng Anh và ví dụ ngữ cảnh thực tế."
 ---
 
 # [Word/Phrase]
@@ -30,10 +31,10 @@ _(Quan trọng nhất: Đặt câu với context IT hoặc đời sống)_
 
 _(Từ này hay đi với từ nào?)_
 
-- **Synonyms (Đồng nghĩa):** ...
-- **Antonyms (Trái nghĩa):** ...
+- **Synonyms:** ...
+- **Antonyms:** ...
 - **Collocations:** [Verb] + [Word]
 
-## Notes (False Friends) [TÙY CHỌN]
+## Notes & False Friends [TÙY CHỌN]
 
 _(Cẩn thận dùng sai. Ví dụ: Library trong Code khác Library ngoài đời)_

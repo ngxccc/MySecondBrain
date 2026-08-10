@@ -8,6 +8,7 @@ tags:
   ]
 date: 2026-07-25
 aliases: [Lý thuyết trò chơi trong Hẹn hò, Dating Game Theory, The Dating Game]
+description: "Lý thuyết trò chơi trong Hẹn hò (Dating Game Theory) giải thích thị trường tìm kiếm bạn đời thông qua mô hình 3 yếu tố: Người chơi (Players), Ràng buộc (Rules/Constraints) và Động cơ (Incentives). ..."
 ---
 
 # Dating Game Theory
@@ -36,7 +37,7 @@ Lý thuyết trò chơi (Game Theory) cung cấp khung tư duy để phân tích
 
 ## Dating Game Model & Nash Equilibrium
 
-### 3 Tiêu chí đánh giá giá trị thu hút (Attractiveness Metrics)
+### 3 Tiêu chí đánh giá giá trị thu hút
 
 Người chơi trong thị trường hẹn hò được xếp hạng dựa trên 3 tiêu chuẩn chính:
 
@@ -44,7 +45,7 @@ Người chơi trong thị trường hẹn hò được xếp hạng dựa trên
 - **Tài sản (Wealth):** Khả năng tài chính cá nhân và tiềm lực gia đình.
 - **Địa vị xã hội (Status):** Quyền lực, công việc có vị thế cao, mạng lưới quan hệ xã hội.
 
-### Xung đột Động lực Tiến hóa & Cân bằng Nash (Nash Equilibrium)
+### Xung đột Động lực Tiến hóa & Cân bằng Nash
 
 ```mermaid
 graph TD
@@ -70,7 +71,7 @@ graph TD
    - Để tối ưu hóa xã hội và tránh sụp đổ chủng tộc, chiến lược hợp tác tốt nhất là ghép đôi tương đồng theo thứ hạng: Người thứ hạng 5 kết hôn với người thứ hạng 5, 4 ghép với 4, 3 ghép với 3, 2 ghép với 2, 1 ghép với 1.
    - Trạng thái này giúp mọi người chơi đều đạt kết quả tốt nhất có thể, duy trì tỷ lệ sinh thay thế (Replacement Rate $\ge 2.1$).
 
-### Thực tế lệch khỏi Nash: Trò chơi Địa vị (Status Game)
+### Thực tế lệch khỏi Nash: Trò chơi Địa vị
 
 Trong thực tế, xã hội không vận hành theo Cân bằng Nash lý tưởng vì:
 
@@ -81,7 +82,7 @@ Trong thực tế, xã hội không vận hành theo Cân bằng Nash lý tưở
 
 ---
 
-## 3 Historical Superstructures (3 Kiến trúc Thượng tầng Xã hội)
+## 3 Historical Superstructures
 
 Bản chất của trò chơi hẹn hò thay đổi tùy thuộc vào **Kiến trúc thượng tầng (Superstructure)** — bao gồm dân số, kinh tế, công nghệ, chính trị và tôn giáo.
 
@@ -95,7 +96,7 @@ Bản chất của trò chơi hẹn hò thay đổi tùy thuộc vào **Kiến t
 
 ## Societal Implications & Civilization Life Cycle
 
-### Chu kỳ sống của Văn minh (Civilization Life Cycle)
+### Chu kỳ sống của Văn minh
 
 Lý thuyết trò chơi chỉ ra các văn minh đều trải qua 3 giai đoạn: **Sinh ra (Superstructure 1) $\rightarrow$ Trưởng thành (Superstructure 2) $\rightarrow$ Sụp đổ (Superstructure 3)**.
 

@@ -1,7 +1,8 @@
 ---
-tags: [type/concept, topic/typescript, advanced-types]
+tags: [type/concept, topic/typescript, advanced-types, layer/core-mechanics]
 date: 2026-04-28
 aliases: [Distributive Conditionals, Disable Distribution]
+description: "Cơ chế tự động xé lẻ Union Type trong các biểu thức Generic của TypeScript."
 ---
 
 # TS Distributive Conditional Types

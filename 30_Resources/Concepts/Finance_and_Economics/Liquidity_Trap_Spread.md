@@ -2,6 +2,7 @@
 tags: [type/concept, topic/finance, topic/economics]
 date: 2026-01-30
 aliases: [Bid-Ask Spread, Bẫy thanh khoản, Paper Profit]
+description: "Rủi ro thanh khoản khi thị trường hoảng loạn."
 ---
 
 # Liquidity Trap & Bid-Ask Spread
