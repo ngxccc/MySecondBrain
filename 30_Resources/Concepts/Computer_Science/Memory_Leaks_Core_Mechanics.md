@@ -49,11 +49,12 @@ Memory Leak (rò rỉ bộ nhớ) là hiện tượng bộ nhớ đã cấp phá
 
 ### Các Pattern Gây Rò rỉ Bộ nhớ Kinh điển Trong Lập trình
 
-| Pattern gây rò rỉ                  | Bản chất kỹ thuật                                                                            | Giải pháp phòng ngừa tổng quát                                                      |
-| :--------------------------------- | :------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| **Unbounded Cache**                | Lưu trữ đối tượng vào Map/Array toàn cục mà không có cơ chế dọn dẹp (TTL / Eviction Policy). | Dùng WeakReference / `WeakMap` / `WeakSet` hoặc triển khai LRU Cache.               |
-| **Dangling Listeners / Observers** | Đăng ký Event Listener / Publisher-Subscriber nhưng quên hủy đăng ký (Unsubscribe).          | Luôn triển khai hàm Cleanup/Dispose để gỡ bỏ Event Listener khi Lifecycle kết thúc. |
-| **Long-Lived Closures**            | Closure giữ tham chiếu đến ngữ cảnh lexical chứa các biến kích thước lớn.                    | Gán `null` cho các biến rác dung lượng lớn sau khi sử dụng xong.                    |
+| Pattern gây rò rỉ                  | Bản chất kỹ thuật                                                                                       | Giải pháp phòng ngừa tổng quát                                                                 |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
+| **Unbounded Cache**                | Lưu trữ đối tượng vào Map/Array toàn cục mà không có cơ chế dọn dẹp (TTL / Eviction Policy).            | Dùng WeakReference / `WeakMap` / `WeakSet` hoặc triển khai LRU Cache.                          |
+| **Dangling Listeners / Observers** | Đăng ký Event Listener / Publisher-Subscriber nhưng quên hủy đăng ký (Unsubscribe).                     | Luôn triển khai hàm Cleanup/Dispose để gỡ bỏ Event Listener khi Lifecycle kết thúc.            |
+| **Long-Lived Closures**            | Closure giữ tham chiếu đến ngữ cảnh lexical chứa các biến kích thước lớn.                               | Gán `null` cho các biến rác dung lượng lớn sau khi sử dụng xong.                               |
+| **Sub-slice Memory Leak (Go)**     | Sub-slice nhỏ sống lâu giữ con trỏ `Data` trỏ tới mảng ngầm khổng lồ, khiến GC không thể dọn mảng ngầm. | Dùng `copy()` hoặc `bytes.Clone()` sang mảng độc lập mới khi mảng khổng lồ không còn dùng đến. |
 
 ---
 
