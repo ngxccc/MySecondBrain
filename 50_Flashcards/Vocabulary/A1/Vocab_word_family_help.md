@@ -1,20 +1,23 @@
 ---
-noteId: 1786026050698
+noteId: 1786595082377
 ---
 
 What is the Word Family Matrix, types, pronunciation, and usage of **help**?
 
 ---
 
-- **Type**: Verb (Word Family)
+- **Type**: Verb / Noun (Word Family)
 - **Pronunciation**: /help/
-- **Meaning**: To make it easier for someone to do something by offering services or resources.
+- **Meaning**: To make it easier for someone to do something or to assist (giúp đỡ, trợ giúp).
 - **Word Family**:
   - **Verb**: `help` (/help/ - giúp đỡ)
-  - **Noun**: `helper` (/ˈhel.pər/ - người giúp đỡ) / `help` (/help/ - sự giúp đỡ)
-  - **Adjective**: `helpful` (/ˈhel.pə.fəl/ - hữu ích) / `helpless` (/ˈhelp.ləs/ - bất lực, không thể tự giúp)
-- **Example**:
-  - _Verb: Good documentation **helps** developers onboard quickly._
-  - _Noun: We need an extra **helper** to manage the queue._
-  - _Adjective: The error log was extremely **helpful** during debugging._
-  - _Adjective: Without logs, engineers feel **helpless** when bugs occur._
+  - **Noun**: `help` (/help/ - sự giúp đỡ) / `helper` (/ˈhel.pər/ - người/hàm trợ giúp)
+  - **Adjective**: `helpful` (/ˈhel.p fəl/ - hữu ích)
+  - **Adverb**: `helpfully` (/ˈhel.p fəl.i/ - một cách hữu ích)
+- **Collocations**:
+  - `helper function` (hàm trợ giúp)
+  - `helpful feedback` (phản hồi hữu ích)
+- **Concrete Examples**:
+  - _Verb: Indexing **helps** accelerate search query speeds._
+  - _Noun: Create a **helper** module for string formatting._
+  - _Adjective: Visual diagrams provide **helpful** context._
