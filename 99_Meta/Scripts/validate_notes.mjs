@@ -60,6 +60,7 @@ const ignoredDirs = [
   "00_Inbox",
   "10_Projects",
   "40_Archives",
+  "50_Flashcards",
   "99_Meta",
   ".git",
   ".obsidian",

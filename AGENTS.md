@@ -28,6 +28,9 @@ Each mode has strict boundaries:
 ### System Structure
 
 - **System Structure Reference**: All AI agents and systems MUST read `000_System_Structure.md` at the beginning of a task to understand the exact organization and directories of this Second Brain.
+- **Strict 2-Level Folder Depth Limit**: All AI agents MUST strictly enforce a maximum 2-level folder depth cap across `30_Resources/` and `10_Projects/`:
+  - **In `30_Resources/` (`Concepts/`, `Methods/`, `Tech/`)**: Notes MUST sit flat directly inside 2nd-level domain subdirectories (e.g., `Concepts/Computer_Science/`, `Methods/Engineering/`). NEVER create 3rd-level nested subfolders.
+  - **In `10_Projects/` (`10_Projects/<Project_Name>/`)**: Redundant `Docs/` wrapper folders are PROHIBITED. Domain subdirectories (`Architecture/`, `Auth/`, `Database/`, `DevOps/`, `Workflows/`, `Testing/`) MUST sit directly under the Project Root (e.g., `10_Projects/Ticket_Booking_Backend/Architecture/`). Notes inside domain folders MUST remain flat.
 - **Tag Taxonomy SSOT**: All AI agents MUST strictly comply with `99_Meta/Tag_Taxonomy_SSOT.md` for YAML frontmatter tags. NEVER use arbitrary or undeclared tags in any note. If a new tag is genuinely required, the AI MUST explicitly declare and document it in `99_Meta/Tag_Taxonomy_SSOT.md` FIRST before applying it.
 - **No Emojis or Icons**: All AI agents MUST NOT use emojis or icons anywhere in the Second Brain (including titles, headings, MOCs, dashboards, code blocks, or note bodies) unless explicitly requested by the user. Keep all Markdown text clean, professional, and emoji-free.
 - **Maintain & Update**: Any task that introduces a structural change, creates a new core folder, or deprecates an existing directory MUST immediately update `000_System_Structure.md` to ensure it remains the source of truth.
@@ -54,6 +57,10 @@ Each mode has strict boundaries:
     - If it contains checklists, step-by-step guidelines, code templates, or scripts -> Place under `30_Resources/Methods/`.
     - If it contains definitions, theory, origins, or mental models -> Place under `30_Resources/Concepts/`.
   - **Quality Verification**: After creating or updating any note, you MUST run `bun 99_Meta/Scripts/validate_notes.mjs` to verify its structure and content quality. No note should be committed with validation errors.
+
+### Socratic Mentorship & Code Generation Rules
+
+- **Zero-Code-Handout Rule (Scaffolding-Only Guidance)**: When assisting the user with exercises, drills, or learning challenges, AI agents MUST NOT write or modify the core business logic / solution code directly unless explicitly requested. Agents MUST ONLY provide boilerplate scaffolding structures with `TODO` comments, guiding the user to write and verify the core logic themselves.
 
 ### Efficiency
 

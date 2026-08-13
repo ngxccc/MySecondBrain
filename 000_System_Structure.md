@@ -11,7 +11,7 @@ updated_at: Sunday, June 7th 2026, 10:00:00 am +07:00
 
 Tài liệu quy định chức năng và quy tắc lưu trữ cho từng thư mục trong hệ thống Second Brain, dựa trên phương pháp **PARA Modified** (Inbox + Projects + Areas + Resources + Archives).
 
----
+Tất cả các quy tắc hệ thống, quy định phân loại note, và chỉ dẫn cấu trúc thư mục được tập trung duy nhất tại **`AGENTS.md`** (Single Source of Truth). Tài liệu này chỉ đóng vai trò bản đồ ánh xạ (Directory Mapping) cho cây thư mục.
 
 ## Directory Breakdown (Chi tiết cấu trúc)
 
@@ -33,12 +33,17 @@ Tài liệu quy định chức năng và quy tắc lưu trữ cho từng thư m�
 ### 10_Projects (Dự án đang chạy)
 
 - **Mục đích:** Chứa các dự án **có mục tiêu cụ thể** và **có thời hạn (Deadline)**.
-- **Các dự án hiện tại:**
-  - `Hyundai_Ecommerce/`: Dự án thương mại điện tử Hyundai. Có cấu trúc tài liệu chi tiết (`Docs/Pipeline.md`, `000_Hyundai_MOC.md.md`).
-  - `LLM_Wiki/`: Dự án Wiki liên quan đến Mô hình Ngôn ngữ Lớn (LLM) (`Prompt.md`).
+- **Cấu trúc mỗi thư mục dự án (`10_Projects/<Project_Name>/`):**
+  - Cắt bỏ vỏ bọc `Docs/` thừa. Tất cả các thư mục Domain Cấp 2 nằm trực tiếp dưới thư mục gốc của Dự án:
+    - `Architecture/`: Kiến trúc hệ thống, ADR, RFC, System Design Specs.
+    - `Auth/`: Thiết kế luồng xác thực (Authentication/Authorization), OAuth, Session.
+    - `Database/`: DBML Schema, Postgres Indexes, Locking, Migrations.
+    - `DevOps/`: Docker Compose, Nginx, CI/CD, Deployment Guide.
+    - `Workflows/`: Luồng nghiệp vụ, Security, i18n, Scenarios.
+    - `Testing/`: Apidog setup, E2E Test Scenarios.
 - **Quy tắc:**
   - Chứa tài liệu đặc thù của dự án đó (Requirement, Design, Plan).
-  - Khi dự án hoàn thành -> Move toàn bộ folder sang `40_Archives`.
+  - Khi dự án hoàn thành -> Move toàn bộ folder dự án sang `40_Archives`.
 
 ### 20_Areas (Lĩnh vực trách nhiệm)
 
@@ -67,8 +72,14 @@ Tài liệu quy định chức năng và quy tắc lưu trữ cho từng thư m�
     - `Learning_and_Linguistics/`: Spaced Repetition, Phonetic Chunking...
     - `Knowledge_Management/`: Zettelkasten, Map of Content...
     - `Finance_and_Economics/`: Opportunity Cost, Liquidity Trap...
-    - `Psychology_and_Mental_Models/`: Critical thinking...
-  - `Methods/`: Các SOP, phương pháp làm việc (Standard Project Timeline SOP, DCA, First Principles Thinking, STAR Method...).
+    - `Psychology_and_Mental_Models/`: Cognitive Stack, Confirmation Bias, Systems Thinking...
+    - `Negotiation_and_Communication/`: BATNA, ZOPA, Tactical Empathy, Getting To Yes...
+    - `Product_and_Business_Mindsets/`: Product Mindset, Customer Outcome Thinking, Kanban...
+    - `Academic_and_Case_Studies/`: RMIT Critical Review Report, Case Studies...
+  - `Methods/`: Các SOP, quy trình thực hành và phương pháp làm việc. Phân loại thành:
+    - `Engineering/`: SOP kỹ thuật, Benchmarking, SDLC, System Design (Go Benchmarking, Automated Verification, Stress Testing...).
+    - `Learning_and_Cognition/`: Phương pháp tư duy, học tập (Metalearning, First Principles Thinking, Socratic Questioning...).
+    - `Life_and_Finance/`: Quy trình tài chính cá nhân và tối ưu lối sống (Dollar Cost Averaging, Sleep Optimization...).
   - `Vocabulary/`: Từ vựng tiếng Anh, từ vựng chuyên ngành (Vocab_Homographs.md, Vocab_IT_Specialized.md...).
   - `Life/`: Các khía cạnh đời sống thường ngày.
 - **Quy tắc:**
@@ -88,7 +99,7 @@ Tài liệu quy định chức năng và quy tắc lưu trữ cho từng thư m�
 - **Các thư mục con:**
   - `Vocabulary/`: Thẻ từ vựng và ma trận họ từ (Word Family Matrix) phân loại theo trình độ (`A1/`, `A2/`, `B1/`, `B2/`, `C1/`, `C2/`, `Software_Engineering/`, `Professional_Communication/`...).
   - `Grammar/`: Thẻ ngữ pháp thực chiến phân loại theo chủ đề (`Question_Patterns/`, `Parts_Of_Speech_And_Morphology/`, `Verb_Patterns_And_Prepositions/`, `Sentence_Structures/`, `Technical_Phrasing/`).
-- **Quy tắc:**
+  - `Go/`: Thẻ ghi nhớ về kỹ thuật và kiến trúc bộ nhớ Go phân loại theo chủ đề (`Slice/`, `Map/`...).
   - Cấu trúc cây thư mục con phản ánh cấu trúc Deck trong Anki (ví dụ: `50_Flashcards/Grammar/Question_Patterns/` sẽ đồng bộ vào deck `Grammar::Question_Patterns`).
   - Mỗi file Markdown tương ứng với một Anki Note độc lập (Front/Back phân tách bằng `---`).
   - Không gán tag `type/...` trong frontmatter để bỏ qua bộ kiểm tra cấu trúc Atomic Note thông thường của Second Brain.
