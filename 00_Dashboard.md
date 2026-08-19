@@ -1,14 +1,20 @@
 # Master Control Dashboard
 
+## Strategic Compass & Action Hub
+
+> [!IMPORTANT]
+> **Strategic Compass & Master Backend SSOT**: [[30_Resources/Methods/Engineering/Master_Backend_Engineering_SSOT.md|Master Backend Engineering SSOT & Roadmap]]
+> _Mở tài liệu này mỗi khi mất phương hướng để tái định vị mục tiêu, kiểm tra Active Sprint, và cập nhật trạng thái lộ trình 4 tầng._
+
 ## Quick Navigation Hub
 
-| Chuyên Môn & Kiến Trúc                          | Khái Niệm & Mô Hình                                         | SOP & Phương Pháp                                        | Tiêu Chuẩn Tag                             |
+| Tech & Architecture                             | Concepts & Models                                           | Methods & Frameworks                                     | Tag Taxonomy                               |
 | :---------------------------------------------- | :---------------------------------------------------------- | :------------------------------------------------------- | :----------------------------------------- |
 | [[30_Resources/Tech/000_Tech_MOC.md\|Tech MOC]] | [[30_Resources/Concepts/000_Concepts_MOC.md\|Concepts MOC]] | [[30_Resources/Methods/000_Methods_MOC.md\|Methods MOC]] | [[99_Meta/Tag_Taxonomy_SSOT.md\|Tag SSOT]] |
 
 ---
 
-## Track 1: Lộ Trình Backend Engineering (4-Layer Cognitive Stack - Dynamic Auto-Query)
+## Track 1: 4-Layer Cognitive Stack (Dynamic Auto-Query)
 
 ```dataviewjs
 dv.header(3, "Layer 1: Core Mechanics & Memory (#layer/core-mechanics)");
@@ -47,11 +53,11 @@ dv.table(["Note Title", "Aliases / Key Concepts"],
 ```dataviewjs
 dv.table(["Mental Model / Strategy Note", "Category Folder", "Aliases"],
   dv.pages('"30_Resources"')
-    .where(p => p.file.folder.includes("Psychology_and_Mental_Models") || (p.tags && (p.tags.includes("type/mental-model") || p.tags.includes("type/strategy"))) || p.file.name.includes("T_Shaped") || p.file.name.includes("First_Principles") || p.file.name.includes("Systems_Thinking") || p.file.name.includes("Critical_Thinking"))
+    .where(p => p.tags && (p.tags.includes("type/mental-model") || p.tags.includes("type/strategy") || p.tags.includes("topic/mental-models") || p.tags.includes("topic/decision-making") || p.file.folder.includes("Psychology_and_Mental_Models") || p.file.folder.includes("Product_and_Business_Mindsets") || p.file.folder.includes("Negotiation_and_Communication")))
     .sort(p => p.file.name, 'asc')
     .map(p => [
       p.file.link,
-      p.file.folder.replace("30_Resources/Concepts/", "").replace("30_Resources/", ""),
+      p.file.folder.replace("30_Resources/Concepts/", "").replace("30_Resources/Methods/", "").replace("30_Resources/", ""),
       p.aliases ? (Array.isArray(p.aliases) ? p.aliases.join(", ") : p.aliases) : ""
     ])
 );

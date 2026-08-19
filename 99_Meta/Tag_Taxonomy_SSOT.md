@@ -8,84 +8,86 @@ date: 2026-08-09
 
 ## TL;DR
 
-Tài liệu này là **Nguồn Sự Thật Duy Nhất (Single Source of Truth - SSOT)** quy định toàn bộ hệ thống thẻ (`tags`) được phép sử dụng trong Second Brain.
-
-**QUY TẮC BẮT BUỘC CHO AI AGENTS & USERS:**
-
-1. Tất cả ghi chú khi khởi tạo hoặc cập nhật MUST sử dụng các tag thuộc danh sách chính thức dưới đây.
-2. Nếu cần tạo một tag mới chưa có trong danh sách, AI/User MUST khai báo và bổ sung tag đó vào tài liệu này TRƯỚC KHI sử dụng trong bất kỳ note nào.
-3. Script `bun 99_Meta/Scripts/validate_notes.mjs` sẽ tự động quét và báo lỗi/cảnh báo nếu phát hiện bất kỳ tag nào chưa được khai báo tại SSOT này.
+- **Sứ mệnh**: Nguồn sự thật duy nhất (SSOT) chuẩn hóa toàn bộ YAML frontmatter tags trong Second Brain.
+- **Tiêu chuẩn**: Mọi tag gán vào note phải được khai báo bằng mã `tag` tại tài liệu này trước khi sử dụng.
+- **Kiểm soát chất lượng**: `bun 99_Meta/Scripts/validate_notes.mjs` tự động quét và chặn các tag chưa khai báo.
 
 ---
 
-## 1. Type Tags (`type/*`) - Phân loại loại hình Note
+## 1. Type Tags (`type/*`)
 
-Mỗi note (ngoại trừ Daily Logs và Flashcards) MUST chứa ít nhất 1 `type/` tag:
+Mỗi note (ngoại trừ Daily Logs và Flashcards) bắt buộc chứa ít nhất 1 `type/*` tag:
 
-- **`type/concept`**: Khái niệm lý thuyết, nguyên lý, định nghĩa, mental model (lưu tại `30_Resources/Concepts/`).
-- **`type/method`**: SOP, quy trình, thuật toán, framework hành động (lưu tại `30_Resources/Methods/`).
-- **`type/pattern`**: Design pattern, architectural pattern.
-- **`type/mental-model`**: Mô hình tư duy, khung phân tích nhận thức.
-- **`type/vocab`**: Thẻ từ vựng, ngữ pháp tiếng Anh.
-- **`type/moc`**: Map of Content - Bản đồ điều hướng nội dung.
-- **`type/project`**: Dự án đang thực hiện (lưu tại `10_Projects/`).
-- **`type/meeting`**: Biên bản cuộc họp, Scrum daily logs.
-- **`type/checklist`**: Danh sách kiểm tra công việc/sức khỏe.
-- **`type/guide`**: Hướng dẫn cài đặt, tài liệu cấu hình hệ thống.
-- **`type/algorithm`**: Thuật toán LeetCode, cấu trúc dữ liệu.
-- **`type/audit`**: Báo cáo đánh giá hiệu năng, bảo mật.
-- **`type/strategy`**: Chiến lược phát triển sự nghiệp, tài chính, đầu tư.
-- **`type/technique`**: Kỹ thuật viết code, kỹ thuật test.
-
----
-
-## 2. Topic Tags (`topic/*`) - Phân loại Lĩnh vực & Chủ đề
-
-- **`topic/backend`**: Lập trình Backend, API, Microservices, Node.js, NestJS, Go, C#/.NET.
-- **`topic/frontend`**: Lập trình Frontend, React, Next.js, UI Components, State.
-- **`topic/testing`**: Kiểm thử phần mềm, ISTQB, Unit Test, E2E, EP, BVA.
-- **`topic/engineering`**: Kỹ nghệ phần mềm, SDLC, Clean Architecture, SOLID.
-- **`topic/architecture`**: Kiến trúc phần mềm, System Design, Scalability, Distributed Systems.
-- **`topic/database`**: Cơ sở dữ liệu, PostgreSQL, SQL Tuning, Redis, Indexing.
-- **`topic/infrastructure`**: Hạ tầng, Docker, Serverless, Edge, Tmux.
-- **`topic/security`**: Bảo mật, Mã hóa, Rate Limiting, XSS, OAuth.
-- **`topic/devops`**: CI/CD, Deployment, Monitoring, Logging.
-- **`topic/productivity`**: Tối ưu năng suất, Time-boxing, Second Brain, Zettelkasten.
-- **`topic/career`**: Phát triển sự nghiệp, CV, Phỏng vấn, Skill Stacking.
-- **`topic/learning`**: Phương pháp học tập, Spaced Repetition, Active Recall.
-- **`topic/linguistics`**: Tiếng Anh, Từ vựng, Ngữ pháp, IPA.
-- **`topic/finance`**: Tài chính cá nhân, Quản trị rủi ro.
-- **`topic/economics`**: Kinh tế học, Game Theory, Cơ chế thị trường.
-- **`topic/psychology`**: Tâm lý học, Thiên kiến nhận thức, Maslow.
-- **`topic/concepts`**: Khái niệm chung.
-- **`topic/tech`**: Tri thức kỹ thuật chung.
-- **`topic/life`**: Sức khỏe, Đời sống cá nhân.
-
-## 5. Layer Tags (`layer/*`) - Phân tầng Nhận thức Backend (4-Layer Cognitive Stack)
-
-- **`layer/core-mechanics`**: Tầng 1 Core Mechanics & Memory (V8/JSC, Garbage Collection, Stack/Heap, B+Tree).
-- **`layer/architecture`**: Tầng 2 Architecture & Clean Code (Clean/Layered Architecture, DDD, SOLID, Design Patterns).
-- **`layer/infrastructure`**: Tầng 3 System Infrastructure & Ops (Pessimistic Locking, Redlock, Rate Limiting, Docker).
-- **`layer/quality`**: Tầng 4 Quality & Software Testing (7 Principles, EP, BVA, Statement/Decision Coverage, STLC).
+- `type/concept`: Định nghĩa, lý thuyết, nguyên lý, mental model (`30_Resources/Concepts/`).
+- `type/method`: SOP, quy trình thực thi, thuật toán, framework hành động (`30_Resources/Methods/`).
+- `type/pattern`: Design patterns, architectural patterns.
+- `type/mental-model`: Mô hình tư duy, khung phân tích nhận thức.
+- `type/vocab`: Thẻ từ vựng, ngữ pháp tiếng Anh.
+- `type/moc`: Map of Content - Bản đồ điều hướng nội dung.
+- `type/project`: Dự án thực hiện (`10_Projects/`).
+- `type/meeting`: Biên bản cuộc họp, Scrum daily logs.
+- `type/checklist`: Danh sách kiểm tra công việc, quy chuẩn.
+- `type/guide`: Hướng dẫn cấu hình, tài liệu kỹ thuật.
+- `type/algorithm`: Giải thuật, bài toán LeetCode, cấu trúc dữ liệu.
+- `type/audit`: Báo cáo đánh giá hiệu năng, bảo mật.
+- `type/strategy`: Chiến lược phát triển sự nghiệp, tài chính, đầu tư.
+- `type/technique`: Kỹ thuật lập trình, kỹ thuật kiểm thử.
+- `type/submission`: Báo cáo nộp bài, đề xuất dự án.
 
 ---
 
-## 3. Status Tags (`status/*`) - Trạng thái Note
+## 2. Topic Tags (`topic/*`)
 
-- **`status/permanent`**: Note nguyên tử chính thức, đã kiểm định chất lượng.
-- **`status/todo`**: Note nháp/placeholder chưa hoàn thiện.
+### Software Engineering & Architecture
+
+- Core Backend: `topic/backend`, `topic/architecture`, `topic/system-design`, `topic/engineering`, `topic/devops`, `topic/infrastructure`.
+- Data & Storage: `topic/database`, `topic/sql`, `topic/dsa`, `topic/leetcode`, `topic/memory-management`.
+- Quality & Lifecycle: `topic/testing`, `topic/sdlc`, `topic/security`, `topic/engineering-management`, `topic/project-management`.
+- Web & Client: `topic/frontend`, `topic/web`, `topic/rendering`, `topic/seo`, `topic/i18n`.
+- Languages & Core: `topic/go`, `topic/rust`, `topic/typescript`, `topic/javascript`, `topic/php`, `topic/laravel`.
+- General Tech: `topic/tech`, `topic/concepts`, `topic/ai-engineering`, `topic/iot`, `topic/academic`, `topic/healthcare-it`, `topic/hyundai-ecommerce`, `topic/programming/standards`.
+
+### Mindset, Cognition & Productivity
+
+- Mental Models: `topic/mental-models`, `topic/decision-making`, `topic/psychology`, `topic/game-theory`.
+- Systems & Workflow: `topic/knowledge-management`, `topic/documentation`, `topic/workflow`, `topic/productivity`.
+- Communication & Career: `topic/communication`, `topic/negotiation`, `topic/product-management`, `topic/career`, `topic/freelance`.
+- Learning & Mastery: `topic/learning`, `topic/self-study`, `topic/personal-rules`, `topic/personal-development`.
+
+### Linguistics & English
+
+- Core English: `topic/english`, `topic/linguistics`, `topic/grammar`, `topic/writing`, `topic/toeic`.
+- Linguistic Matrix: `lang/english`, `skill/pronunciation`, `level/B1`.
+
+### Finance, Economics & Life
+
+- Capital & Markets: `topic/finance`, `topic/investing`, `topic/investment`, `topic/economics`, `topic/macro-economics`, `topic/math`, `market/us`, `market/vietnam`.
+- Lifestyle & Health: `topic/health`, `topic/nutrition`, `topic/calisthenics`, `topic/life`, `topic/agriculture`.
 
 ---
 
-## 4. Meta Tags (`meta/*`) - Thẻ Metadata Hệ thống
+## 3. Layer Tags (`layer/*`)
 
-- **`meta/structure`**: Tài liệu quy định cấu trúc và hướng dẫn hệ thống Second Brain.
+Phân tầng nhận thức Backend (4-Layer Cognitive Stack):
+
+- `layer/core-mechanics`: Tầng 1 - Core Mechanics & Memory (V8/Go runtime, GC, Stack/Heap, Escape Analysis, B+ Tree, Hardware footprint).
+- `layer/architecture`: Tầng 2 - Architecture & Clean Code (Clean Architecture, Modular Monolith, DDD, SOLID, Design Patterns, DI).
+- `layer/infrastructure`: Tầng 3 - System Infrastructure & Reliability (Locks, Redis Redlock, Rate Limiting, Outbox, Caching, DB Indexing).
+- `layer/quality`: Tầng 4 - Quality & Verification (7 Principles, ISTQB, EP/BVA, STLC, Playwright, E2E Automation, Contract Drift).
 
 ---
 
-## Quy trình Thêm Tag Mới (Change Protocol)
+## 4. Status & Meta Tags (`status/*`, `meta/*`, `project/*`)
 
-1. Mở file `99_Meta/Tag_Taxonomy_SSOT.md`.
-2. Bổ sung tag mới vào đúng nhóm (`type/*`, `topic/*`, `status/*`, hoặc `meta/*`) kèm theo 1 dòng mô tả mục đích.
-3. Tiến hành gán tag mới đó vào note.
-4. Chạy `bun 99_Meta/Scripts/validate_notes.mjs` để xác nhận hợp lệ.
+- Status: `status/permanent` (hoàn thiện), `status/todo` (nháp/placeholder), `status/active` (đang chạy), `status/archived` (lưu trữ).
+- Meta: `meta/structure` (cấu trúc hệ thống), `meta/template` (template mẫu).
+- Projects & Archives: `project/hyundai-ecommerce`, `project/viettridao`.
+- Legacy & Domain Aliases: `architecture`, `attributes`, `best-practices`, `blade`, `blog-posts`, `components`, `controller`, `documentation`, `eloquent`, `frontend`, `guide`, `laravel`, `layout`, `memory/optimization`, `mvc`, `named-routes`, `performance/v8`, `php`, `routing`, `web.php`, `x-layout`.
+
+---
+
+## 5. Change Protocol
+
+1. Khai báo tag mới vào danh sách trên dưới dạng `tag-name`.
+2. Gán tag vào note mục tiêu.
+3. Chạy `bun 99_Meta/Scripts/validate_notes.mjs` để xác nhận hợp lệ.
