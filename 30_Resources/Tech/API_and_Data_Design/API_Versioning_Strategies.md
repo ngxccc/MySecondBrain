@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/backend, pattern/api-design, layer/infrastructure]
+tags: [type/concept, topic/backend, layer/infrastructure]
 date: 2026-04-28
 aliases: [API Versioning, Backward Compatibility]
 description: "Quản lý tương thích ngược (Backward Compatibility) bằng URI hoặc Header."

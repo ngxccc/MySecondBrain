@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, architecture-patterns]
+tags: [type/concept, topic/tech, topic/architecture, layer/architecture]
 date: 2026-06-07
 aliases:
   [

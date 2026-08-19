@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, language-core]
+tags: [type/concept, topic/tech, layer/core-mechanics]
 date: 2026-06-07
 aliases:
   [

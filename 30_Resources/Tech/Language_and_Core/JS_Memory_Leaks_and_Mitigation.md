@@ -4,9 +4,8 @@ tags:
     type/concept,
     topic/tech,
     layer/core-mechanics,
-    engine/v8,
-    language/javascript,
-    system/memory,
+    topic/javascript,
+    topic/memory-management,
   ]
 aliases: [JS Memory Leaks, Memory Leaks Mitigation, Memory Leaks Backend]
 date: 2026-08-09

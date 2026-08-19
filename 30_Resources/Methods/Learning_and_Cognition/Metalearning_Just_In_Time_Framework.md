@@ -1,5 +1,5 @@
 ---
-tags: [type/method, topic/learning, topic/productivity, topic/methods]
+tags: [type/method, topic/learning, topic/productivity]
 date: 2026-07-31
 aliases:
   [
@@ -37,7 +37,7 @@ $$\text{Mental Model (20\%)} + \text{Build Something} + \text{Just-In-Time Looku
 
 ### 2. Ma trận ứng dụng theo miền kiến thức
 
-| Miền kiến thức     | 🧠 Sơ đồ tư duy cốt lõi (CẦN NẮM VỮNG)                                 | 🔍 Tra cứu Just-In-Time (KHÔNG CẦN THUỘC)                 |
+| Miền kiến thức     | Sơ đồ tư duy cốt lõi (CẦN NẮM VỮNG)                                    | Tra cứu Just-In-Time (KHÔNG CẦN THUỘC)                    |
 | :----------------- | :--------------------------------------------------------------------- | :-------------------------------------------------------- |
 | **Linux / System** | Everything is a file, `systemd` PID 1, Cấu trúc FHS, Quyền UGO.        | Cờ lệnh `tar`, cú pháp file config mạng phức tạp.         |
 | **Docker**         | Image (bản thiết kế), Container (tiến trình cách ly), Volume, Network. | Cú pháp lệnh Dockerfile/Compose chi tiết (dùng template). |

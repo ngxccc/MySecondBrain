@@ -1,10 +1,6 @@
 ---
 tags:
-  - type/concept
-  - topic/concepts
-  - layer/core-mechanics
-  - domain/computer-science
-  - system/memory
+  [type/concept, topic/concepts, layer/core-mechanics, topic/memory-management]
 aliases:
   - Dynamic Array Exponential Growth
   - Thuật Toán Tăng Trưởng Lũy Thừa Mảng Động

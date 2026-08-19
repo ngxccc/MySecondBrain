@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/concepts, psychology-mental-models, status/permanent]
+tags: [type/concept, topic/concepts, topic/mental-models, status/permanent]
 date: 2026-07-20
 aliases:
   [

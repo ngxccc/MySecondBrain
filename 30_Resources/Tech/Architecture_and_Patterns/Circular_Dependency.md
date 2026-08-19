@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/architecture, anti-pattern, layer/architecture]
+tags: [type/concept, topic/architecture, topic/engineering, layer/architecture]
 date: 2026-05-01
 aliases:
   [
@@ -36,7 +36,7 @@ Circular Dependency (Phụ thuộc vòng tròn) xảy ra khi hai hoặc nhiều 
 **Code Snippet:**
 
 ```typescript
-// ❌ BAD - Circular Dependency
+//  BAD - Circular Dependency
 // user.service.ts
 import { PostService } from "../posts/post.service";
 
@@ -53,7 +53,7 @@ export class PostService {
 ```
 
 ```typescript
-// ✅ GOOD - Break the cycle bằng Extraction + DI
+//  GOOD - Break the cycle bằng Extraction + DI
 // common/password-hasher.ts (Shared/Common)
 export class PasswordHasher {
   static hash(password: string): string { ... }

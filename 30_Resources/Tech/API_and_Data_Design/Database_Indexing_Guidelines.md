@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
+tags: [type/concept, topic/tech, topic/database, layer/infrastructure]
 date: 2026-07-04
 aliases:
   [Quy tắc thiết lập Index, Database Indexing Guidelines, Khi nào dùng Index]

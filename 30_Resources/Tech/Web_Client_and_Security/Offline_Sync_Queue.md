@@ -1,6 +1,5 @@
 ---
-tags:
-  [type/concept, topic/architecture, topic/frontend, pwa, layer/infrastructure]
+tags: [type/concept, topic/architecture, topic/frontend, layer/infrastructure]
 date: 2026-01-29
 aliases: [Background Sync, Outbox Pattern, Offline First]
 description: "Kỹ thuật Outbox Pattern ở phía client cho ứng dụng Offline-First."

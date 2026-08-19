@@ -1,14 +1,5 @@
 ---
-tags:
-  - layer/core-mechanics
-  [
-    type/concept,
-    topic/tech,
-    engine/v8,
-    engine/jsc,
-    language/javascript,
-    performance,
-  ]
+tags: [type/concept, topic/javascript, topic/tech, layer/core-mechanics]
 aliases: [Hidden Classes, Shapes, Inline Caching, JS Optimization]
 date: 2026-06-20
 description: "Trong JavaScript, các đối tượng (Objects) thực chất là các Hash Map động, khiến việc truy cập thuộc tính (property lookup) theo mặc định rất chậm do phải băm chuỗi. Để tối ưu hóa, các JS Engine hiệ..."
@@ -118,22 +109,22 @@ Bạn có thể lưu đoạn code sau thành file `benchmark.js` và chạy tr�
 const iterations = 10000000; // 10 triệu vòng lặp
 
 // Case 1: Đối tượng có cấu trúc ổn định (Stable Object Shape)
-console.time("🚀 Stable Shape (Optimized)");
+console.time(" Stable Shape (Optimized)");
 for (let i = 0; i < iterations; i++) {
   const obj = { x: i, y: i + 1 };
   const z = obj.x + obj.y;
 }
-console.timeEnd("🚀 Stable Shape (Optimized)");
+console.timeEnd(" Stable Shape (Optimized)");
 
 // Case 2: Đối tượng gán thuộc tính động (Dynamic Shape / Class Transition)
-console.time("🐌 Dynamic Shape (Unoptimized)");
+console.time(" Dynamic Shape (Unoptimized)");
 for (let i = 0; i < iterations; i++) {
   const obj = {};
   obj.x = i;
   obj.y = i + 1;
   const z = obj.x + obj.y;
 }
-console.timeEnd("🐌 Dynamic Shape (Unoptimized)");
+console.timeEnd(" Dynamic Shape (Unoptimized)");
 ```
 
 - **Kết quả thực tế:** Case 1 (Stable Shape) thường chạy nhanh hơn **2 đến 5 lần** so với Case 2 do được JIT Compiler biên dịch trực tiếp và truy cập offset bộ nhớ tĩnh không qua chuyển đổi Class ẩn liên tục.

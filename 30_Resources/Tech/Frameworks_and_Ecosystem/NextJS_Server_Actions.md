@@ -1,13 +1,5 @@
 ---
-tags:
-  [
-    type/concept,
-    topic/tech,
-    react,
-    frontend,
-    framework/nextjs,
-    layer/infrastructure,
-  ]
+tags: [type/concept, topic/tech, topic/frontend, layer/infrastructure]
 date: 2026-06-20
 aliases:
   [

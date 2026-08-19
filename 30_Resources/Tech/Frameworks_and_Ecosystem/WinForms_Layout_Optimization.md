@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, frameworks-ecosystem]
+tags: [type/concept, topic/tech]
 date: 2026-06-07
 aliases:
   [

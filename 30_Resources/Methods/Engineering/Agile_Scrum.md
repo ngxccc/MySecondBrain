@@ -1,5 +1,5 @@
 ---
-tags: [type/method, topic/engineering, topic/productivity]
+tags: [type/method, topic/engineering, topic/productivity, layer/quality]
 aliases: [Quy trình Agile Scrum, Agile Scrum Process]
 date: 2026-06-23
 description: "Quy trình quản lý và phát triển phần mềm linh hoạt thông qua các chu kỳ ngắn (Sprints) và cải tiến quy trình liên tục."
@@ -56,7 +56,7 @@ Mỗi hiện vật trong Scrum đi kèm với một cam kết nhằm tăng tính
 3. **Increment - Phần tăng trưởng** (Cam kết: **Definition of Done - Định nghĩa Hoàn thành**)
    - Mô tả chính thức và rõ ràng về trạng thái của sản phẩm khi nó đáp ứng đầy đủ các tiêu chuẩn chất lượng bắt buộc.
 
-> 💡 **Phân biệt DoD (Definition of Done) và AC (Acceptance Criteria):**
+> **Phân biệt DoD (Definition of Done) và AC (Acceptance Criteria):**
 >
 > - **Definition of Done (DoD):** Là bộ quy chuẩn chất lượng **chung** áp dụng cho _mọi_ User Story/chức năng (ví dụ: code sạch, đã qua review chéo, đã kiểm thử không lỗi, đã deploy thành công). Do cả team thống nhất và tuân thủ.
 > - **Acceptance Criteria (AC):** Là tiêu chí nghiệm thu **riêng** cho _từng_ User Story cụ thể (ví dụ: với Story "Đăng nhập", AC là đăng nhập thành công qua Google, báo lỗi khi nhập sai định dạng email). Do PO định nghĩa.

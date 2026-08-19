@@ -1,5 +1,12 @@
 ---
-tags: [type/method, topic/backend, topic/system-design, topic/career]
+tags:
+  [
+    type/method,
+    topic/backend,
+    topic/system-design,
+    topic/career,
+    layer/architecture,
+  ]
 date: 2026-08-07
 aliases:
   [

@@ -3,7 +3,7 @@ tags:
   [
     type/concept,
     topic/tech,
-    framework/nextjs,
+    topic/frontend,
     topic/rendering,
     layer/infrastructure,
   ]

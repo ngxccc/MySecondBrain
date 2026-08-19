@@ -4,10 +4,8 @@ tags:
     type/concept,
     topic/tech,
     layer/core-mechanics,
-    framework/nodejs,
-    runtime/bun,
-    engine/v8,
-    engine/jsc,
+    topic/backend,
+    topic/javascript,
   ]
 aliases: [Bun vs Node.js, JS Runtimes, Event Loop Runtime, JSC vs V8]
 date: 2026-06-20

@@ -1,13 +1,6 @@
 ---
 title: Postgres SELECT FOR UPDATE (Pessimistic Locking)
-tags:
-  [
-    type/concept,
-    topic/tech,
-    layer/infrastructure,
-    database/postgres,
-    concurrency/locking,
-  ]
+tags: [type/concept, topic/tech, layer/infrastructure, topic/database]
 aliases: [SELECT FOR UPDATE, Row-Level Locking, Pessimistic Locking]
 date: 2026-06-08
 description: "Cơ chế Row-Level Exclusive Lock trong PostgreSQL chống tranh chấp đồng thời (TOCTOU / Race Condition)."
@@ -27,10 +20,10 @@ Khi một câu lệnh `SELECT ... FOR UPDATE` được thực thi bên trong m�
 
 - **Bản ghi bị khóa**: Chỉ những bản ghi (rows) thỏa mãn điều kiện `WHERE` và thực sự được trả về mới bị đặt khóa độc quyền.
 - **Phạm vi tác động đối với các Transaction khác**:
-  - ❌ **`UPDATE` / `DELETE`**: Bị chặn và bắt buộc phải **chờ (WAIT)** cho tới khi transaction giữ khóa hoàn tất.
-  - ❌ **`SELECT ... FOR UPDATE` / `FOR SHARE`**: Bị chặn và bắt buộc phải chờ.
-  - ✅ **Plain `SELECT` (Đọc thông thường)**: **Không bị chặn** nhờ cơ chế **MVCC (Multi-Version Concurrency Control)** của PostgreSQL. Trình truy vấn đọc phiên bản dữ liệu nhất quán trước khi bị khóa mà không bị treo.
-  - ✅ **Bản ghi khác**: Các bản ghi khác trong cùng bảng hoàn toàn không bị ảnh hưởng.
+  - **`UPDATE` / `DELETE`**: Bị chặn và bắt buộc phải **chờ (WAIT)** cho tới khi transaction giữ khóa hoàn tất.
+  - **`SELECT ... FOR UPDATE` / `FOR SHARE`**: Bị chặn và bắt buộc phải chờ.
+  - **Plain `SELECT` (Đọc thông thường)**: **Không bị chặn** nhờ cơ chế **MVCC (Multi-Version Concurrency Control)** của PostgreSQL. Trình truy vấn đọc phiên bản dữ liệu nhất quán trước khi bị khóa mà không bị treo.
+  - **Bản ghi khác**: Các bản ghi khác trong cùng bảng hoàn toàn không bị ảnh hưởng.
 
 ### 2. Chu kỳ sống của Lock
 

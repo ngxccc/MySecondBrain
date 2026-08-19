@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/english, pronunciation]
+tags: [type/concept, topic/english]
 date: 2026-01-29
 aliases: [Homographs, Word Stress Shift]
 description: "Cạm bẫy từ đồng dạng và dịch chuyển trọng âm."

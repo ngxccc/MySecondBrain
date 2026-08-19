@@ -11,7 +11,7 @@ description: "Lộ trình học Rust thực chiến kết hợp hệ thống & a
 
 Tài liệu này cung cấp một lộ trình kết hợp (Hybrid) tối ưu để học Rust hiệu quả nhất bằng cách kết hợp thế mạnh của hai lộ trình: Lộ trình Backend Truyền thống (vững chắc, thực tế) và Lộ trình An ninh mạng/WebAssembly (thực chiến, cuốn hút).
 
-⚠️ **CẢNH BÁO QUAN TRỌNG:** Giai đoạn 1 (Lý thuyết cơ bản + Borrow Checker) là **bắt buộc và không thể nhảy cóc**. Việc cố gắng viết công cụ bảo mật bất đồng bộ (`tokio`) hoặc WebAssembly (`wasm-pack`) trước khi nắm vững Ownership/Lifetimes sẽ dẫn đến việc hai đường cong học tập cực kỳ dốc va chạm nhau, khiến người học dễ nản lòng và từ bỏ.
+️ **CẢNH BÁO QUAN TRỌNG:** Giai đoạn 1 (Lý thuyết cơ bản + Borrow Checker) là **bắt buộc và không thể nhảy cóc**. Việc cố gắng viết công cụ bảo mật bất đồng bộ (`tokio`) hoặc WebAssembly (`wasm-pack`) trước khi nắm vững Ownership/Lifetimes sẽ dẫn đến việc hai đường cong học tập cực kỳ dốc va chạm nhau, khiến người học dễ nản lòng và từ bỏ.
 
 ---
 

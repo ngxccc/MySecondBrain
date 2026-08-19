@@ -3,9 +3,10 @@ tags:
   [
     type/concept,
     topic/tech,
-    api-data-design,
+    topic/database,
     status/permanent,
     layer/architecture,
+    layer/infrastructure,
   ]
 date: 2026-06-27
 aliases: [Outbox Pattern, Transactional Outbox, Mẫu thiết kế Outbox]

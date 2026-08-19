@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, language-core, layer/core-mechanics]
+tags: [type/concept, topic/tech, layer/core-mechanics]
 date: 2026-06-07
 aliases: [Bóc tách dữ liệu JS, Destructuring Assignment, ES6 Destructuring]
 description: "Kỹ thuật bóc tách dữ liệu mảng và đối tượng trong ES6."

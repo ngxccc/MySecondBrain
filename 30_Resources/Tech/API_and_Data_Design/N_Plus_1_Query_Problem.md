@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
+tags: [type/concept, topic/tech, topic/database, layer/infrastructure]
 date: 2026-07-31
 aliases: [Vấn đề truy vấn N+1, N+1 Query Problem, Solution for N+1 Selects]
 description: "N+1 Query Problem là sự cố hiệu năng phổ biến khi làm việc với ORM (Object-Relational Mapping), xảy ra khi ứng dụng thực thi $1$ câu truy vấn ban đầu để lấy danh sách $N$ bản ghi cha, sau đó tiếp t..."
@@ -66,7 +66,7 @@ Khai báo cho ORM biết trước các quan hệ cần lấy cùng lúc với b�
 ### 1. Anti-Pattern: Mã nguồn bị N+1 Query
 
 ```typescript
-// ❌ LỖI N+1 QUERY:
+//  LỖI N+1 QUERY:
 // Step 1: Chạy 1 câu query lấy 10 bài viết (1 Query)
 const posts = await db.post.findMany({ take: 10 });
 
@@ -76,13 +76,13 @@ for (const post of posts) {
   const author = await db.user.findUnique({ where: { id: post.authorId } });
   console.log(`${post.title} được viết bởi ${author?.name}`);
 }
-// ➔ TỔNG CỘNG: 1 + 10 = 11 Queries!
+//  TỔNG CỘNG: 1 + 10 = 11 Queries!
 ```
 
 ### 2. Solution 1: Sử dụng Eager Loading
 
 ```typescript
-// ✅ TỐI ƯU BẰNG EAGER LOADING:
+//  TỐI ƯU BẰNG EAGER LOADING:
 // ORM tự động phát sinh JOIN hoặc truy vấn IN batching bên dưới
 const posts = await db.post.findMany({
   take: 10,
@@ -95,7 +95,7 @@ for (const post of posts) {
   // post.author đã có sẵn dữ liệu trong bộ nhớ, KHÔNG phát sinh thêm câu SQL nào
   console.log(`${post.title} được viết bởi ${post.author.name}`);
 }
-// ➔ TỔNG CỘNG: Chỉ 1 hoặc 2 Queries!
+//  TỔNG CỘNG: Chỉ 1 hoặc 2 Queries!
 ```
 
 ### 3. Solution 2: Sử dụng DataLoader Pattern
@@ -123,7 +123,7 @@ const postsWithAuthors = await Promise.all(
     author: await authorLoader.load(post.authorId),
   })),
 );
-// ➔ TỔNG CỘNG: 1 query lấy Posts + 1 query Batch lấy Authors = 2 Queries!
+//  TỔNG CỘNG: 1 query lấy Posts + 1 query Batch lấy Authors = 2 Queries!
 ```
 
 ---

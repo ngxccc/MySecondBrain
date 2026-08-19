@@ -106,16 +106,19 @@ Dưới đây là cách khai báo cấu trúc dữ liệu bài viết (Article S
 
 Các tác nhân AI (AI Agents) và Answer Engines (như Perplexity, SearchGPT) ưu tiên trích dẫn các đoạn văn bản có cấu trúc phân cấp mạch lạc và đi trực tiếp vào câu trả lời:
 
-- ❌ **Cách viết thông thường (dành cho người đọc lướt truyền thống):**
-  > _"Khi lập trình một website y tế, nếu bạn đang thắc mắc không biết làm sao để nâng cao trải nghiệm người bệnh thì việc cải thiện khả năng điều hướng đóng vai trò vô cùng quan trọng giúp nâng cao thứ hạng..."_
-- ✅ **Cách viết tối ưu hóa cho AI Agents / LLMs (Answer-First):**
-  > **Làm thế nào để cải thiện trải nghiệm người dùng trên website y tế?**
-  > Cải thiện trải nghiệm người dùng (UX) trên website y tế được thực hiện thông qua tối ưu hóa điều hướng bệnh nhân (patient navigation) và cải thiện hiệu năng kỹ thuật. [Answer-First]
-  > Các bước thực hiện bao gồm:
-  >
-  > 1. Xây dựng bộ lọc tìm kiếm bác sĩ theo tên/chuyên khoa/ngôn ngữ.
-  > 2. Đặt lịch khám nhanh thông qua các nút Call-to-Action (CTA) nổi bật.
-  > 3. Tối ưu hóa chỉ số phản hồi INP dưới 200ms để tăng tốc tương tác. [Supporting Details]
+- **Cách viết thông thường (dành cho người đọc lướt truyền thống):**
+
+> _"Khi lập trình một website y tế, nếu bạn đang thắc mắc không biết làm sao để nâng cao trải nghiệm người bệnh thì việc cải thiện khả năng điều hướng đóng vai trò vô cùng quan trọng giúp nâng cao thứ hạng..."_
+
+- **Cách viết tối ưu hóa cho AI Agents / LLMs (Answer-First):**
+
+> **Làm thế nào để cải thiện trải nghiệm người dùng trên website y tế?**
+> Cải thiện trải nghiệm người dùng (UX) trên website y tế được thực hiện thông qua tối ưu hóa điều hướng bệnh nhân (patient navigation) và cải thiện hiệu năng kỹ thuật. [Answer-First]
+> Các bước thực hiện bao gồm:
+>
+> 1. Xây dựng bộ lọc tìm kiếm bác sĩ theo tên/chuyên khoa/ngôn ngữ.
+> 2. Đặt lịch khám nhanh thông qua các nút Call-to-Action (CTA) nổi bật.
+> 3. Tối ưu hóa chỉ số phản hồi INP dưới 200ms để tăng tốc tương tác. [Supporting Details]
 
 ---
 

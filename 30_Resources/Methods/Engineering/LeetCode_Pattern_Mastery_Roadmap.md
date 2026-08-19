@@ -89,7 +89,7 @@ graph TD
 
 ## Related Notes
 
-- Lộ trình tổng thể Backend: [[Backend_Engineering_Mastery_Pipeline]]
+- Lộ trình tổng thể Backend: [[Master_Backend_Engineering_SSOT]]
 - Hướng dẫn System Design: [[System_Design_Architecture_Roadmap]]
 - Hướng dẫn SQL Benchmark: [[Postgres_SQL_Performance_Benchmarking_Guide]]
 - Danh mục Data Structures: [[Data_Structures_and_Algorithms_Roadmap]]

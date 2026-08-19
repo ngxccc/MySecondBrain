@@ -1,8 +1,5 @@
 ---
-tags:
-  - type/method
-  - english/presentation
-  - second-brain
+tags: [type/method, topic/english, topic/knowledge-management]
 date: 2026-08-04
 aliases:
   - Kỹ thuật thuyết trình 2 thẻ slide

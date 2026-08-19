@@ -1,9 +1,5 @@
 ---
-tags:
-  - type/method
-  - topic/english
-  - topic/toeic
-  - topic/self-study
+tags: [type/method, topic/english, topic/toeic, topic/self-study]
 date: 2026-08-04
 aliases:
   - Lộ trình tự học TOEIC 0 đến 900
@@ -16,6 +12,9 @@ description: "Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ đi�
 ## TL;DR
 
 Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được chia làm 3 giai đoạn rõ ràng trong 6–9 tháng. Lộ trình ứng dụng các phương pháp học tập dựa trên bằng chứng khoa học như **Phonetic Chunking**, **Chép chính tả (Dictation)**, **Luyện nghe chủ động (Active Listening)**, phân bổ thời gian nghiêm ngặt (Time Allocation), và phân tích lỗi sai sâu (Error Analysis).
+
+> [!NOTE]
+> **Vị Trí Trong Hệ Thống SSOT**: Tài liệu này đóng vai trò là **Module Luyện Nghe & Đọc Chuyên Biệt**, trực thuộc chiến lược tổng thể tại [[English_Learner_Profile]]. Trong lộ trình cấp tốc Backend (T8–T12/2026), ưu tiên trích xuất phương pháp Dictation Part 1 & Part 2 để phục vụ phản xạ nghe kỹ thuật.
 
 ---
 

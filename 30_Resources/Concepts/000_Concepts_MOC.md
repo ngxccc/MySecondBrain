@@ -14,9 +14,20 @@ Bản đồ điều hướng trung tâm cho toàn bộ tri thức khái niệm l
 ---
 
 ```dataviewjs
-dv.header(2, "Finance & Economics");
+dv.header(2, "Computer Science & Fundamentals");
 dv.table(["Note Title", "Description"],
-  dv.pages('"30_Resources/Concepts/Finance_and_Economics"')
+  dv.pages('"30_Resources/Concepts/Computer_Science"')
+    .where(p => p.file.name !== "000_Concepts_MOC")
+    .sort(p => p.file.name, 'asc')
+    .map(p => [
+      p.file.link,
+      p.description || (p.aliases ? (Array.isArray(p.aliases) ? p.aliases.join(", ") : p.aliases) : "")
+    ])
+);
+
+dv.header(2, "Software Testing");
+dv.table(["Note Title", "Description"],
+  dv.pages('"30_Resources/Concepts/Software_Testing"')
     .where(p => p.file.name !== "000_Concepts_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [
@@ -28,6 +39,28 @@ dv.table(["Note Title", "Description"],
 dv.header(2, "Psychology & Mental Models");
 dv.table(["Note Title", "Description"],
   dv.pages('"30_Resources/Concepts/Psychology_and_Mental_Models"')
+    .where(p => p.file.name !== "000_Concepts_MOC")
+    .sort(p => p.file.name, 'asc')
+    .map(p => [
+      p.file.link,
+      p.description || (p.aliases ? (Array.isArray(p.aliases) ? p.aliases.join(", ") : p.aliases) : "")
+    ])
+);
+
+dv.header(2, "Product & Business Mindsets");
+dv.table(["Note Title", "Description"],
+  dv.pages('"30_Resources/Concepts/Product_and_Business_Mindsets"')
+    .where(p => p.file.name !== "000_Concepts_MOC")
+    .sort(p => p.file.name, 'asc')
+    .map(p => [
+      p.file.link,
+      p.description || (p.aliases ? (Array.isArray(p.aliases) ? p.aliases.join(", ") : p.aliases) : "")
+    ])
+);
+
+dv.header(2, "Negotiation & Communication");
+dv.table(["Note Title", "Description"],
+  dv.pages('"30_Resources/Concepts/Negotiation_and_Communication"')
     .where(p => p.file.name !== "000_Concepts_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [
@@ -58,9 +91,20 @@ dv.table(["Note Title", "Description"],
     ])
 );
 
-dv.header(2, "Software Testing");
+dv.header(2, "Finance & Economics");
 dv.table(["Note Title", "Description"],
-  dv.pages('"30_Resources/Concepts/Software_Testing"')
+  dv.pages('"30_Resources/Concepts/Finance_and_Economics"')
+    .where(p => p.file.name !== "000_Concepts_MOC")
+    .sort(p => p.file.name, 'asc')
+    .map(p => [
+      p.file.link,
+      p.description || (p.aliases ? (Array.isArray(p.aliases) ? p.aliases.join(", ") : p.aliases) : "")
+    ])
+);
+
+dv.header(2, "Academic & Case Studies");
+dv.table(["Note Title", "Description"],
+  dv.pages('"30_Resources/Concepts/Academic_and_Case_Studies"')
     .where(p => p.file.name !== "000_Concepts_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [

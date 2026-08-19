@@ -1,12 +1,6 @@
 ---
 tags:
-  [
-    type/concept,
-    topic/concepts,
-    layer/core-mechanics,
-    domain/computer-science,
-    system/memory,
-  ]
+  [type/concept, topic/concepts, layer/core-mechanics, topic/memory-management]
 aliases:
   [
     Stack vs Heap Memory Fundamentals,

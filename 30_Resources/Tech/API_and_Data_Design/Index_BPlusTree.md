@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, layer/core-mechanics, api-data-design]
+tags: [type/concept, topic/tech, layer/core-mechanics, topic/database]
 date: 2026-06-09
 aliases: [Index và B+Tree, B+Tree Index, B-Tree vs B+Tree]
 description: "Bản chất của Index, cấu trúc B+Tree và lý do tại sao Disk I/O quyết định kiến trúc Database."

@@ -1,6 +1,7 @@
 ---
 title: Laravel Blade Layout Components
-tags: [type/concept, topic/tech, laravel, blade, mvc]
+tags:
+  [type/concept, topic/tech, topic/backend, topic/frontend, topic/architecture]
 aliases: [Blade Components, Blade Layouts, Kế thừa Layout Laravel, x-layout]
 date: 2026-07-13
 description: "Laravel Blade Components (thông qua cú pháp thẻ `<x-component>`) cung cấp giải pháp hướng thành phần (Component-based approach) mạnh mẽ để thiết lập cấu trúc Layout kế thừa, thay thế cho các chỉ th..."

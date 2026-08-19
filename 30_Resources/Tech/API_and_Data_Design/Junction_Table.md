@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
+tags: [type/concept, topic/tech, topic/database, layer/infrastructure]
 date: 2026-06-07
 aliases:
   [Bảng liên kết, Junction Table, Bridge Table, Join Table, Khóa chính phức hợp]

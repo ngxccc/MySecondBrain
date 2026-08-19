@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/concepts, psychology-mental-models, status/permanent]
+tags: [type/concept, topic/concepts, topic/mental-models, status/permanent]
 date: 2026-06-07
 aliases: [Tư duy hệ thống, Systems Thinking, 9 Lăng kính Hệ thống]
 description: "Tư duy hệ thống và quy chiếu 6 lăng kính trong kỹ nghệ phần mềm."

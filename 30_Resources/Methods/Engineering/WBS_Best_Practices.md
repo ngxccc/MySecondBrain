@@ -53,41 +53,41 @@ Trong môi trường phát triển phần mềm Agile/Scrum:
 
 ### A. Cấp độ 1: WBS Dự Án
 
-- ❌ **SAI (Phân rã theo giai đoạn/hoạt động hoặc vai trò):**
-  - 1.0 Dự án Web E-commerce
-    - 1.1 Khảo sát yêu cầu (BA làm)
-    - 1.2 Thiết kế UI/UX (Designer làm)
-    - 1.3 Lập trình (Dev làm)
-    - 1.4 Kiểm thử (Tester làm)
-  - _Tại sao sai:_ Đây là cách phân rã theo quy trình thác nước (Waterfall) hoặc phòng ban. Nó vi phạm nguyên tắc hướng kết quả đầu ra và rất khó nghiệm thu khi làm Agile.
+- **SAI (Phân rã theo giai đoạn/hoạt động hoặc vai trò):**
+- 1.0 Dự án Web E-commerce
+  - 1.1 Khảo sát yêu cầu (BA làm)
+  - 1.2 Thiết kế UI/UX (Designer làm)
+  - 1.3 Lập trình (Dev làm)
+  - 1.4 Kiểm thử (Tester làm)
+- _Tại sao sai:_ Đây là cách phân rã theo quy trình thác nước (Waterfall) hoặc phòng ban. Nó vi phạm nguyên tắc hướng kết quả đầu ra và rất khó nghiệm thu khi làm Agile.
 
-- ✅ **ĐÚNG (Phân rã theo cấu phần sản phẩm - Deliverable-oriented):**
-  - 1.0 Hệ thống Web E-commerce
-    - 1.1 Cổng thanh toán (Payment Gateway)
-      - 1.1.1 API Tích hợp Stripe
-      - 1.1.2 Tài liệu đặc tả tích hợp
-      - 1.1.3 Bộ Testcase thanh toán
-    - 1.2 Giỏ hàng (Shopping Cart)
-      - 1.2.1 Giao diện Giỏ hàng (UI Form)
-      - 1.2.2 Cơ sở dữ liệu Giỏ hàng tạm thời (Database Redis)
-    - 1.3 Quản lý dự án (Project Management)
-      - 1.3.1 Biên bản họp (Meeting Minutes)
-      - 1.3.2 Kế hoạch dự án (Project Plan)
+- **ĐÚNG (Phân rã theo cấu phần sản phẩm - Deliverable-oriented):**
+- 1.0 Hệ thống Web E-commerce
+  - 1.1 Cổng thanh toán (Payment Gateway)
+    - 1.1.1 API Tích hợp Stripe
+    - 1.1.2 Tài liệu đặc tả tích hợp
+    - 1.1.3 Bộ Testcase thanh toán
+  - 1.2 Giỏ hàng (Shopping Cart)
+    - 1.2.1 Giao diện Giỏ hàng (UI Form)
+    - 1.2.2 Cơ sở dữ liệu Giỏ hàng tạm thời (Database Redis)
+  - 1.3 Quản lý dự án (Project Management)
+    - 1.3.1 Biên bản họp (Meeting Minutes)
+    - 1.3.2 Kế hoạch dự án (Project Plan)
 
 ---
 
 ### B. Cấp độ 2: WBS Cá Nhân / Task List
 
-- ❌ **SAI (Đặt tên mơ hồ, độ mịn quá to):**
-  - Task: _"Làm database"_ (Deadline: 3 ngày, Estimated: 24h)
-  - Task: _"Viết code API"_ (Deadline: 5 ngày, Estimated: 40h)
-  - _Tại sao sai:_ Tên task quá chung chung, thời lượng quá dài (> 8h), dễ gây rủi ro lập trình viên bị nghẽn (blocked) nhưng nhóm trưởng không nắm được tiến độ hàng ngày.
+- **SAI (Đặt tên mơ hồ, độ mịn quá to):**
+- Task: _"Làm database"_ (Deadline: 3 ngày, Estimated: 24h)
+- Task: _"Viết code API"_ (Deadline: 5 ngày, Estimated: 40h)
+- _Tại sao sai:_ Tên task quá chung chung, thời lượng quá dài (> 8h), dễ gây rủi ro lập trình viên bị nghẽn (blocked) nhưng nhóm trưởng không nắm được tiến độ hàng ngày.
 
-- ✅ **ĐÚNG (Động từ hành động, thời lượng 2-4h):**
-  - Thay vì _"Làm database"_ (24h), hãy phân rã thành:
-    - Task 1: _"Thiết kế sơ đồ quan hệ ERD cho bảng users và orders"_ (Estimated: 3.0h)
-    - Task 2: _"Viết file SQL script khởi tạo tables và foreign keys"_ (Estimated: 2.0h)
-    - Task 3: _"Tạo dữ liệu mẫu (Mock data) 50 dòng phục vụ test"_ (Estimated: 2.0h)
+- **ĐÚNG (Động từ hành động, thời lượng 2-4h):**
+- Thay vì _"Làm database"_ (24h), hãy phân rã thành:
+  - Task 1: _"Thiết kế sơ đồ quan hệ ERD cho bảng users và orders"_ (Estimated: 3.0h)
+  - Task 2: _"Viết file SQL script khởi tạo tables và foreign keys"_ (Estimated: 2.0h)
+  - Task 3: _"Tạo dữ liệu mẫu (Mock data) 50 dòng phục vụ test"_ (Estimated: 2.0h)
 
 ---
 

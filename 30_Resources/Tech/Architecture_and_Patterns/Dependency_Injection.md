@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, pattern/design, layer/architecture]
+tags: [type/concept, topic/tech, topic/architecture, layer/architecture]
 date: 2026-04-28
 aliases: [DI, Inversion of Control, IoC]
 description: "Kỹ thuật đảo ngược luồng điều khiển (IoC) để giảm tight-coupling và dễ test."
@@ -24,7 +24,7 @@ Kỹ thuật thiết kế trong đó một đối tượng nhận các phụ thu
 - **Benefit for Testing:** Dễ dàng thay thế database thật bằng `MockDatabase` trong môi trường thử nghiệm mà không cần sửa một dòng code nào trong logic nghiệp vụ.
 
 ```typescript
-// ❌ BAD: Tight Coupling (Khó test, khó sửa)
+//  BAD: Tight Coupling (Khó test, khó sửa)
 class OrderController {
   private service = new OrderService(); // Dính chặt vào OrderService cụ thể
   async handle() {
@@ -32,7 +32,7 @@ class OrderController {
   }
 }
 
-// ✅ GOOD: Dependency Injection (Linh hoạt)
+//  GOOD: Dependency Injection (Linh hoạt)
 class OrderController {
   // Nhận interface từ ngoài vào, không quan tâm nó được khởi tạo ra sao
   constructor(private readonly service: IOrderService) {}

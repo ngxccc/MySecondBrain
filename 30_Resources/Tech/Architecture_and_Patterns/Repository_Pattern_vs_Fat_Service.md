@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, pattern/architecture, layer/architecture]
+tags: [type/concept, topic/tech, topic/architecture, layer/architecture]
 aliases:
   [
     Repository vs Fat Service,

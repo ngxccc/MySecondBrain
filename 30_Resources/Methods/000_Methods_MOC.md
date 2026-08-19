@@ -11,13 +11,16 @@ description: "Bản đồ quy tụ các quy trình, thuật toán và framework 
 
 Bản đồ quy tụ các quy trình, thuật toán và framework thực chiến có thể lấy ra áp dụng ngay để giải quyết vấn đề (Actionable Toolbox). Tự động truy vấn dữ liệu động bằng DataviewJS.
 
+> [!IMPORTANT]
+> **Master Strategic Compass**: [[Master_Backend_Engineering_SSOT]] - Kim chỉ nam chiến lược và lộ trình 4 tầng nhận thức Backend.
+
 ---
 
 ```dataviewjs
-dv.header(2, "1. Problem Solving & Thinking");
+dv.header(2, "1. Engineering & Execution");
 dv.table(["Note Title", "Description"],
-  dv.pages('"30_Resources/Methods"')
-    .where(p => p.file.name !== "000_Methods_MOC" && (p.file.name.includes("First_Principles") || p.file.name.includes("Socratic") || p.file.name.includes("Top_University") || p.file.name.includes("Mental_Model_Automation") || p.file.name.includes("Problem_Solving")))
+  dv.pages('"30_Resources/Methods/Engineering"')
+    .where(p => p.file.name !== "000_Methods_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [
       p.file.link,
@@ -25,10 +28,10 @@ dv.table(["Note Title", "Description"],
     ])
 );
 
-dv.header(2, "2. Engineering & Execution");
+dv.header(2, "2. Learning & Cognition");
 dv.table(["Note Title", "Description"],
-  dv.pages('"30_Resources/Methods"')
-    .where(p => p.file.name !== "000_Methods_MOC" && (p.file.name.includes("Agile") || p.file.name.includes("WBS") || p.file.name.includes("Timeline") || p.file.name.includes("Benchmark") || p.file.name.includes("Vim") || p.file.name.includes("Pipeline") || p.file.name.includes("Roadmap") || p.file.name.includes("Model") || p.file.name.includes("Waterfall") || p.file.name.includes("Framework")))
+  dv.pages('"30_Resources/Methods/Learning_and_Cognition"')
+    .where(p => p.file.name !== "000_Methods_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [
       p.file.link,
@@ -36,10 +39,10 @@ dv.table(["Note Title", "Description"],
     ])
 );
 
-dv.header(2, "3. Career & Communication");
+dv.header(2, "3. Life & Finance");
 dv.table(["Note Title", "Description"],
-  dv.pages('"30_Resources/Methods"')
-    .where(p => p.file.name !== "000_Methods_MOC" && (p.file.name.includes("STAR") || p.file.name.includes("IELTS") || p.file.name.includes("Presentation") || p.file.name.includes("TOEIC")))
+  dv.pages('"30_Resources/Methods/Life_and_Finance"')
+    .where(p => p.file.name !== "000_Methods_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [
       p.file.link,
@@ -47,24 +50,14 @@ dv.table(["Note Title", "Description"],
     ])
 );
 
-dv.header(2, "4. Personal Finance");
-dv.table(["Note Title", "Description"],
-  dv.pages('"30_Resources/Methods"')
-    .where(p => p.file.name !== "000_Methods_MOC" && (p.file.name.includes("Dollar") || p.file.name.includes("Saving") || p.file.name.includes("Income")))
-    .sort(p => p.file.name, 'asc')
-    .map(p => [
-      p.file.link,
-      p.description || (p.aliases ? (Array.isArray(p.aliases) ? p.aliases.join(", ") : p.aliases) : "")
-    ])
-);
-
-dv.header(2, "5. All Methods Index");
-dv.table(["Note Title", "Description"],
+dv.header(2, "4. All Methods Index");
+dv.table(["Note Title", "Category", "Description"],
   dv.pages('"30_Resources/Methods"')
     .where(p => p.file.name !== "000_Methods_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [
       p.file.link,
+      p.file.folder.replace("30_Resources/Methods/", "").replace("30_Resources/Methods", "Root"),
       p.description || (p.aliases ? (Array.isArray(p.aliases) ? p.aliases.join(", ") : p.aliases) : "")
     ])
 );

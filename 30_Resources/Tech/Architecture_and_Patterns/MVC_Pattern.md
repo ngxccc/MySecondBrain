@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/backend, pattern/architectural, layer/architecture]
+tags: [type/concept, topic/backend, topic/architecture, layer/architecture]
 date: 2026-02-08
 aliases: [Model-View-Controller, Classical MVC]
 description: "Mô hình kinh điển và sự tiến hóa thành REST API hiện đại."

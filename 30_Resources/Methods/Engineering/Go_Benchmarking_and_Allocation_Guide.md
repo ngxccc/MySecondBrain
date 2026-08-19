@@ -1,9 +1,6 @@
 ---
 tags:
-  - type/method
-  - topic/backend
-  - topic/testing
-  - topic/go
+  [type/method, topic/backend, topic/testing, topic/go, layer/infrastructure]
 aliases:
   - Go Benchmarking and Allocation Guide
   - Hướng Dẫn Đo Đạc Hiệu Năng Benchmark Trong Go

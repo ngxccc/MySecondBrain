@@ -1,13 +1,5 @@
 ---
-tags:
-  - layer/core-mechanics
-  [
-    type/concept,
-    topic/tech,
-    language/typescript,
-    system/types,
-    programming/paradigm,
-  ]
+tags: [type/concept, topic/typescript, topic/concepts, layer/core-mechanics]
 aliases:
   [Structural Typing, Type Erasure, Type Guards, Type Predicates, Duck Typing]
 date: 2026-06-20

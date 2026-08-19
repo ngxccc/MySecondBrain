@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
+tags: [type/concept, topic/tech, topic/database, layer/infrastructure]
 date: 2026-08-06
 aliases: [Đặt tên Database, DB Naming, Database Naming Conventions]
 description: "Quy tắc đặt tên đồng bộ và nhất quán giữa Database (Số ít) và TypeScript ORM (Số nhiều)."

@@ -1,9 +1,5 @@
 ---
-tags:
-  - layer/core-mechanics
-  - type/concept
-  - topic/go
-  - topic/memory-management
+tags: [layer/core-mechanics, type/concept, topic/go, topic/memory-management]
 date: 2026-08-05
 aliases:
   - Bản Chất Của Slice Trong Go

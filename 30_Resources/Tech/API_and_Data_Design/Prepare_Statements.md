@@ -1,6 +1,6 @@
 ---
 tags:
-  [type/concept, topic/tech, api-data-design, status/todo, layer/infrastructure]
+  [type/concept, topic/tech, topic/database, status/todo, layer/infrastructure]
 date: 2026-06-07
 aliases: [Prepare Statements in DB, SQL Prepare, Truy vấn chuẩn bị trước]
 description: "Cơ chế truy vấn chuẩn bị trước để tối ưu hiệu năng và bảo mật SQL."

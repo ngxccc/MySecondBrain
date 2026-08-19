@@ -1,6 +1,13 @@
 ---
 title: NextJS Route Groups and Nested Layouts
-tags: [type/concept, topic/tech, nextjs, ssr, vercel, topic/rendering]
+tags:
+  [
+    type/concept,
+    topic/tech,
+    topic/frontend,
+    topic/rendering,
+    topic/infrastructure,
+  ]
 aliases:
   [Route Groups, Next.js DYNAMIC_SERVER_USAGE, Nested Layouts, Kế thừa Layout]
 date: 2026-06-20

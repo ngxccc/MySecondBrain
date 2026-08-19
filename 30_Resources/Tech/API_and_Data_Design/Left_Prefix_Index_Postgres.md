@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, api-data-design, layer/infrastructure]
+tags: [type/concept, topic/tech, topic/database, layer/infrastructure]
 date: 2026-06-07
 aliases:
   [Nguyên lý Left-Prefix, Composite Index Left-Prefix, PostgreSQL Left-Prefix]

@@ -21,22 +21,10 @@ description: "Báo cáo phản biện chuẩn học thuật RMIT áp dụng Cogn
 
 ## TL;DR
 
-Báo cáo phản biện theo chuẩn học thuật RMIT Academic Critical Review Report phân tích toàn diện bài viết "Should you still learn to code in 2026? The honest answer" công bố trên daily.dev. Báo cáo ứng dụng [[Cognitive_Stack_Framework]] để bóc tách 5 tầng nhận thức, vạch rõ các điểm mù về Cognitive Biases, Unstated Assumptions, và Second-Order System Paradox. Báo cáo đồng thời đề xuất khung hành động chiến lược giúp lập trình viên phát triển năng lực cạnh tranh cốt lõi trong kỷ nguyên AI.
+Báo cáo phản biện bài viết _"Should you still learn to code in 2026?"_ (daily.dev):
 
----
-
-## Academic Critical Review Framework
-
-Báo cáo này được cấu trúc theo định dạng RMIT Academic Analytical Evaluation Report, bao gồm các phần chuẩn mực:
-
-1. **Executive Summary & Context**: Xác định tác phẩm, mục tiêu nghiên cứu và luận điểm trung tâm.
-2. **Summary of Target Text**: Tóm tắt khách quan các luận điểm và số liệu chính của nguồn phân tích.
-3. **Critical Evaluation via Cognitive Stack**: Phân tích phản biện theo 5 tầng nhận thức của Cognitive Stack Framework.
-4. **Synthesis of Limitations & System Paradoxes**: Đánh giá tổng hợp điểm mạnh, hạn chế và nghịch lý cấu trúc.
-5. **Strategic Recommendations**: Đề xuất lộ trình hành động có tính ứng dụng cao cho người học.
-6. **Academic References**: Danh mục tài liệu tham khảo theo chuẩn trích dẫn.
-
----
+- **Phương pháp**: Ứng dụng [[Cognitive_Stack_Framework]] bóc tách 5 tầng nhận thức, vạch rõ Cognitive Biases, Unstated Assumptions, và Junior Developer Paradox.
+- **Định hướng cốt lõi**: Chuyển dịch từ Code Reading/Auditing thụ động sang **Specification & System Invariant Engineering**.
 
 ## 1. Executive Summary & Context
 

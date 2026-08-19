@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, layer/architecture, architecture-patterns]
+tags: [type/concept, topic/tech, layer/architecture, topic/architecture]
 date: 2026-06-07
 aliases: [Domain-Driven Design, Thiết kế hướng tên miền, DDD]
 description: "Thiết kế hướng tên miền, giải quyết độ phức tạp của nghiệp vụ cốt lõi."

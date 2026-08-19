@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/backend, pattern/api-design, layer/infrastructure]
+tags: [type/concept, topic/backend, layer/infrastructure]
 date: 2026-02-08
 aliases: [Cursor Pagination, Offset Pagination]
 description: "Phân trang hiệu suất cao O(1) thay thế cho Offset O(N) cồng kềnh."

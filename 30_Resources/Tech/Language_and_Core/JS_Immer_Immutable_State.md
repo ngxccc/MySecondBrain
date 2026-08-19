@@ -3,9 +3,10 @@ tags:
   [
     type/concept,
     topic/tech,
-    language/javascript,
-    library/state-management,
-    performance/memory,
+    topic/javascript,
+    topic/frontend,
+    topic/memory-management,
+    layer/core-mechanics,
   ]
 aliases: [Immer, ImmerJS, Copy-on-Write, Structural Sharing, Immutable State]
 date: 2026-06-20

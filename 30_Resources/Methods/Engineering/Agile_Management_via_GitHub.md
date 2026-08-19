@@ -1,5 +1,5 @@
 ---
-tags: [type/method, topic/engineering, topic/productivity]
+tags: [type/method, topic/engineering, topic/productivity, layer/quality]
 aliases:
   [
     Quản lý dự án Agile bằng GitHub,

@@ -1,6 +1,5 @@
 ---
-tags:
-  [type/concept, topic/tech, infrastructure/torrent, cli/tool, download/client]
+tags: [type/concept, topic/tech, topic/infrastructure]
 date: 2026-07-04
 aliases:
   [Torrent CLI Tools, aria2c Alternatives, Torrent Download Clients Comparison]

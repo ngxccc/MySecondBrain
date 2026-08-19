@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, tmux, terminal, tooling, layer/infrastructure]
+tags: [type/concept, topic/tech, topic/infrastructure, layer/infrastructure]
 aliases: [Tmux Session vs Window vs Pane, Tmux Keybinds]
 description: "Tmux (Terminal Multiplexer) giúp quản lý nhiều phiên làm việc (Sessions), tab (Windows) và phân mảnh màn hình (Panes) trên một cửa sổ Terminal duy nhất. Bằng cách tích hợp `vim-tmux-navigator`, ta ..."
 ---

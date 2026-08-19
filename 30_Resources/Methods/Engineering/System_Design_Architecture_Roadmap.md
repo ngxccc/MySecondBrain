@@ -1,5 +1,12 @@
 ---
-tags: [type/method, topic/backend, topic/system-design, topic/career]
+tags:
+  [
+    type/method,
+    topic/backend,
+    topic/system-design,
+    topic/career,
+    layer/architecture,
+  ]
 date: 2026-08-07
 aliases:
   [
@@ -123,7 +130,7 @@ graph TD
 
 ## Related Notes
 
-- Lộ trình tổng thể Backend: [[Backend_Engineering_Mastery_Pipeline]]
+- Lộ trình tổng thể Backend: [[Master_Backend_Engineering_SSOT]]
 - Hướng dẫn Benchmark SQL: [[Postgres_SQL_Performance_Benchmarking_Guide]]
 - Hướng dẫn Stress Test k6: [[Local_Stress_Testing_Benchmark]]
 - Mẫu thiết kế Outbox Pattern: [[Outbox_Pattern]]

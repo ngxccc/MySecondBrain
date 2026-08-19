@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/productivity, knowledge-management]
+tags: [type/concept, topic/productivity, topic/knowledge-management]
 date: 2026-06-07
 aliases: [Phương pháp PARA, Tổ chức thông tin theo mức độ hành động]
 description: "Tổ chức thông tin theo mức độ hành động (Actionability)."

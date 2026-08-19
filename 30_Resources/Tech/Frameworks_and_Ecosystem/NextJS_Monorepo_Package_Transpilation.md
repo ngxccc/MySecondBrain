@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, framework/nextjs, monorepo, devops]
+tags: [type/concept, topic/tech, topic/frontend, topic/devops]
 aliases: [Package Transpilation, transpilePackages, Monorepo Transpilation]
 date: 2026-06-20
 description: "Cơ chế biên dịch gói nội bộ (transpilePackages) và tối ưu hóa build trong Turborepo."

@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/concepts, psychology-mental-models, status/permanent]
+tags: [type/concept, topic/concepts, topic/mental-models, status/permanent]
 date: 2026-06-24
 aliases: [Phương pháp Kanban, Kanban Methodology, Kanban Board Concept]
 description: "Phương pháp và bảng Kanban quản lý dòng công việc trực quan theo mô hình Kéo (Pull)."

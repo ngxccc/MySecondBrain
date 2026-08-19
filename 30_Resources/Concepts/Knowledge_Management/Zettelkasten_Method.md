@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/productivity, knowledge-management]
+tags: [type/concept, topic/productivity, topic/knowledge-management]
 date: 2026-04-29
 aliases: [Hộp ghi chú, Atomic Notes, Linked Thinking]
 description: "Quản lý tri thức bằng Atomic Notes và Links."
@@ -24,12 +24,12 @@ Phương pháp quản lý tri thức bằng cách đập vụn kiến thức th�
 - **Ví dụ so sánh (Graph vs Folder):**
 
 '''text
-❌ Tư duy Folder (Chết dí một chỗ):
+Tư duy Folder (Chết dí một chỗ):
 Projects/
 └── NextJS_Clone/
 └── Singleton_Pattern.md (Khi làm project khác cần dùng lại thì không biết đi mò ở đâu)
 
-✅ Tư duy Zettelkasten (Backlinks):
+Tư duy Zettelkasten (Backlinks):
 Tất cả Atomic Notes ném chung vào một rổ `30_Resources/`.
 Khi file `Project_A.md` và `Project_B.md` cùng cần dùng đến kiến thức Singleton,
 chúng chỉ việc gọi tên `[[Singleton_Pattern]]`. Kiến thức được tái sử dụng trong $O(1)$.

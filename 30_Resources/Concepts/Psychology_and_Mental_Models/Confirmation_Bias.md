@@ -23,14 +23,14 @@ Thiên kiến xác nhận (Confirmation Bias) là lỗi tư duy khi chúng ta ch
 
 Hiểu và nhận diện mô hình này để tự cảnh tỉnh bản thân trong các tình huống:
 
-- ✅ **Good for:**
-  - Ra các quyết định lớn như đầu tư tài chính, chọn kiến trúc công nghệ cho dự án, hoặc tuyển dụng nhân sự.
-  - Tranh luận, thảo luận nhóm và giải quyết xung đột ý kiến trong đội ngũ phát triển.
-  - Phân tích dữ liệu, tìm lỗi hệ thống (debugging) hoặc kiểm thử phần mềm (tránh việc chỉ viết test cho luồng chạy thành công - Happy Path).
-- ❌ **Bad for:**
-  - Các quyết định khẩn cấp đòi hỏi phản xạ tức thì hoặc các hoạt động cần dựa hoàn toàn vào trực giác thể chất.
-- 🧠 **Phân tầng Maslow phù hợp**: **Tầng 2 (Safety - Nhận diện để tránh quyết định sai lầm hủy hoại an toàn)** và **Tầng 4/5 (Esteem & Self-Actualization)**.
-- 🛑 **Điều kiện tiên quyết**: Đòi hỏi tâm trí ở trạng thái tương đối bình ổn. Khi ở trạng thái hoảng loạn sinh tồn (Tầng 1/2 bị đe dọa), Amygdala sẽ khiến Thiên kiến xác nhận tăng cực đại như một cơ chế phòng thủ tâm lý vô thức.
+- **Good for:**
+- Ra các quyết định lớn như đầu tư tài chính, chọn kiến trúc công nghệ cho dự án, hoặc tuyển dụng nhân sự.
+- Tranh luận, thảo luận nhóm và giải quyết xung đột ý kiến trong đội ngũ phát triển.
+- Phân tích dữ liệu, tìm lỗi hệ thống (debugging) hoặc kiểm thử phần mềm (tránh việc chỉ viết test cho luồng chạy thành công - Happy Path).
+- **Bad for:**
+- Các quyết định khẩn cấp đòi hỏi phản xạ tức thì hoặc các hoạt động cần dựa hoàn toàn vào trực giác thể chất.
+- **Phân tầng Maslow phù hợp**: **Tầng 2 (Safety - Nhận diện để tránh quyết định sai lầm hủy hoại an toàn)** và **Tầng 4/5 (Esteem & Self-Actualization)**.
+- **Điều kiện tiên quyết**: Đòi hỏi tâm trí ở trạng thái tương đối bình ổn. Khi ở trạng thái hoảng loạn sinh tồn (Tầng 1/2 bị đe dọa), Amygdala sẽ khiến Thiên kiến xác nhận tăng cực đại như một cơ chế phòng thủ tâm lý vô thức.
 
 ---
 

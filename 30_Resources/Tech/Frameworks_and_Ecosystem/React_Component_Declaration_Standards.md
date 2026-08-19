@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, react, frontend]
+tags: [type/concept, topic/tech, topic/frontend]
 date: 2026-06-08
 aliases:
   [

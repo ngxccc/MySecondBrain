@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, dev-tools]
+tags: [type/concept, topic/tech]
 date: 2026-06-07
 aliases: [Phím tắt Vim, Vim Shortcuts Cheat Sheet, Phím tắt nâng cao Vim]
 description: "Các phím tắt và câu lệnh thay thế vùng nâng cao trong Vim."

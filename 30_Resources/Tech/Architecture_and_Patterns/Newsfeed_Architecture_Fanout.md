@@ -3,8 +3,8 @@ tags:
   [
     type/concept,
     topic/tech,
-    architecture-patterns,
-    system-design,
+    topic/architecture,
+    topic/system-design,
     layer/architecture,
   ]
 date: 2026-06-07

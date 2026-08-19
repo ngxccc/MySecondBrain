@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/career, skill/communication]
+tags: [type/concept, topic/career, topic/communication]
 date: 2026-04-29
 aliases: [STAR Framework, Kỹ thuật phỏng vấn hành vi]
 description: "Framework kể chuyện (Situation-Task-Action-Result) để flex kinh nghiệm mượt mà trong các vòng phỏng vấn hành vi (Behavioral Interview)."

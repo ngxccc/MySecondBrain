@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/architecture, pattern/clean-code, layer/architecture]
+tags: [type/concept, topic/architecture, topic/engineering, layer/architecture]
 date: 2026-04-28
 aliases: [SDP, Stable Dependencies Principle, Circular Dependency]
 description: "Quy tắc mũi tên một chiều chống Circular Dependency."
@@ -23,14 +23,14 @@ Quy tắc kiến trúc quy định luồng phụ thuộc (import) một chiều 
 - **Code Snippet (React Example):**
 
 ```tsx
-// ❌ BAD: Shared Component vi phạm luật (Import từ Feature)
+//  BAD: Shared Component vi phạm luật (Import từ Feature)
 import { navigateToProfile } from "@/features/users";
 
 export const SharedButton = ({ userId }) => {
   return <button onClick={() => navigateToProfile(userId)}>Click</button>;
 };
 
-// ✅ GOOD: Shared Component tuân thủ luật (Dùng DI qua Props)
+//  GOOD: Shared Component tuân thủ luật (Dùng DI qua Props)
 interface ButtonProps {
   onClick: () => void; // Chờ Feature tiêm (inject) logic vào
 }

@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/english, learning-method]
+tags: [type/concept, topic/english, topic/learning]
 date: 2026-04-29
 aliases: [Gom nhóm ngữ âm, Sound Clustering]
 description: "Hack não học từ vựng bằng cách gom nhóm âm tiết."

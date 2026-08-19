@@ -1,13 +1,5 @@
 ---
-tags:
-  [
-    type/concept,
-    topic/tech,
-    react,
-    frontend,
-    framework/nextjs,
-    layer/infrastructure,
-  ]
+tags: [type/concept, topic/tech, topic/frontend, layer/infrastructure]
 date: 2026-06-20
 aliases:
   [RSC, React Server Components vs Client Components, RSC vs Client Components]
@@ -43,11 +35,11 @@ Trong mô hình Next.js App Router, **React Server Components (RSC)** (mặc đ�
 - **Giải pháp (Pattern):** Truyền Server Component dưới dạng `children` hoặc một `prop` khác từ một Server Component cha bên ngoài.
 
 ```typescript
-// ❌ SAI: Import trực tiếp Server Component vào Client Component
+//  SAI: Import trực tiếp Server Component vào Client Component
 'use client';
 import MyServerComponent from './MyServerComponent'; // LỖI biên dịch!
 
-// ✓ ĐÚNG: Nhận Server Component dưới dạng children
+//  ĐÚNG: Nhận Server Component dưới dạng children
 'use client';
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   return <div className="client-wrapper">{children}</div>;

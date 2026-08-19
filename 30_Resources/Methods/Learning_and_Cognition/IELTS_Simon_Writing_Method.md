@@ -64,7 +64,8 @@ Báo cáo số liệu Task 1 không cần kết luận, thay vào đó là đo�
 
 ## Related Notes
 
-- Lộ trình tổng quan tự học tiếng Anh: [[English_Learning_Roadmap]]
+- Hồ sơ và lộ trình học tiếng Anh: [[English_Learner_Profile]]
+- Lộ trình luyện thi TOEIC: [[TOEIC_Self_Study_Roadmap_0_To_900]]
 - Phương pháp ghi nhớ từ vựng hiệu quả: [[Phonetic_Chunking]]
 
 ## Sources / References

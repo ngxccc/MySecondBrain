@@ -1,5 +1,5 @@
 ---
-tags: [type/method, topic/methods, finance-and-economics, status/permanent]
+tags: [type/method, topic/productivity, topic/finance, status/permanent]
 date: 2026-07-20
 aliases:
   [

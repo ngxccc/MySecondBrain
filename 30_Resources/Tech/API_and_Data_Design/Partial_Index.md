@@ -1,6 +1,6 @@
 ---
 tags:
-  [type/concept, topic/tech, api-data-design, status/todo, layer/infrastructure]
+  [type/concept, topic/tech, topic/database, status/todo, layer/infrastructure]
 date: 2026-06-07
 aliases: [Partial Index, Filtered Index, Index một phần]
 description: "Lập chỉ mục có điều kiện giúp tiết kiệm dung lượng đĩa và tối ưu hóa ghi."

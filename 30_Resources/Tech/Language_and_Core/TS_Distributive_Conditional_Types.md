@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/typescript, advanced-types, layer/core-mechanics]
+tags: [type/concept, topic/typescript, layer/core-mechanics]
 date: 2026-04-28
 aliases: [Distributive Conditionals, Disable Distribution]
 description: "Cơ chế tự động xé lẻ Union Type trong các biểu thức Generic của TypeScript."
@@ -35,9 +35,9 @@ type NonDistResult = ToArrayFixed<string | number>;
 // -> Kết quả: (string | number)[] (Giữ nguyên cục)
 
 // 3. Fix bug IsNever kinh điển
-// ❌ SAI: Trả về never do tập rỗng
+//  SAI: Trả về never do tập rỗng
 type IsNeverWrong<T> = T extends never ? true : false;
-// ✅ ĐÚNG: So sánh nguyên hộp [never] vs [never]
+//  ĐÚNG: So sánh nguyên hộp [never] vs [never]
 type IsNever<T> = [T] extends [never] ? true : false;
 ```
 

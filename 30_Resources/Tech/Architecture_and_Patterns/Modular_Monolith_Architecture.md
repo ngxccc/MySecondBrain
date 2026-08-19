@@ -1,12 +1,5 @@
 ---
-tags:
-  [
-    type/concept,
-    topic/backend,
-    pattern/architectural,
-    framework/express,
-    layer/architecture,
-  ]
+tags: [type/concept, topic/backend, topic/architecture, layer/architecture]
 date: 2026-02-08
 aliases: [Modular Architecture, Feature-Based Architecture]
 description: "Kiến trúc chia theo Domain/Feature (High Cohesion, Low Coupling)."
@@ -33,11 +26,11 @@ Kiến trúc tổ chức codebase bằng cách gom nhóm file theo chức năng 
 
 ```text
 src/
-├── common/                 # 🟢 SHARED: Hạ tầng (Vô tri, không chứa nghiệp vụ)
+├── common/                 #  SHARED: Hạ tầng (Vô tri, không chứa nghiệp vụ)
 │   ├── middlewares/        # Error Handler, Rate Limit
 │   └── utils/              # Logger, JWT Helper
 │
-└── modules/                # 🔴 FEATURES: Nghiệp vụ (Domain)
+└── modules/                #  FEATURES: Nghiệp vụ (Domain)
     ├── auth/
     │   ├── auth.controllers.ts
     │   ├── auth.services.ts

@@ -1,9 +1,6 @@
 ---
 tags:
-  - type/concept
-  - english/grammar
-  - learning/linguistics
-  - second-brain
+  [type/concept, topic/grammar, topic/linguistics, topic/knowledge-management]
 date: 2026-08-06
 aliases:
   - Word Family Matrix & Morphemic Anchor Method
@@ -31,7 +28,7 @@ Nhìn vào đuôi (Suffix) của một từ là cách nhanh nhất 80-90% để 
 | **Adjective** (Tính từ)  | **`-able`**, **`-ible`**, **`-ive`**, **`-al`**, **`-ous`**, **`-ful`**, **`-ed`**     | _respons**ible**, protect**ive**, optim**al**, danger**ous**, automat**ed**._              |
 | **Verb** (Động từ)       | **`-ate`**, **`-ify`**, **`-ize`** (`-ise`), **`-en`**                                 | _activ**ate**, qual**ify**, optim**ize**, strength**en**._                                 |
 
-> 💡 **Kỹ thuật Neo Từ Mẫu (Anchor Word Technique)**: Thay vì học thuộc danh sách đuôi khô khan, gán 1 từ mẫu quen thuộc nhất làm đại diện cho từng hậu tố (ví dụ: `-tion` $\rightarrow$ `action` [Noun]; `-able` $\rightarrow$ `able` [Adj]; `-ize` $\rightarrow$ `visualize` [Verb]).
+> **Kỹ thuật Neo Từ Mẫu (Anchor Word Technique)**: Thay vì học thuộc danh sách đuôi khô khan, gán 1 từ mẫu quen thuộc nhất làm đại diện cho từng hậu tố (ví dụ: `-tion` $\rightarrow$ `action` [Noun]; `-able` $\rightarrow$ `able` [Adj]; `-ize` $\rightarrow$ `visualize` [Verb]).
 
 ---
 
@@ -61,7 +58,7 @@ Từ đứng ở đâu sẽ làm loại từ đó. Ghi nhớ 3 vị trí vàng:
    - `be + Adj` $\rightarrow$ _You are **responsible** for this task._
    - `Adj + Noun` $\rightarrow$ _This is an **optimal** solution._
 
-> 💡 **Vòng Lặp Phản Xạ Thay Thế (Substitution Loop)**: Khi phân vân vị trí trống cần điền loại từ nào, hãy thử thay vị trí đó bằng 1 từ mẫu đơn giản (`cat` cho Danh từ, `good` cho Tính từ, `make` cho Động từ). Nếu câu thay thế xuôi tai $\rightarrow$ điền loại từ tương ứng.
+> **Vòng Lặp Phản Xạ Thay Thế (Substitution Loop)**: Khi phân vân vị trí trống cần điền loại từ nào, hãy thử thay vị trí đó bằng 1 từ mẫu đơn giản (`cat` cho Danh từ, `good` cho Tính từ, `make` cho Động từ). Nếu câu thay thế xuôi tai $\rightarrow$ điền loại từ tương ứng.
 
 ---
 

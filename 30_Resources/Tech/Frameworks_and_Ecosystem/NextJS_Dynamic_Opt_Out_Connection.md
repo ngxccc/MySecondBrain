@@ -1,6 +1,6 @@
 ---
 title: NextJS Dynamic Opt Out and connection() API
-tags: [type/concept, topic/tech, framework/nextjs, topic/rendering]
+tags: [type/concept, topic/tech, topic/frontend, topic/rendering]
 created: 2026-06-20
 description: "Cơ chế ngắt Prerender tĩnh và chuyển đổi sang Dynamic Rendering ở Next.js 15/16."
 ---

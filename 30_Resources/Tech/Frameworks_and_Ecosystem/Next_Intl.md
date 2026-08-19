@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/frontend, topic/i18n, nextjs, framework/nextjs]
+tags: [type/concept, topic/frontend, topic/i18n]
 date: 2026-06-20
 aliases: [Next.js Internationalization, next-intl, Đa ngôn ngữ NextJS]
 description: "Thư viện i18n hỗ trợ strict type-safety và Server Components."

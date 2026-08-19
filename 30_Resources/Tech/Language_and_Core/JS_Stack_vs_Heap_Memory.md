@@ -4,9 +4,8 @@ tags:
     type/concept,
     topic/tech,
     layer/core-mechanics,
-    engine/v8,
-    language/javascript,
-    system/memory,
+    topic/javascript,
+    topic/memory-management,
   ]
 aliases: [Stack vs Heap Memory, JS Stack vs Heap, Stack and Heap]
 date: 2026-08-09

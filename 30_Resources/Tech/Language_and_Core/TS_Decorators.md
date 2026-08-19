@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, language/typescript, layer/core-mechanics]
+tags: [type/concept, topic/tech, topic/typescript, layer/core-mechanics]
 date: 2026-06-24
 aliases: [TypeScript Decorators, Decorators trong TypeScript]
 description: "Phương pháp trang trí trong TypeScript chuẩn ES (Stage 3) vs cũ (experimentalDecorators)."

@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, language/javascript, layer/core-mechanics]
+tags: [type/concept, topic/tech, topic/javascript, layer/core-mechanics]
 date: 2026-06-24
 aliases: [Temporal API, JS Temporal API, API xử lý thời gian mới của JavaScript]
 description: "API xử lý ngày giờ thế hệ mới chính thức của JavaScript (ECMAScript 2026)."

@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/english, grammar]
+tags: [type/concept, topic/english, topic/grammar]
 date: 2026-07-21
 aliases: [Danh động từ và cách dùng đuôi -ing, Gerunds and Present Participles]
 description: "Cách sử dụng đuôi `-ing` trong tiếng Anh để chuyển đổi động từ thành danh từ làm chủ ngữ/tân ngữ (Danh động từ - Gerund) hoặc mô tả tính chất của danh từ (Hiện tại phân từ - Present Participle). Gi..."

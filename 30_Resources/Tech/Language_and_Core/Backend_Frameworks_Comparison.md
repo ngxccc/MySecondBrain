@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/tech, layer/infrastructure]
+tags: [type/concept, topic/tech, layer/infrastructure, layer/architecture]
 date: 2026-06-24
 aliases:
   [

@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/psychology, topic/innovation]
+tags: [type/concept, topic/psychology, topic/decision-making]
 date: 2026-04-29
 aliases:
   [Reasoning from First Principles, Tư duy nguyên bản, Nguyên lý đầu tiên]
