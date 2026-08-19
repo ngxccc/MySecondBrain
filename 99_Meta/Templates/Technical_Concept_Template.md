@@ -9,7 +9,9 @@ description: "Tóm tắt ngắn gọn 1-2 câu nội dung cốt lõi của ghi c
 
 ## TL;DR [BẮT BUỘC]
 
-_(1-2 câu tóm tắt bản chất cốt lõi của vấn đề)_
+- **Bản chất**: [Định nghĩa bản chất kỹ thuật trong 1 câu ngắn gọn, chuẩn xác]
+- **Mục đích & Bài toán**: [Giải quyết vấn đề gì hoặc tối ưu chỉ số/tài nguyên nào]
+- **Điểm mấu chốt**: [Cơ chế cốt lõi hoặc takeaway quan trọng nhất cần nhớ]
 
 ## Core Concept [BẮT BUỘC]
 

@@ -9,7 +9,9 @@ description: "Tóm tắt ngắn gọn 1-2 câu về tư duy/mô hình tâm lý n
 
 ## TL;DR [BẮT BUỘC]
 
-_(Định nghĩa cốt lõi. Nguyên lý này nói về cái gì?)_
+- **Bản chất**: [Định nghĩa cốt lõi của mô hình tư duy trong 1 câu ngắn gọn]
+- **Bối cảnh áp dụng**: [Dùng khi nào hoặc ngăn chặn bẫy tâm lý nào]
+- **Quy tắc vàng**: [Nguyên lý/hành động then chốt nhất]
 
 ---
 

@@ -9,9 +9,9 @@ updated_at: Sunday, June 7th 2026, 10:00:00 am +07:00
 
 ## TL;DR
 
-Tài liệu quy định chức năng và quy tắc lưu trữ cho từng thư mục trong hệ thống Second Brain, dựa trên phương pháp **PARA Modified** (Inbox + Projects + Areas + Resources + Archives).
-
-Tất cả các quy tắc hệ thống, quy định phân loại note, và chỉ dẫn cấu trúc thư mục được tập trung duy nhất tại **`AGENTS.md`** (Single Source of Truth). Tài liệu này chỉ đóng vai trò bản đồ ánh xạ (Directory Mapping) cho cây thư mục.
+- **Mục đích**: Bản đồ ánh xạ (Directory Mapping) quy định chức năng và vị trí lưu trữ cho từng thư mục trong Second Brain.
+- **Cơ chế tổ chức**: Ứng dụng **PARA Modified** (Inbox, Projects, Areas, Resources, Archives) kết hợp Zettelkasten.
+- **Single Source of Truth**: Mọi quy tắc phân loại, giới hạn 2 cấp thư mục, và chỉ dẫn AI Agent tập trung duy nhất tại `AGENTS.md`.
 
 ## Directory Breakdown (Chi tiết cấu trúc)
 
@@ -108,7 +108,7 @@ Tất cả các quy tắc hệ thống, quy định phân loại note, và chỉ
 
 - **Mục đích:** Chứa các file cấu hình và tài nguyên hệ thống.
 - **Thư mục con hiện tại:**
-  - `Templates/`: Các file mẫu để tạo note nhanh chóng (`Daily_Log_Template.md`, `Technical_Concept_Template.md`, `Project_Template.md`...).
+  - `Templates/`: Các file mẫu để tạo note nhanh chóng (`Daily_Log_Template.md`, `Technical_Concept_Template.md`, `Method_SOP_Template.md`, `Master_SSOT_Template.md`, `Project_Template.md`...).
   - `Scripts/`: Chứa các script bổ trợ cho hệ thống, ví dụ `validate_notes.mjs` để kiểm tra chất lượng và cấu trúc các ghi chú.
 
 ---

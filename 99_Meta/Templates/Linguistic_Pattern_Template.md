@@ -9,10 +9,9 @@ description: "Tóm tắt ngắn gọn quy tắc ngữ âm/mẫu câu (để Data
 
 ## TL;DR [BẮT BUỘC]
 
-_(Quy tắc cốt lõi 1 dòng - The "Golden Rule")_
-
-> **Rule:** Noun/Adj nhấn âm 1. Verb nhấn âm 2.
-> **Why:** Thay đổi trọng âm để đổi từ loại (part of speech).
+- **Rule**: [Quy tắc phát âm / ngữ pháp cốt lõi 1 dòng]
+- **Why**: [Cơ chế hoặc lý do biến đổi ngôn ngữ]
+- **Quick Anchor**: [Dấu hiệu nhận diện nhanh / Phản xạ tức thì]
 
 ---
 

@@ -1,9 +1,6 @@
 ---
 docType: area-index
-tags:
-  - excalidraw
-  - drawings
-  - second-brain
+tags: [topic/documentation, topic/knowledge-management]
 description: "Thư mục lưu trữ các file phác thảo Excalidraw, sơ đồ tư duy, và hình minh họa khái niệm kỹ thuật trong Second Brain."
 ---
 
@@ -11,16 +8,16 @@ description: "Thư mục lưu trữ các file phác thảo Excalidraw, sơ đồ
 
 ## TL;DR
 
-Thư mục lưu trữ các file phác thảo Excalidraw, sơ đồ tư duy, và hình minh họa khái niệm kỹ thuật trong Second Brain.
+- **Mục đích**: Lưu trữ các bản vẽ phác thảo Excalidraw, sơ đồ kiến trúc hệ thống và mô hình tư duy trực quan.
+- **Định dạng**: File `.excalidraw` chỉnh sửa trực tiếp qua Obsidian Excalidraw plugin.
+- **Tích hợp**: Xuất ảnh SVG/PNG để nhúng trực tiếp vào các Atomic Notes trong `30_Resources/`.
 
 ## Organization Structure
 
 - **Go Memory Mechanics**: `Go_Escape_Analysis_Whiteboard.excalidraw`
 - **Architecture Diagrams**: `System_Architecture_Overview.excalidraw`
 
----
+## Usage Guidelines
 
-## ️ Usage Guidelines
-
-1. **Excalidraw Plugin**: Dùng plugin Excalidraw trong Obsidian để tạo và chỉnh sửa file trực tiếp.
-2. **Export**: Xuất file ảnh dạng SVG/PNG nếu cần nhúng vào các gạch ghi chú khái niệm trong `30_Resources/Concepts/`.
+1. **Plugin Integration**: Dùng Obsidian Excalidraw plugin để mở, chỉnh sửa và quản lý sơ đồ.
+2. **Export Standards**: Xuất định dạng SVG hoặc PNG trước khi nhúng vào các note trong `30_Resources/Concepts/` hoặc `30_Resources/Tech/`.

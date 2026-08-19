@@ -9,7 +9,9 @@ description: "Tóm tắt ngắn gọn 1-2 câu về quy trình/phương pháp n�
 
 ## TL;DR [BẮT BUỘC]
 
-_(1-2 câu tóm tắt nhanh quy trình/phương pháp này dùng để làm gì và kết quả đạt được)_
+- **Mục tiêu**: [Quy trình/phương pháp này dùng để làm gì và giải quyết bài toán nào]
+- **Đầu ra (Deliverable)**: [Kết quả cụ thể đạt được sau khi hoàn thành]
+- **Thời điểm áp dụng**: [Điều kiện hoặc bối cảnh cần kích hoạt SOP này]
 
 ## Context: When to use? [BẮT BUỘC]
 

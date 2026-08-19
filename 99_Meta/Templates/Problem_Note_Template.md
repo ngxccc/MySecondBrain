@@ -22,7 +22,9 @@ description: "Mẫu ghi chú tiêu chuẩn giúp phân rã và quản lý các b
 
 ## TL;DR
 
-Template này ứng dụng [[GPS_Goal_Problem_Solution_Framework]] và [[McKinsey_Issue_Tree_Framework]] nhằm ghim chặt North Star Goal ở đầu trang. Bối cảnh ban đầu luôn được nhìn thấy dù người lập trình hay thảo luận đào sâu vào các sub-problems ở mức độ chi tiết nào.
+- **North Star**: [Mục tiêu ban đầu tối thượng cần đạt được]
+- **Root Blocker**: [Điểm nghẽn / nguyên nhân gốc rễ lớn nhất đang gặp phải]
+- **Action Strategy**: [Đòn bẩy hoặc giải pháp trọng tâm để tháo gỡ]
 
 ---
 
