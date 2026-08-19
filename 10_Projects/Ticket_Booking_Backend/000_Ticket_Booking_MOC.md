@@ -73,6 +73,7 @@ created_at: 2026-06-27
 - Luồng Đổi mật khẩu người dùng: [[Change_Password_Workflow]]
 - Luồng Đăng xuất toàn bộ phiên: [[Logout_All_User_Sessions_Workflow]]
 - Luồng Lấy thông tin hồ sơ người dùng hiện tại (GET /api/users/me): [[Get_Current_User_Profile_Workflow]]
+
 ### Database & Data Models
 
 - Sơ đồ cơ sở dữ liệu (DBML): [[Database_Schema.dbml]]

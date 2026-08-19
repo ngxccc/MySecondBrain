@@ -9,7 +9,7 @@
 
 ## 1. Overview & Single Responsibility Principle
 
-In NestJS, a **Guard** is a class annotated with `@Injectable()` that implements the `CanActivate` interface. 
+In NestJS, a **Guard** is a class annotated with `@Injectable()` that implements the `CanActivate` interface.
 
 Guards have a **single responsibility**: They determine whether a given request will be handled by the route handler or not, depending on runtime conditions such as authentication status, permissions, roles, or rate limits.
 
@@ -35,6 +35,7 @@ export interface CanActivate {
 ### Return Value Semantics
 
 The single required method `canActivate()` receives `ExecutionContext` and must return:
+
 - `true` $\rightarrow$ Request passes the guard and proceeds to interceptors/pipes/route handler.
 - `false` $\rightarrow$ Request is blocked. NestJS automatically throws `ForbiddenException` (HTTP 403).
 - `throw new UnauthorizedException(...)` $\rightarrow$ Custom HTTP 401 exception (recommended for authentication failures).
@@ -42,6 +43,7 @@ The single required method `canActivate()` receives `ExecutionContext` and must 
 ### Why `implements CanActivate`?
 
 Implementing `CanActivate` tells NestJS that the class is a **Guard**. NestJS will:
+
 1. Instantiate the class via its Dependency Injection (DI) container.
 2. Call `canActivate()` before invoking the protected route handler.
 3. Use the return value (or thrown exception) to decide whether to allow the request.
@@ -79,12 +81,12 @@ sequenceDiagram
 
 ### Execution Order Comparison Matrix
 
-| Layer | Runs Before Handler | Access to `ExecutionContext` | Primary Use Case | Short-circuiting |
-| :--- | :--- | :--- | :--- | :--- |
-| **Middleware** | Yes | No (`req`, `res`, `next`) | Logging, CORS, Body parsing, Session setup | Yes (`next()`) |
-| **Guard** | Yes | **Yes** | Authentication (JWT), Authorization (ACL/RBAC), Throttling | Yes (return `false` / `throw`) |
-| **Interceptor** | Yes & After | **Yes** | Response mapping, Performance profiling, Caching | Yes |
-| **Pipe** | Yes | **Yes** | Payload validation (`class-validator`), Type transformation | Yes (`throw BadRequestException`) |
+| Layer           | Runs Before Handler | Access to `ExecutionContext` | Primary Use Case                                            | Short-circuiting                  |
+| :-------------- | :------------------ | :--------------------------- | :---------------------------------------------------------- | :-------------------------------- |
+| **Middleware**  | Yes                 | No (`req`, `res`, `next`)    | Logging, CORS, Body parsing, Session setup                  | Yes (`next()`)                    |
+| **Guard**       | Yes                 | **Yes**                      | Authentication (JWT), Authorization (ACL/RBAC), Throttling  | Yes (return `false` / `throw`)    |
+| **Interceptor** | Yes & After         | **Yes**                      | Response mapping, Performance profiling, Caching            | Yes                               |
+| **Pipe**        | Yes                 | **Yes**                      | Payload validation (`class-validator`), Type transformation | Yes (`throw BadRequestException`) |
 
 ### Order of Execution when Multiple Guards are Present
 
@@ -94,7 +96,7 @@ Per official [NestJS Request Lifecycle Docs](https://docs.nestjs.com/faq/request
 2. **Controller-level Guards** run second.
 3. **Route/Method-level Guards** run third.
 
-*Note:* Within the same level, guards run in the **exact array order** they are bound: `@UseGuards(GuardA, GuardB)` will execute `GuardA.canActivate()` followed by `GuardB.canActivate()`. If `GuardA` returns `false` or throws an exception, `GuardB` is **short-circuited** and will never execute.
+_Note:_ Within the same level, guards run in the **exact array order** they are bound: `@UseGuards(GuardA, GuardB)` will execute `GuardA.canActivate()` followed by `GuardB.canActivate()`. If `GuardA` returns `false` or throws an exception, `GuardB` is **short-circuited** and will never execute.
 
 ---
 
@@ -118,12 +120,12 @@ const request = context.switchToHttp().getRequest<Request>();
 
 ## 5. Throwing vs Returning `false` Semantics
 
-| Behavior | Result Status | Recommended Use Case |
-| :--- | :--- | :--- |
-| **Return `false`** | HTTP 403 Forbidden | Rarely — loses error context & produces generic 403 |
-| **Throw `UnauthorizedException`** | HTTP 401 Unauthorized | **Preferred for Authentication failures** (missing/invalid token) |
-| **Throw `ForbiddenException`** | HTTP 403 Forbidden | **Preferred for Authorization failures** (insufficient permissions/roles) |
-| **Throw Custom `HttpException`** | Custom HTTP Status & Payload | Specialized domain errors |
+| Behavior                          | Result Status                | Recommended Use Case                                                      |
+| :-------------------------------- | :--------------------------- | :------------------------------------------------------------------------ |
+| **Return `false`**                | HTTP 403 Forbidden           | Rarely — loses error context & produces generic 403                       |
+| **Throw `UnauthorizedException`** | HTTP 401 Unauthorized        | **Preferred for Authentication failures** (missing/invalid token)         |
+| **Throw `ForbiddenException`**    | HTTP 403 Forbidden           | **Preferred for Authorization failures** (insufficient permissions/roles) |
+| **Throw Custom `HttpException`**  | Custom HTTP Status & Payload | Specialized domain errors                                                 |
 
 For authentication failures (missing/invalid/expired token), always throw `UnauthorizedException` with i18n localization rather than returning `false`. This preserves the correct HTTP 401 status and provides meaningful localized feedback.
 
@@ -249,7 +251,7 @@ To bypass global or controller-level guards (e.g. `@Public()` endpoints), NestJS
 
 ```typescript
 // Custom Decorator
-export const IS_PUBLIC_KEY = 'isPublic';
+export const IS_PUBLIC_KEY = "isPublic";
 export const Public = () => SetMetadata(IS_PUBLIC_KEY, true);
 
 // Inside Guard
