@@ -2,7 +2,7 @@
 noteId: 1784625716937
 ---
 
-What is the pattern and implicit negative meaning of **Too + Adjective + to V**?
+What is the structure, verb form, and implicit negative meaning when using **too... to**?
 
 ---
 

@@ -2,7 +2,7 @@
 noteId: 1785979178336
 ---
 
-What is the pattern, usage, and meaning of **Rather than + V-ing / Bare Verb** (rather than unifying)?
+What are the pattern, acceptable verb forms, and usage of **rather than**?
 
 ---
 

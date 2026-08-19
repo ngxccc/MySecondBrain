@@ -1,7 +1,9 @@
 ---
-noteId: 1783154400224
+noteId: 1786852036979
 ---
 
-Spell the word/phrase that means "Sử dụng, tận dụng tối ưu hiệu năng" (/ˈjuː.təl.aɪz/):
+Spell the word/phrase that means "To make practical and effective use of a resource or tool." (/ˈjuː.təl.aɪz/):
+
+---
 
 _utilize_

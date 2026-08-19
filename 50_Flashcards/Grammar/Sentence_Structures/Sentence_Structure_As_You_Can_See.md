@@ -2,7 +2,7 @@
 noteId: 1785856695227
 ---
 
-What is the visual transitions pattern for presentations (**As you can see on/in + Noun**)?
+What is the transition pattern and preposition usage for referencing visuals in presentations using **as you can see**?
 
 ---
 

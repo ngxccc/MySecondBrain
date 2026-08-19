@@ -1,7 +1,9 @@
 ---
-noteId: 1783154400196
+noteId: 1786852036946
 ---
 
-Spell the word/phrase that means "Việc bàn giao sản phẩm đúng thời hạn" (/ˈtaɪmli dɪˈlɪvəri/):
+Spell the word/phrase that means "The act of delivering software or tasks punctually according to schedule." (/ˈtaɪm.li dɪˈlɪv.ər.i/):
+
+---
 
 _timely delivery_

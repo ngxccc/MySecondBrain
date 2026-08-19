@@ -1,13 +1,16 @@
 ---
 noteId: 1784625716786
+created_at: Tuesday, July 21st 2026, 4:12:24 pm +07:00
+updated_at: Saturday, August 15th 2026, 3:30:22 pm +07:00
 ---
 
-What is the preposition pattern and verb form after **Instead of** (Instead of + V-ing / Noun)?
+What is the preposition pattern and verb form after **instead of**?
 
 ---
 
 - **Formula / Pattern**:
-  - `Action A + instead of + V-ing / Noun (Action B)`
+  - `Action A + instead of + V-ing / Noun / Pronoun (Action B)`
+  - `instead of + Noun / Noun Phrase / Pronoun / V-ing (Gerund)`
 - **Core Explanation**:
   - Diễn tả sự lựa chọn thay thế: làm/dùng A thay vì B. Vì `of` là giới từ nên động từ sau `instead of` BẮT BUỘC thêm `-ing`.
 - **Usage & Anchor Cues**:

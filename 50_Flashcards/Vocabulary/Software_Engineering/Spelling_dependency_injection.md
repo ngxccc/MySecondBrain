@@ -1,7 +1,9 @@
 ---
-noteId: 1783154400046
+noteId: 1786852037199
 ---
 
-Spell the word/phrase that means "Kỹ thuật tiêm phụ thuộc (design pattern)" (/dɪˈpendənsi ɪnˈdʒekʃn/):
+Spell the word/phrase that means "The definition and usage of dependency injection in software engineering and professional communication.":
+
+---
 
 _dependency injection_

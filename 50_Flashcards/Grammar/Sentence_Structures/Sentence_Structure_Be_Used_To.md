@@ -2,7 +2,7 @@
 noteId: 1784625716684
 ---
 
-What is the pattern and meaning for expressing familiarity with a habit (**Be used to + V-ing**)?
+What is the pattern, verb form, and meaning for expressing familiarity with a habit using **be used to**?
 
 ---
 

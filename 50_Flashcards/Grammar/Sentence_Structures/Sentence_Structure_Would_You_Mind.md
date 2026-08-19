@@ -2,7 +2,7 @@
 noteId: 1784625716987
 ---
 
-What are the polite request and permission patterns for **Would you mind** (doing vs if I did)?
+What are the polite request and permission patterns and verb forms for **would you mind**?
 
 ---
 

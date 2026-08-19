@@ -2,7 +2,7 @@
 noteId: 1785417091428
 ---
 
-What are the modal verb patterns for asking polite requests (**Could you + V** vs **Would you mind + V-ing**)?
+What are the modal verb patterns and verb forms for making polite requests with **could you** vs **would you mind**?
 
 ---
 

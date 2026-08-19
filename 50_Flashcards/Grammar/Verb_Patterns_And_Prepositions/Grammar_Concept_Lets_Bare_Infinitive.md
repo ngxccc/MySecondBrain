@@ -2,7 +2,7 @@
 noteId: 1785979178312
 ---
 
-What is the pattern for **Let's + Bare Infinitive** and verb forms after **start** (Let's start explaining)?
+What is the verb form rule after **let's** and how does the verb following **start** behave?
 
 ---
 

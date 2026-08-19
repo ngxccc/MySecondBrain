@@ -2,7 +2,7 @@
 noteId: 1784625716770
 ---
 
-What are the structures for expressing purpose with base verbs (**In order to** / **So as to**)?
+What are the structures and verb forms for expressing purpose using **in order to** and **so as to**?
 
 ---
 

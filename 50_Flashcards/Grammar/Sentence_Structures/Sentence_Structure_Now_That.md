@@ -2,7 +2,7 @@
 noteId: 1785856695296
 ---
 
-What is the causal-temporal structure for stating a newly established situation (**Now that + Clause**)?
+What is the causal-temporal structure for stating a newly established situation using **now that**?
 
 ---
 

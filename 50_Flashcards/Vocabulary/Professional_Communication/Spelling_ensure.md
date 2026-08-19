@@ -1,7 +1,9 @@
 ---
-noteId: 1783154400074
+noteId: 1786852036744
 ---
 
-Spell the word/phrase that means "Đảm bảo, chắc chắn (để ngăn chặn lỗi)" (/ɪnˈʃɔːr/):
+Spell the word/phrase that means "To make certain that something will occur or be the case." (/ɪnˈʃʊər/):
+
+---
 
 _ensure_

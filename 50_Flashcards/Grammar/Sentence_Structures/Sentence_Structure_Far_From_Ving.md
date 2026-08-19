@@ -2,7 +2,7 @@
 noteId: 1785856695272
 ---
 
-What is the contrast pattern for refuting expectations (**Far from + V-ing / Noun**)?
+What is the contrast pattern and verb form for refuting expectations using **far from**?
 
 ---
 

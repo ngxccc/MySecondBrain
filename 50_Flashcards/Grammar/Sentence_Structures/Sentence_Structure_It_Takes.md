@@ -2,7 +2,7 @@
 noteId: 1784625716836
 ---
 
-What is the pattern and usage for expressing time spent on a task (**It takes someone time to do something**)?
+What is the pattern and verb form for expressing time spent on a task using **it takes**?
 
 ---
 

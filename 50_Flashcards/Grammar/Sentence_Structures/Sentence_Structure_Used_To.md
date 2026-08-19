@@ -2,7 +2,7 @@
 noteId: 1784625716970
 ---
 
-What is the pattern and meaning for expressing past habits that no longer exist (**Used to + V-bare**)?
+What is the structure, verb form, and meaning for expressing past habits that no longer exist using **used to**?
 
 ---
 

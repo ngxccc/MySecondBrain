@@ -2,7 +2,7 @@
 noteId: 1785334776488
 ---
 
-What is the usage, pattern, and meaning of **so + Subject + Verb** to express purpose?
+What is the usage, pattern, and clause structure of **so** to express purpose?
 
 ---
 

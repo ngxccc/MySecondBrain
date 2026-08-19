@@ -2,7 +2,7 @@
 noteId: 1784625716887
 ---
 
-What is the cause-and-effect pattern for **So + Adjective + that + Clause**?
+What is the cause-and-effect pattern and clause structure using **so... that**?
 
 ---
 

@@ -2,7 +2,7 @@
 noteId: 1784625716920
 ---
 
-What is the verb pattern for spending time or money (**Spend time/money + V-ing**)?
+What is the verb pattern and required verb form for spending time or resources using **spend**?
 
 ---
 

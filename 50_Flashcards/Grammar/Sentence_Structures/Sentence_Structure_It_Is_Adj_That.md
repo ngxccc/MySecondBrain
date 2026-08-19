@@ -2,7 +2,7 @@
 noteId: 1784625716819
 ---
 
-What is the subjunctive mood pattern for expressing urgency/importance (**It is essential that + Subject + V-bare**)?
+What is the subjunctive mood pattern and verb form for expressing urgency/importance (**It is essential / important that...**)?
 
 ---
 

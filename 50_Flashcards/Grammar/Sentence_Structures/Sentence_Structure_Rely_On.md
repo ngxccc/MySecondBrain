@@ -2,7 +2,7 @@
 noteId: 1785856695330
 ---
 
-What is the preposition pattern for expressing dependency (**Rely on + Noun / V-ing**)?
+What is the preposition pattern and required verb form for expressing dependency with **rely**?
 
 ---
 

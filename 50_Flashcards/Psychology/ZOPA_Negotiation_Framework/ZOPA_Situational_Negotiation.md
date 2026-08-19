@@ -8,5 +8,5 @@ Tình huống: Đàm phán hợp đồng phần mềm bị bế tắc vì ngân 
 
 - **Chẩn đoán:** Rơi vào ZOPA âm về biến số tiền mặt thuần túy.
 - **Phản xạ nới rộng ZOPA bằng giá trị phi tiền tệ:**
-  1. *Cắt giảm scope:* Đề xuất gói MVP đáp ứng nhu cầu cốt lõi với đúng giá $30k.
-  2. *Thêm biến số trao đổi:* Giữ giá $40k nhưng cho phép thanh toán 3 đợt, hoặc yêu cầu khách hàng cam kết hợp đồng bảo trì năm sau + cho phép dùng dự án làm Case Study truyền thông.
+  1. _Cắt giảm scope:_ Đề xuất gói MVP đáp ứng nhu cầu cốt lõi với đúng giá $30k.
+  2. _Thêm biến số trao đổi:_ Giữ giá $40k nhưng cho phép thanh toán 3 đợt, hoặc yêu cầu khách hàng cam kết hợp đồng bảo trì năm sau + cho phép dùng dự án làm Case Study truyền thông.

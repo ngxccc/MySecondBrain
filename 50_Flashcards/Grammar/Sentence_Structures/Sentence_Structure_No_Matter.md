@@ -2,7 +2,7 @@
 noteId: 1784625716870
 ---
 
-What are the concessive sentence patterns for expressing regardlessness (**No matter how / No matter what**)?
+What are the concessive sentence patterns for expressing regardlessness using **no matter** (_no matter how / what_)?
 
 ---
 

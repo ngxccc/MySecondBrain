@@ -2,7 +2,7 @@
 noteId: 1784625716708
 ---
 
-What is the dummy object pattern for expressing opinions (**Find it + Adjective + to V**)?
+What is the dummy object pattern and verb form for expressing opinions using the verb **find** (_find it..._)?
 
 ---
 

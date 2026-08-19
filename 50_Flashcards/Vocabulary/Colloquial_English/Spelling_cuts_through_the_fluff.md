@@ -1,7 +1,9 @@
 ---
-noteId: 1783430787207
+noteId: 1786852036581
 ---
 
-Spell the word/phrase that means "Đi thẳng vào vấn đề, bỏ qua những thứ lý thuyết suông, rườm rà." (/kʌts θruː ðə flʌf/):
+Spell the word/phrase that means "The definition and usage of cuts through the fluff in software engineering and professional communication." (/C1)/):
+
+---
 
 _cuts through the fluff_

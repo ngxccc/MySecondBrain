@@ -1,7 +1,9 @@
 ---
-noteId: 1783430787340
+noteId: 1786852037345
 ---
 
-Spell the word/phrase that means "Code chuẩn để chạy thực tế cho khách hàng sử dụng (code hoàn thiện)." (/prəˈdʌk.ʃən ˈred.i koʊd/):
+Spell the word/phrase that means "The definition and usage of production ready code in software engineering and professional communication.":
 
-_production-ready code_
+---
+
+_production ready code_

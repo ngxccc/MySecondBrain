@@ -1,7 +1,9 @@
 ---
-noteId: 1783430787181
+noteId: 1786852036274
 ---
 
-Spell the word/phrase that means "Theo dõi sản phẩm ở mức độ nguyên tử (tách biệt topping ra khỏi món chính)." (/əˈtɒm.ɪk ˈaɪ.təm ˈtræk.ɪŋ/):
+Spell the word/phrase that means "The definition and usage of atomic item tracking in software engineering and professional communication.":
+
+---
 
 _atomic item tracking_

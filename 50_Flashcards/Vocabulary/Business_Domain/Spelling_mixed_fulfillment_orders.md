@@ -1,7 +1,9 @@
 ---
-noteId: 1783430787290
+noteId: 1786852036324
 ---
 
-Spell the word/phrase that means "Đơn hàng phức tạp có nhiều hình thức hoàn thành (ví dụ: vừa mang đi vừa ăn tại chỗ)." (/mɪkst fʊlˈfɪl.mənt ˈɔː.dərz/):
+Spell the word/phrase that means "The definition and usage of mixed fulfillment orders in software engineering and professional communication.":
 
-_mixed-fulfillment orders_
+---
+
+_mixed fulfillment orders_

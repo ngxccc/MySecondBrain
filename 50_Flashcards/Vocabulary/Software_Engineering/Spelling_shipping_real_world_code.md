@@ -1,7 +1,9 @@
 ---
-noteId: 1783430787390
+noteId: 1786852037500
 ---
 
-Spell the word/phrase that means "Deploy/xuất bản mã nguồn chạy thực tế phục vụ người dùng." (/ˈʃɪp.ɪŋ ˌrɪəl ˈwɜːld koʊd/):
+Spell the word/phrase that means "The definition and usage of shipping real world code in software engineering and professional communication.":
 
-_shipping real-world code_
+---
+
+_shipping real world code_

@@ -2,7 +2,7 @@
 noteId: 1784625716736
 ---
 
-What is the active causative structure for delegating or requesting tasks (**Have someone do something**)?
+What is the active causative structure and verb form for delegating or requesting tasks using **have**?
 
 ---
 

@@ -1,7 +1,9 @@
 ---
-noteId: 1783430787356
+noteId: 1786852037447
 ---
 
-Spell the word/phrase that means "Lỗi xảy ra khi chương trình đang chạy và các nút thắt cổ chai khi tái cấu trúc code." (/ˈrʌn.taɪm ɪkˈsep.ʃənz & ˌriːˈfæk.tər.ɪŋ ˈbɒt.əl.neks/):
+Spell the word/phrase that means "The definition and usage of runtime exceptions and refactoring bottlenecks in software engineering and professional communication.":
 
-_runtime exceptions & refactoring bottlenecks_
+---
+
+_runtime exceptions and refactoring bottlenecks_

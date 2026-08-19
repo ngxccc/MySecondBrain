@@ -2,7 +2,7 @@
 noteId: 1785856695246
 ---
 
-What is the additive preposition pattern for adding facts (**Besides + V-ing / Noun**)?
+What is the additive preposition pattern and required verb form for adding facts using **besides**?
 
 ---
 

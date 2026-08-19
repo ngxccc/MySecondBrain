@@ -2,7 +2,7 @@
 noteId: 1785422280193
 ---
 
-What is the auxiliary verb rule for Present Simple questions with singular subjects (**Does my config have**)?
+What is the auxiliary verb and main verb form rule for Present Simple questions with third-person singular subjects?
 
 ---
 
