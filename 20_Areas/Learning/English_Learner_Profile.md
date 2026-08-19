@@ -1,33 +1,42 @@
 ---
 docType: learning-profile
-tags:
-  - english
-  - learner-profile
-  - second-brain
+tags: [topic/english, topic/learning, topic/knowledge-management]
 date: 2026-08-06
 aliases:
   - English Learner Profile
   - Hồ sơ học tiếng Anh
 ---
 
-# English Learner Profile & Progress Tracker
+# English Learner Profile & Strategy SSOT
 
 ## TL;DR
 
-Hồ sơ cá nhân theo dõi trình độ tiếng Anh (CEFR A2 $\rightarrow$ B1 $\rightarrow$ B2), quản lý điểm mạnh, các điểm cần tập trung cải thiện và lịch sử đánh giá trình độ định kỳ.
+Hồ sơ cá nhân và **Single Source of Truth (SSOT)** theo dõi lộ trình phát triển năng lực tiếng Anh (CEFR A2 $\rightarrow$ B1 $\rightarrow$ B2). Phân cấp rõ ràng: Ưu tiên số 1 là **Technical English Communication** phục vụ phỏng vấn Backend Developer trước ngày 06/12/2026; các lộ trình luyện thi chứng chỉ như TOEIC/IELTS chỉ đóng vai trò bài tập bổ trợ phương pháp nghe/viết.
 
 ---
 
-## 📊 Current CEFR Profile
+## 1. Master Strategy & Hierarchy
+
+```
+[ PRIMARY TRACK ]     ──> B1 ──> B2 Technical English Communication (Feynman Presentation & Mock Interview)
+                                        │
+                                        ▼
+[ SUPPORTING MODULE ] ──> [[TOEIC_Self_Study_Roadmap_0_To_900]] (Dictation Part 1 & Part 2)
+                                        │
+                                        ▼
+[ REFERENCE METHODS ] ──> [[IELTS_Simon_Writing_Method]], [[Card_By_Card_Presentation_Delivery_Technique]]
+```
+
+---
+
+## 2. Current CEFR Profile
 
 - **Current Level**: **A2 (High-Beginner) $\rightarrow$ B1 (Lower-Intermediate)**
 - **Target Level**: **B2 (Upper-Intermediate / Technical Professional)**
 - **Last Evaluated**: 2026-08-06
 - **Vocabulary Vault**: Auto-synced via Yanki plugin in `50_Flashcards/` _(Flashcard từng từ lẻ lưu độc lập tại thẻ Anki, không ghi log vụn vặt vào profile này)_.
 
----
-
-## 💪 Core Competencies & Strengths
+## Core Competencies & Strengths
 
 - **Technical & Engineering Domain Vocab**: Hiểu và sử dụng thành thạo từ vựng chuyên ngành lập trình (`codebase`, `concurrency`, `Escape Analysis`, `Garbage Collection`, `Value Semantics`, `Slice Header Fields`, `Memory Allocation`, `Overhead`).
 - **Phonetics & Pronunciation Mechanics**: Nắm vững cơ chế phát âm phụ âm vô thanh/hữu thanh (Voiceless vs Voiced sounds), phụ âm huýt (Sibilants), nối âm (Phonetic liaison), âm chặn (Held stops), và quy tắc phát âm đuôi `-s`, `-es`, `-ed`.
@@ -36,7 +45,7 @@ Hồ sơ cá nhân theo dõi trình độ tiếng Anh (CEFR A2 $\rightarrow$ B1 
 
 ---
 
-## 🎯 Active Target Improvement Areas
+## Active Target Improvement Areas
 
 1. **Question Grammar & Sentence Patterns**:
    - Master patterns: `What is the difference between A and B?`, `How do you pronounce "..."?`, `Is "..." translated as "..."?`, `What does "..." mean?`.
@@ -47,7 +56,7 @@ Hồ sơ cá nhân theo dõi trình độ tiếng Anh (CEFR A2 $\rightarrow$ B1 
 
 ---
 
-## 📈 Major CEFR Assessment & Milestone History
+## Major CEFR Assessment & Milestone History
 
 - **2026-08-06**: Relocated learner profile to `20_Areas/Learning/English_Learner_Profile.md` per PARA framework. Operational error frequency tracking moved to skill data JSON (`english-tutor/data/english-error-tracker.json`).
 - **2026-08-06**: Restructured profile to Macro-Tracking architecture. Separated individual word flashcards (`50_Flashcards/`) from profile milestones. Operational assessment framework relocated to skill references (`english-tutor/references/assessment-framework.md`).

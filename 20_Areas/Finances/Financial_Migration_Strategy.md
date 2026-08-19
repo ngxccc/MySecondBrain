@@ -8,13 +8,13 @@ aliases: [Nâng cấp tài chính, 4 to 6 Jars, Refactoring Finance]
 
 # Financial Migration Strategy (4 to 6 Jars)
 
-## 💡 TL;DR
+## TL;DR
 
 Quy trình "Refactoring" hệ thống quản lý tài chính từ phiên bản rút gọn (4 Lọ - Sinh tồn & Tăng trưởng) lên phiên bản tiêu chuẩn (6 Lọ - Tự do & Cân bằng) khi thu nhập cá nhân đạt ngưỡng an toàn.
 
 ---
 
-## 🧠 Why use it?
+## Why use it?
 
 _Tại sao không dùng 6 lọ ngay từ đầu hoặc dùng 4 lọ mãi mãi?_
 
@@ -25,7 +25,7 @@ _Tại sao không dùng 6 lọ ngay từ đầu hoặc dùng 4 lọ mãi mãi?_
   - **Junior:** Tập trung Up skill (Growth).
   - **Senior:** Tập trung Tích sản (FFA).
 
-## 🔍 Deep Dive (Cơ chế chuyển đổi)
+## Deep Dive (Cơ chế chuyển đổi)
 
 ### 1. The Trigger (Điều kiện kích hoạt)
 
@@ -44,7 +44,7 @@ _(Tức là: Khi chi phí sống cơ bản chỉ còn chiếm khoảng một n�
 
 ---
 
-## 💻 Code Snippet / Implementation
+## Code Snippet / Implementation
 
 Logic tính toán số tiền phân bổ khi chuyển đổi (Giả sử Lương tăng từ 10tr -> 30tr).
 
@@ -66,11 +66,11 @@ function migrateStrategy(currentIncome: number, basicLivingCost: number) {
   const necRatio = basicLivingCost / currentIncome;
 
   if (necRatio > 0.55) {
-    console.log("⚠️ Chưa đủ điều kiện Migration. Tiếp tục cày cuốc với 4 Lọ.");
+    console.log("️ Chưa đủ điều kiện Migration. Tiếp tục cày cuốc với 4 Lọ.");
     return "STAY_JUNIOR";
   }
 
-  console.log("🚀 Đủ điều kiện! Kích hoạt Pro Mode (6 Lọ).");
+  console.log(" Đủ điều kiện! Kích hoạt Pro Mode (6 Lọ).");
   console.log(
     `Dư ra: ${(1 - necRatio) * 100}% thu nhập để ném vào Đầu tư & Hưởng thụ.`,
   );
@@ -78,17 +78,17 @@ function migrateStrategy(currentIncome: number, basicLivingCost: number) {
 }
 ```
 
-## ⚠️ Edge Cases / Pitfalls
+## ️ Edge Cases / Pitfalls
 
-- ❌ **Premature Optimization (Tối ưu sớm):** Lương 7-8 triệu đã vội chia 6 lọ.
-  - _Hậu quả:_ Mỗi lọ có vài trăm nghìn, không đủ mua gì, quản lý mệt mỏi (Over-engineering).
+- **Premature Optimization (Tối ưu sớm):** Lương 7-8 triệu đã vội chia 6 lọ.
+- _Hậu quả:_ Mỗi lọ có vài trăm nghìn, không đủ mua gì, quản lý mệt mỏi (Over-engineering).
 
-- ❌ **Lifestyle Creep (Sống sang chảnh):** Lương x2 nhưng chuyển sang chung cư cao cấp x2 tiền thuê.
-  - _Hậu quả:_ `NEC` vẫn chiếm 60-70%. Không bao giờ đạt điều kiện Migration -> Mãi mãi là nô lệ của đồng tiền.
+- **Lifestyle Creep (Sống sang chảnh):** Lương x2 nhưng chuyển sang chung cư cao cấp x2 tiền thuê.
+- _Hậu quả:_ `NEC` vẫn chiếm 60-70%. Không bao giờ đạt điều kiện Migration -> Mãi mãi là nô lệ của đồng tiền.
 
 ---
 
-## 🔗 Connections
+## Connections
 
 - [[My_Investment_Strategy]] (Chiến lược tổng thể)
 

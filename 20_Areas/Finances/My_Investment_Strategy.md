@@ -8,14 +8,14 @@ aliases: [Luật đầu tư, Quy tắc tài chính, Kim chỉ nam, JARS System]
 
 # My Investment Strategy (Kim Chỉ Nam Tài Chính)
 
-## 💡 TL;DR
+## TL;DR
 
 Bộ quy tắc bất di bất dịch để quản lý dòng tiền cá nhân, giúp tối ưu hóa lợi nhuận dài hạn mà vẫn đảm bảo an toàn tài chính (ngủ ngon mỗi tối).
 **Core Philosophy:** "Kiếm tiền từ Code, Giữ tiền bằng Tích sản, Tăng trưởng bằng Tri thức."
 
 ---
 
-## 🛡️ The 3 Iron Rules (3 Quy Tắc Thép)
+## ️ The 3 Iron Rules (3 Quy Tắc Thép)
 
 ### Rule #1: Defense First (Phòng thủ trước)
 
@@ -41,9 +41,9 @@ Khoản đầu tư lợi nhuận cao nhất của một Dev 20 tuổi không ph�
 
 ---
 
-## 💰 The Budgeting System (Hệ thống ngân sách)
+## The Budgeting System (Hệ thống ngân sách)
 
-### 🟢 Phase 1: Student/Junior Mode (Hiện tại)
+### Phase 1: Student/Junior Mode (Hiện tại)
 
 _Áp dụng khi thu nhập chưa cao, ưu tiên Tăng trưởng & Sinh tồn._
 **Quy tắc: 4 Chiếc Lọ (Refactored JARS)**
@@ -57,7 +57,7 @@ _Áp dụng khi thu nhập chưa cao, ưu tiên Tăng trưởng & Sinh tồn._
 
 ---
 
-### 🟡 Phase 2: Pro/Senior Mode (Tương lai - Mục tiêu)
+### Phase 2: Pro/Senior Mode (Tương lai - Mục tiêu)
 
 _Áp dụng khi thu nhập > 20-30tr/tháng. Chuẩn mô hình T. Harv Eker._
 [[Financial_Migration_Strategy|Nâng cấp tài chính]]
@@ -72,19 +72,19 @@ _Áp dụng khi thu nhập > 20-30tr/tháng. Chuẩn mô hình T. Harv Eker._
 
 ---
 
-## 📊 Asset Allocation (Phân Bổ Tài Sản - Mô hình Barbell)
+## Asset Allocation (Phân Bổ Tài Sản - Mô hình Barbell)
 
 Chiến lược "Thanh tạ": Cực kỳ an toàn ở một đầu, và cực kỳ rủi ro ở đầu kia. Bỏ qua khúc giữa lỡ cỡ.
 
-| Hạng mục      | Tỷ trọng   | Tài sản                                         | Mục tiêu                                                            |
-| :------------ | :--------- | :---------------------------------------------- | :------------------------------------------------------------------ |
-| **🛡️ Safety** | **60-70%** | Vàng vật chất ([[Safe_Haven_Asset]]), Tiết kiệm | Giữ giá trị, chống lạm phát. "Lương khô" cho tương lai.             |
-| **🚀 Growth** | **20-30%** | ETF Chứng khoán, Crypto (Top tier: BTC/ETH)     | X5, x10 tài sản. Chấp nhận mất số này mà không ảnh hưởng cuộc sống. |
-| **🧠 Self**   | **10%**    | Books, Courses, Certifications                  | Nâng cao thu nhập chủ động (Active Income).                         |
+| Hạng mục    | Tỷ trọng   | Tài sản                                         | Mục tiêu                                                            |
+| :---------- | :--------- | :---------------------------------------------- | :------------------------------------------------------------------ |
+| **️ Safety** | **60-70%** | Vàng vật chất ([[Safe_Haven_Asset]]), Tiết kiệm | Giữ giá trị, chống lạm phát. "Lương khô" cho tương lai.             |
+| ** Growth** | **20-30%** | ETF Chứng khoán, Crypto (Top tier: BTC/ETH)     | X5, x10 tài sản. Chấp nhận mất số này mà không ảnh hưởng cuộc sống. |
+| ** Self**   | **10%**    | Books, Courses, Certifications                  | Nâng cao thu nhập chủ động (Active Income).                         |
 
 ---
 
-## 🤖 Execution Algorithm (Quy trình thực thi)
+## Execution Algorithm (Quy trình thực thi)
 
 ### Monthly Routine (Hàng tháng - Ngày nhận lương)
 
@@ -99,15 +99,15 @@ Chiến lược "Thanh tạ": Cực kỳ an toàn ở một đầu, và cực k�
 
 ---
 
-## ⚠️ Blacklist (Tuyệt đối không đụng vào)
+## ️ Blacklist (Tuyệt đối không đụng vào)
 
-- ❌ **Margin/Leverage:** Vay tiền để đầu tư (Đòn bẩy). Cháy tài khoản là chuyện sớm muộn.
-- ❌ **Shitcoins/Memecoins:** Trừ khi dùng số tiền "xổ số" (mất không tiếc).
-- ❌ **Ủy thác đầu tư cam kết lãi khủng:** Scam 100%.
+- **Margin/Leverage:** Vay tiền để đầu tư (Đòn bẩy). Cháy tài khoản là chuyện sớm muộn.
+- **Shitcoins/Memecoins:** Trừ khi dùng số tiền "xổ số" (mất không tiếc).
+- **Ủy thác đầu tư cam kết lãi khủng:** Scam 100%.
 
 ---
 
-## 🔗 Connections
+## Connections
 
 - [[2026_Asset_Allocation]] (File theo dõi số dư thực tế)
 - [[Dollar_Cost_Averaging]]

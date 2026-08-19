@@ -6,7 +6,7 @@ updated_at: Friday, January 30th 2026, 9:54:16 am +07:00
 aliases: [Bản đồ tài chính, Investment Strategy]
 ---
 
-# 💰 Personal Finance & Investment MOC
+# Personal Finance & Investment MOC
 
 ## TL;DR
 
@@ -15,7 +15,7 @@ _"Kiếm tiền đã khó, giữ tiền còn khó hơn."_
 
 ---
 
-## 🛡️ Core Strategy (Chiến thuật cốt lõi)
+## ️ Core Strategy (Chiến thuật cốt lõi)
 
 Các phương pháp luận để quản lý dòng tiền và ra quyết định xuống tiền.
 
@@ -31,7 +31,7 @@ Các phương pháp luận để quản lý dòng tiền và ra quyết định 
 - [[Opportunity_Cost_Hold]]: Tư duy quản lý danh mục (Rút hay Hold? Audit danh mục thế nào?).
 - [[Kelly_Criterion]]: Quản lý quy mô vị thế vốn đầu tư tối ưu để đạt tăng trưởng dài hạn tối đa.
 
-## 🌍 Macro & Market Concepts (Kiến thức thị trường)
+## Macro & Market Concepts (Kiến thức thị trường)
 
 Hiểu luật chơi của thị trường để không bị "lùa gà".
 
@@ -40,7 +40,7 @@ Hiểu luật chơi của thị trường để không bị "lùa gà".
 
 ---
 
-## 📉 Portfolio Tracking (Theo dõi danh mục)
+## Portfolio Tracking (Theo dõi danh mục)
 
 _(Chỗ này để link tới file Excel hoặc Note theo dõi tài sản của bạn)_
 
@@ -49,6 +49,6 @@ _(Chỗ này để link tới file Excel hoặc Note theo dõi tài sản của 
 
 ---
 
-## 🔗 Related MOCs
+## Related MOCs
 
 - [[000_Life_MOC]] (Quản lý chung về đời sống)
