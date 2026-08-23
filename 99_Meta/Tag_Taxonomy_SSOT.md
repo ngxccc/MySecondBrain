@@ -44,7 +44,7 @@ Mỗi note (ngoại trừ Daily Logs và Flashcards) bắt buộc chứa ít nh�
 - Data & Storage: `topic/database`, `topic/sql`, `topic/dsa`, `topic/leetcode`, `topic/memory-management`.
 - Quality & Lifecycle: `topic/testing`, `topic/sdlc`, `topic/security`, `topic/engineering-management`, `topic/project-management`.
 - Web & Client: `topic/frontend`, `topic/web`, `topic/rendering`, `topic/seo`, `topic/i18n`.
-- Languages & Core: `topic/go`, `topic/rust`, `topic/typescript`, `topic/javascript`, `topic/php`, `topic/laravel`.
+- Languages & Core: `topic/go`, `topic/rust`, `topic/typescript`, `topic/javascript`, `topic/php`, `topic/laravel`, `topic/csharp`, `topic/dotnet`, `topic/efcore`.
 - General Tech: `topic/tech`, `topic/concepts`, `topic/ai-engineering`, `topic/iot`, `topic/academic`, `topic/healthcare-it`, `topic/hyundai-ecommerce`, `topic/programming/standards`.
 
 ### Mindset, Cognition & Productivity
@@ -81,7 +81,7 @@ Phân tầng nhận thức Backend (4-Layer Cognitive Stack):
 
 - Status: `status/permanent` (hoàn thiện), `status/todo` (nháp/placeholder), `status/active` (đang chạy), `status/archived` (lưu trữ).
 - Meta: `meta/structure` (cấu trúc hệ thống), `meta/template` (template mẫu).
-- Projects & Archives: `project/hyundai-ecommerce`, `project/viettridao`.
+- Projects & Archives: `project/hyundai-ecommerce`, `project/viettridao`, `project/sports-store`.
 - Legacy & Domain Aliases: `architecture`, `attributes`, `best-practices`, `blade`, `blog-posts`, `components`, `controller`, `documentation`, `eloquent`, `frontend`, `guide`, `laravel`, `layout`, `memory/optimization`, `mvc`, `named-routes`, `performance/v8`, `php`, `routing`, `web.php`, `x-layout`.
 
 ---
