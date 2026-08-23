@@ -1,3 +1,7 @@
+---
+noteId: 1787111655108
+---
+
 What is the Word Family Matrix, types, pronunciation, and usage of **leverage**?
 
 ---

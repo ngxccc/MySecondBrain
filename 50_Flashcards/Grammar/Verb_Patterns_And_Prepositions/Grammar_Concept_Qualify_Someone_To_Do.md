@@ -1,3 +1,7 @@
+---
+noteId: 1787111654653
+---
+
 What is the structure, preposition, and passive pattern for **qualify someone to be / do**?
 
 ---

@@ -1,3 +1,7 @@
+---
+noteId: 1787111654883
+---
+
 What is the Word Family Matrix, types, pronunciation, and usage of **integrate**?
 
 ---

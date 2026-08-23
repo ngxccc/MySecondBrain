@@ -1,3 +1,7 @@
+---
+noteId: 1787111654537
+---
+
 What is the question word order and auxiliary rule for **Why + Negative Auxiliaries (Why don't / Why didn't)**?
 
 ---

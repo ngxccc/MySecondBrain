@@ -1,3 +1,7 @@
+---
+noteId: 1787111654907
+---
+
 What is the Word Family Matrix, types, pronunciation, and usage of **qualify**?
 
 ---

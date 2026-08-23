@@ -1,3 +1,7 @@
+---
+noteId: 1787111655083
+---
+
 What is the Word Family Matrix, types, pronunciation, and usage of **idempotency**?
 
 ---
