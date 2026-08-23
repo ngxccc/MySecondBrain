@@ -200,8 +200,8 @@ async function validateFile(filePath) {
 
     const isPlaceholder =
       tags.includes("status/todo") ||
-      content.includes("TODO:") ||
-      content.includes("Placeholder");
+      /^\s*[-*]\s*TODO\s*:/im.test(content) ||
+      content.includes("Ghi chú chờ (Placeholder)");
     // 2. Heading 1 check
     const hasH1 = /^#\s+.+/m.test(content);
     if (!hasH1) {
