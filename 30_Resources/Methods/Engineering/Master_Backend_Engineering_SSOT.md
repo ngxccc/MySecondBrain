@@ -262,7 +262,7 @@ _Cây lộ trình 4 tầng nhận thức - Đánh dấu `[x]` khi đã nghiệm 
 
 _Khi hệ thống gặp sự cố (High CPU, Memory Leak, Timeout, Deadlock), tuyệt đối không restart mù quáng. Tuân thủ quy trình truy vết đến tận cùng:_
 
-| Hiện Tượng / Sự Cố                    | Công Cụ Chẩn Đoán Cấp Thấp             | Mục Tiêu Phân Tích                                    | Placeholder Atomic Note                             |
+| Hiện Tượng / Sự Cố                    | Công Cụ Chẩn Đoán Cấp Thấp             | Mục Tiêu Phân Tích                                    | Target Atomic Note                                  |
 | :------------------------------------ | :------------------------------------- | :---------------------------------------------------- | :-------------------------------------------------- |
 | **High CPU / CPU Spike**              | `pprof`, CPU Profiler, Flamegraphs     | Định vị hàm chiếm dụng chu kỳ CPU cao nhất            | [ ] [[Go_Pprof_and_Flamegraph_Analysis]]            |
 | **Memory Leak / OOM**                 | Heap Profiler, Heap Snapshot, GC Trace | Tìm đối tượng không được giải phóng                   | [x] [[JS_Memory_Leaks_and_Mitigation]]              |
