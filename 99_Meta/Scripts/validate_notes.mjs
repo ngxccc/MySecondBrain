@@ -282,7 +282,10 @@ async function validateFile(filePath) {
 async function main() {
   const args = process.argv.slice(2);
   const isJsonMode = args.includes("--json");
-  const fileArgs = args.filter((arg) => arg !== "--json");
+  const isVerbose = args.includes("--verbose") || args.includes("-v");
+  const fileArgs = args.filter(
+    (arg) => arg !== "--json" && arg !== "--verbose" && arg !== "-v",
+  );
 
   if (!isJsonMode) {
     console.log(
@@ -342,17 +345,17 @@ async function main() {
       passedCount++;
       if (result.isPlaceholder) {
         placeholderCount++;
-        if (!isJsonMode) {
+        if (!isJsonMode && isVerbose) {
           console.log(
             `${colors.yellow}⚠ PASSED (Placeholder): ${result.path}${colors.reset}`,
           );
         }
       } else {
-        if (!isJsonMode) {
+        if (!isJsonMode && isVerbose) {
           console.log(`${colors.green}✓ PASSED: ${result.path}${colors.reset}`);
         }
       }
-      if (!isJsonMode && result.warnings.length > 0) {
+      if (!isJsonMode && isVerbose && result.warnings.length > 0) {
         for (const warn of result.warnings) {
           console.log(`    - WARNING: ${warn}`);
         }
@@ -372,12 +375,18 @@ async function main() {
     };
     console.log(JSON.stringify(jsonOutput, null, 2));
   } else {
-    console.log("\n=== Summary ===");
-    console.log(`Total scanned: ${allFiles.length}`);
-    console.log(
-      `Passed:        ${colors.green}${passedCount}${colors.reset} (including ${placeholderCount} placeholders)`,
-    );
-    console.log(`Failed:        ${colors.red}${failedCount}${colors.reset}`);
+    if (failedCount === 0) {
+      console.log(
+        `${colors.green}✓ ALL PASSED: ${allFiles.length} notes scanned cleanly (0 errors, ${placeholderCount} placeholders).${colors.reset}`,
+      );
+    } else {
+      console.log("\n=== Summary ===");
+      console.log(`Total scanned: ${allFiles.length}`);
+      console.log(
+        `Passed:        ${colors.green}${passedCount}${colors.reset} (including ${placeholderCount} placeholders)`,
+      );
+      console.log(`Failed:        ${colors.red}${failedCount}${colors.reset}`);
+    }
   }
 
   if (failedCount > 0) {
