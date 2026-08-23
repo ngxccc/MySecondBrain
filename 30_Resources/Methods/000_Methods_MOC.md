@@ -39,9 +39,9 @@ dv.table(["Note Title", "Description"],
     ])
 );
 
-dv.header(2, "3. Life & Finance");
+dv.header(2, "3. Finance & Wealth");
 dv.table(["Note Title", "Description"],
-  dv.pages('"30_Resources/Methods/Life_and_Finance"')
+  dv.pages('"30_Resources/Methods/Finance"')
     .where(p => p.file.name !== "000_Methods_MOC")
     .sort(p => p.file.name, 'asc')
     .map(p => [

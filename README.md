@@ -19,8 +19,8 @@ Enforces a strict **2-level folder depth limit** across resources and projects t
 - **`30_Resources/` (Evergreen Knowledge)**: Curated, reusable reference library of atomic notes:
   - `Tech/`: Domain-specific engineering knowledge (`Architecture_and_Patterns/`, `API_and_Data_Design/`, `Frameworks_and_Ecosystem/`, `Infrastructure_and_Cloud/`, `Language_and_Core/`, `Web_Client_and_Security/`).
   - `Concepts/`: Fundamental theories and mental models (`Academic_and_Case_Studies/`, `Computer_Science/`, `Finance_and_Economics/`, `Knowledge_Management/`, `Learning_and_Linguistics/`, `Negotiation_and_Communication/`, `Product_and_Business_Mindsets/`, `Psychology_and_Mental_Models/`, `Software_Testing/`).
-  - `Methods/`: Actionable SOPs, execution frameworks, and roadmaps (`Engineering/`, `Learning_and_Cognition/`, `Life_and_Finance/`).
-  - `Life/`: Evidence-backed research on physiology, sleep, and lifestyle optimization.
+  - `Methods/`: Actionable SOPs, execution frameworks, and roadmaps (`Engineering/`, `Learning_and_Cognition/`, `Finance/`).
+  - `Life/`: Evidence-backed research on physiology, sleep, and lifestyle optimization (`Health_and_Dermatology/`, `Sleep_and_Recovery/`).
   - `Excalidraw/`: Visual architecture diagrams and mental model sketches.
 - **`40_Archives/` (Cold Storage)**: Completed projects, deprecated standards, and inactive reference material.
 - **`50_Flashcards/` (Spaced Repetition)**: Anki-synchronized decks via Yanki:

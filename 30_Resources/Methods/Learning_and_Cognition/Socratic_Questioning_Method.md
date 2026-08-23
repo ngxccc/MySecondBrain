@@ -1,5 +1,5 @@
 ---
-tags: [type/concept, topic/psychology, topic/communication]
+tags: [type/method, topic/communication, topic/mental-models]
 date: 2026-04-29
 aliases: [Socratic Method, Maieutics, Elenchus]
 description: "Bộ 6 câu hỏi truy vấn để bóc mẽ các giả định (assumptions) ngầm và tránh bị dắt mũi."

@@ -37,7 +37,7 @@ date: 2026-08-09
 │   ├── Tech/                         # Tri thức kỹ thuật (6 domain folders)
 │   ├── Concepts/                     # Lý thuyết & Mental Models (9 domain folders)
 │   ├── Methods/                      # SOPs, Roadmaps, Frameworks (3 domain folders)
-│   ├── Life/                         # Nghiên cứu sinh lý, giấc ngủ, sức khỏe
+│   ├── Life/                         # Nghiên cứu sinh lý, giấc ngủ, sức khỏe (2 domain folders)
 │   └── Excalidraw/                   # Sơ đồ kiến trúc & whiteboard
 ├── 40_Archives/                      # Lưu trữ lạnh dự án hoàn tất / tài liệu cũ
 ├── 50_Flashcards/                    # Anki Flashcards (Yanki plugin)
@@ -58,11 +58,12 @@ date: 2026-08-09
 - **`30_Resources/`**: Kho tri thức nguyên tử độc lập dự án, tuân thủ giới hạn phẳng 2 cấp:
   - `Tech/`: `Architecture_and_Patterns/`, `Language_and_Core/`, `Web_Client_and_Security/`, `Infrastructure_and_Cloud/`, `API_and_Data_Design/`, `Frameworks_and_Ecosystem/`.
   - `Concepts/`: `Academic_and_Case_Studies/`, `Computer_Science/`, `Finance_and_Economics/`, `Knowledge_Management/`, `Learning_and_Linguistics/`, `Negotiation_and_Communication/`, `Product_and_Business_Mindsets/`, `Psychology_and_Mental_Models/`, `Software_Testing/`.
-  - `Methods/`: `Engineering/`, `Learning_and_Cognition/`, `Life_and_Finance/`.
-  - `Life/` & `Excalidraw/`: Sức khỏe thường nhật và sơ đồ trực quan.
+  - `Methods/`: `Engineering/`, `Learning_and_Cognition/`, `Finance/`.
+  - `Life/`: `Health_and_Dermatology/`, `Sleep_and_Recovery/`.
+  - `Excalidraw/`: Sơ đồ kiến trúc & whiteboard.
 - **`40_Archives/`**: Đóng băng dự án và tài liệu tham khảo cũ.
 - **`50_Flashcards/`**: Thẻ học Anki theo chuẩn phân tách `---` của Yanki (`Vocabulary/`, `Grammar/`).
-- **`99_Meta/`**: Quản trị hệ thống (`Templates/`, `Scripts/validate_notes.mjs`, `Tag_Taxonomy_SSOT.md`).
+- **`99_Meta/`**: Quản trị hệ thống (`Templates/`, `Scripts/`, `Quizzes/`, `Visuals/`, `Tag_Taxonomy_SSOT.md`).
 
 ---
 
