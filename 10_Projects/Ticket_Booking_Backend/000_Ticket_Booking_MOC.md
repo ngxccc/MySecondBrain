@@ -100,6 +100,7 @@ created_at: 2026-06-27
 - Tích hợp Apidog trong dự án OMP: [[OMP_Apidog_Setup]]
 - Hướng dẫn dùng Apidog MCP Server: [[Apidog_MCP]]
 - Thiết kế kịch bản kiểm thử trong Apidog: [[API_Testing_Scenarios_in_Apidog]]
+- Kiến trúc khởi tạo dữ liệu kiểm thử & Seed Patterns: [[Database_Integration_Testing_Data_Seeding_Architecture]]
 
 ### DevOps & Infrastructure
 
