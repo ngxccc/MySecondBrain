@@ -33,11 +33,11 @@ TIMELINE VIDEO DEMO WEB UI (Thời lượng: 6 - 9 Phút)
 └── 08:00 - 08:30 | Phan 6: Tong ket bao cao HTML Report & Tich hop CI/CD Pipeline
 ```
 
-- **Phần 1: Giới thiệu cấu trúc:** Trình bày cấu trúc thư mục `src/ui/components/` và `src/ui/pages/`, nhấn mạnh tính tách biệt giữa Locators và kịch bản test.
-- **Phần 2: Demo Ca 1 (Checkout Flow):** Chạy lệnh `npx playwright test checkout.spec.ts --headed`, quay màn hình Chromium tự động đăng nhập, lọc giá, thêm 2 món vào giỏ, điền form thanh toán và xác nhận đặt hàng thành công.
-- **Phần 3: Demo Ca 2 (Network Mocking):** Chạy lệnh `npx playwright test network_mock.spec.ts --headed`, chỉ ra thông báo lỗi khi đăng nhập `locked_out_user` và quan sát giao diện hiển thị Error Banner khi mạng bị can thiệp trả về HTTP 500.
-- **Phần 4: Demo Ca 3 (Trace Viewer):** Chạy test `glitch_diagnostics.spec.ts`, sau đó mở Trace Viewer (`npx playwright show-trace`), kéo thanh trượt Filmstrip và mở tab Network chứng minh request bị treo đúng $5000\text{ms}$.
-- **Phần 5: Demo Ca 4 (Visual Regression):** Chạy test `visual_regression.spec.ts`, giải thích cơ chế so khớp ảnh Snapshot và kỹ thuật Masking che các phần tử biến đổi động.
+- **Phần 1: Giới thiệu cấu trúc:** Trình bày cấu trúc thư mục `pages/` (POM & COM) và `tests/e2e/`, nhấn mạnh tính tách biệt giữa Locators và kịch bản test.
+- **Phần 2: Demo Ca 1 (Checkout Flow):** Chạy lệnh `npx playwright test tests/e2e/checkout.spec.ts --headed`, quay màn hình Chromium tự động đăng nhập, lọc giá, thêm 2 món vào giỏ, điền form thanh toán và xác nhận đặt hàng thành công.
+- **Phần 3: Demo Ca 2 (Network Mocking):** Chạy lệnh `npx playwright test tests/e2e/network_mock.spec.ts --headed`, chỉ ra thông báo lỗi khi đăng nhập `locked_out_user` và quan sát giao diện hiển thị Error Banner khi mạng bị can thiệp trả về HTTP 500.
+- **Phần 4: Demo Ca 3 (Trace Viewer):** Chạy test `tests/e2e/glitch_diagnostics.spec.ts`, sau đó mở Trace Viewer (`npx playwright show-trace`), kéo thanh trượt Filmstrip và mở tab Network chứng minh request bị treo đúng $5000\text{ms}$.
+- **Phần 5: Demo Ca 4 (Visual Regression):** Chạy test `tests/e2e/visual_regression.spec.ts`, giải thích cơ chế so khớp ảnh Snapshot và kỹ thuật Masking che các phần tử biến đổi động.
 
 ### 2. Quy Chuẩn Kỹ Thuật Video (Video & Audio Production Standards)
 

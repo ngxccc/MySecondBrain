@@ -17,7 +17,7 @@ description: Technical architecture, multi-project configuration specification, 
 
 ## TL;DR
 
-Tài liệu đặc tả kỹ thuật cho Trưởng nhóm khởi tạo cấu trúc repository kiểm thử chuẩn công nghiệp, cấu hình Playwright Multi-Project phân tách rõ ràng 2 tầng `api-tests` (Headless microsecond execution) và `ui-tests` (Chromium browser execution), thiết lập biến môi trường `.env`, cấu hình TypeScript và xây dựng pipeline tự động hóa CI/CD trên GitHub Actions.
+Tài liệu đặc tả kỹ thuật cho Trưởng nhóm khởi tạo cấu trúc repository kiểm thử chuẩn công nghiệp, cấu hình Playwright Multi-Project phân tách rõ ràng các tầng `api` (Headless microsecond execution), `chromium` / `e2e` (Browser execution), và `smoke` (Healthcheck baseline), thiết lập biến môi trường `.env`, cấu hình TypeScript và xây dựng pipeline tự động hóa CI/CD trên GitHub Actions.
 
 ## Core Architectural Blueprint
 
@@ -27,35 +27,33 @@ Tài liệu đặc tả kỹ thuật cho Trưởng nhóm khởi tạo cấu trú
 software-testing-playwright/
 ├── .github/
 │   └── workflows/
-│       └── playwright.yml            <-- GitHub Actions CI Workflow
-├── src/
-│   ├── api/
-│   │   ├── schemas/                  <-- Zod Schemas kiểm định hợp đồng
-│   │   │   └── rfc9457.schema.ts
-│   │   ├── services/                 <-- Service Object Model (SOM)
-│   │   │   ├── AuthService.ts
-│   │   │   └── BookingService.ts
-│   │   └── specs/                    <-- Kịch bản kiểm thử API
-│   │       ├── auth.spec.ts
-│   │       ├── concurrency_redlock.spec.ts
-│   │       ├── booking_idempotency.spec.ts
-│   │       └── rfc9457_throttling.spec.ts
-│   └── ui/
-│       ├── components/               <-- Component Object Model (COM)
-│       │   └── NavbarComponent.ts
-│       ├── pages/                    <-- Page Object Model (POM)
-│       │   ├── LoginPage.ts
-│       │   ├── InventoryPage.ts
-│       │   ├── CartPage.ts
-│       │   └── CheckoutPage.ts
-│       └── specs/                    <-- Kịch bản kiểm thử Web UI
-│           ├── checkout.spec.ts
-│           ├── network_mock.spec.ts
-│           └── visual_regression.spec.ts
-├── .env.example
-├── package.json
-├── playwright.config.ts              <-- File cấu hình trung tâm Multi-Project
-└── tsconfig.json
+│       └── playwright.yml         # CI/CD pipeline
+├── tests/                         # Root test directory (Playwright testDir)
+│   ├── api/                       # API Test Suite (WBS Phase 2)
+│   │   ├── auth.spec.ts
+│   │   ├── booking.spec.ts
+│   │   ├── concurrency.spec.ts
+│   │   └── rfc9457_throttling.spec.ts
+│   ├── e2e/                       # Web UI Test Suite (WBS Phase 3)
+│   │   ├── checkout.spec.ts
+│   │   ├── network_mock.spec.ts
+│   │   ├── glitch_diagnostics.spec.ts
+│   │   └── visual_regression.spec.ts
+│   └── smoke/                     # Healthcheck Baseline
+│       └── smoke.spec.ts
+├── fixtures/                      # Custom Fixtures mở rộng từ test.extend()
+│   ├── api.fixture.ts
+│   └── auth.fixture.ts
+├── pages/                         # Page Object Model (POM & COM) cho Web UI
+│   ├── LoginPage.ts
+│   ├── InventoryPage.ts
+│   └── CheckoutPage.ts
+├── schemas/                       # Zod validation schemas (chống Contract Drift)
+│   └── rfc9457.schema.ts
+├── utils/                         # Helper functions, data generators
+├── playwright.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
 ### 2. Cấu Hình Multi-Project trong `playwright.config.ts`
@@ -67,7 +65,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export default defineConfig({
-  testDir: "./src",
+  testDir: "./tests",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
@@ -80,10 +78,12 @@ export default defineConfig({
 
   projects: [
     {
-      name: "api-tests",
-      testDir: "./src/api/specs",
+      name: "api",
+      testMatch: /.*tests\/api\/.*\.spec\.ts/,
       use: {
-        baseURL: process.env.API_BASE_URL || "http://localhost:3000",
+        baseURL:
+          process.env.API_BASE_URL ||
+          "https://ticket-booking-amqv.onrender.com",
         extraHTTPHeaders: {
           Accept: "application/json",
           "Content-Type": "application/json",
@@ -91,14 +91,22 @@ export default defineConfig({
       },
     },
     {
-      name: "ui-tests",
-      testDir: "./src/ui/specs",
+      name: "chromium",
+      testMatch: /.*tests\/e2e\/.*\.spec\.ts/,
       use: {
-        baseURL: process.env.UI_BASE_URL || "https://www.saucedemo.com",
+        baseURL: process.env.WEB_BASE_URL || "https://www.saucedemo.com",
         ...devices["Desktop Chrome"],
         trace: "on-first-retry",
         screenshot: "only-on-failure",
         video: "retain-on-failure",
+      },
+    },
+    {
+      name: "smoke",
+      testMatch: /.*tests\/smoke\/.*\.spec\.ts/,
+      use: {
+        baseURL: process.env.WEB_BASE_URL || "https://www.saucedemo.com",
+        ...devices["Desktop Chrome"],
       },
     },
   ],
@@ -144,10 +152,10 @@ jobs:
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Khởi Tạo Repository & Dependencies:**
-  - [ ] Khởi tạo hoàn tất thư mục `software-testing-playwright/` với cấu trúc `src/api/` và `src/ui/`.
+  - [ ] Khởi tạo hoàn tất thư mục `software-testing-playwright/` với cấu trúc `tests/api/`, `tests/e2e/`, `fixtures/`, `pages/`, `schemas/`.
   - [ ] Cài đặt đầy đủ các package: `@playwright/test`, `typescript`, `zod`, `dotenv`.
 - [ ] **Cấu Hình Multi-Project:**
-  - [ ] Cấu hình `playwright.config.ts` tách biệt rõ 2 project `api-tests` và `ui-tests`.
+  - [ ] Cấu hình `playwright.config.ts` với `testDir: './tests'` và các project `api`, `chromium`, `smoke`.
   - [ ] Chạy thử lệnh `npx playwright test --list` hiển thị đầy đủ danh sách test thuộc 2 project.
 - [ ] **Tích Hợp CI/CD:**
   - [ ] File `.github/workflows/playwright.yml` được push lên GitHub và kích hoạt thành công khi có Pull Request.

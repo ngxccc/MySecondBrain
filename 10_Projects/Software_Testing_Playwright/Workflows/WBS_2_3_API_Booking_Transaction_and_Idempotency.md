@@ -13,7 +13,7 @@ description: Technical test specification, Idempotency-Key validation mechanics,
 - **Task Name:** API Case 3: Booking Transaction & Idempotency Boundary Verification
 - **Assignee:** Đặng Duy Lam (MSSV: 0306241125)
 - **Task Weight:** `7.5%`
-- **Deliverable Artifacts:** File mã nguồn `src/api/specs/booking_idempotency.spec.ts`, Pull Request GitHub, Mục 3.3 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/api/booking.spec.ts`, Pull Request GitHub, Mục 3.3 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -64,8 +64,8 @@ Tài liệu đặc tả kỹ thuật kịch bản kiểm thử API Ca 3: Kiểm 
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo file `src/api/specs/booking_idempotency.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test booking_idempotency.spec.ts --project=api-tests` pass $100\%$.
+  - [ ] Tạo file `tests/api/booking.spec.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/api/booking.spec.ts --project=api` pass $100\%$.
   - [ ] Xác nhận kiểm tra đầy đủ cả 4 scenarios trên.
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-2.3-api-booking-idempotency`.

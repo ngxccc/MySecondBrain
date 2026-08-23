@@ -13,7 +13,7 @@ description: Technical test specification, CDP network interception, error bound
 - **Task Name:** UI Ca 2: Network Mocking page.route() HTTP 500 & Locked-out User
 - **Assignee:** Ngô Gia Bảo (MSSV: 0306241090)
 - **Task Weight:** `6.0%`
-- **Deliverable Artifacts:** File mã nguồn `src/ui/specs/network_mock.spec.ts`, Pull Request GitHub, Mục 3.6 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/e2e/network_mock.spec.ts`, Pull Request GitHub, Mục 3.6 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -78,8 +78,8 @@ Tài liệu đặc tả kỹ thuật kịch bản kiểm thử tự động Web 
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo file `src/ui/specs/network_mock.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test network_mock.spec.ts --project=chromium` pass $100\%$.
+  - [ ] Tạo file `tests/e2e/network_mock.spec.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/e2e/network_mock.spec.ts --project=chromium` pass $100\%$.
   - [ ] Kiểm chứng đầy đủ cả 2 kịch bản: Locked-out user và `page.route()` HTTP 500.
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-3.2-ui-network-mock`.

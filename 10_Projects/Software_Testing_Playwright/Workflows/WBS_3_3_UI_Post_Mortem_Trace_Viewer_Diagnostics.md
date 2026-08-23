@@ -13,7 +13,7 @@ description: Technical test specification, performance glitch diagnostics, Trace
 - **Task Name:** UI Ca 3: Post-Mortem Diagnostics với Trace Viewer & performance_glitch_user
 - **Assignee:** Lê Minh Tài (MSSV: 0306241145)
 - **Task Weight:** `6.0%`
-- **Deliverable Artifacts:** File mã nguồn `src/ui/specs/glitch_diagnostics.spec.ts`, file dữ liệu `trace.zip`, Pull Request GitHub, Mục 3.7 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/e2e/glitch_diagnostics.spec.ts`, file dữ liệu `trace.zip`, Pull Request GitHub, Mục 3.7 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -34,7 +34,7 @@ Tài liệu đặc tả kỹ thuật kịch bản kiểm thử tự động Web 
 ### 2. Kỹ Thuật Lập Trình Thu Thập Trace Programmatic
 
 ```typescript
-// src/ui/specs/glitch_diagnostics.spec.ts
+// tests/e2e/glitch_diagnostics.spec.ts
 import { test, expect } from "@playwright/test";
 
 test("Diagnose Performance Glitch User with Trace Viewer", async ({
@@ -85,8 +85,8 @@ npx playwright show-trace test-results/glitch_diagnostics_trace.zip
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo file `src/ui/specs/glitch_diagnostics.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test glitch_diagnostics.spec.ts --project=chromium` pass $100\%$.
+  - [ ] Tạo file `tests/e2e/glitch_diagnostics.spec.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/e2e/glitch_diagnostics.spec.ts --project=chromium` pass $100\%$.
   - [ ] Xuất thành công file `test-results/glitch_diagnostics_trace.zip`.
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-3.3-ui-trace-diagnostics`.

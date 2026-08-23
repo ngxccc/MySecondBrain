@@ -24,16 +24,16 @@ Tài liệu đặc tả chuyên sâu 3 trụ cột kỹ thuật kiểm thử gia
 ### 1. Kiến Trúc Phân Lớp POM & COM (Page Object & Component Object Model)
 
 ```text
-src/ui/
+pages/
 ├── components/                 <-- Component Object Model (Tai su dung da trang)
 │   └── NavbarComponent.ts      <-- Menu, Shopping Cart Badge, Logout button
-├── pages/                      <-- Page Object Model (Dong goi nghiep vu tung trang)
-│   ├── LoginPage.ts            <-- Form dang nhap & validation error
-│   ├── InventoryPage.ts        <-- Danh sach san pham, filter gia, add-to-cart
-│   ├── CartPage.ts             <-- Gio hang, danh sach item, nut Checkout
-│   └── CheckoutPage.ts         <-- Form dien thong tin, tong tien, nut Finish
-└── specs/                      <-- Test Scenarios (Ngan gon, ro rang, de bao tri)
-    └── checkout.spec.ts        <-- Kich ban kiem thu E2E hoan chinh
+├── LoginPage.ts                <-- Form dang nhap & validation error
+├── InventoryPage.ts            <-- Danh sach san pham, filter gia, add-to-cart
+├── CartPage.ts                 <-- Gio hang, danh sach item, nut Checkout
+└── CheckoutPage.ts             <-- Form dien thong tin, tong tien, nut Finish
+
+tests/e2e/                      <-- Test Scenarios (Ngan gon, ro rang, de bao tri)
+└── checkout.spec.ts            <-- Kich ban kiem thu E2E hoan chinh
 ```
 
 - **Nguyên lý Single Responsibility:** Tách biệt hoàn toàn phần tử giao diện (Locators) và phương thức nghiệp vụ khỏi kịch bản kiểm thử (`expect`). Khi giao diện thay đổi, lập trình viên chỉ cần sửa đổi 1 file Page/Component duy nhất.

@@ -33,11 +33,11 @@ TIMELINE VIDEO DEMO API (Thời lượng: 5 - 8 Phút)
 └── 06:30 - 07:00 | Phan 6: Tong ket ket qua chay pass toan bo test suite tren Terminal & CI/CD
 ```
 
-- **Phần 1: Giới thiệu kiến trúc:** Mở file `playwright.config.ts`, giải thích cấu hình `api-tests` chạy ở tốc độ micro-giây không cần mở trình duyệt.
-- **Phần 2: Demo Ca 1 (Auth):** Chạy lệnh `npx playwright test auth.spec.ts`, giải thích luồng lấy JWT Token và chứng minh request gửi lại Token cũ bị hệ thống chặn với mã `HTTP 403`.
-- **Phần 3: Demo Ca 2 (Concurrency Redlock):** Chạy lệnh `npx playwright test concurrency_redlock.spec.ts`, quan sát Terminal bắn đồng thời 10 requests qua `Promise.all()`, giải thích log chỉ có đúng 1 request nhận `200/201` và 9 requests còn lại nhận `409 Conflict`.
-- **Phần 4: Demo Ca 3 (Idempotency):** Chạy lệnh `npx playwright test booking_idempotency.spec.ts`, chứng minh gửi lại cùng `Idempotency-Key` không làm tăng số lượng vé trong cơ sở dữ liệu.
-- **Phần 5: Demo Ca 4 (RFC 9457):** Chạy lệnh `npx playwright test rfc9457_throttling.spec.ts`, giải thích Schema Zod bắt lỗi Contract Drift và phản hồi `HTTP 429 Too Many Requests`.
+- **Phần 1: Giới thiệu kiến trúc:** Mở file `playwright.config.ts`, giải thích cấu hình project `api` chạy ở tốc độ micro-giây không cần mở trình duyệt.
+- **Phần 2: Demo Ca 1 (Auth):** Chạy lệnh `npx playwright test tests/api/auth.spec.ts --project=api`, giải thích luồng lấy JWT Token và chứng minh request gửi lại Token cũ bị hệ thống chặn với mã `HTTP 403`.
+- **Phần 3: Demo Ca 2 (Concurrency Redlock):** Chạy lệnh `npx playwright test tests/api/concurrency.spec.ts --project=api`, quan sát Terminal bắn đồng thời 10 requests qua `Promise.all()`, giải thích log chỉ có đúng 1 request nhận `200/201` và 9 requests còn lại nhận `409 Conflict`.
+- **Phần 4: Demo Ca 3 (Idempotency):** Chạy lệnh `npx playwright test tests/api/booking.spec.ts --project=api`, chứng minh gửi lại cùng `Idempotency-Key` không làm tăng số lượng vé trong cơ sở dữ liệu.
+- **Phần 5: Demo Ca 4 (RFC 9457):** Chạy lệnh `npx playwright test tests/api/rfc9457_throttling.spec.ts --project=api`, giải thích Schema Zod bắt lỗi Contract Drift và phản hồi `HTTP 429 Too Many Requests`.
 
 ### 2. Quy Chuẩn Kỹ Thuật Video (Video & Audio Production Standards)
 

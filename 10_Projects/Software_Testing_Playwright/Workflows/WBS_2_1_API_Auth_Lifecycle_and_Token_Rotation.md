@@ -13,7 +13,7 @@ description: Technical test specification, SOM architecture, and Definition of D
 - **Task Name:** API Ca 1: Auth Lifecycle, JWT & Single-use Token Rotation
 - **Assignee:** Nguyễn Quốc Đương (MSSV: 0306241102)
 - **Task Weight:** `7.5%`
-- **Deliverable Artifacts:** File mã nguồn `src/api/specs/auth.spec.ts`, `src/api/services/AuthService.ts`, Pull Request GitHub, Mục 3.1 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/api/auth.spec.ts`, `fixtures/api.fixture.ts`, Pull Request GitHub, Mục 3.1 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -61,7 +61,7 @@ Tài liệu đặc tả kỹ thuật kịch bản kiểm thử tự động API 
 ### 3. Cấu Trúc Mã Nguồn Chuẩn Mực
 
 ```typescript
-// src/api/services/AuthService.ts
+// tests/api/auth.spec.ts
 export class AuthService {
   constructor(private request: APIRequestContext) {}
 
@@ -82,8 +82,8 @@ export class AuthService {
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo file `src/api/services/AuthService.ts` và `src/api/specs/auth.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test auth.spec.ts --project=api-tests` pass $100\%$ cả 4 test cases.
+  - [ ] Tạo file `tests/api/auth.spec.ts` và cấu hình `fixtures/api.fixture.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/api/auth.spec.ts --project=api` pass $100\%$ cả 4 test cases.
   - [ ] Không có lệnh chờ tĩnh `sleep()`, code viết sạch đẹp theo chuẩn TypeScript.
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-2.1-api-auth-lifecycle`.

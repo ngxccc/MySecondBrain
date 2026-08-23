@@ -29,7 +29,7 @@ npm init playwright@latest
 
 # Tuan thu cac thiet lap mac dinh:
 # - Ngon ngu: TypeScript
-# - Thu muc test: src/ (hoac tests/)
+# - Thu muc test: tests/
 # - Cai dat trinh duyet Playwright Browsers: Yes
 # - Cai dat GitHub Actions Workflow: Yes
 
@@ -42,16 +42,16 @@ npm install dotenv zod @faker-js/faker --save-dev
 
 ### 2. Bảng Tra Cứu Cờ Lệnh Dòng Lệnh Cốt Lõi (Playwright CLI Commands)
 
-| Lệnh CLI Thực Thi                         | Ý Nghĩa Kỹ Thuật & Tình Huống Sử Dụng                                  |
-| ----------------------------------------- | ---------------------------------------------------------------------- |
-| `npx playwright test`                     | Thực thi toàn bộ test suite ở chế độ không đầu (Headless mode).        |
-| `npx playwright test --headed`            | Bật giao diện đồ họa trình duyệt để quan sát trực tiếp luồng thao tác. |
-| `npx playwright test --project=api-tests` | Chỉ thực thi các bài test thuộc cấu hình dự án API (không mở browser). |
-| `npx playwright test --project=chromium`  | Chỉ thực thi các bài test thuộc cấu hình Web UI trên Chromium.         |
-| `npx playwright test -g "@smoke"`         | Lọc và chỉ chạy các bài test có chứa tag `@smoke` trong tiêu đề.       |
-| `npx playwright test --workers=4`         | Giới hạn số lượng luồng thực thi song song (Worker Threads) là 4.      |
-| `npx playwright test --retries=2`         | Tự động chạy lại tối đa 2 lần đối với các bài test bị thất bại.        |
-| `npx playwright show-report`              | Khởi động máy chủ Web nội bộ để xem báo cáo kết quả kiểm thử HTML.     |
+| Lệnh CLI Thực Thi                        | Ý Nghĩa Kỹ Thuật & Tình Huống Sử Dụng                                  |
+| ---------------------------------------- | ---------------------------------------------------------------------- |
+| `npx playwright test`                    | Thực thi toàn bộ test suite ở chế độ không đầu (Headless mode).        |
+| `npx playwright test --headed`           | Bật giao diện đồ họa trình duyệt để quan sát trực tiếp luồng thao tác. |
+| `npx playwright test --project=api`      | Chỉ thực thi các bài test thuộc cấu hình dự án API (không mở browser). |
+| `npx playwright test --project=chromium` | Chỉ thực thi các bài test thuộc cấu hình Web UI trên Chromium.         |
+| `npx playwright test -g "@smoke"`        | Lọc và chỉ chạy các bài test có chứa tag `@smoke` trong tiêu đề.       |
+| `npx playwright test --workers=4`        | Giới hạn số lượng luồng thực thi song song (Worker Threads) là 4.      |
+| `npx playwright test --retries=2`        | Tự động chạy lại tối đa 2 lần đối với các bài test bị thất bại.        |
+| `npx playwright show-report`             | Khởi động máy chủ Web nội bộ để xem báo cáo kết quả kiểm thử HTML.     |
 
 ### 3. Hướng Dẫn Sử Dụng Playwright Codegen (Record & Playback)
 

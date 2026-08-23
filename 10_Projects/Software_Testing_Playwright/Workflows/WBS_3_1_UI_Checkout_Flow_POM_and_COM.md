@@ -13,7 +13,7 @@ description: Technical test specification, POM & COM architecture, and Definitio
 - **Task Name:** UI Ca 1: Full E2E Checkout Flow với POM & COM trên SauceDemo
 - **Assignee:** Lê Minh Quân (MSSV: 0306241143)
 - **Task Weight:** `7.0%`
-- **Deliverable Artifacts:** File mã nguồn `src/ui/specs/checkout.spec.ts`, các lớp POM & COM trong `src/ui/pages/` và `src/ui/components/`, Pull Request GitHub, Mục 3.5 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/e2e/checkout.spec.ts`, các lớp POM & COM trong `pages/`, Pull Request GitHub, Mục 3.5 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -47,26 +47,26 @@ Tài liệu đặc tả kỹ thuật kịch bản kiểm thử tự động Web 
 
 ### 2. Thiết Kế Kiến Trúc Phân Lớp POM & COM
 
-1. **`src/ui/components/NavbarComponent.ts` (COM):**
+1. **`pages/components/NavbarComponent.ts` (COM):**
    - Đóng gói nút Menu, nút Reset App State, biểu tượng giỏ hàng và số lượng Badge hiển thị.
-2. **`src/ui/pages/LoginPage.ts` (POM):**
+2. **`pages/LoginPage.ts` (POM):**
    - Đóng gói ô nhập `username`, `password`, nút `login-button`, thông báo lỗi `error-message-container`.
-3. **`src/ui/pages/InventoryPage.ts` (POM):**
+3. **`pages/InventoryPage.ts` (POM):**
    - Đóng gói danh sách sản phẩm, dropdown sắp xếp (`product_sort_container`), các nút `Add to cart` động theo tên sản phẩm.
-4. **`src/ui/pages/CartPage.ts` (POM):**
+4. **`pages/CartPage.ts` (POM):**
    - Đóng gói danh sách các item trong giỏ, nút `Remove`, nút `Continue Shopping`, và nút `Checkout`.
-5. **`src/ui/pages/CheckoutPage.ts` (POM):**
+5. **`pages/CheckoutPage.ts` (POM):**
    - Đóng gói form nhập liệu bước 1, bảng đối soát giá tiền bước 2 (Subtotal, Tax, Final Total), và nút `Finish`.
 
-### 3. Cấu Trúc Kịch Bản Kiểm Thử Sạch (`src/ui/specs/checkout.spec.ts`)
+### 3. Cấu Trúc Kịch Bản Kiểm Thử Sạch (`tests/e2e/checkout.spec.ts`)
 
 ```typescript
+// tests/e2e/checkout.spec.ts
 import { test, expect } from "@playwright/test";
-import { LoginPage } from "../pages/LoginPage";
-import { InventoryPage } from "../pages/InventoryPage";
-import { CartPage } from "../pages/CartPage";
-import { CheckoutPage } from "../pages/CheckoutPage";
-
+import { LoginPage } from "../../pages/LoginPage";
+import { InventoryPage } from "../../pages/InventoryPage";
+import { CartPage } from "../../pages/CartPage";
+import { CheckoutPage } from "../../pages/CheckoutPage";
 test("E2E Full Checkout Flow on SauceDemo", async ({ page }) => {
   const loginPage = new LoginPage(page);
   const inventoryPage = new InventoryPage(page);
@@ -100,8 +100,8 @@ test("E2E Full Checkout Flow on SauceDemo", async ({ page }) => {
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo đầy đủ các file Page/Component Objects và file `src/ui/specs/checkout.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test checkout.spec.ts --project=chromium` pass $100\%$.
+  - [ ] Tạo đầy đủ các file Page/Component Objects trong `pages/` và file `tests/e2e/checkout.spec.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/e2e/checkout.spec.ts --project=chromium` pass $100\%$.
   - [ ] Áp dụng $100\%$ Role-based Locators (`getByRole`, `getByText`, `getByPlaceholder`).
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-3.1-ui-checkout-pom`.

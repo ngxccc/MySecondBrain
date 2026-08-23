@@ -13,7 +13,7 @@ description: Technical test specification, Pixel-by-Pixel visual regression test
 - **Task Name:** UI Ca 4: Visual Regression Testing & Dynamic Data Masking
 - **Assignee:** Lê Minh Tài (MSSV: 0306241145)
 - **Task Weight:** `6.0%`
-- **Deliverable Artifacts:** File mã nguồn `src/ui/specs/visual_regression.spec.ts`, các file ảnh Golden Snapshots, Pull Request GitHub, Mục 3.8 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/e2e/visual_regression.spec.ts`, các file ảnh Golden Snapshots, Pull Request GitHub, Mục 3.8 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -41,9 +41,10 @@ Tài liệu đặc tả kỹ thuật kịch bản kiểm thử tự động Web 
    se lam test fail neu khong mask!)           loai bo 100% loi False-Positive!)
 ```
 
-### 3. Mã Nguồn Kiểm Thử Mẫu (`src/ui/specs/visual_regression.spec.ts`)
+### 3. Mã Nguồn Kiểm Thử Mẫu (`tests/e2e/visual_regression.spec.ts`)
 
 ```typescript
+// tests/e2e/visual_regression.spec.ts
 import { test, expect } from "@playwright/test";
 
 test("Visual Regression on SauceDemo Inventory with Masking", async ({
@@ -74,7 +75,7 @@ test("Visual Regression on SauceDemo Inventory with Masking", async ({
 
 ```bash
 # Tao moi hoac cap nhat anh Golden Snapshots khi giao dien co chu dich thay doi
-npx playwright test visual_regression.spec.ts --update-snapshots
+npx playwright test tests/e2e/visual_regression.spec.ts --update-snapshots
 ```
 
 ---
@@ -82,8 +83,8 @@ npx playwright test visual_regression.spec.ts --update-snapshots
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo file `src/ui/specs/visual_regression.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test visual_regression.spec.ts --project=chromium` pass $100\%$.
+  - [ ] Tạo file `tests/e2e/visual_regression.spec.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/e2e/visual_regression.spec.ts --project=chromium` pass $100\%$.
   - [ ] Thư mục `__snapshots__` chứa ảnh Golden Snapshot chuẩn.
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-3.4-ui-visual-regression`.

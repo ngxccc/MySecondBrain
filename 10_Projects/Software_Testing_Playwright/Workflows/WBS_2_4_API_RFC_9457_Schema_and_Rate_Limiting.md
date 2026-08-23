@@ -13,7 +13,7 @@ description: Technical test specification, RFC 9457 Problem Details Zod validati
 - **Task Name:** API Case 4: RFC 9457 Problem Details Schema Validation & Rate Limiting
 - **Assignee:** Nguyễn Hoài Linh (MSSV: 0306241126)
 - **Task Weight:** `7.5%`
-- **Deliverable Artifacts:** File mã nguồn `src/api/specs/rfc9457_throttling.spec.ts`, `src/api/schemas/rfc9457.schema.ts`, Pull Request GitHub, Mục 3.4 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/api/rfc9457_throttling.spec.ts`, `schemas/rfc9457.schema.ts`, Pull Request GitHub, Mục 3.4 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -35,7 +35,7 @@ Khi API gặp sự cố (4xx / 5xx), response bắt buộc phải tuân theo c�
 ### 2. Kỹ Thuật Kiểm Định Hợp Đồng Bằng Zod (Contract Drift Prevention)
 
 ```typescript
-// src/api/schemas/rfc9457.schema.ts
+// schemas/rfc9457.schema.ts
 import { z } from "zod";
 
 export const ProblemDetailsSchema = z.object({
@@ -58,9 +58,9 @@ export const ProblemDetailsSchema = z.object({
 ### 3. Kỹ Thuật Kiểm Thử Rate Limiting & Throttling
 
 ```typescript
-// src/api/specs/rfc9457_throttling.spec.ts
+// tests/api/rfc9457_throttling.spec.ts
 import { test, expect } from "@playwright/test";
-import { ProblemDetailsSchema } from "../schemas/rfc9457.schema";
+import { ProblemDetailsSchema } from "../../schemas/rfc9457.schema";
 
 test("API Rate Limiting & RFC 9457 Validation", async ({ request }) => {
   const quotaLimit = 10;
@@ -91,8 +91,8 @@ test("API Rate Limiting & RFC 9457 Validation", async ({ request }) => {
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo file `src/api/schemas/rfc9457.schema.ts` và `src/api/specs/rfc9457_throttling.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test rfc9457_throttling.spec.ts --project=api-tests` pass $100\%$.
+  - [ ] Tạo file `schemas/rfc9457.schema.ts` và `tests/api/rfc9457_throttling.spec.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/api/rfc9457_throttling.spec.ts --project=api` pass $100\%$.
   - [ ] Xác nhận toàn bộ response lỗi 4xx/5xx đều pass qua bộ lọc Zod validation.
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-2.4-api-rfc9457-throttling`.

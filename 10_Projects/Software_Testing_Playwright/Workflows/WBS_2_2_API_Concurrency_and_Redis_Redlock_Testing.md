@@ -13,7 +13,7 @@ description: Technical test specification, asynchronous socket flooding mechanic
 - **Task Name:** API Ca 2: High-Contention Concurrency & Redis Redlock Race Condition Test
 - **Assignee:** Trần Văn Ngọc (MSSV: 0306241131)
 - **Task Weight:** `7.5%`
-- **Deliverable Artifacts:** File mã nguồn `src/api/specs/concurrency_redlock.spec.ts`, Pull Request GitHub, Mục 3.2 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
+- **Deliverable Artifacts:** File mã nguồn `tests/api/concurrency.spec.ts`, Pull Request GitHub, Mục 3.2 Chương 3 trong `67_Bao_cao.docx` và các Slide tương ứng trong `67_Slide.pptx`.
 
 ## TL;DR
 
@@ -41,7 +41,7 @@ Time (ms)   User 1 (Request 1)              User 2 (Request 2)              Data
 ### 2. Kỹ Thuật Asynchronous Socket Flooding Với `Promise.all()`
 
 ```typescript
-// src/api/specs/concurrency_redlock.spec.ts
+// tests/api/concurrency.spec.ts
 import { test, expect } from "@playwright/test";
 
 test("Concurrent Seat Booking Race Condition Test", async ({ request }) => {
@@ -80,8 +80,8 @@ test("Concurrent Seat Booking Race Condition Test", async ({ request }) => {
 ## Acceptance Criteria & Definition of Done (DoD Checklist)
 
 - [ ] **Mã Nguồn Kiểm Thử & Chạy Pass ($100\%$):**
-  - [ ] Tạo file `src/api/specs/concurrency_redlock.spec.ts`.
-  - [ ] Chạy lệnh `npx playwright test concurrency_redlock.spec.ts --project=api-tests` pass $100\%$.
+  - [ ] Tạo file `tests/api/concurrency.spec.ts`.
+  - [ ] Chạy lệnh `npx playwright test tests/api/concurrency.spec.ts --project=api` pass $100\%$.
   - [ ] Xác nhận tỷ lệ Double-booking là $0.00\%$ trên tối thiểu 10 requests đồng thời.
 - [ ] **Bằng Chứng Git & Pull Request:**
   - [ ] Tạo nhánh `feat/wbs-2.2-api-concurrency-redlock`.

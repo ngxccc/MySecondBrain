@@ -29,8 +29,8 @@ Khác biệt lớn nhất trong quy trình làm việc nhóm (Team Collaboration
 
 ```text
 [Playwright: Mã nguồn Plain-Text Phân Tán]
-src/pages/booking.page.ts
-src/tests/booking.spec.ts
+pages/BookingPage.ts
+tests/api/booking.spec.ts
 ===> Khi 2 kỹ sư cùng sửa code: Git diff từng dòng, resolve conflict như code ứng dụng.
 
 ─────────────────────────────────────────────────────────────────────────────
