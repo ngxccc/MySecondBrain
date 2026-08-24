@@ -34,7 +34,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 2)
 
-> _"To answer this big question, // we first need to understand how AI models actually work compared to traditional code. // Let's dive into Section 01: Foundations."_
+> _"To answer this big question, // we first need to understand how AI models actually work compared to traditional code. // Let's dive in."_
 
 #### Vietnamese Note / Vietsub
 
@@ -42,7 +42,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 >
 > _Trí tuệ nhân tạo đang tiến bộ nhanh chóng từng ngày. Hôm nay, chúng ta sẽ cùng khám phá góc nhìn chiến lược về khả năng của AI, giá trị không thể thay thế của tư duy phản biện con người và tương lai thực sự của ngành kỹ thuật phần mềm._
 >
-> _(Chuyển Slide 2): Để trả lời câu hỏi lớn này, trước hết chúng ta cần hiểu các mô hình AI thực sự hoạt động ra sao so với việc viết code truyền thống. Hãy cùng bước vào Phần 01: Nền tảng."_
+> _(Chuyển Slide 2): Để trả lời câu hỏi lớn này, trước hết chúng ta cần hiểu các mô hình AI thực sự hoạt động ra sao so với việc viết code truyền thống. Hãy cùng bắt đầu nhé."_
 
 ---
 
@@ -73,7 +73,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Presenter Script (English)
 
-> _"Here in Section 01, // let's compare traditional computer programs with modern AI models. [PAUSE]_
+> _"Let's begin by comparing traditional computer programs with modern AI models. [PAUSE]_
 >
 > _On the left card, // traditional programs rely on explicit rules written by humans. // They follow strict logic, // like if-else statements, // where fixed inputs always produce fixed outputs through manual coding. [PAUSE]_
 >
@@ -81,17 +81,17 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 3)
 
-> _"Now that we know how AI models learn from data, // let's see how developers actually use them in their daily workflow. // Moving to Section 02: Developer Assistance."_
+> _"Now that we know how AI models learn from data, // let's see how developers actually use them in their daily workflow."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Ở Phần 01 này, hãy cùng so sánh các chương trình máy tính truyền thống với các mô hình AI hiện đại._
+> _"Hãy cùng bắt đầu bằng việc so sánh các chương trình máy tính truyền thống với các mô hình AI hiện đại._
 >
 > _Ở thẻ bên trái, các chương trình truyền thống phụ thuộc vào các quy tắc rõ ràng do con người viết. Chúng tuân theo logic nghiêm ngặt, như câu lệnh if-else, nơi đầu vào cố định luôn tạo ra đầu ra cố định thông qua việc lập trình thủ công._
 >
 > _Bây giờ hãy nhìn sang thẻ bên phải. Các mô hình AI hoạt động hoàn toàn khác. Chúng học các mẫu từ lượng dữ liệu khổng lồ và sinh mã nguồn trực tiếp từ câu lệnh của chúng ta. Ngày nay, các công cụ như ChatGPT, Copilot và Cursor đang biến đổi sâu sắc cách phần mềm được xây dựng._
 >
-> _(Chuyển Slide 3): Bây giờ khi đã hiểu AI học từ dữ liệu thế nào, hãy xem các lập trình viên thực sự ứng dụng chúng ra sao trong công việc hàng ngày. Chuyển sang Phần 02: Hỗ trợ Lập trình viên."_
+> _(Chuyển Slide 3): Bây giờ khi đã hiểu AI học từ dữ liệu thế nào, hãy xem các lập trình viên thực sự ứng dụng chúng ra sao trong công việc hàng ngày."_
 
 ---
 
@@ -122,7 +122,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Presenter Script (English)
 
-> _"In Section 02, // let's explore AI as a developer's co-pilot. [PAUSE]_
+> _"Here, // let's explore AI as an intelligent developer co-pilot. [PAUSE]_
 >
 > _On the left card, // AI excels at handling routine, repetitive tasks: // generating boilerplate setup code, // refactoring existing syntax, // writing unit tests, // and explaining complex error logs in seconds. [PAUSE]_
 >
@@ -134,7 +134,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Vietnamese Note / Vietsub
 
-> _"Trong Phần 02, hãy cùng khám phá vai trò của AI như một người trợ lý đắc lực của lập trình viên._
+> _"Ở đây, hãy cùng khám phá vai trò của AI như một người trợ lý thông minh của lập trình viên._
 >
 > _Ở thẻ bên trái, AI cực kỳ xuất sắc trong việc xử lý các tác vụ rập khuôn lặp đi lặp lại: sinh code boilerplate khởi tạo, tái cấu trúc cú pháp, viết unit test và giải thích các log lỗi phức tạp chỉ trong vài giây._
 >
@@ -180,7 +180,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 5)
 
-> _"So far, // AI sounds almost magical, right? // But is it flawless? // Absolutely not. // Let's move to Section 03 to examine its core limitations."_
+> _"So far, // AI sounds almost magical, right? // But is it flawless? // Absolutely not. // Let's uncover its core limitations."_
 
 #### Vietnamese Note / Vietsub
 
@@ -190,7 +190,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 >
 > _Ở thẻ bên phải, AI đóng vai trò như một gia sư lập trình cá nhân không bao giờ ngủ. Đối với sinh viên và người mới bắt đầu, nó làm sáng tỏ các chủ đề phức tạp—như đệ quy, luồng bất đồng bộ và lập trình hướng đối tượng—bằng các ví dụ code đơn giản và câu trả lời tức thì._
 >
-> _(Chuyển Slide 5): Từ đầu đến giờ, AI nghe như phép màu đúng không? Nhưng nó có hoàn hảo không? Chắc chắn là không. Hãy cùng chuyển sang Phần 03 để xem xét các giới hạn cốt lõi của nó."_
+> _(Chuyển Slide 5): Từ đầu đến giờ, AI nghe như phép màu đúng không? Nhưng nó có hoàn hảo không? Chắc chắn là không. Hãy cùng làm sáng tỏ những giới hạn cốt lõi của nó."_
 
 ---
 
@@ -214,7 +214,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Presenter Script (English)
 
-> _"Now in Section 03, // we must confront what AI cannot do. [PAUSE]_
+> _"However, // we must confront the hard truth: // what AI cannot do. [PAUSE]_
 >
 > _As highlighted on this slide, // AI has fundamental limitations. [PAUSE]_
 >
@@ -230,7 +230,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Vietnamese Note / Vietsub
 
-> _"Bây giờ trong Phần 03, chúng ta phải thẳng thắn nhìn nhận những điều AI không thể làm._
+> _"Tuy nhiên, chúng ta phải thẳng thắn nhìn nhận sự thật: những điều AI không thể làm._
 >
 > _Như được nhấn mạnh trên slide này, AI có những hạn chế nền tảng._
 >
@@ -279,7 +279,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 7)
 
-> _"This necessity for critical thinking brings us to an important academic debate. // Let's move to Section 04: AI in Education."_
+> _"This necessity for critical thinking brings us to a major debate: // AI in education."_
 
 #### Vietnamese Note / Vietsub
 
@@ -289,7 +289,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 >
 > _Ở thẻ bên phải, hãy xem xét thực tế rủi ro cao. Trong các lĩnh vực quan trọng như phần mềm tài chính hay y tế, một lỗi logic nhỏ do AI sinh ra có thể gây lộ dữ liệu lớn, thiệt hại hàng triệu đô la hoặc thậm chí đe dọa tính mạng con người. Kỹ sư con người—chứ không phải thuật toán—phải chịu trách nhiệm cao nhất._
 >
-> _(Chuyển Slide 7): Sự cần thiết của tư duy phản biện này đưa chúng ta đến một cuộc tranh luận học thuật quan trọng. Hãy chuyển sang Phần 04: AI trong Giáo dục."_
+> _(Chuyển Slide 7): Sự cần thiết của tư duy phản biện này đưa chúng ta đến một cuộc tranh luận học thuật quan trọng: AI trong giáo dục."_
 
 ---
 
@@ -319,15 +319,11 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Presenter Script (English)
 
-> _"Section 04 tackles a vital question in universities: // Is using AI cheating, // or is it a learning tool? [PAUSE]_
+> _"This brings us to a vital question in universities: // Is using AI cheating, // or is it a learning tool? [PAUSE]_
 >
 > _On the left card, // the distinction is crystal clear. // Blindly copy-pasting AI code without understanding is cheating. // But using AI to explain error logs and break down concepts makes it a powerful learning companion. [PAUSE]_
 >
 > _On the right card are the golden rules for every student: // Always understand every single line before submitting, // use AI to clarify logic rather than skipping problem-solving, // and treat AI as a mentor, // never a ghostwriter."_
-
-#### Slide Transition Script (Nói khi bấm chuyển sang Slide 8)
-
-> _"Is there empirical evidence showing what happens when students over-rely on AI? // Yes! // Let's look at Slide 8 for scientific research."_
 
 #### Vietnamese Note / Vietsub
 
@@ -371,7 +367,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 9)
 
-> _"Understanding these educational risks helps us analyze what happens when these graduates enter the workforce. // Let's move to Section 05: Job Market Impact."_
+> _"Understanding these educational risks helps us analyze what happens when graduates enter the workforce. // Let's examine the IT job market."_
 
 #### Vietnamese Note / Vietsub
 
@@ -383,7 +379,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 >
 > _Bài học cốt lõi rất rõ ràng: bạn không thể kiểm tra và giám sát code AI hiệu quả nếu bạn chưa từng tự tay rèn luyện phản xạ viết code trước đó._
 >
-> _(Chuyển Slide 9): Hiểu được các rủi ro học tập này giúp chúng ta phân tích điều gì xảy ra khi các sinh viên này bước vào thị trường việc làm. Hãy chuyển sang Phần 05: Tác động thị trường việc làm."_
+> _(Chuyển Slide 9): Hiểu được các rủi ro học tập này giúp chúng ta phân tích điều gì xảy ra khi các sinh viên này bước vào thị trường việc làm. Hãy cùng xem xét thị trường việc làm IT."_
 
 ---
 
@@ -413,7 +409,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Presenter Script (English)
 
-> _"In Section 05, // we analyze the shift across the IT job market. [PAUSE]_
+> _"Looking at the industry, // a massive shift is happening across the IT job market. [PAUSE]_
 >
 > _On the left card, // entry-level roles that involve only pure code typing are shrinking rapidly. // However, // high-value roles—like Software Architects, // Security Engineers, // and DevOps specialists—are in higher demand than ever. [PAUSE]_
 >
@@ -425,8 +421,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Vietnamese Note / Vietsub
 
-> _"Trong Phần 05, chúng ta phân tích sự chuyển dịch trên thị trường việc làm IT._
->
+> _"Nhìn vào toàn ngành công nghệ, một sự chuyển dịch mạnh mẽ đang diễn ra trên thị trường việc làm IT._
 > _Ở thẻ bên trái, các công việc cấp thấp chỉ liên quan đến gõ code đơn thuần đang thu hẹp nhanh chóng. Tuy nhiên, các vai trò giá trị cao—như Kiến trúc sư phần mềm, Kỹ sư bảo mật và Chuyên gia DevOps—đang có nhu cầu cao hơn bao giờ hết._
 >
 > _Ở thẻ bên phải, các chuyên gia hàng đầu nhấn mạnh một sự tiến hóa lớn: phát triển phần mềm đang chuyển mình từ 'viết từng dòng code' sang 'kỹ nghệ hệ thống', nơi trọng tâm đặt vào kiến trúc, kiểm duyệt bảo mật và giải quyết bài toán chiến lược._
@@ -461,7 +456,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 11)
 
-> _"To succeed in these new roles, // what specific technical skills must developers build? // Let's move to Section 06: Technical Future Skills."_
+> _"To succeed in these new roles, // what specific technical skills must developers build? // Let's examine the essential technical skills."_
 
 #### Vietnamese Note / Vietsub
 
@@ -469,7 +464,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 >
 > _Chúng ta đang chứng kiến nhu cầu lớn về Kỹ sư Prompt và Context AI giúp tối ưu câu lệnh cho LLM, Kỹ sư Kiểm toán Bảo mật AI chuyên rà soát lỗ hổng dữ liệu, Chuyên gia Tích hợp AI kết nối các mô hình với cơ sở dữ liệu doanh nghiệp, và Kỹ sư Sản phẩm kết hợp thiết kế trải nghiệm người dùng với việc làm mẫu sản phẩm siêu tốc bằng AI._
 >
-> _(Chuyển Slide 11): Để thành công trong các vai trò mới này, lập trình viên cần xây dựng những kỹ năng kỹ thuật cụ thể nào? Hãy chuyển sang Phần 06: Kỹ năng tương lai."_
+> _(Chuyển Slide 11): Để thành công trong các vai trò mới này, lập trình viên cần xây dựng những kỹ năng kỹ thuật cụ thể nào? Hãy cùng tìm hiểu các kỹ năng thiết yếu."_
 
 ---
 
@@ -500,7 +495,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Presenter Script (English)
 
-> _"Section 06 outlines the essential technical capabilities required in the AI era. [PAUSE]_
+> _"Here are the essential technical capabilities required in the AI era. [PAUSE]_
 >
 > _On the left card, // core computer science fundamentals—data structures, // database indexing, // networking, // and security—are more vital than ever. // You need these deep fundamentals to inspect and audit AI code. [PAUSE]_
 >
@@ -512,7 +507,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Vietnamese Note / Vietsub
 
-> _"Phần 06 tóm tắt các năng lực kỹ thuật thiết yếu trong kỷ nguyên AI._
+> _"Dưới đây là các năng lực kỹ thuật thiết yếu trong kỷ nguyên AI._
 >
 > _Ở thẻ bên trái, các nền tảng khoa học máy tính cốt lõi—cấu trúc dữ liệu, đánh chỉ mục cơ sở dữ liệu, mạng máy tính và bảo mật—trở nên quan trọng hơn bao giờ hết. Bạn cần những nền tảng sâu sắc này để kiểm tra và thẩm định mã nguồn AI._
 >
@@ -554,7 +549,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 13)
 
-> _"Now, // what if a company decides to ignore human expertise and rely 100% on AI? // Let's examine the severe risks in Section 07."_
+> _"Now, // what if a company decides to ignore human expertise and rely 100% on AI? // Let's examine the severe risks."_
 
 #### Vietnamese Note / Vietsub
 
@@ -564,9 +559,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 >
 > _Ở thẻ bên phải, năng lực tiếng Anh là bắt buộc để viết prompt AI chuẩn xác, đọc tài liệu toàn cầu và làm các công việc công nghệ từ xa. Đối với sinh viên, lộ trình tốt nhất rất rõ ràng: hãy xây dựng các dự án thực tế, nắm vững nền tảng khoa học máy tính và thực hành kiểm duyệt code AI hàng ngày._
 >
-> _(Chuyển Slide 13): Bây giờ, điều gì sẽ xảy ra nếu một công ty quyết định phớt lờ chuyên môn con người và phụ thuộc 100% vào AI? Hãy cùng xem xét những rủi ro nghiêm trọng trong Phần 07."_
-
----
+> _(Chuyển Slide 13): Bây giờ, điều gì sẽ xảy ra nếu một công ty quyết định phớt lờ chuyên môn con người và phụ thuộc 100% vào AI? Hãy cùng xem xét những rủi ro nghiêm trọng."_
 
 ### Slide 13: Risks of Total AI Dependency
 
@@ -588,7 +581,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Presenter Script (English)
 
-> _"Now in Section 07, // let's examine what happens if companies rely 100% on AI // without human engineers. [PAUSE]_
+> _"So, // what happens if a company relies 100% on AI // without human engineers? [PAUSE]_
 >
 > _As you can see, // total AI dependency creates severe business risks. [PAUSE]_
 >
@@ -602,12 +595,11 @@ Kịch bản thuyết trình tiếng Anh đầy đủ 14 slide được định 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 14)
 
-> _"So, // weighing all these opportunities and risks, // what is the ultimate answer? // Let's bring everything together in our final slide."_
+> _"Weighing all these opportunities and risks, // what is the ultimate answer? // Let's bring everything together in our final slide."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Bây giờ ở Phần 07, hãy cùng xem xét điều gì sẽ xảy ra nếu các công ty phụ thuộc 100% vào AI mà không có kỹ sư con người._
->
+> _"Vậy, điều gì sẽ xảy ra nếu một công ty phụ thuộc 100% vào AI mà không có kỹ sư con người?_
 > _Như các bạn thấy, sự phụ thuộc hoàn toàn vào AI tạo ra những rủi ro kinh doanh nghiêm trọng._
 >
 > _Thứ nhất, các lỗ hổng bảo mật chưa được phát hiện có thể lọt vào môi trường production._

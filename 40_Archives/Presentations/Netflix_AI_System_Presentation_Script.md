@@ -5,7 +5,7 @@
 
 ## TL;DR
 
-Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) khớp 100% từng từ và từng khung hình với bộ slide **`Netflix_Recommendation_AI_System.pptx.pdf`**. Toàn bộ tài liệu được định dạng bằng **Native Markdown**, hoàn toàn không chứa emoji, tối ưu hóa nhịp thở tự nhiên (_Spoken Cadence_), phân đoạn nhịp ngắt nghỉ `//` và bổ sung câu chuyển slide dẫn dắt lôi cuốn.
+Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) khớp 100% từng từ và từng khung hình với bộ slide **`Netflix_Recommendation_AI_System.pptx.pdf`**. Toàn bộ tài liệu được định dạng bằng **Native Markdown**, hoàn toàn không chứa emoji, tối ưu hóa nhịp thở tự nhiên (_Spoken Cadence_), phân đoạn nhịp ngắt nghỉ `//`, sử dụng các câu chuyển ý đa dạng (_Diverse Signposting_) và loại bỏ hoàn toàn việc đọc số mục máy móc.
 
 ---
 
@@ -31,21 +31,23 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 > _"Hello everyone, // welcome to my presentation today. [PAUSE]_
 >
-> _As you can see on the title slide, // under Section 00: Executive AI Case Study, // our topic is the 'Netflix AI Recommendation System'. [PAUSE]_
+> _Today, // we are diving into the 'Netflix AI Recommendation System'. [PAUSE]_
 >
-> _Our analysis covers the 2024 to 2026 case study period. // Today, // we will explore how Netflix seamlessly combines Machine Learning, // Deep Neural Networks, // and Computer Vision // to deliver a hyper-personalized streaming experience for over 260 million users worldwide."_
+> _Our analysis covers the 2024 to 2026 case study period. // We will explore how Netflix seamlessly combines Machine Learning, // Deep Neural Networks, // and Computer Vision // to deliver a hyper-personalized streaming experience for over 260 million users worldwide."_
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 2)
 
-> _"To understand why Netflix built such a sophisticated AI system, // let's first examine the core user challenge in Section 01: The Problem."_
+> _"To understand why Netflix built such a sophisticated AI system, // let's first look at the core user challenge."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Xin chào mọi người, chào mừng đến với bài thuyết trình của tôi hôm nay. Như các bạn thấy trên slide tiêu đề, dưới Phần 00: Nghiên cứu điển hình về AI, chủ đề của chúng ta là: 'Hệ thống gợi ý AI của Netflix'._
+> _"Xin chào mọi người, chào mừng đến với bài thuyết trình của tôi hôm nay._
 >
-> _Phân tích của chúng ta bao gồm giai đoạn nghiên cứu 2024–2026. Hôm nay, chúng ta sẽ cùng khám phá cách Netflix kết hợp nhịp nhàng giữa Machine Learning, Mạng thần kinh sâu và Thị giác máy tính để mang lại trải nghiệm xem phim cá nhân hóa cho hơn 260 triệu người dùng trên toàn cầu._
+> _Hôm nay, chúng ta sẽ cùng khám phá chủ đề: 'Hệ thống gợi ý AI của Netflix'._
 >
-> _(Chuyển Slide 2): Để hiểu tại sao Netflix xây dựng một hệ thống AI phức tạp như vậy, trước hết chúng ta hãy cùng nhìn vào thách thức cốt lõi của người dùng ở Phần 01: Bài toán."_
+> _Phân tích của chúng ta bao gồm giai đoạn nghiên cứu 2024–2026. Chúng ta sẽ cùng tìm hiểu cách Netflix kết hợp nhịp nhàng giữa Machine Learning, Mạng thần kinh sâu và Thị giác máy tính để mang lại trải nghiệm xem phim cá nhân hóa cho hơn 260 triệu người dùng trên toàn cầu._
+>
+> _(Chuyển Slide 2): Để hiểu tại sao Netflix xây dựng một hệ thống AI phức tạp như vậy, trước hết chúng ta hãy cùng nhìn vào thách thức cốt lõi của người dùng."_
 
 ---
 
@@ -75,7 +77,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"Here in Section 01: The Problem, // let me explain the core challenge: // 'Choice Paralysis'. [PAUSE]_
+> _"Here lies the core challenge: // 'Choice Paralysis'. [PAUSE]_
 >
 > _Looking at the left card, // Netflix offers a massive catalog of over 15,000 titles. // Without AI, // users spend an average of 18 minutes just scrolling and browsing. // Even worse, // UX research reveals an 80% drop-off risk—meaning users close the app if they fail to find interesting content within the first 60 to 90 seconds. [PAUSE]_
 >
@@ -83,17 +85,17 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 3)
 
-> _"To solve this choice paralysis, // why couldn't Netflix just use a traditional rule-based program? // Let's compare them in Section 02: Technology Differences."_
+> _"To solve this choice paralysis, // why couldn't Netflix just use a traditional rule-based program? // Let's compare them."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Ở Phần 01: Bài toán này, hãy cùng xem xét thách thức chính: 'Sự tê liệt lựa chọn'._
+> _"Thách thức cốt lõi nằm ở đây: 'Sự tê liệt lựa chọn'._
 >
 > _Nhìn vào thẻ bên trái, kho nội dung của Netflix có hơn 15.000 tác phẩm. Nếu không có AI, người dùng tốn trung bình 18 phút chỉ để lướt xem. Tệ hơn nữa, nghiên cứu UX chỉ ra 80% rủi ro bỏ ứng dụng—nghĩa là người dùng sẽ thoát app nếu không tìm thấy phim hay trong 60 đến 90 giây đầu._
 >
 > _Chuyển sang thẻ bên phải, mục tiêu kinh doanh cốt lõi của Netflix là giảm thiểu ma sát từ lúc mở app đến khi bấm 'Play', từ đó giảm tỷ lệ hủy dịch vụ hàng tháng._
 >
-> _(Chuyển Slide 3): Để giải quyết sự tê liệt lựa chọn này, tại sao Netflix không dùng một chương trình dựa trên quy tắc truyền thống? Hãy cùng so sánh chúng trong Phần 02: Sự khác biệt công nghệ."_
+> _(Chuyển Slide 3): Để giải quyết sự tê liệt lựa chọn này, tại sao Netflix không dùng một chương trình dựa trên quy tắc truyền thống? Hãy cùng so sánh chúng."_
 
 ---
 
@@ -124,7 +126,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"In Section 02, // we compare Traditional Rule-Based Systems with the Netflix AI System. [PAUSE]_
+> _"This comparison highlights the fundamental difference between fixed rules and adaptive AI. [PAUSE]_
 >
 > _A traditional rule-based program follows hardcoded logic—for instance, // 'If a user likes Action, // show the Top 10 Action movies'. // This results in identical recommendations for everyone, // fails when new trends emerge, // and requires engineers to update rules manually. [PAUSE]_
 >
@@ -132,17 +134,17 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 4)
 
-> _"Now that we see why AI is superior to fixed rules, // let's look at the specific AI technologies powering Netflix in Section 03."_
+> _"Now that we see why AI is superior to fixed rules, // what specific AI technologies make this possible?"_
 
 #### Vietnamese Note / Vietsub
 
-> _"Ở Phần 02, chúng ta so sánh Hệ thống Quy tắc Truyền thống với Hệ thống AI của Netflix._
+> _"Bảng so sánh này nêu bật sự khác biệt căn bản giữa các quy tắc cố định và AI thích ứng._
 >
 > _Một chương trình dựa trên quy tắc truyền thống tuân theo logic cố định—ví dụ: 'Nếu người dùng thích phim Hành động, hãy hiện Top 10 phim Hành động'. Điều này dẫn đến kết quả giống hệt nhau cho mọi người, thất bại khi có xu hướng mới và đòi hỏi lập trình viên phải sửa quy tắc thủ công._
 >
 > _Ngược lại, AI của Netflix tự động học từ hàng tỷ tương tác thực tế. Nó mang lại khả năng cá nhân hóa 1-1 thực sự, điều chỉnh theo thời gian thực dựa trên thiết bị và thời gian trong ngày, đồng thời phân tích hàng triệu biến số 24/7 mà không cần can thiệp thủ công._
 >
-> _(Chuyển Slide 4): Bây giờ khi đã thấy rõ tại sao AI vượt trội hơn quy tắc cố định, hãy cùng tìm hiểu các công nghệ AI cụ thể vận hành Netflix trong Phần 03."_
+> _(Chuyển Slide 4): Bây giờ khi đã thấy rõ tại sao AI vượt trội hơn quy tắc cố định, những công nghệ AI cụ thể nào làm nên điều kỳ diệu này?"_
 
 ---
 
@@ -171,7 +173,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"Section 03 outlines the three primary AI technologies Netflix utilizes. [PAUSE]_
+> _"Three core AI technologies power the entire Netflix experience. [PAUSE]_
 >
 > _First, // Machine Learning powers Collaborative and Content Filtering, // grouping users with similar viewing habits to suggest movies they both love. [PAUSE]_
 >
@@ -181,11 +183,11 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 5)
 
-> _"How do these three technologies process data behind the scenes? // Let's inspect the system pipeline in Section 04: System Architecture."_
+> _"How do these three technologies process data behind the scenes? // Let's inspect the system architecture."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Phần 03 trình bày 3 công nghệ AI chính mà Netflix sử dụng._
+> _"Ba công nghệ AI cốt lõi cùng vận hành toàn bộ trải nghiệm người dùng trên Netflix._
 >
 > _Đầu tiên, Machine Learning cung cấp Lọc cộng tác và Lọc theo nội dung, nhóm những người dùng có sở thích tương tự để đề xuất các bộ phim họ cùng yêu thích._
 >
@@ -193,7 +195,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 >
 > _Thứ ba, Thị giác máy tính—cụ thể là thuật toán Phân tích Thị giác Thẩm mỹ (AVA) của Netflix—quét hàng ngàn khung hình video để chọn ảnh đại diện có ánh sáng, bố cục và biểu cảm cảm xúc tốt nhất._
 >
-> _(Chuyển Slide 5): Ba công nghệ này xử lý dữ liệu ở hậu trường như thế nào? Hãy cùng khám phá đường ống hệ thống trong Phần 04: Kiến trúc hệ thống."_
+> _(Chuyển Slide 5): Ba công nghệ này xử lý dữ liệu ở hậu trường như thế nào? Hãy cùng xem kiến trúc hệ thống."_
 
 ---
 
@@ -219,7 +221,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"In Section 04, // we break down Netflix's 4-stage data pipeline // based on Gomez-Uribe & Hunt's reference architecture. [PAUSE]_
+> _"Taking a closer look at the architecture, // Netflix operates a 4-stage data pipeline // based on Gomez-Uribe & Hunt's reference design. [PAUSE]_
 >
 > _Stage 1 is Data Ingestion, // logging every user interaction like clicks, // searches, // and dwell times. [PAUSE]_
 >
@@ -231,11 +233,11 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 6)
 
-> _"To feed this 4-stage architecture, // what specific data types does Netflix collect? // Let's check Section 05: Input Data."_
+> _"To feed this 4-stage architecture, // what specific data types does Netflix collect?"_
 
 #### Vietnamese Note / Vietsub
 
-> _"Trong Phần 04, chúng ta phân tích đường ống dữ liệu 4 giai đoạn của Netflix dựa trên kiến trúc tham chiếu của Gomez-Uribe & Hunt._
+> _"Đi sâu vào phần kiến trúc, Netflix vận hành một đường ống dữ liệu 4 giai đoạn dựa trên thiết kế tham chiếu của Gomez-Uribe & Hunt._
 >
 > _Giai đoạn 1 là Thu thập Dữ liệu (Data Ingestion), ghi lại mọi tương tác như cú click, tìm kiếm và thời gian dừng xem._
 >
@@ -245,7 +247,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 >
 > _Cuối cùng, Giai đoạn 4 là Hiển thị Thời gian thực (Real-time Rendering), tái cấu trúc trang chủ trong vài miligiây. Kiến trúc lai này tối ưu chi phí hạ tầng mà vẫn giữ được độ nhạy tức thì._
 >
-> _(Chuyển Slide 6): Để nuôi dưỡng kiến trúc 4 giai đoạn này, Netflix thu thập những loại dữ liệu cụ thể nào? Hãy cùng kiểm tra Phần 05: Dữ liệu đầu vào."_
+> _(Chuyển Slide 6): Để nuôi dưỡng kiến trúc 4 giai đoạn này, Netflix thu thập những loại dữ liệu cụ thể nào?"_
 
 ---
 
@@ -282,7 +284,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"Section 05 covers the three primary data sources feeding Netflix AI. [PAUSE]_
+> _"Three primary data sources feed Netflix AI algorithms continuously. [PAUSE]_
 >
 > _First is Implicit Behavioral Data—which accounts for 90% of model weight—including watch history, // rewinds, // viewing timestamps, // device types, // and browsing duration. [PAUSE]_
 >
@@ -292,11 +294,11 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 7)
 
-> _"Now let's see how these data inputs translate into real-world decisions. // Let's examine Decision Making Example 1 in Section 06."_
+> _"Now, // let's see how these data inputs translate into real-world decisions with our first case study."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Phần 05 đề cập đến 3 nguồn dữ liệu chính nuôi dưỡng AI của Netflix._
+> _"Ba nguồn dữ liệu chính liên tục nuôi dưỡng các thuật toán AI của Netflix._
 >
 > _Đầu tiên là Dữ liệu Hành vi Ẩn (Implicit Data)—chiếm 90% trọng số mô hình—bao gồm lịch sử xem, tua lại, thời điểm xem, loại thiết bị và thời gian lướt._
 >
@@ -304,7 +306,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 >
 > _Thứ ba là Siêu dữ liệu Nội dung (Content Metadata), phân loại tác phẩm thành hơn 76.000 thể loại siêu nhỏ cùng chi tiết về dàn diễn viên, tông màu và nhịp phim._
 >
-> _(Chuyển Slide 7): Bây giờ hãy cùng xem các dữ liệu đầu vào này chuyển hóa thành các quyết định thực tế như thế nào. Hãy cùng xem Ví dụ ra quyết định 1 trong Phần 06."_
+> _(Chuyển Slide 7): Bây giờ, hãy cùng xem các dữ liệu đầu vào này chuyển hóa thành các quyết định thực tế qua case study đầu tiên."_
 
 ---
 
@@ -335,7 +337,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"In Section 06, // we examine Netflix's first decision-making example: // Dynamic Artwork Personalization using Stranger Things, // backed by Netflix's AVA framework. [PAUSE]_
+> _"A prime example of AI in action is Dynamic Artwork Personalization using Stranger Things, // backed by Netflix's AVA framework. [PAUSE]_
 >
 > _Using a Contextual Multi-Armed Bandit algorithm, // the system selects thumbnail variants tailored to individual preferences. // Sci-Fi fans see the eerie dark forest or Mind Flayer sky, // while Teen Drama fans see close-up character posters of Nancy and Jonathan. [PAUSE]_
 >
@@ -343,17 +345,17 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 8)
 
-> _"Dynamic artwork personalizes individual images. // How does Netflix personalize the entire homepage layout? // Let's examine Example 2 in Section 07."_
+> _"Dynamic artwork personalizes individual images. // How does Netflix personalize the entire homepage layout? // Let's examine our second example."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Ở Phần 06, chúng ta nghiên cứu ví dụ ra quyết định đầu tiên: Cá nhân hóa Ảnh đại diện Động qua case study Stranger Things, dựa trên khung thuật toán AVA của Netflix._
+> _"Một ví dụ tiêu biểu về AI đang hoạt động thực tế là Cá nhân hóa Ảnh đại diện Động qua case study Stranger Things, dựa trên khung AVA của Netflix._
 >
 > _Sử dụng thuật toán Contextual Multi-Armed Bandits, hệ thống chọn mẫu ảnh đại diện phù hợp với sở thích cá nhân. Fan Sci-Fi thấy hình khu rừng ma mị, trong khi fan Drama tuổi teen thấy ảnh cận cảnh nhân vật Nancy và Jonathan._
 >
 > _Chiến lược này giúp tăng Tỷ lệ Click (CTR) hơn 20% so với ảnh tĩnh._
 >
-> _(Chuyển Slide 8): Ảnh đại diện động cá nhân hóa từng bức hình. Vậy Netflix cá nhân hóa toàn bộ bố cục trang chủ ra sao? Hãy cùng xem Ví dụ 2 trong Phần 07."_
+> _(Chuyển Slide 8): Ảnh đại diện động cá nhân hóa từng bức hình. Vậy Netflix cá nhân hóa toàn bộ bố cục trang chủ ra sao? Hãy cùng xem ví dụ thứ hai."_
 
 ---
 
@@ -384,7 +386,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"Section 07 presents Example 2: Context-Aware Homepage Ranking. [PAUSE]_
+> _"Turning to our second example: // Context-Aware Homepage Ranking. [PAUSE]_
 >
 > _The AI algorithm dynamically re-orders homepage rows based on real-time temporal and device features. [PAUSE]_
 >
@@ -394,11 +396,11 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 9)
 
-> _"These recommendation features deliver great user experiences, // but what is their actual business return on investment? // Let's check Section 08."_
+> _"These recommendation features deliver great user experiences, // but what is their actual business return on investment?"_
 
 #### Vietnamese Note / Vietsub
 
-> _"Phần 07 trình bày Ví dụ 2: Sắp xếp Trang chủ Theo Ngữ cảnh._
+> _"Chuyển sang ví dụ thứ hai: Sắp xếp Trang chủ Theo Ngữ cảnh._
 >
 > _Thuật toán AI tái cấu trúc các hàng trang chủ dựa trên thời gian và thiết bị thời gian thực._
 >
@@ -406,7 +408,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 >
 > _Tuy nhiên, vào 9 giờ tối cuối tuần trên Smart TV, trang chủ tự động đổi sang ưu tiên các phim bom tấn thời lượng dài và bộ phim gia đình xem chung._
 >
-> _(Chuyển Slide 9): Những tính năng gợi ý này mang lại trải nghiệm tuyệt vời, nhưng lợi nhuận đầu tư kinh doanh thực tế là bao nhiêu? Hãy cùng kiểm tra Phần 08."_
+> _(Chuyển Slide 9): Những tính năng gợi ý này mang lại trải nghiệm tuyệt vời, nhưng lợi nhuận đầu tư kinh doanh thực tế là bao nhiêu?"_
 
 ---
 
@@ -437,7 +439,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"Section 08 highlights the massive business impact of Netflix AI. [PAUSE]_
+> _"Looking at the bottom line, // these numbers highlight the massive business impact of Netflix AI. [PAUSE]_
 >
 > _First, // 80% of all member watch time is driven directly by AI recommendations, // with only 20% coming from active searches. [PAUSE]_
 >
@@ -447,11 +449,11 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 10)
 
-> _"While these figures prove huge business success, // every AI system has trade-offs. // Let's evaluate the advantages and limitations in Section 09."_
+> _"While these figures prove huge business success, // every AI system has trade-offs. // Let's evaluate the advantages and limitations."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Phần 08 nhấn mạnh tác động kinh doanh khổng lồ của AI Netflix._
+> _"Nhìn vào kết quả kinh doanh thực tế, những con số này nêu bật tác động khổng lồ của AI Netflix._
 >
 > _Đầu tiên, 80% thời lượng xem của người dùng xuất phát trực tiếp từ gợi ý AI, chỉ 20% đến từ tìm kiếm chủ động._
 >
@@ -459,7 +461,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 >
 > _Thứ ba, hệ thống đã tạo ra hơn 260 triệu phiên bản trải nghiệm cá nhân hóa độc bản trên toàn cầu. Cho đến năm 2026, lượng người dùng đăng ký trả phí toàn cầu đã vượt mốc 325 triệu thành viên—chứng minh quy mô khổng lồ và sự phát triển liên tục._
 >
-> _(Chuyển Slide 10): Trong khi những con số này chứng minh thành công lớn, mọi hệ thống AI đều có những điểm đánh đổi. Hãy cùng đánh giá ưu điểm và hạn chế trong Phần 09."_
+> _(Chuyển Slide 10): Trong khi những con số này chứng minh thành công lớn, mọi hệ thống AI đều có những điểm đánh đổi. Hãy cùng đánh giá ưu điểm và hạn chế."_
 
 ---
 
@@ -486,7 +488,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"In Section 09, // we evaluate the system's strengths and limitations. [PAUSE]_
+> _"A balanced evaluation reveals both powerful strengths and clear limitations. [PAUSE]_
 >
 > _The primary advantage is hyper-personalization at massive scale, // allowing millions of members to discover relevant titles within seconds and maximizing user satisfaction. [PAUSE]_
 >
@@ -494,17 +496,17 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Slide Transition Script (Nói khi bấm chuyển sang Slide 11)
 
-> _"Now, // let's wrap up our presentation with a final conclusion and open the floor for Q&A on Slide 11."_
+> _"Now, // let's wrap up our presentation with a final takeaway and open the floor for Q&A."_
 
 #### Vietnamese Note / Vietsub
 
-> _"Trong Phần 09, chúng ta đánh giá ưu điểm và hạn chế của hệ thống._
+> _"Một đánh giá khách quan chỉ ra cả những điểm mạnh vượt trội và những hạn chế rõ ràng._
 >
 > _Ưu điểm chính là khả năng cá nhân hóa siêu việt ở quy mô lớn, giúp hàng triệu thành viên tìm thấy nội dung phù hợp trong vài giây và tối đa hóa sự hài lòng._
 >
 > _Tuy nhiên, hạn chế lớn là vấn đề 'Cold-start', nơi AI gặp khó khăn khi gợi ý cho tài khoản mới lập do thiếu dữ liệu hành vi. Ngoài ra, nó dễ đưa người dùng vào 'bong bóng lọc nội dung', liên tục đề xuất thể loại cũ mà bỏ qua các tác phẩm mới lạ._
 >
-> _(Chuyển Slide 11): Bây giờ, hãy cùng tổng kết bài thuyết trình và mở lời cho phần hỏi đáp Q&A ở Slide 11."_
+> _(Chuyển Slide 11): Bây giờ, hãy cùng tổng kết bài thuyết trình với thông điệp cốt lõi và mở lời cho phần hỏi đáp Q&A."_
 
 ---
 
@@ -525,7 +527,7 @@ Kịch bản thuyết trình tiếng Anh đầy đủ (trình độ CEFR B1/B2) 
 
 #### Presenter Script (English)
 
-> _"In conclusion, // AI is not just an added feature—it is the core engine driving Netflix's competitive advantage. [PAUSE]_
+> _"To summarize, // AI is not just an added feature—it is the core engine driving Netflix's competitive advantage. [PAUSE]_
 >
 > _By seamlessly combining Machine Learning, // Deep Learning, // and Computer Vision, // Netflix transforms a vast content catalog into a frictionless streaming experience for over 260 million subscribers. [PAUSE]_
 >
